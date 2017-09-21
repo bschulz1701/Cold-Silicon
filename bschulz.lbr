@@ -167,7 +167,10 @@
 <wire x1="-1.5625" y1="0.9375" x2="-1.5625" y2="0.3125" width="0.127" layer="21"/>
 <wire x1="-1.875" y1="0.625" x2="-1.25" y2="0.625" width="0.127" layer="21"/>
 </package>
-<package name="WE-LQS(INDUCTOR)">
+<package name="WE-LQS(4X4)">
+<description>Wurth LQS series inductor, with 4mmx4mm package
+Avaliable in inductances 470nH, 1uH, 1.5uH, 2.2uH, 3.3uH, 4.7uH, 10uH, 15uH, 22uH, 33uH, 47uH, 68uH, 100uH, 150uH, 220uH, 330uH, 470uH, 1mH 
+https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV=ffecaecb%2Cfffc0511%2Cfffc06ed%2Cfffc02dc%2C1f140000%2Cffe00047%2Cb83c0b&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pbfree=0&amp;rohs=0&amp;cad=0&amp;datasheet=0&amp;nstock=0&amp;photo=0&amp;nonrohs=0&amp;newproducts=0&amp;k=inductor&amp;quantity=0&amp;ptm=0&amp;fid=0&amp;pageSize=25&amp;pkeyword=inductor</description>
 <smd name="P$1" x="-1.15" y="0" dx="3.6" dy="1.5" layer="1" rot="R90"/>
 <smd name="P$2" x="1.15" y="0" dx="3.6" dy="1.5" layer="1" rot="R90"/>
 <wire x1="-2.54" y1="1.905" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
@@ -504,6 +507,11 @@ http://www.maxim-ic.com .. MAX3223-MAX3243.pdf</description>
 <smd name="P$11" x="0" y="0" dx="0.84" dy="2.4" layer="1"/>
 </package>
 <package name="WE-MAIA(4.1X4.1)">
+<description>Wurth MAIA series inductor, with 4.1mmx4.1mm package, sheilded  
+
+Avaliable in inductances 330nH, 560nH, 680nH, 1.2uH, 1.5uH, 1.8uH, 2.2uH, 3.3uH, 4.7uH, 5.6uH
+
+https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV=ffecb9d7%2Cfffc0511%2Cfffc06ed%2Cfffc02dc%2Cb87c46%2C1f140000%2Cffe00047&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pbfree=0&amp;rohs=0&amp;cad=0&amp;datasheet=0&amp;nstock=0&amp;photo=0&amp;nonrohs=0&amp;newproducts=0&amp;k=inductor&amp;quantity=&amp;ptm=0&amp;fid=0&amp;pageSize=25&amp;pkeyword=inductor</description>
 <smd name="P$1" x="-1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
 <smd name="P$2" x="1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
@@ -1302,22 +1310,6 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WE-LSQ(INDUCTOR)" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WE-LQS(INDUCTOR)">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CM200">
 <description>Crystal Oscilator, 32.768 kHz</description>
 <gates>
@@ -1707,23 +1699,6 @@ PN: HR1941CT-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WE-MAIA(INDUCTOR)" uservalue="yes">
-<description>Wurth MAIA series inductor (https://www.digikey.com/products/en?FV=ffecb9d7,ffe00047)</description>
-<gates>
-<gate name="G$1" symbol="L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="WE-MAIA(4.1X4.1)">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FXMAR2102">
 <description>Fairchild bi-directional logic level shifter, 5v tollerent, open drain/tri state inputs</description>
 <gates>
@@ -1937,6 +1912,32 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <connect gate="G$1" pin="SDI" pad="7"/>
 <connect gate="G$1" pin="SDO" pad="12"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INDUCTOR">
+<description>Genaric indcutor</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LQS_4X4" package="WE-LQS(4X4)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MAIA_4.1X4.1" package="WE-MAIA(4.1X4.1)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>

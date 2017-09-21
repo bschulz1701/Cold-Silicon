@@ -167,7 +167,10 @@
 <wire x1="-1.5625" y1="0.9375" x2="-1.5625" y2="0.3125" width="0.127" layer="21"/>
 <wire x1="-1.875" y1="0.625" x2="-1.25" y2="0.625" width="0.127" layer="21"/>
 </package>
-<package name="WE-LQS(INDUCTOR)">
+<package name="WE-LQS(4X4)">
+<description>Wurth LQS series inductor, with 4mmx4mm package
+Avaliable in inductances 470nH, 1uH, 1.5uH, 2.2uH, 3.3uH, 4.7uH, 10uH, 15uH, 22uH, 33uH, 47uH, 68uH, 100uH, 150uH, 220uH, 330uH, 470uH, 1mH 
+https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV=ffecaecb%2Cfffc0511%2Cfffc06ed%2Cfffc02dc%2C1f140000%2Cffe00047%2Cb83c0b&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pbfree=0&amp;rohs=0&amp;cad=0&amp;datasheet=0&amp;nstock=0&amp;photo=0&amp;nonrohs=0&amp;newproducts=0&amp;k=inductor&amp;quantity=0&amp;ptm=0&amp;fid=0&amp;pageSize=25&amp;pkeyword=inductor</description>
 <smd name="P$1" x="-1.15" y="0" dx="3.6" dy="1.5" layer="1" rot="R90"/>
 <smd name="P$2" x="1.15" y="0" dx="3.6" dy="1.5" layer="1" rot="R90"/>
 <wire x1="-2.54" y1="1.905" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
@@ -504,6 +507,11 @@ http://www.maxim-ic.com .. MAX3223-MAX3243.pdf</description>
 <smd name="P$11" x="0" y="0" dx="0.84" dy="2.4" layer="1"/>
 </package>
 <package name="WE-MAIA(4.1X4.1)">
+<description>Wurth MAIA series inductor, with 4.1mmx4.1mm package, sheilded  
+
+Avaliable in inductances 330nH, 560nH, 680nH, 1.2uH, 1.5uH, 1.8uH, 2.2uH, 3.3uH, 4.7uH, 5.6uH
+
+https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV=ffecb9d7%2Cfffc0511%2Cfffc06ed%2Cfffc02dc%2Cb87c46%2C1f140000%2Cffe00047&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pbfree=0&amp;rohs=0&amp;cad=0&amp;datasheet=0&amp;nstock=0&amp;photo=0&amp;nonrohs=0&amp;newproducts=0&amp;k=inductor&amp;quantity=&amp;ptm=0&amp;fid=0&amp;pageSize=25&amp;pkeyword=inductor</description>
 <smd name="P$1" x="-1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
 <smd name="P$2" x="1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
@@ -1262,12 +1270,12 @@ Switches electrical signals</description>
 <wire x1="-7.62" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LTC2440">
-<pin name="VCC" x="-12.7" y="10.16" visible="pin" length="middle"/>
-<pin name="GND" x="-12.7" y="7.62" visible="pin" length="middle"/>
-<pin name="IN+" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="IN-" x="-12.7" y="0" visible="pin" length="middle"/>
-<pin name="REF+" x="-12.7" y="-5.08" visible="pin" length="middle"/>
-<pin name="REF-" x="-12.7" y="-7.62" visible="pin" length="middle"/>
+<pin name="VCC" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="GND@1" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="IN+" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="IN-" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="REF+" x="-15.24" y="-12.7" visible="pin" length="middle"/>
+<pin name="REF-" x="-15.24" y="-15.24" visible="pin" length="middle"/>
 <pin name="BUSY" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="F0" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="SCK" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
@@ -1275,11 +1283,14 @@ Switches electrical signals</description>
 <pin name="/CS" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="/EXT" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="SDI" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<text x="-7.62" y="13.716" size="1.27" layer="95">LTC2440</text>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="13.716" size="1.27" layer="95">LTC2440</text>
+<pin name="GND@2" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="GND@3" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="GND@4" x="-15.24" y="0" visible="pin" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1299,12 +1310,12 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WE-LSQ(INDUCTOR)" uservalue="yes">
+<deviceset name="WE-LQS(INDUCTOR)" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="WE-LQS(INDUCTOR)">
+<device name="" package="WE-LQS(4X4)">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -1904,6 +1915,50 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <connect gate="G$1" pin="GREEN_CATH" pad="4"/>
 <connect gate="G$1" pin="RED_CATH" pad="1"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC2440">
+<description>Linear Technology ADC, 24 bit, 3.5ksps, SPI</description>
+<gates>
+<gate name="G$1" symbol="LTC2440" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP16">
+<connects>
+<connect gate="G$1" pin="/CS" pad="11"/>
+<connect gate="G$1" pin="/EXT" pad="10"/>
+<connect gate="G$1" pin="BUSY" pad="15"/>
+<connect gate="G$1" pin="F0" pad="14"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="8"/>
+<connect gate="G$1" pin="GND@3" pad="9"/>
+<connect gate="G$1" pin="GND@4" pad="16"/>
+<connect gate="G$1" pin="IN+" pad="5"/>
+<connect gate="G$1" pin="IN-" pad="6"/>
+<connect gate="G$1" pin="REF+" pad="3"/>
+<connect gate="G$1" pin="REF-" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="13"/>
+<connect gate="G$1" pin="SDI" pad="7"/>
+<connect gate="G$1" pin="SDO" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INDUCTOR">
+<description>Genaric indcutor</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
