@@ -7843,7 +7843,30 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE_PART" value="" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="DIGIKEY" value="311-10.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0710KL" constant="no"/>
+<attribute name="VALUE_PART" value="10k" constant="no"/>
+</technology>
+<technology name="27">
+<attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0727RL" constant="no"/>
+<attribute name="VALUE_PART" value="27" constant="no"/>
+</technology>
+<technology name="330">
+<attribute name="DIGIKEY" value="311-330HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07330RL" constant="no"/>
+<attribute name="VALUE_PART" value="330" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R0805" package="R0805">
