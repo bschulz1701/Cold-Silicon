@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7443,9 +7443,15 @@ Rated to 50 mA 16V (DC)</description>
 </devices>
 </deviceset>
 <deviceset name="HEADER_5X2_1.27">
-<description>Header, 5x2, 1.27mm Pitch
+<description>&lt;b&gt;Header&lt;/b&gt;
+&lt;p&gt;
+&lt;li&gt;Size: 5x2 &lt;/li&gt; 
+&lt;li&gt;Pitch: 1.27mm (0.05") &lt;/li&gt;
+&lt;/p&gt;
+&lt;br&gt;
+Used for prog header on Arduino M0
 
-Used for prog header on Arduino M0</description>
+&lt;p&gt; &lt;b&gt;Digikey:&lt;/b&gt; &lt;a href = "https://www.digikey.com/product-detail/en/amphenol-fci/20021121-00010C4LF/609-3695-1-ND/2209147"&gt; 609-3695-1-ND&lt;/a&gt; &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="HEADER_5X2" x="0" y="0"/>
 </gates>
@@ -7464,7 +7470,11 @@ Used for prog header on Arduino M0</description>
 <connect gate="G$1" pin="$9" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="609-3695-1-ND" constant="no"/>
+<attribute name="MF" value="Amphenol" constant="no"/>
+<attribute name="MPN" value="20021121-00010C4LF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
