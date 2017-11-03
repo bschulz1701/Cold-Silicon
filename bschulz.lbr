@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10059,9 +10059,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="ATMEGA644A-MU-ND" constant="no"/>
+<attribute name="DIGIKEY" value="ATMEGA644PA-MURCT-ND" constant="no"/>
 <attribute name="MF" value="Atmel" constant="no"/>
-<attribute name="MPN" value="ATMEGA644P-20MU" constant="no"/>
+<attribute name="MPN" value="ATMEGA644PA-MUR" constant="no"/>
 <attribute name="OC_FARNELL" value="1748528" constant="no"/>
 <attribute name="OC_NEWARK" value="26R5636" constant="no"/>
 </technology>
