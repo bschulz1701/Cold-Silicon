@@ -7836,7 +7836,21 @@ PN: HR1941CT-ND</description>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="Atmel" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="441">
+<attribute name="DIGIKEY" value="ATTINY441-SSU-ND" constant="no"/>
+<attribute name="MF" value="Atmel" constant="no"/>
+<attribute name="MPN" value="ATTINY441-SSU" constant="no"/>
+</technology>
+<technology name="841">
+<attribute name="DIGIKEY" value="ATTINY841-SSU-ND" constant="no"/>
+<attribute name="MF" value="Atmel" constant="no"/>
+<attribute name="MPN" value="ATTINY841-SSU" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
