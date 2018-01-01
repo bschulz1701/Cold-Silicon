@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="8.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6170,6 +6170,27 @@ Breadboard-friendly pins.
 <wire x1="4" y1="0" x2="4" y2="6" width="0.127" layer="21"/>
 <wire x1="4" y1="6" x2="-4" y2="6" width="0.127" layer="21"/>
 </package>
+<package name="SWITCH_4.2X3.2">
+<smd name="1" x="-2.075" y="1.4" dx="1.05" dy="0.8125" layer="1"/>
+<smd name="2" x="2.075" y="1.4" dx="1.05" dy="0.8125" layer="1"/>
+<smd name="4" x="2.075" y="-1.4" dx="1.05" dy="0.8125" layer="1"/>
+<smd name="3" x="-2.075" y="-1.4" dx="1.05" dy="0.8125" layer="1"/>
+<wire x1="-2.3" y1="1.6" x2="-2.3" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.6" x2="2.3" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.6" x2="2.3" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.6" x2="-2.3" y2="1.6" width="0.127" layer="21"/>
+</package>
+<package name="BATT_12MM_CLIP_VERT">
+<smd name="BATT-" x="0" y="8.2" dx="2.3" dy="4.5" layer="1"/>
+<smd name="BATT+" x="0" y="-8.2" dx="2.3" dy="4.5" layer="1"/>
+<hole x="0" y="3.725" drill="1"/>
+<hole x="0" y="-3.725" drill="1"/>
+<wire x1="-6.35" y1="-3.81" x2="-6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="0" y1="7.62" x2="6.35" y2="-3.81" width="0.127" layer="21" curve="-121.798913"/>
+<wire x1="0" y1="7.62" x2="-6.35" y2="-3.81" width="0.127" layer="21" curve="121.798913"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_0402">
@@ -10529,6 +10550,17 @@ Manufacturer: TI
 <technology name=""/>
 </technologies>
 </device>
+<device name="4.2X3.2" package="SWITCH_4.2X3.2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="4"/>
+<connect gate="G$1" pin="4" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="JST_2MM_MALE" prefix="J" uservalue="yes">
@@ -10587,6 +10619,15 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <attribute name="MF" value="Linx" constant="no"/>
 <attribute name="MPN" value="BAT-HLD-012-SMT" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="VERT" package="BATT_12MM_CLIP_VERT">
+<connects>
+<connect gate="G$1" pin="+" pad="BATT+"/>
+<connect gate="G$1" pin="-" pad="BATT-"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
