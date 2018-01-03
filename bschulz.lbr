@@ -8031,7 +8031,7 @@ PN: HR1941CT-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS797XX">
+<deviceset name="TPS797*">
 <description>TPS797xx, Ultra low power linear voltage regulator, fixed voltages of 1.8v, 3v, 3.3v
 Input voltage rage of 1.8-5.5v</description>
 <gates>
@@ -8046,7 +8046,32 @@ Input voltage rage of 1.8-5.5v</description>
 <connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="18">
+<attribute name="DIGIKEY" value="296-11988-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS79718DCKR" constant="no"/>
+</technology>
+<technology name="285">
+<attribute name="DIGIKEY" value="296-25465-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS797285DCKR" constant="no"/>
+</technology>
+<technology name="30">
+<attribute name="DIGIKEY" value="296-11989-1-ND
+" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS79730DCKR" constant="no"/>
+</technology>
+<technology name="33">
+<attribute name="DIGIKEY" value="296-11990-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS79733DCKR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

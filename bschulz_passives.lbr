@@ -3336,6 +3336,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10B104KO8NNNC" constant="no"/>
 </technology>
+<technology name="0.47UF">
+<attribute name="DIGIKEY" value="1276-2083-1-ND" constant="no"/>
+<attribute name="MF" value="Samsung" constant="no"/>
+<attribute name="MPN" value="CL10B474KA8NNNC" constant="no"/>
+</technology>
 <technology name="12PF">
 <attribute name="DIGIKEY" value="1276-1254-1-ND" constant="no"/>
 <attribute name="MF" value="Samsung" constant="no"/>
