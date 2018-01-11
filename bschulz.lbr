@@ -28,7 +28,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -6428,6 +6428,19 @@ Breadboard-friendly pins.
 <text x="-2.54" y="1.27" size="1.016" layer="27">&gt;NAME&lt;</text>
 <text x="-2.54" y="-2.54" size="1.016" layer="27">&gt;VALUE&lt;</text>
 </package>
+<package name="DCK_R-PDSO-G6">
+<smd name="1" x="-0.65" y="-1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="3" x="0.65" y="-1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="0" y="1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="-0.65" y="1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
+<wire x1="-1.075" y1="0.7" x2="-1.075" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.075" y1="-0.7" x2="1.075" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.075" y1="-0.7" x2="1.075" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.075" y1="0.7" x2="-1.075" y2="0.7" width="0.127" layer="21"/>
+<circle x="-1.397" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_0402">
@@ -7725,6 +7738,52 @@ Switches electrical signals</description>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
 <text x="-2.54" y="11.176" size="1.27" layer="95">TPS61086</text>
+</symbol>
+<symbol name="INA21X">
+<pin name="V+" x="-12.7" y="12.7" length="middle"/>
+<pin name="REF" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="IN+" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="IN-" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="12.7" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<text x="-3.048" y="16.256" size="1.27" layer="95">INA21*</text>
+</symbol>
+<symbol name="MCP6041">
+<pin name="VIN+" x="-7.62" y="5.08" length="middle" direction="in"/>
+<pin name="VIN-" x="-7.62" y="-5.08" length="middle" direction="in"/>
+<pin name="VDD" x="17.78" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="VSS" x="17.78" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="1.016" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="1.016" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0.508" y1="0.762" x2="1.524" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.016" x2="1.524" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.016" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.016" x2="0" y2="1.016" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="11.43" y2="2.54" width="0.254" layer="94"/>
+<wire x1="11.43" y1="2.54" x2="11.43" y2="5.08" width="0.254" layer="94"/>
+<wire x1="11.43" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="1.524" y="8.636" size="1.27" layer="95">MCP6041</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11788,6 +11847,122 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="DIGIKEY" value="296-37680-1-ND " constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS61086DRCR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INA21*">
+<description>&lt;b&gt;INA21x&lt;/b&gt; - Analog Output Current Sense Amplifier
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vs: 2.7V ~ 26V&lt;/li&gt;
+&lt;li&gt;Iq: 100uA &lt;/li&gt;
+&lt;li&gt; Common Mode Range: 0V ~ 26V &lt;/li&gt;
+&lt;li&gt; Gain: 200, 500, 1000, 50, 100, 75 V/V (INA210, 211, 212, 213, 214, 215)
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/INA210BIDCKR/296-40124-1-ND/5178001"&gt; INA210 &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/INA211BIDCKR/296-40126-1-ND/5178003"&gt; INA211 &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/INA212BIDCKR/296-40128-1-ND/5178005"&gt; INA212 &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/INA213BIDCKR/296-40129-1-ND/5178006"&gt; INA213 &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/INA214BIDCKR/296-40131-1-ND/5178008"&gt; INA214 &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/INA215AIDCKR/296-46095-1-ND/7033271"&gt; INA215 &lt;/a&gt;&lt;br/&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="INA21X" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="DCK_R-PDSO-G6">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN+" pad="4"/>
+<connect gate="G$1" pin="IN-" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="REF" pad="1"/>
+<connect gate="G$1" pin="V+" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="296-40124-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="INA210BIDCKR" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="296-40126-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="INA211BIDCKR" constant="no"/>
+</technology>
+<technology name="2">
+<attribute name="DIGIKEY" value="296-40128-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="INA212BIDCKR" constant="no"/>
+</technology>
+<technology name="3">
+<attribute name="DIGIKEY" value="296-40129-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="INA213BIDCKR" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="296-40131-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="INA214BIDCKR" constant="no"/>
+</technology>
+<technology name="5">
+<attribute name="DIGIKEY" value="296-46095-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="INA215AIDCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP6041">
+<description>&lt;b&gt;MCP6041&lt;/b&gt; - Low Power Rail to Rail Op-Amp
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vs: 1.4V ~ 6V&lt;/li&gt;
+&lt;li&gt;Iq: 600nA &lt;/li&gt;
+&lt;li&gt; Common Mode Range: 0V ~ 6V &lt;/li&gt;
+&lt;li&gt; GBP: 14 kHz
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP6041T-I-OT/MCP6041T-I-OTCT-ND/529846"&gt; MCP6041T-I/OTCT-ND &lt;/a&gt;&lt;br/&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP6041" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VIN+" pad="3"/>
+<connect gate="G$1" pin="VIN-" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="MCP6041T-I/OTCT-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MCP6041T-I/OT" constant="no"/>
 </technology>
 </technologies>
 </device>
