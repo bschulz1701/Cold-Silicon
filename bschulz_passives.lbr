@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3332,9 +3332,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
 <technology name="0.1UF">
-<attribute name="DIGIKEY" value="1276-1005-1-ND" constant="no"/>
-<attribute name="MF" value="Samsung" constant="no"/>
-<attribute name="MPN" value="CL10B104KO8NNNC" constant="no"/>
+<attribute name="DIGIKEY" value="490-6051-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GCM188R71E104KA57D" constant="no"/>
 </technology>
 <technology name="0.47UF">
 <attribute name="DIGIKEY" value="1276-2083-1-ND" constant="no"/>
@@ -3342,9 +3342,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="CL10B474KA8NNNC" constant="no"/>
 </technology>
 <technology name="12PF">
-<attribute name="DIGIKEY" value="1276-1254-1-ND" constant="no"/>
-<attribute name="MF" value="Samsung" constant="no"/>
-<attribute name="MPN" value="CL10C120JB8NNNC" constant="no"/>
+<attribute name="DIGIKEY" value="490-6197-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM1555C1H120GA01D" constant="no"/>
 </technology>
 <technology name="1UF">
 <attribute name="DIGIKEY" value="1276-6524-1-ND" constant="no"/>
@@ -3370,14 +3370,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
 <technology name="10UF">
-<attribute name="DIGIKEY" value="1276-2405-1-ND" constant="no"/>
-<attribute name="MF" value="Samsung" constant="no"/>
-<attribute name="MPN" value="CL21A106KQCLRNC" constant="no"/>
+<attribute name="DIGIKEY" value="490-6473-6-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM21BR61C106KE15K" constant="no"/>
 </technology>
 <technology name="22UF">
-<attribute name="DIGIKEY" value="1276-6687-1-ND" constant="no"/>
-<attribute name="MF" value="Samsung" constant="no"/>
-<attribute name="MPN" value="CL21A226KQCLRNC" constant="no"/>
+<attribute name="DIGIKEY" value="490-9952-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM219R61C226ME15L" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4095,15 +4095,27 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MF" value="" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="VALUE_PART" value="" constant="no"/>
+</technology>
+<technology name="1.62M">
+<attribute name="DIGIKEY" value="RMCF0603FT1M62TR-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FT1M62" constant="no"/>
+<attribute name="VALUE_PART" value="1.62M" constant="no"/>
 </technology>
 <technology name="10K">
 <attribute name="DIGIKEY" value="311-10.0KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0710KL" constant="no"/>
 <attribute name="VALUE_PART" value="10k" constant="no"/>
+</technology>
+<technology name="180K">
+<attribute name="DIGIKEY" value="311-180KHRTR-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07180KL" constant="no"/>
+<attribute name="VALUE_PART" value="180k" constant="no"/>
 </technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>

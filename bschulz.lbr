@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5690,8 +5690,8 @@ Breadboard-friendly pins.
 <text x="-1.397" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="0.635" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="AWICKERT_LINX_BAT-HLD-012-SMT">
-<smd name="GND" x="0" y="0" dx="10.16" dy="10.16" layer="1" roundness="100"/>
+<package name="LINX_BAT-HLD-012-SMT">
+<smd name="GND" x="0" y="0" dx="10.16" dy="10.16" layer="1" roundness="100" cream="no"/>
 <smd name="POWER0" x="-7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
 <smd name="POWER1" x="7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
 </package>
@@ -6460,13 +6460,13 @@ Breadboard-friendly pins.
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-5.31" y1="3.25" x2="5.31" y2="3.25" width="0.127" layer="21"/>
-<wire x1="5.31" y1="3.25" x2="5.31" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="5.31" y1="-2.54" x2="5.31" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="5.31" y1="-3.25" x2="-5.31" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="-5.31" y1="-3.25" x2="-5.31" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-5.31" y1="-2.54" x2="-5.31" y2="3.25" width="0.127" layer="21"/>
-<wire x1="-5.31" y1="-2.54" x2="5.31" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.31" y1="3.2" x2="5.31" y2="3.2" width="0.254" layer="21"/>
+<wire x1="5.31" y1="3.2" x2="5.31" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="5.31" y1="-2.54" x2="5.31" y2="-3.3" width="0.254" layer="21"/>
+<wire x1="5.31" y1="-3.3" x2="-5.31" y2="-3.3" width="0.254" layer="21"/>
+<wire x1="-5.31" y1="-3.3" x2="-5.31" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-5.31" y1="-2.54" x2="-5.31" y2="3.2" width="0.254" layer="21"/>
+<wire x1="-5.31" y1="-2.54" x2="5.31" y2="-2.54" width="0.254" layer="21"/>
 </package>
 <package name="2X3_SMD">
 <smd name="1" x="-2.54" y="-2.22" dx="1.27" dy="3.68" layer="1"/>
@@ -7244,6 +7244,124 @@ part number 2062-2P from STA</description>
 <rectangle x1="0.177" y1="0.15" x2="1.247" y2="0.97" layer="31"/>
 <rectangle x1="0.177" y1="-0.993" x2="1.247" y2="-0.173" layer="31"/>
 <rectangle x1="-1.22" y1="-0.993" x2="-0.15" y2="-0.173" layer="31"/>
+</package>
+<package name="RFM69HCW-XXXS2">
+<description>&lt;h3&gt;Hope RF RFM69HCW RF Transciever&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.orcam.eu/res/Datablad/rfm69hcwv11.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="4" x="-7.5" y="1" dx="3" dy="1.2" layer="1"/>
+<smd name="3" x="-7.5" y="3" dx="3" dy="1.2" layer="1"/>
+<smd name="2" x="-7.5" y="5" dx="3" dy="1.2" layer="1"/>
+<smd name="1" x="-7.5" y="7" dx="3" dy="1.2" layer="1"/>
+<smd name="5" x="-7.5" y="-1" dx="3" dy="1.2" layer="1"/>
+<smd name="6" x="-7.5" y="-3" dx="3" dy="1.2" layer="1"/>
+<smd name="7" x="-7.5" y="-5" dx="3" dy="1.2" layer="1"/>
+<smd name="8" x="-7.5" y="-7" dx="3" dy="1.2" layer="1"/>
+<smd name="9" x="7.5" y="-7" dx="3" dy="1.2" layer="1"/>
+<smd name="10" x="7.5" y="-5" dx="3" dy="1.2" layer="1"/>
+<smd name="11" x="7.5" y="-3" dx="3" dy="1.2" layer="1"/>
+<smd name="12" x="7.5" y="-1" dx="3" dy="1.2" layer="1"/>
+<smd name="13" x="7.5" y="1" dx="3" dy="1.2" layer="1"/>
+<smd name="14" x="7.5" y="3" dx="3" dy="1.2" layer="1"/>
+<smd name="15" x="7.5" y="5" dx="3" dy="1.2" layer="1"/>
+<smd name="16" x="7.5" y="7" dx="3" dy="1.2" layer="1"/>
+<text x="0" y="8.255" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-8.3" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="-5.485" y="5.35" size="1.27" layer="51" font="vector" ratio="12">1</text>
+<wire x1="-8.127" y1="8.127" x2="8.127" y2="8.127" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="-8.127" x2="-8.127" y2="-8.127" width="0.2032" layer="21"/>
+<wire x1="-4" y1="6" x2="-4" y2="2" width="0.2032" layer="51"/>
+<wire x1="-4" y1="2" x2="0" y2="2" width="0.2032" layer="51"/>
+<wire x1="0" y1="2" x2="0" y2="6" width="0.2032" layer="51"/>
+<wire x1="0" y1="6" x2="-4" y2="6" width="0.2032" layer="51"/>
+<wire x1="2" y1="-0.5" x2="2" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="1.5" x2="2" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-0.5" x2="4" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-0.5" x2="2" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="51"/>
+<wire x1="8" y1="-8" x2="8" y2="8" width="0.127" layer="51"/>
+<wire x1="8" y1="8" x2="-8" y2="8" width="0.127" layer="51"/>
+<wire x1="-8" y1="8" x2="-8" y2="-8" width="0.127" layer="51"/>
+<wire x1="-8.127" y1="-8.127" x2="-8.127" y2="-7.859" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="-7.859" x2="8.127" y2="-8.127" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="5.826" x2="-8.127" y2="6.1562" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="8.127" x2="8.127" y2="7.859" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="7.859" x2="-8.127" y2="8.127" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="3.826" x2="-8.127" y2="4.1562" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="1.826" x2="-8.127" y2="2.1562" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="-0.174" x2="-8.127" y2="0.1562" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="-2.174" x2="-8.127" y2="-1.8438" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="-4.174" x2="-8.127" y2="-3.8438" width="0.2032" layer="21"/>
+<wire x1="-8.127" y1="-6.174" x2="-8.127" y2="-5.8438" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="-5.826" x2="8.127" y2="-6.1562" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="-3.826" x2="8.127" y2="-4.1562" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="-1.826" x2="8.127" y2="-2.1562" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="0.174" x2="8.127" y2="-0.1562" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="2.174" x2="8.127" y2="1.8438" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="4.174" x2="8.127" y2="3.8438" width="0.2032" layer="21"/>
+<wire x1="8.127" y1="6.174" x2="8.127" y2="5.8438" width="0.2032" layer="21"/>
+<circle x="-9.089" y="8.392" radius="0.508" width="0" layer="21"/>
+</package>
+<package name="RFM69W-XXXS2">
+<description>&lt;h3&gt;Hope RF RFM69HW RF Transceiver&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-9.85" y1="8" x2="9.85" y2="8" width="0.127" layer="51"/>
+<wire x1="9.85" y1="-8" x2="-9.85" y2="-8" width="0.127" layer="51"/>
+<wire x1="-5" y1="-1" x2="-5" y2="-6" width="0.2032" layer="51"/>
+<wire x1="-5" y1="-6" x2="0" y2="-6" width="0.2032" layer="51"/>
+<wire x1="0" y1="-6" x2="0" y2="-1" width="0.2032" layer="51"/>
+<wire x1="0" y1="-1" x2="-5" y2="-1" width="0.2032" layer="51"/>
+<wire x1="-5" y1="7" x2="-5" y2="4" width="0.2032" layer="51"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.2032" layer="51"/>
+<wire x1="5" y1="4" x2="5" y2="7" width="0.2032" layer="51"/>
+<wire x1="5" y1="7" x2="-5" y2="7" width="0.2032" layer="51"/>
+<wire x1="-9.977" y1="8.127" x2="9.977" y2="8.127" width="0.2032" layer="21"/>
+<wire x1="-9.85" y1="-8" x2="-9.85" y2="8" width="0.127" layer="51"/>
+<wire x1="9.85" y1="8" x2="9.85" y2="-8" width="0.127" layer="51"/>
+<wire x1="9.977" y1="-8.127" x2="-9.977" y2="-8.127" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="-8.127" x2="-9.977" y2="-7.875" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="7.875" x2="-9.977" y2="8.127" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="5.8166" x2="-9.977" y2="6.1722" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="3.8166" x2="-9.977" y2="4.1722" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="1.8166" x2="-9.977" y2="2.1722" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="-0.1834" x2="-9.977" y2="0.1722" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="-2.1834" x2="-9.977" y2="-1.8278" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="-4.1834" x2="-9.977" y2="-3.8278" width="0.2032" layer="21"/>
+<wire x1="-9.977" y1="-6.1834" x2="-9.977" y2="-5.8278" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="-5.8166" x2="9.977" y2="-6.1722" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="-3.8166" x2="9.977" y2="-4.1722" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="-1.8166" x2="9.977" y2="-2.1722" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="0.1834" x2="9.977" y2="-0.1722" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="2.1834" x2="9.977" y2="1.8278" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="4.1834" x2="9.977" y2="3.8278" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="6.1834" x2="9.977" y2="5.8278" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="-7.875" x2="9.977" y2="-8.127" width="0.2032" layer="21"/>
+<wire x1="9.977" y1="8.127" x2="9.977" y2="7.875" width="0.2032" layer="21"/>
+<smd name="4" x="-9.35" y="1" dx="3" dy="1.2" layer="1"/>
+<smd name="3" x="-9.35" y="3" dx="3" dy="1.2" layer="1"/>
+<smd name="2" x="-9.35" y="5" dx="3" dy="1.2" layer="1"/>
+<smd name="1" x="-9.35" y="7" dx="3" dy="1.2" layer="1"/>
+<smd name="5" x="-9.35" y="-1" dx="3" dy="1.2" layer="1"/>
+<smd name="6" x="-9.35" y="-3" dx="3" dy="1.2" layer="1"/>
+<smd name="7" x="-9.35" y="-5" dx="3" dy="1.2" layer="1"/>
+<smd name="8" x="-9.35" y="-7" dx="3" dy="1.2" layer="1"/>
+<smd name="9" x="9.35" y="-7" dx="3" dy="1.2" layer="1"/>
+<smd name="10" x="9.35" y="-5" dx="3" dy="1.2" layer="1"/>
+<smd name="11" x="9.35" y="-3" dx="3" dy="1.2" layer="1"/>
+<smd name="12" x="9.35" y="-1" dx="3" dy="1.2" layer="1"/>
+<smd name="13" x="9.35" y="1" dx="3" dy="1.2" layer="1"/>
+<smd name="14" x="9.35" y="3" dx="3" dy="1.2" layer="1"/>
+<smd name="15" x="9.35" y="5" dx="3" dy="1.2" layer="1"/>
+<smd name="16" x="9.35" y="7" dx="3" dy="1.2" layer="1"/>
+<text x="-6.985" y="6.35" size="1.27" layer="51" font="vector" ratio="12">1</text>
+<text x="0" y="8.255" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-6.731" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<circle x="-10.435" y="8.381" radius="0.508" width="0" layer="21"/>
+</package>
+<package name="SMD1,27-2,54">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="1.27" dy="2.54" layer="1" cream="no"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -8696,6 +8814,51 @@ Switches electrical signals</description>
 <pin name="GND" x="-5.08" y="5.08" length="middle"/>
 <pin name="VCC" x="-5.08" y="25.4" length="middle"/>
 </symbol>
+<symbol name="RFM69H">
+<description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
+&lt;p&gt;The RFM69H is a transceiver module capable of operation 
+over a wide frequency range, including the 
+315,433,868 and 
+915MHz license-free ISM (Industry Scientific and Medical) 
+frequency bands. All major RF communication parameters 
+are programmable and most of them  can  be  dynamically 
+set.  The  RFM69H  offers  the unique advantage of 
+programmable narrow-band and wide- band  communication 
+modes. The RFM69H is optimized for low power 
+consumption while offering high RF output power and 
+channelized operation.
+Compliance  ETSI and FCC 
+regulations. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<pin name="RESET" x="-12.7" y="-10.16" length="short" direction="in"/>
+<pin name="DIO0" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="DIO1" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="DIO2" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="DIO3" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="DIO4" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="DIO5" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="3.3V" x="-12.7" y="12.7" length="short" direction="pwr"/>
+<pin name="GND@1" x="12.7" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="ANT" x="12.7" y="-7.62" length="short" direction="pas" rot="R180"/>
+<pin name="GND@2" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="SCK" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="MISO" x="-12.7" y="5.08" length="short"/>
+<pin name="MOSI" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="NSS" x="-12.7" y="-2.54" length="short" direction="in"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="15.494" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LED_0402">
@@ -8819,23 +8982,6 @@ Rated to 50 mA 16V (DC)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WIREPAD_2">
-<description>Wire pad for general offboard connections 2x1</description>
-<gates>
-<gate name="G$1" symbol="WIREPAD_2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="16AWG" package="WIREPAD_HOLE_2">
-<connects>
-<connect gate="G$1" pin="PAD1" pad="P$1"/>
-<connect gate="G$1" pin="PAD2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="HEADER_5X2_1.27">
 <description>&lt;b&gt;Header&lt;/b&gt;
 &lt;p&gt;
@@ -8942,7 +9088,11 @@ PN: HR1941CT-ND</description>
 <connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="3M5607CT-ND" constant="no"/>
+<attribute name="MF" value="3M" constant="no"/>
+<attribute name="MPN" value="2908-05WB-MG" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9082,7 +9232,21 @@ PN: HR1941CT-ND</description>
 <connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="H">
+<attribute name="DIGIKEY" value="576-2926-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC842HYC5-TR" constant="no"/>
+</technology>
+<technology name="L">
+<attribute name="DIGIKEY" value="576-2927-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC842LYC5-TR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9344,7 +9508,16 @@ Input voltage rage of 1.8-5.5v</description>
 <connect gate="G$1" pin="2" pad="OSC2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="8MHZ">
+<attribute name="DIGIKEY" value="887-1740-1-ND" constant="no"/>
+<attribute name="MF" value="TXC" constant="no"/>
+<attribute name="MPN" value="7A-8.000MAAE-T" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -9751,7 +9924,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="9" pad="P$9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED2735-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTTE100104" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11591,6 +11768,9 @@ push-push type</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="2N7002W-FDICT-ND" constant="no"/>
+<attribute name="MF" value="Diodes Incorporated" constant="no"/>
+<attribute name="MPN" value="2N7002W-7-F" constant="no"/>
 <attribute name="PROD_ID" value="TRANS-11151"/>
 <attribute name="VALUE" value="310mA/60V/1.6Ω"/>
 </technology>
@@ -11669,7 +11849,11 @@ push-push type</description>
 <connect gate="NMOS" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DMG3404L-7DICT-ND" constant="no"/>
+<attribute name="MF" value="Diodes Incorporated" constant="no"/>
+<attribute name="MPN" value="DMG3404L-7" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11767,7 +11951,11 @@ push-push type</description>
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="609-4618-1-ND" constant="no"/>
+<attribute name="MF" value="Amphenol" constant="no"/>
+<attribute name="MPN" value="10118194-0001LF" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11922,7 +12110,11 @@ Manufacturer: TI
 <connect gate="G$1" pin="4" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="CKN10504CT-ND" constant="no"/>
+<attribute name="MF" value="C&amp;K" constant="no"/>
+<attribute name="MPN" value="PTS810 SJG 250 SMTR LFS" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11972,7 +12164,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <gate name="G$1" symbol="AWICKERT_BATTERY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="12MM" package="AWICKERT_LINX_BAT-HLD-012-SMT">
+<device name="12MM" package="LINX_BAT-HLD-012-SMT">
 <connects>
 <connect gate="G$1" pin="+" pad="POWER0 POWER1"/>
 <connect gate="G$1" pin="-" pad="GND"/>
@@ -12916,7 +13108,11 @@ Standard 6 pin header for AVR programming</description>
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10563-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTVN04A150" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12983,7 +13179,7 @@ Standard 6 pin header for AVR programming</description>
 <gate name="G$1" symbol="CONN_06" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X06_SCREW">
+<device name="SCREW_2.54" package="1X06_SCREW">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -12993,7 +13189,11 @@ Standard 6 pin header for AVR programming</description>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10565-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTVN06A150" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13237,13 +13437,17 @@ Standard 6 pin header for AVR programming</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="2.54MM_SCREWTERM" package="1X02_2.54_SCREWTERM">
+<device name="SCREW_2.54" package="1X02_2.54_SCREWTERM">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10561-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTVN02A150" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMALL_POKEHOME" package="1X02_POKEHOME">
@@ -13342,6 +13546,129 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74LV4051ARGYR" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM69H" prefix="U">
+<description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
+&lt;p&gt;The RFM69H is a transceiver module capable of operation over a wide frequency range, including the 315,433,868 and 915MHz license-free ISM (Industry Scientific and Medical) frequency bands. All major RF communication parameters are programmable and most of them  can  be  dynamically set.  The  RFM69H  offers  the unique advantage of programmable narrow-band and wide- band  communication modes. The RFM69H is optimized for low power consumption while offering high RF output power and channelized operation.Compliance  ETSI and FCC regulations. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13909"&gt;RFM69HCW Wireless Transceiver - 915MHz&lt;/a&gt; (COM-13909)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13910"&gt;RFM69HCW Wireless Transceiver - 434MHz&lt;/a&gt; (COM-13910)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12775"&gt;SparkFun RFM69 Breakout (915MHz)&lt;/a&gt; (WRL-12775)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12823"&gt;SparkFun RFM69 Breakout (434MHz)&lt;/a&gt; (WRL-12823)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RFM69H" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="CW-915" package="RFM69HCW-XXXS2">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="13"/>
+<connect gate="G$1" pin="ANT" pad="9"/>
+<connect gate="G$1" pin="DIO0" pad="14"/>
+<connect gate="G$1" pin="DIO1" pad="15"/>
+<connect gate="G$1" pin="DIO2" pad="16"/>
+<connect gate="G$1" pin="DIO3" pad="11"/>
+<connect gate="G$1" pin="DIO4" pad="12"/>
+<connect gate="G$1" pin="DIO5" pad="7"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="8 10"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="3"/>
+<connect gate="G$1" pin="NSS" pad="5"/>
+<connect gate="G$1" pin="RESET" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1568-1394-ND" constant="no"/>
+<attribute name="MF" value="SFE" constant="no"/>
+<attribute name="MPN" value="COM-13909" constant="no"/>
+<attribute name="PROD_ID" value="IC-11997"/>
+<attribute name="VALUE" value="915MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="W" package="RFM69W-XXXS2">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="8"/>
+<connect gate="G$1" pin="ANT" pad="10"/>
+<connect gate="G$1" pin="DIO0" pad="2"/>
+<connect gate="G$1" pin="DIO1" pad="3"/>
+<connect gate="G$1" pin="DIO2" pad="4"/>
+<connect gate="G$1" pin="DIO3" pad="5"/>
+<connect gate="G$1" pin="DIO4" pad="6"/>
+<connect gate="G$1" pin="DIO5" pad="7"/>
+<connect gate="G$1" pin="GND@1" pad="9"/>
+<connect gate="G$1" pin="GND@2" pad="11"/>
+<connect gate="G$1" pin="MISO" pad="13"/>
+<connect gate="G$1" pin="MOSI" pad="14"/>
+<connect gate="G$1" pin="NSS" pad="15"/>
+<connect gate="G$1" pin="RESET" pad="1"/>
+<connect gate="G$1" pin="SCK" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CW-433" package="RFM69HCW-XXXS2">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="13"/>
+<connect gate="G$1" pin="ANT" pad="9"/>
+<connect gate="G$1" pin="DIO0" pad="14"/>
+<connect gate="G$1" pin="DIO1" pad="15"/>
+<connect gate="G$1" pin="DIO2" pad="16"/>
+<connect gate="G$1" pin="DIO3" pad="11"/>
+<connect gate="G$1" pin="DIO4" pad="12"/>
+<connect gate="G$1" pin="DIO5" pad="7"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="8 10"/>
+<connect gate="G$1" pin="MISO" pad="2"/>
+<connect gate="G$1" pin="MOSI" pad="3"/>
+<connect gate="G$1" pin="NSS" pad="5"/>
+<connect gate="G$1" pin="RESET" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12053"/>
+<attribute name="VALUE" value="433MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD2" prefix="PAD" uservalue="yes">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD1,27-2,54">
+<connects>
+<connect gate="1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WIREPAD_2">
+<gates>
+<gate name="G$1" symbol="WIREPAD_2" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="WIREPAD_HOLE_2">
+<connects>
+<connect gate="G$1" pin="PAD1" pad="P$1"/>
+<connect gate="G$1" pin="PAD2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
