@@ -8971,6 +8971,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MPN" value="RC0603FR-0710KL" constant="no"/>
 <attribute name="VALUE_PART" value="10k" constant="no"/>
 </technology>
+<technology name="10M">
+<attribute name="DIGIKEY" value="311-10.0MHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0710ML" constant="no"/>
+<attribute name="VALUE_PART" value="10M" constant="no"/>
+</technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="311-180KHRTR-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -8988,6 +8994,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0727RL" constant="no"/>
 <attribute name="VALUE_PART" value="27" constant="no"/>
+</technology>
+<technology name="3.3M">
+<attribute name="DIGIKEY" value="RMCF0603FT3M30CT-ND" constant="no"/>
+<attribute name="MF" value="Stackpole" constant="no"/>
+<attribute name="MPN" value="RMCF0603FT3M30" constant="no"/>
+<attribute name="VALUE_PART" value="3.3M" constant="no"/>
 </technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330HRCT-ND" constant="no"/>
