@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.1">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7967,8 +7967,8 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <package name="TO-46">
 <pad name="THERMOPILE_GND" x="-0.898" y="-0.898" drill="0.8128" shape="square"/>
 <pad name="THERMISTOR_GND" x="0.898" y="-0.898" drill="0.8128" shape="square"/>
-<pad name="THERMOPILE+" x="-0.898" y="0.898" drill="0.8128"/>
-<pad name="THEMRISTOR+" x="0.898" y="0.898" drill="0.8128"/>
+<pad name="THERMISTOR+" x="-0.898" y="0.898" drill="0.8128"/>
+<pad name="THERMOPILE+" x="0.898" y="0.898" drill="0.8128"/>
 <circle x="0" y="0" radius="2.7" width="0.127" layer="21"/>
 <wire x1="2.667" y1="0.5" x2="3.667" y2="0.5" width="0.127" layer="21"/>
 <wire x1="3.667" y1="0.5" x2="3.667" y2="-0.5" width="0.127" layer="21"/>
@@ -15792,7 +15792,7 @@ Note: These are recomendations at the time, always verify pin compatability usin
 <device name="" package="TO-46">
 <connects>
 <connect gate="G$1" pin="THEMROPILE-" pad="THERMOPILE_GND"/>
-<connect gate="G$1" pin="THERMISTOR+" pad="THEMRISTOR+"/>
+<connect gate="G$1" pin="THERMISTOR+" pad="THERMISTOR+"/>
 <connect gate="G$1" pin="THERMISTOR-" pad="THERMISTOR_GND"/>
 <connect gate="G$1" pin="THERMOPILE+" pad="THERMOPILE+"/>
 </connects>
