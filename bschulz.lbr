@@ -15936,7 +15936,11 @@ SD003-151-001:
 <connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="VEML6030-GS15CT-ND" constant="no"/>
+<attribute name="MF" value="Vishay" constant="no"/>
+<attribute name="MPN" value="VEML6030-GS15" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -15975,10 +15979,10 @@ SD003-151-001:
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="LTC2054CS5#TRPBFCT-ND" constant="no"/>
+<attribute name="DIGIKEY" value="LTC2054HS5#TRMPBFCT-ND" constant="no"/>
 <attribute name="DISP" value="LTC2054" constant="no"/>
 <attribute name="MF" value="LT" constant="no"/>
-<attribute name="MPN" value="LTC2054CS5#TRPBF" constant="no"/>
+<attribute name="MPN" value="LTC2054HS5#TRMPBF" constant="no"/>
 </technology>
 <technology name="HV">
 <attribute name="DIGIKEY" value="LTC2054HVIS5#TRMPBFCT-ND" constant="no"/>
@@ -16194,7 +16198,11 @@ NTC Thermistors:
 <connect gate="G$1" pin="VS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ADXL343BCCZ-ND" constant="no"/>
+<attribute name="MF" value="Analog Devices" constant="no"/>
+<attribute name="MPN" value="ADXL343BCCZ" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -17022,6 +17030,55 @@ Digikey:
 <attribute name="DIGIKEY" value="3M5646CT-ND" constant="no"/>
 <attribute name="MF" value="3M" constant="no"/>
 <attribute name="MPN" value="SD-RSMT-2-MQ-WF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC2050">
+<description>&lt;b&gt;LTC2050&lt;/b&gt; -Single Micropower Zero Drift Op-Amp
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vs: 2.7 ~ 6V (1.35 ~ +/- 5.5V for LTC2054HV) &lt;/li&gt;
+&lt;li&gt;Iq: 1mA &lt;/li&gt;
+&lt;li&gt; GBP: 3MHz &lt;/li&gt;
+&lt;li&gt;PSSR: 130dB &lt;/li&gt;
+&lt;li&gt;CMMR: 130dB&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/linear-technology-analog-devices/LTC2050IS6-TRMPBF/LTC2050IS6-TRMPBFCT-ND/4729352"&gt;LTC2050IS6#TRMPBFCT-ND &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/linear-technology-analog-devices/LTC2050HVIS5-TRPBF/LTC2050HVIS5-TRPBFCT-ND/8603412"&gt; LTC2050HVIS5#TRPBFCT-ND (High Voltage Variant)&lt;/a&gt;&lt;br/&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OPAMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VIN+" pad="3"/>
+<connect gate="G$1" pin="VIN-" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="LTC2050IS6#TRMPBFCT-ND" constant="no"/>
+<attribute name="DISP" value="LTC2050" constant="no"/>
+<attribute name="MF" value="LT" constant="no"/>
+<attribute name="MPN" value="LTC2050IS6#TRMPBF" constant="no"/>
+</technology>
+<technology name="HV">
+<attribute name="DIGIKEY" value="LTC2050HVIS5#TRPBFCT-ND" constant="no"/>
+<attribute name="DISP" value="LTC2050HV" constant="no"/>
+<attribute name="MF" value="LT" constant="no"/>
+<attribute name="MPN" value="LTC2050HVIS5#TRPBF" constant="no"/>
 </technology>
 </technologies>
 </device>
