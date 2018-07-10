@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -56,7 +56,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -562,6 +562,7 @@ https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV
 <wire x1="-4.375" y1="-2" x2="4.375" y2="-2" width="0.00175" layer="57"/>
 <wire x1="4.375" y1="-2" x2="4.375" y2="2" width="0.00175" layer="57"/>
 <wire x1="4.375" y1="2" x2="-4.375" y2="2" width="0.00175" layer="57"/>
+<text x="-5.08" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="SOT23-6L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -655,6 +656,7 @@ https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV
 <wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="21"/>
+<text x="0" y="2.159" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="CLX6F-FKC">
 <smd name="P$1" x="-1.75" y="1" dx="1.5" dy="0.8" layer="1"/>
@@ -692,6 +694,7 @@ https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV
 <wire x1="1.6" y1="-1.4" x2="1.6" y2="1.4" width="0.127" layer="21"/>
 <wire x1="1.6" y1="1.4" x2="-1.6" y2="1.4" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="0.508" x2="-0.762" y2="1.397" width="0.127" layer="21"/>
+<text x="0" y="1.905" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SSOP16">
 <description>&lt;b&gt;GN Package 16-Lead Plastic SSOP (Narrow .150 Inch)&lt;/b&gt;&lt;p&gt;
@@ -6104,7 +6107,7 @@ Breadboard-friendly pins.
 <smd name="19" x="-0.532" y="1.968" dx="1" dy="0.25" layer="1" rot="R90"/>
 <smd name="20" x="-1.032" y="1.968" dx="1" dy="0.25" layer="1" rot="R90"/>
 <smd name="21" x="-0.032" y="-0.032" dx="2" dy="2" layer="1"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="2.921" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="PTH">
 <description>Two 0.8 mm PTHs spaced 0.2 in apart for through hole parts.</description>
@@ -6181,6 +6184,7 @@ Breadboard-friendly pins.
 <wire x1="-2.3" y1="-1.6" x2="2.3" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="2.3" y1="-1.6" x2="2.3" y2="1.6" width="0.127" layer="21"/>
 <wire x1="2.3" y1="1.6" x2="-2.3" y2="1.6" width="0.127" layer="21"/>
+<text x="-3.175" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="BATT_12MM_CLIP_VERT">
 <smd name="BATT-" x="0" y="8.2" dx="2.3" dy="4.5" layer="1"/>
@@ -6678,8 +6682,8 @@ Breadboard-friendly pins.
 <pad name="4" x="1.27" y="0" drill="1.016" rot="R90"/>
 <pad name="5" x="3.81" y="0" drill="1.016" rot="R90"/>
 <pad name="6" x="6.35" y="0" drill="1.016" rot="R90"/>
-<text x="-7.5692" y="3.8608" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-7.62" y="-4.953" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-7.5692" y="3.6068" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-7.62" y="-4.191" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
@@ -7940,8 +7944,8 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <rectangle x1="-0.875" y1="-1.6" x2="-0.625" y2="-1.1625" layer="51" rot="R180"/>
 <wire x1="-0.95" y1="-0.9" x2="-0.95" y2="0.8875" width="0.2" layer="21"/>
 <wire x1="0.95" y1="0.8875" x2="0.95" y2="-0.9" width="0.2" layer="21"/>
-<text x="-1.25" y="-2" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.5" y="-2" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-1.25" y="-2" size="0.6096" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<text x="1.865" y="-2" size="0.6096" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
 </package>
 <package name="DRL_R-PDSO-N6">
 <smd name="6" x="-0.5" y="0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
@@ -7955,6 +7959,7 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <wire x1="0.85" y1="-0.65" x2="-0.85" y2="-0.65" width="0.127" layer="21"/>
 <wire x1="-0.85" y1="-0.65" x2="-0.85" y2="0.65" width="0.127" layer="21"/>
 <circle x="-1.143" y="-0.889" radius="0.127" width="0.127" layer="21"/>
+<text x="1.397" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="CRYSTAL_3.2X1.5_2-SMD">
 <smd name="P$1" x="-1.25" y="0" dx="1.9" dy="1.1" layer="1" rot="R90"/>
@@ -13994,7 +13999,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP3425">
+<deviceset name="MCP3425" prefix="U">
 <description>&lt;b&gt;MCP3425&lt;/b&gt; - Sigma Delta ADC
  
 &lt;p&gt;Characteristics:
