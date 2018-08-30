@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -37,9 +37,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -8523,6 +8523,37 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="-4.04" y1="-2.54" x2="-4.04" y2="3.2" width="0.254" layer="21"/>
 <wire x1="-4.04" y1="-2.54" x2="4.04" y2="-2.54" width="0.254" layer="21"/>
 </package>
+<package name="X2SON">
+<smd name="P$2" x="-0.52" y="-0.325" dx="0.21" dy="0.18" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="P$3" x="0.52" y="-0.325" dx="0.21" dy="0.18" layer="1" rot="R270"/>
+<polygon width="0.01" layer="1">
+<vertex x="-0.25" y="-0.425"/>
+<vertex x="-0.25" y="-0.405"/>
+<vertex x="-0.43" y="-0.225"/>
+<vertex x="-0.43" y="-0.425"/>
+</polygon>
+<smd name="P$5" x="0" y="0" dx="0.48" dy="0.48" layer="1" rot="R45"/>
+<smd name="P$1" x="0.52" y="0.325" dx="0.21" dy="0.18" layer="1" rot="R90"/>
+<polygon width="0.01" layer="1">
+<vertex x="0.25" y="0.425"/>
+<vertex x="0.25" y="0.405"/>
+<vertex x="0.43" y="0.225"/>
+<vertex x="0.43" y="0.425"/>
+</polygon>
+<polygon width="0.01" layer="1">
+<vertex x="0.43" y="-0.225"/>
+<vertex x="0.25" y="-0.405"/>
+<vertex x="0.25" y="-0.425"/>
+<vertex x="0.43" y="-0.425"/>
+</polygon>
+<smd name="P$4" x="-0.52" y="0.325" dx="0.21" dy="0.18" layer="1" rot="R90"/>
+<polygon width="0.01" layer="1">
+<vertex x="-0.43" y="0.225"/>
+<vertex x="-0.25" y="0.405"/>
+<vertex x="-0.25" y="0.425"/>
+<vertex x="-0.43" y="0.425"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_0402">
@@ -10599,6 +10630,17 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="2" x="5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="TPS7A05">
+<pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="VOUT" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.398" size="1.778" layer="95" align="center">TPS7A05</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LED_0402">
@@ -11128,8 +11170,30 @@ PN: HR1941CT-ND</description>
 </devices>
 </deviceset>
 <deviceset name="TPS797*" prefix="U">
-<description>TPS797xx, Ultra low power linear voltage regulator, fixed voltages of 1.8v, 3v, 3.3v
-Input voltage rage of 1.8-5.5v</description>
+<description>&lt;b&gt;TPS797*&lt;/b&gt; - Ultra Low Power Low Dropout Linear Regulator
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.4V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 1.8, 2.85, 3.0, 3.3V fixed&lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 1.2&amp;mu;A typ, 2&amp;mu;A max &lt;/li&gt;
+&lt;li&gt; Voltage Accuracy: 4% max &lt;/li&gt;
+&lt;li&gt; Dropout Voltage: 105mV @ 10mA &lt;/li&gt;
+&lt;li&gt; Output Current: 50 mA &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS79733DCKR/296-11990-1-ND/390520"&gt; TPS79733 (3.3V Fixed) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS79730DCKR/296-11989-1-ND/390518"&gt; TPS79730 (3.0V Fixed) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS797285DCKR/296-25465-1-ND/2187585"&gt; TPS797285 (2.85V Fixed) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS79718DCKR/296-11988-1-ND/390516"&gt; TPS79718 (1.8V Fixed) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPS797XX" x="0" y="0"/>
 </gates>
@@ -17086,6 +17150,59 @@ Digikey:
 <attribute name="DISP" value="LTC2050HV" constant="no"/>
 <attribute name="MF" value="LT" constant="no"/>
 <attribute name="MPN" value="LTC2050HVIS5#TRPBF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS7A05*" prefix="U">
+<description>&lt;b&gt;TPS7A05*&lt;/b&gt; - Ultra Low Power Low Dropout Linear Regulator
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.4V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 0.8, 1.0, 1.2, 1.5, 1.8, 2.5, 2.85, 3.3V fixed&lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A typ, 3&amp;mu;A max &lt;/li&gt;
+&lt;li&gt; Voltage Accuracy: 1% typ, 3% max &lt;/li&gt;
+&lt;li&gt; Output Current: 200 mA &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Mouser: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.mouser.com/ProductDetail/Texas-Instruments/TPS7A0533PDBVR?qs=sGAEpiMZZMsGz1a6aV8DcD1rpA6FsR3J1Mp5DdTpiXw%3d"&gt; TPS7A0533 (3.3V Fixed) &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.mouser.com/ProductDetail/Texas-Instruments/TPS7A0518PDBVR?qs=sGAEpiMZZMsGz1a6aV8DcD1rpA6FsR3J1f7DNYacdSI%3d"&gt; TPS7A0518 (1.8V Fixed) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS7A05" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="18">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MOUSER" value="595-TPS7A0518PDBVR" constant="no"/>
+<attribute name="MPN" value="TPS7A0518PDBVR" constant="no"/>
+</technology>
+<technology name="33">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MOUSER" value="595-TPS7A0533PDBVR" constant="no"/>
+<attribute name="MPN" value="TPS7A0533PDBVR" constant="no"/>
 </technology>
 </technologies>
 </device>
