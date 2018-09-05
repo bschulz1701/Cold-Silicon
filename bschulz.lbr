@@ -8572,6 +8572,12 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <package name="SMD1,0-2,54">
 <smd name="1" x="0" y="0" dx="1" dy="2.54" layer="1" rot="R180"/>
 </package>
+<package name="CREATIVE_COMMONS">
+<text x="0" y="3.81" size="1.27" layer="48" align="center">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.032" size="1.27" layer="48" align="center">https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="-12.7" y="0" size="1.27" layer="48" align="center">Designed by:</text>
+<text x="-5.842" y="-0.127" size="1.27" layer="48" align="center-left">&gt;DESIGNER</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_0402">
@@ -16313,7 +16319,7 @@ NTC Thermistors:
 <gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="CREATIVE_COMMONS">
 <technologies>
 <technology name=""/>
 </technologies>
