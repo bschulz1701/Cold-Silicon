@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6176,10 +6176,10 @@ Breadboard-friendly pins.
 <wire x1="4" y1="6" x2="-4" y2="6" width="0.127" layer="21"/>
 </package>
 <package name="SWITCH_4.2X3.2">
-<smd name="1" x="-2.075" y="1.4" dx="1.05" dy="0.8125" layer="1"/>
-<smd name="2" x="2.075" y="1.4" dx="1.05" dy="0.8125" layer="1"/>
-<smd name="4" x="2.075" y="-1.4" dx="1.05" dy="0.8125" layer="1"/>
-<smd name="3" x="-2.075" y="-1.4" dx="1.05" dy="0.8125" layer="1"/>
+<smd name="1" x="-2.075" y="1.075" dx="1.05" dy="0.65" layer="1"/>
+<smd name="2" x="2.075" y="1.075" dx="1.05" dy="0.65" layer="1"/>
+<smd name="4" x="2.075" y="-1.075" dx="1.05" dy="0.65" layer="1"/>
+<smd name="3" x="-2.075" y="-1.075" dx="1.05" dy="0.65" layer="1"/>
 <wire x1="-2.3" y1="1.6" x2="-2.3" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="-2.3" y1="-1.6" x2="2.3" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="2.3" y1="-1.6" x2="2.3" y2="1.6" width="0.127" layer="21"/>
@@ -8711,6 +8711,36 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <rectangle x1="-4.5" y1="0.5" x2="-3.5" y2="1.5" layer="51" rot="R180"/>
 <rectangle x1="-6.5" y1="0.5" x2="-5.5" y2="1.5" layer="51" rot="R180"/>
 </package>
+<package name="BMP280">
+<smd name="8" x="-0.8" y="0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="7" x="-0.8" y="0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="-0.8" y="-0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="-0.8" y="-0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="0.8" y="-0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="0.8" y="-0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="0.8" y="0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="0.8" y="0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1" y1="1.25" x2="-1" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.25" x2="1" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1" y1="-1.25" x2="1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1" y1="1.25" x2="-1" y2="1.25" width="0.127" layer="21"/>
+<circle x="0.762" y="1.651" radius="0.179603125" width="0.127" layer="21"/>
+</package>
+<package name="BME280">
+<smd name="8" x="-1.025" y="0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="7" x="-1.025" y="0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="-1.025" y="-0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="-1.025" y="-0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="1.025" y="-0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="1.025" y="-0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="1.025" y="0.325" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="1.025" y="0.975" dx="0.35" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.25" y1="1.25" x2="-1.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.25" x2="1.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
+<circle x="1.016" y="1.651" radius="0.179603125" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_0402">
@@ -10865,6 +10895,20 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="BMP280">
+<pin name="VDD" x="-15.24" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="VDDIO" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="CSB" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="SDI" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SDO" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-1.27" y="9.144" size="1.778" layer="95" align="center">&gt;DISP</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14577,9 +14621,9 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="MPN" value="" constant="no"/>
 </technology>
 <technology name="0">
-<attribute name="DIGIKEY" value="296-31719-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="296-19625-1-ND" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="SN65HVD3082EDR" constant="no"/>
+<attribute name="MPN" value="SN65HVD30DR" constant="no"/>
 </technology>
 <technology name="1">
 <attribute name="DIGIKEY" value="296-19626-1-ND" constant="no"/>
@@ -14906,10 +14950,25 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MF" value="MOLEX" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="OC_FARNELL" value="7434698" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+<technology name="FEMALE">
+<attribute name="DIGIKEY" value="WM18702-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="0791091006" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
+</technology>
+<technology name="MALE">
+<attribute name="DIGIKEY" value="WM6815CT-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="0878325623" constant="no"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -16473,7 +16532,7 @@ NTC Thermistors:
 <gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="CREATIVE_COMMONS">
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -17557,6 +17616,96 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BMP280" prefix="U">
+<description>&lt;b&gt;BMP280&lt;/b&gt; - Digital Pressure Sensor
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.8V ~ 3.3V&lt;/li&gt;
+&lt;li&gt; Pressure Range: 300 ~ 1100 mBar &lt;/li&gt;
+&lt;li&gt; Pressure Resolution: 0.0015 mBar, max &lt;/li&gt;
+&lt;li&gt; Pressure Accuracy: relative &amp;plusmn;0.12 mBar, abs &amp;plusmn; 1 mBar&lt;/li&gt;
+&lt;li&gt;Temperature Resolution: 0.01°C&lt;/li&gt;
+&lt;li&gt;Temperature Accuracy: 0.5°C&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/bosch-sensortec/BMP280/828-1064-1-ND/6136315"&gt; 828-1064-1-ND&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BMP280" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="BMP280">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1 7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="828-1064-1-ND" constant="no"/>
+<attribute name="DISP" value="BMP280" constant="no"/>
+<attribute name="MF" value="Bosch" constant="no"/>
+<attribute name="MPN" value="BMP280" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BME280">
+<description>&lt;b&gt;BME280&lt;/b&gt; - Combined Digital Humidity and Pressure Sensor
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.8V ~ 3.3V&lt;/li&gt;
+&lt;li&gt; Pressure Range: 300 ~ 1100 mBar &lt;/li&gt;
+&lt;li&gt; Pressure Resolution: 0.0015 mBar, max &lt;/li&gt;
+&lt;li&gt; Pressure Accuracy: relative &amp;plusmn;0.12 mBar, abs &amp;plusmn; 1 mBar&lt;/li&gt;
+&lt;li&gt;Humidity Resolution: 0.008% RH, max &lt;/li&gt;
+&lt;li&gt;Humidity Accuracy: &amp;plusmn;3% RH &lt;/li&gt;
+&lt;li&gt;Temperature Resolution: 0.01°C&lt;/li&gt;
+&lt;li&gt;Temperature Accuracy: 0.5°C&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/bosch-sensortec/BME280/828-1063-1-ND/6136314"&gt; 828-1063-1-ND&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BMP280" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BME280">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1 7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="828-1063-1-ND" constant="no"/>
+<attribute name="DISP" value="BME280" constant="no"/>
+<attribute name="MF" value="Bosch" constant="no"/>
+<attribute name="MPN" value="BME280" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
