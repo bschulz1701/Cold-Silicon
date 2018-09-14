@@ -8178,6 +8178,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" constant="no"/>
 </technology>
+<technology name="12PF">
+<attribute name="DIGIKEY" value="445-5585-1-ND" constant="no"/>
+<attribute name="MF" value="TDK" constant="no"/>
+<attribute name="MPN" value="CGA2B2C0G1H120J050BA" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C0504" package="C0504">
@@ -8979,6 +8984,18 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07200KL" constant="no"/>
 <attribute name="VALUE_PART" value="200k" constant="no"/>
+</technology>
+<technology name="27">
+<attribute name="DIGIKEY" value="YAG3086CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0727RL" constant="no"/>
+<attribute name="VALUE_PART" value="27" constant="no"/>
+</technology>
+<technology name="330">
+<attribute name="DIGIKEY" value="311-330LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07330RL" constant="no"/>
+<attribute name="VALUE_PART" value="330" constant="no"/>
 </technology>
 <technology name="4.7K">
 <attribute name="DIGIKEY" value="311-4.7KJRCT-ND" constant="no"/>
