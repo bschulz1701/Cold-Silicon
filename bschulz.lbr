@@ -39,7 +39,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -9706,6 +9706,8 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="-10.39" y1="2.54" x2="10.39" y2="2.54" width="0.254" layer="21"/>
 <pad name="7" x="6.35" y="0" drill="1.016" rot="R90"/>
 <pad name="8" x="8.89" y="0" drill="1.016" rot="R90"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
 </package>
 <package name="1X10_SCREW">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -9734,6 +9736,10 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <pad name="8" x="6.35" y="0" drill="1.016" rot="R90"/>
 <pad name="9" x="8.89" y="0" drill="1.016" rot="R90"/>
 <pad name="10" x="11.43" y="0" drill="1.016" rot="R90"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
 </package>
 <package name="FEATHERWING">
 <wire x1="2.54" y1="0" x2="48.26" y2="0" width="0" layer="20"/>
@@ -9860,6 +9866,63 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="0" y1="3" x2="3" y2="0" width="0.127" layer="21" curve="90"/>
 <wire x1="3" y1="0" x2="47.798" y2="0" width="0.127" layer="21"/>
 <wire x1="47.798" y1="0" x2="50.798" y2="3" width="0.127" layer="21" curve="90"/>
+</package>
+<package name="RTW_S-PWQFN-N24">
+<description>4x4 QFN 24 Pin</description>
+<smd name="1" x="-1.9" y="1.25" dx="0.6" dy="0.24" layer="1"/>
+<smd name="2" x="-1.9" y="0.75" dx="0.6" dy="0.24" layer="1"/>
+<smd name="3" x="-1.9" y="0.25" dx="0.6" dy="0.24" layer="1"/>
+<smd name="4" x="-1.9" y="-0.25" dx="0.6" dy="0.24" layer="1"/>
+<smd name="5" x="-1.9" y="-0.75" dx="0.6" dy="0.24" layer="1"/>
+<smd name="6" x="-1.9" y="-1.25" dx="0.6" dy="0.24" layer="1"/>
+<smd name="24" x="-1.25" y="1.9" dx="0.6" dy="0.24" layer="1" rot="R90"/>
+<smd name="23" x="-0.75" y="1.9" dx="0.6" dy="0.24" layer="1" rot="R90"/>
+<smd name="22" x="-0.25" y="1.9" dx="0.6" dy="0.24" layer="1" rot="R90"/>
+<smd name="21" x="0.25" y="1.9" dx="0.6" dy="0.24" layer="1" rot="R90"/>
+<smd name="20" x="0.75" y="1.9" dx="0.6" dy="0.24" layer="1" rot="R90"/>
+<smd name="19" x="1.25" y="1.9" dx="0.6" dy="0.24" layer="1" rot="R90"/>
+<smd name="12" x="1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" rot="R270"/>
+<smd name="11" x="0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" rot="R270"/>
+<smd name="10" x="0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" rot="R270"/>
+<smd name="9" x="-0.25" y="-1.9" dx="0.6" dy="0.24" layer="1" rot="R270"/>
+<smd name="8" x="-0.75" y="-1.9" dx="0.6" dy="0.24" layer="1" rot="R270"/>
+<smd name="7" x="-1.25" y="-1.9" dx="0.6" dy="0.24" layer="1" rot="R270"/>
+<smd name="13" x="1.9" y="-1.25" dx="0.6" dy="0.24" layer="1" rot="R180"/>
+<smd name="14" x="1.9" y="-0.75" dx="0.6" dy="0.24" layer="1" rot="R180"/>
+<smd name="15" x="1.9" y="-0.25" dx="0.6" dy="0.24" layer="1" rot="R180"/>
+<smd name="16" x="1.9" y="0.25" dx="0.6" dy="0.24" layer="1" rot="R180"/>
+<smd name="17" x="1.9" y="0.75" dx="0.6" dy="0.24" layer="1" rot="R180"/>
+<smd name="18" x="1.9" y="1.25" dx="0.6" dy="0.24" layer="1" rot="R180"/>
+<smd name="EP" x="0" y="0" dx="2.45" dy="2.45" layer="1" cream="no"/>
+<polygon width="0" layer="31">
+<vertex x="-1.18" y="1.18"/>
+<vertex x="-1.18" y="0.1"/>
+<vertex x="-0.1" y="0.1"/>
+<vertex x="-0.1" y="1.18"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-1.18" y="-0.1"/>
+<vertex x="-1.18" y="-1.18"/>
+<vertex x="-0.1" y="-1.18"/>
+<vertex x="-0.1" y="-0.1"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.1" y="1.18"/>
+<vertex x="0.1" y="0.1"/>
+<vertex x="1.18" y="0.1"/>
+<vertex x="1.18" y="1.18"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.1" y="-0.1"/>
+<vertex x="0.1" y="-1.18"/>
+<vertex x="1.18" y="-1.18"/>
+<vertex x="1.18" y="-0.1"/>
+</polygon>
+<wire x1="-2" y1="2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
+<circle x="-2.286" y="2.286" radius="0.127" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -10325,6 +10388,7 @@ Switches electrical signals</description>
 <wire x1="10.16" y1="-5.08" x2="10.16" y2="2.54" width="0.254" layer="94"/>
 <wire x1="10.16" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
 <text x="-7.62" y="3.556" size="1.27" layer="95">TPS797xx</text>
+<text x="1.27" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="MAX6070">
 <pin name="VIN" x="-7.62" y="5.08" length="middle"/>
@@ -11191,6 +11255,7 @@ Switches electrical signals</description>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
 <text x="0" y="16.51" size="1.27" layer="95" align="center">&gt;DISP</text>
+<text x="0" y="-3.81" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="OPAMP">
 <pin name="VIN+" x="-7.62" y="-5.08" length="middle" direction="in"/>
@@ -11429,14 +11494,14 @@ regulations. &lt;/p&gt;
 <pin name="20" x="7.62" y="-12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="SN74AUP3G34">
-<pin name="1A" x="-12.7" y="5.08" visible="off" length="middle"/>
-<pin name="2A" x="-12.7" y="2.54" visible="off" length="middle"/>
-<pin name="3A" x="-12.7" y="0" visible="off" length="middle"/>
-<pin name="3Y" x="12.7" y="0" visible="off" length="middle" rot="R180"/>
-<pin name="2Y" x="12.7" y="2.54" visible="off" length="middle" rot="R180"/>
-<pin name="1Y" x="12.7" y="5.08" visible="off" length="middle" rot="R180"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
-<pin name="VCC" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="1A" x="-12.7" y="5.08" visible="off" length="middle" direction="in"/>
+<pin name="2A" x="-12.7" y="2.54" visible="off" length="middle" direction="in"/>
+<pin name="3A" x="-12.7" y="0" visible="off" length="middle" direction="in"/>
+<pin name="3Y" x="12.7" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="2Y" x="12.7" y="2.54" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="1Y" x="12.7" y="5.08" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="VCC" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
@@ -11465,7 +11530,8 @@ regulations. &lt;/p&gt;
 <wire x1="-0.762" y1="-1.016" x2="-0.762" y2="0" width="0.254" layer="94"/>
 <wire x1="1.016" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="1.016" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="-3.556" y="8.636" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-8.89" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="8.89" size="1.27" layer="95" ratio="15" align="center">SN74AUP3G34</text>
 </symbol>
 <symbol name="75ALS176">
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.254" layer="94"/>
@@ -11488,9 +11554,9 @@ regulations. &lt;/p&gt;
 <pin name="A" x="-12.7" y="0" visible="off" length="middle"/>
 <pin name="B1" x="12.7" y="2.54" visible="off" length="middle" rot="R180"/>
 <pin name="B2" x="12.7" y="-2.54" visible="off" length="middle" rot="R180"/>
-<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle"/>
-<pin name="VCC" x="12.7" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="S" x="-12.7" y="-2.54" visible="off" length="middle"/>
+<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCC" x="12.7" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="S" x="-12.7" y="-2.54" visible="off" length="middle" direction="in"/>
 <circle x="2.54" y="-2.54" radius="0.359209375" width="0.254" layer="94"/>
 <circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
@@ -11505,7 +11571,8 @@ regulations. &lt;/p&gt;
 <wire x1="-7.62" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
 <wire x1="0" y1="-2.54" x2="0" y2="0.762" width="0.254" layer="94" style="shortdash"/>
 <circle x="-2.54" y="0" radius="0.359209375" width="0.254" layer="94"/>
-<text x="-3.302" y="6.35" size="1.27" layer="96">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="96" align="center">&gt;NAME</text>
+<text x="0" y="6.604" size="1.27" layer="95" ratio="15" align="center">SN74LVC1G3157</text>
 </symbol>
 <symbol name="MCP7940">
 <pin name="SDA" x="-10.16" y="5.08" length="middle"/>
@@ -12044,6 +12111,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <text x="-1.27" y="9.144" size="1.778" layer="95" align="center">&gt;DISP</text>
+<text x="-1.27" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="TPS2105">
 <pin name="IN1" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
@@ -12056,6 +12124,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="6.604" size="1.27" layer="95" align="center">TPS2105</text>
+<text x="0" y="-8.89" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="SN65HVD33">
 <pin name="R" x="-12.7" y="5.08" length="middle" direction="out"/>
@@ -12089,6 +12158,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <text x="1.27" y="9.144" size="1.27" layer="95" align="center">TXS0102</text>
 <pin name="GND" x="-10.16" y="-2.54" length="middle" direction="pwr"/>
+<text x="1.27" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="ATTINY1634">
 <pin name="PA0" x="-10.16" y="15.24" length="middle"/>
@@ -12377,19 +12447,19 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="TXS0104">
-<pin name="A1" x="-10.16" y="2.54" length="middle"/>
-<pin name="A2" x="-10.16" y="0" length="middle"/>
-<pin name="VA" x="-10.16" y="5.08" length="middle" direction="pwr"/>
-<pin name="VB" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="EN" x="12.7" y="2.54" length="middle" direction="in" rot="R180"/>
-<pin name="B1" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="B2" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="A1" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="A2" x="-10.16" y="0" visible="pin" length="middle"/>
+<pin name="VA" x="-10.16" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="VB" x="12.7" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="EN" x="12.7" y="2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="B1" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="B2" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <text x="1.27" y="9.144" size="1.27" layer="95" align="center">TXS0104</text>
-<pin name="GND" x="-10.16" y="-7.62" length="middle" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-7.62" visible="pin" length="middle" direction="pwr"/>
 <pin name="A3" x="-10.16" y="-2.54" visible="pin" length="middle"/>
 <pin name="A4" x="-10.16" y="-5.08" visible="pin" length="middle"/>
 <pin name="B3" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
@@ -12397,19 +12467,19 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="-11.43" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="TXS0108">
-<pin name="A1" x="-10.16" y="7.62" length="middle"/>
-<pin name="A2" x="-10.16" y="5.08" length="middle"/>
-<pin name="VA" x="-10.16" y="10.16" length="middle" direction="pwr"/>
-<pin name="VB" x="12.7" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="EN" x="12.7" y="7.62" length="middle" direction="in" rot="R180"/>
-<pin name="B1" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="B2" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="A1" x="-10.16" y="7.62" visible="pin" length="middle"/>
+<pin name="A2" x="-10.16" y="5.08" visible="pin" length="middle"/>
+<pin name="VA" x="-10.16" y="10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="VB" x="12.7" y="10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="EN" x="12.7" y="7.62" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="B1" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="B2" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
 <wire x1="-5.08" y1="12.7" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
 <text x="1.27" y="14.224" size="1.27" layer="95" align="center">TXS0108</text>
-<pin name="GND" x="-10.16" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-12.7" visible="pin" length="middle" direction="pwr"/>
 <pin name="A3" x="-10.16" y="2.54" visible="pin" length="middle"/>
 <pin name="A4" x="-10.16" y="0" visible="pin" length="middle"/>
 <pin name="B3" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
@@ -12559,6 +12629,51 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="5.08" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
 <circle x="2.54" y="2.54" radius="1.27" width="0.254" layer="94"/>
 <circle x="2.54" y="30.48" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LM4040">
+<pin name="C" x="0" y="7.62" visible="off" length="middle" direction="pwr" rot="R270"/>
+<pin name="A" x="0" y="-5.08" visible="off" length="middle" direction="pwr" rot="R90"/>
+<wire x1="-1.778" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.524" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="2.54" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="2.54" x2="-2.54" y2="1.524" width="0.254" layer="94"/>
+<text x="-3.556" y="1.27" size="1.27" layer="95" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="3.556" y="1.27" size="1.27" layer="95" ratio="15" rot="R90" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="TCA9555">
+<pin name="P17" x="15.24" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="P16" x="15.24" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="P15" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="P14" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="P13" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="P12" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="P11" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="P10" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="P6" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="P5" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="P4" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="P3" x="15.24" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="P2" x="15.24" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="P1" x="15.24" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="P0" x="15.24" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="A0" x="-12.7" y="17.78" visible="pin" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="12.7" visible="pin" length="middle" direction="in"/>
+<pin name="GND" x="-12.7" y="10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCC" x="-12.7" y="20.32" visible="pin" length="middle" direction="pwr"/>
+<pin name="SDA" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="SCL" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="!INT" x="-12.7" y="-7.62" visible="pin" length="middle" direction="out"/>
+<pin name="P7" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="22.86" x2="-7.62" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
+<text x="1.524" y="24.13" size="1.27" layer="95" ratio="15" align="center">TCA9555</text>
+<text x="1.27" y="-24.13" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16391,6 +16506,19 @@ MCP3425
 </technology>
 </technologies>
 </device>
+<device name="1.5A" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="MF-NSMF150-2CT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="MF-NSMF150-2" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SN65HVD3*">
@@ -17837,7 +17965,7 @@ This was SPECIALLY designed to be used with our Graphic LCD Backpack.  Be sure y
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74AUP3G34">
+<deviceset name="SN74AUP3G34" prefix="U">
 <description>&lt;b&gt;SN74AUP3G34&lt;/b&gt; - Logic Buffer
  
 &lt;p&gt;Characteristics:
@@ -17920,7 +18048,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/scripts/DkSearch/dksus.
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74LVC1G3157">
+<deviceset name="SN74LVC1G3157" prefix="U">
 <description>&lt;b&gt;SN74LVC1G3157&lt;/b&gt; - SPDT Analog Switch
  
 &lt;p&gt;Characteristics:
@@ -19543,7 +19671,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="BME280">
+<deviceset name="BME280" prefix="U">
 <description>&lt;b&gt;BME280&lt;/b&gt; - Combined Digital Humidity and Pressure Sensor
  
 &lt;p&gt;Characteristics:
@@ -19589,7 +19717,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2105">
+<deviceset name="TPS2105" prefix="U">
 <description>&lt;b&gt;TPS2105&lt;/b&gt; - Power Distribution Switch (OR'ing switch)
  
 &lt;p&gt;Characteristics:
@@ -20459,7 +20587,7 @@ Digikey:
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPL5111">
+<deviceset name="TPL5111" prefix="U">
 <description>&lt;b&gt;TPL5111&lt;/b&gt; - Nano-Power System Timer for Power Gating (Watchdog, long period)
  
 &lt;p&gt;Characteristics:
@@ -20912,6 +21040,116 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM4040" prefix="D" uservalue="yes">
+<description>&lt;b&gt;LM4040&lt;/b&gt; - Precision Micropower Shunt Voltage Referance
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;V&lt;sub&gt;ReverseBreakdown&lt;/sub&gt;: 1.225V, 2.5V, 4.096V, 5.0V&lt;/il&gt;
+&lt;li&gt; Output Current: 15 mA &lt;/li&gt;
+&lt;li&gt;Tolerance: 1% &lt;/li&gt;
+&lt;li&gt;Temp Coeficient: &amp;plusmn;15ppm/C&amp;deg;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: 
+
+&lt;li&gt;&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-2.5-TR/576-1047-1-ND/771818"&gt; 576-1047-1-ND (Microchip, 2.5V) &lt;/a&gt; 
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-4.1-TR/576-1048-1-ND/771819"&gt;576-1048-1-ND (Microchip, 4.096V) &lt;/a&gt; 
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LM4040" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2.5">
+<attribute name="DIGIKEY" value="576-1047-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="LM4040DYM3-2.5-TR" constant="no"/>
+</technology>
+<technology name="4.096">
+<attribute name="DIGIKEY" value="576-1048-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="LM4040DYM3-4.1-TR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCA9555" prefix="U">
+<description>&lt;b&gt;TCA9555&lt;/b&gt; - I&lt;sup&gt;2&lt;/sup&gt;C I/O Expander, 16 bit wtih interrupt
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.65V ~ 5.5V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Out&lt;/sub&gt;: 25 mA &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 3.5&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TCA9555RTWR/296-24857-1-ND/2096240"&gt; 296-24857-1-ND &lt;/a&gt;&lt;br/&gt; 
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TCA9555" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RTW" package="RTW_S-PWQFN-N24">
+<connects>
+<connect gate="G$1" pin="!INT" pad="22"/>
+<connect gate="G$1" pin="A0" pad="18"/>
+<connect gate="G$1" pin="A1" pad="23"/>
+<connect gate="G$1" pin="A2" pad="24"/>
+<connect gate="G$1" pin="GND" pad="9 EP"/>
+<connect gate="G$1" pin="P0" pad="1"/>
+<connect gate="G$1" pin="P1" pad="2"/>
+<connect gate="G$1" pin="P10" pad="10"/>
+<connect gate="G$1" pin="P11" pad="11"/>
+<connect gate="G$1" pin="P12" pad="12"/>
+<connect gate="G$1" pin="P13" pad="13"/>
+<connect gate="G$1" pin="P14" pad="14"/>
+<connect gate="G$1" pin="P15" pad="15"/>
+<connect gate="G$1" pin="P16" pad="16"/>
+<connect gate="G$1" pin="P17" pad="17"/>
+<connect gate="G$1" pin="P2" pad="3"/>
+<connect gate="G$1" pin="P3" pad="4"/>
+<connect gate="G$1" pin="P4" pad="5"/>
+<connect gate="G$1" pin="P5" pad="6"/>
+<connect gate="G$1" pin="P6" pad="7"/>
+<connect gate="G$1" pin="P7" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="19"/>
+<connect gate="G$1" pin="SDA" pad="20"/>
+<connect gate="G$1" pin="VCC" pad="21"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-24857-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TCA9555RTWR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
