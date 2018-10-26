@@ -35,6 +35,10 @@ ASSIGN F5 'CHANGE WIDTH 0.2; ROUTE';
 ASSIGN F6 'change width 0.254; route';
 ASSIGN F7 'change width 0.3048; route';
 ASSIGN F8 'change width 0.4064; route';
+ASSIGN A+F5 'change width 0.508; route';
+ASSIGN A+F6 'change width 0.6096; route';
+ASSIGN A+F7 'change width 0.8128; route';
+ASSIGN A+F8 'change width 1.016; route';
 ASSIGN C+U 'display -19';
 ASSIGN C+F 'RUN find'
 ASSIGN CS+F show;
