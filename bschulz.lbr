@@ -8567,7 +8567,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="SMD1,0-2,54">
-<smd name="1" x="0" y="0" dx="1" dy="2.54" layer="1" rot="R180"/>
+<smd name="1" x="0" y="0" dx="1" dy="2.54" layer="1" rot="R180" cream="no"/>
 </package>
 <package name="CREATIVE_COMMONS">
 <text x="0" y="3.81" size="1.27" layer="48" align="center">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
@@ -9923,6 +9923,23 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="2" y1="-2" x2="2" y2="2" width="0.127" layer="21"/>
 <wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
 <circle x="-2.286" y="2.286" radius="0.127" width="0.127" layer="21"/>
+</package>
+<package name="DSBGD_4">
+<description>DSBGA, 2x2 grid, 0.8x0.8mm, YFP0004 TI</description>
+<smd name="A1" x="-0.2" y="0.2" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="0.2" y="0.2" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
+<smd name="B2" x="0.2" y="-0.2" dx="0.23" dy="0.23" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="B1" x="-0.2" y="-0.2" dx="0.23" dy="0.23" layer="1" roundness="100" rot="R180" cream="no"/>
+<rectangle x1="-0.325" y1="0.075" x2="-0.075" y2="0.325" layer="31"/>
+<rectangle x1="0.075" y1="0.075" x2="0.325" y2="0.325" layer="31"/>
+<rectangle x1="-0.325" y1="0.075" x2="-0.075" y2="0.325" layer="31"/>
+<rectangle x1="-0.325" y1="-0.325" x2="-0.075" y2="-0.075" layer="31" rot="R90"/>
+<rectangle x1="0.075" y1="-0.325" x2="0.325" y2="-0.075" layer="31" rot="R180"/>
+<wire x1="-0.4" y1="0.4" x2="-0.4" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.4" x2="0.4" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
+<circle x="-0.508" y="0.508" radius="0.127" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -16808,7 +16825,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </device>
 </devices>
 </deviceset>
-<deviceset name="POGO_PAD">
+<deviceset name="POGO_PAD" prefix="TP">
 <description>&lt;p&gt;&lt;b&gt;POGO Pad&lt;/b&gt;
 &lt;br&gt;SMD pad for interfacing with POGO Pins &lt;/p&gt;</description>
 <gates>
@@ -16825,7 +16842,7 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </device>
 </devices>
 </deviceset>
-<deviceset name="POGO_HOLE">
+<deviceset name="POGO_HOLE" prefix="TP">
 <description>&lt;p&gt;&lt;b&gt;Pogo Hole&lt;/b&gt;
 &lt;br&gt;0.9mm hole for mounting standard pogo pins
 &lt;br&gt;
@@ -19604,7 +19621,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMD" uservalue="yes">
+<deviceset name="SMD" prefix="PAD" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PAD" x="0" y="0"/>
 </gates>
@@ -20524,6 +20541,8 @@ Digikey:
 &lt;br&gt;
 &lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1G04DCKR/296-19072-1-ND/864303"&gt; 296-19072-1-ND (DCK) &lt;/a&gt;&lt;br/&gt;
 
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1G04YFPR/296-25196-1-ND/2172683"&gt; 296-25196-1-ND (YFP) &lt;/a&gt;&lt;br/&gt;
+
  &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SN74AUP1G04" x="0" y="0"/>
@@ -20541,6 +20560,21 @@ Digikey:
 <attribute name="DIGIKEY" value="296-19072-1-ND" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74AUP1G04DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="YFP" package="DSBGD_4">
+<connects>
+<connect gate="G$1" pin="A" pad="A1"/>
+<connect gate="G$1" pin="GND" pad="B1"/>
+<connect gate="G$1" pin="VCC" pad="A2"/>
+<connect gate="G$1" pin="Y" pad="B2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-25196-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74AUP1G04YFPR" constant="no"/>
 </technology>
 </technologies>
 </device>
