@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.03175" altunitdist="mm" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -8193,6 +8193,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MF" value="TDK" constant="no"/>
 <attribute name="MPN" value="CGA2B2C0G1H120J050BA" constant="no"/>
 </technology>
+<technology name="68PF">
+<attribute name="DIGIKEY" value="732-7474-1-ND" constant="no"/>
+<attribute name="MF" value="Wurth" constant="no"/>
+<attribute name="MPN" value="885012005060" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C0504" package="C0504">
@@ -8267,6 +8272,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="DIGIKEY" value="490-9952-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM219R61C226ME15L" constant="no"/>
+</technology>
+<technology name="4.7UF">
+<attribute name="DIGIKEY" value="399-7415-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0805C475K4RACTU" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8957,7 +8967,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;s=4356&amp;s=47360&amp;sf=0&amp;FV=fffc000d%2C1c0002%2C142c040c%2C1f140000%2Cffe00034&amp;quantity=10&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0603&lt;/a&gt;&lt;/li&gt;
 
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv252=68&amp;sf=0&amp;FV=ffec373d%2C1c0002%2C142c040c%2C1f140000%2Cffe00034%2C80002%2Cc0001&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, 0603&lt;/a&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?FV=ffec4907%2Cfffc000a%2Cc0172%2C142c040c%2C1f140000%2Cffe00034%2C1c0002&amp;quantity=100&amp;ColumnSort=2085&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, precision, 0603&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv3=1&amp;sf=0&amp;FV=ffec373d%2C1c0002%2C1f140000%2Cffe00034%2C142c040d&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, 0805&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv3=1&amp;sf=0&amp;FV=ffecb688%2C1f140000%2Cffe00034%2C1c0002&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Rohm, current sense&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv7=2&amp;sf=0&amp;FV=ffec5d6b%2Cffe00034%2C1f140000&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Vishay, pulse proof automotive&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -8989,6 +9005,18 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MPN" value="RC0402JR-0710KL" constant="no"/>
 <attribute name="VALUE_PART" value="10k" constant="no"/>
 </technology>
+<technology name="120K">
+<attribute name="DIGIKEY" value="311-120KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
+<attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="20">
+<attribute name="DIGIKEY" value="311-20LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0720RL" constant="no"/>
+<attribute name="VALUE_PART" value="20" constant="no"/>
+</technology>
 <technology name="200K">
 <attribute name="DIGIKEY" value="311-200KLRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9000,6 +9028,18 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-0727RL" constant="no"/>
 <attribute name="VALUE_PART" value="27" constant="no"/>
+</technology>
+<technology name="287">
+<attribute name="DIGIKEY" value="YAG3089CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07287RL" constant="no"/>
+<attribute name="VALUE_PART" value="287" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="DIGIKEY" value="311-2KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-072KL" constant="no"/>
+<attribute name="VALUE_PART" value="2k" constant="no"/>
 </technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330LRCT-ND" constant="no"/>
@@ -9045,11 +9085,23 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MPN" value="RMCF0603FT10M0" constant="no"/>
 <attribute name="VALUE_PART" value="10M" constant="no"/>
 </technology>
-<technology name="180K">
-<attribute name="DIGIKEY" value="311-180KHRTR-ND" constant="no"/>
+<technology name="120K">
+<attribute name="DIGIKEY" value="311-120KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0603FR-07180KL" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07120KL" constant="no"/>
+<attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="180K">
+<attribute name="DIGIKEY" value="P180KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF1803V" constant="no"/>
 <attribute name="VALUE_PART" value="180k" constant="no"/>
+</technology>
+<technology name="182K">
+<attribute name="DIGIKEY" value="P182KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF1823V" constant="no"/>
+<attribute name="VALUE_PART" value="182k" constant="no"/>
 </technology>
 <technology name="1K">
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" constant="no"/>
@@ -9074,6 +9126,36 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07330RL" constant="no"/>
 <attribute name="VALUE_PART" value="330" constant="no"/>
+</technology>
+<technology name="330K">
+<attribute name="DIGIKEY" value="P330KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF3303V" constant="no"/>
+<attribute name="VALUE_PART" value="330k" constant="no"/>
+</technology>
+<technology name="360K">
+<attribute name="DIGIKEY" value="311-360KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
+<attribute name="VALUE_PART" value="360k" constant="no"/>
+</technology>
+<technology name="470K">
+<attribute name="DIGIKEY" value="311-470KGRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
+<attribute name="VALUE_PART" value="470k" constant="no"/>
+</technology>
+<technology name="820K">
+<attribute name="DIGIKEY" value="311-820KGRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603JR-07820KL" constant="no"/>
+<attribute name="VALUE_PART" value="820k" constant="no"/>
+</technology>
+<technology name="91K">
+<attribute name="DIGIKEY" value="P91.0KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF9102V" constant="no"/>
+<attribute name="VALUE_PART" value="91k" constant="no"/>
 </technology>
 <technology name="P100K">
 <attribute name="DIGIKEY" value="P100KDBCT-ND" constant="no"/>
@@ -9101,7 +9183,21 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0.003">
+<attribute name="DIGIKEY" value="RHM.003AJCT-ND" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="PMR10EZPFV3L00" constant="no"/>
+</technology>
+<technology name="0.005">
+<attribute name="DIGIKEY" value="PMR10EZPFU5L00" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="PMR10EZPFU5L00" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R0805W" package="R0805W">
