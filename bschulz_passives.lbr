@@ -8130,6 +8130,21 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="3.65" y1="2.15" x2="-3.65" y2="2.15" width="0.127" layer="21"/>
 <rectangle x1="-2.286" y1="-2.159" x2="-1.27" y2="2.159" layer="21"/>
 </package>
+<package name="HL">
+<description>Super capacitor, Designed for MPN = DSK-3R3H224U-HL
+&lt;br&gt;
+Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,DSK.pdf</description>
+<smd name="-" x="0" y="-5" dx="4" dy="1.7" layer="1"/>
+<smd name="+" x="0" y="5.15" dx="5" dy="2" layer="1"/>
+<circle x="0" y="0" radius="3.4" width="0.254" layer="21"/>
+<wire x1="-2" y1="5.85" x2="-2" y2="2.794" width="0.254" layer="21"/>
+<wire x1="-2" y1="5.85" x2="2" y2="5.85" width="0.254" layer="21"/>
+<wire x1="2" y1="5.85" x2="2" y2="2.794" width="0.254" layer="21"/>
+<wire x1="-1.5" y1="-3.175" x2="-1.5" y2="-5.85" width="0.254" layer="21"/>
+<wire x1="-1.5" y1="-5.85" x2="1.5" y2="-5.85" width="0.254" layer="21"/>
+<wire x1="1.5" y1="-5.85" x2="1.5" y2="-3.048" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="3.340846875" width="0" layer="43"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -11878,6 +11893,15 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <technology name="">
 <attribute name="SPICEPREFIX" value="C" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="HL" package="HL">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
