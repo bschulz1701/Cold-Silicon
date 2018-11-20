@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -33,9 +33,9 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -10608,6 +10608,73 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <smd name="1" x="0" y="0" dx="1.6" dy="0.8" layer="1" roundness="20"/>
 <text x="0" y="1.27" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="1X03_3.5MM_SCREW">
+<pad name="1" x="-3.5" y="0" drill="1.2"/>
+<pad name="2" x="0" y="0" drill="1.2"/>
+<pad name="3" x="3.5" y="0" drill="1.2"/>
+<wire x1="-5.8" y1="-3.6" x2="5.8" y2="-3.6" width="0.254" layer="21"/>
+<wire x1="5.8" y1="-3.6" x2="5.8" y2="-3.048" width="0.254" layer="21"/>
+<wire x1="5.8" y1="-3.048" x2="5.8" y2="3.4" width="0.254" layer="21"/>
+<wire x1="5.8" y1="3.4" x2="-5.8" y2="3.4" width="0.254" layer="21"/>
+<wire x1="-5.8" y1="3.4" x2="-5.8" y2="-3.048" width="0.254" layer="21"/>
+<wire x1="-5.8" y1="-3.048" x2="-5.8" y2="-3.6" width="0.254" layer="21"/>
+<wire x1="-5.8" y1="-3.048" x2="5.8" y2="-3.048" width="0.254" layer="21"/>
+<text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.8128" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="MICROSD_CD">
+<description>Build for a Micro SD card with discrete card dectect switch, built for the Molex 5025700893 socket</description>
+<wire x1="1.9" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-15.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-15.5" x2="13.8" y2="-15.5" width="0.127" layer="21"/>
+<wire x1="13.8" y1="-15.5" x2="13.8" y2="0" width="0.127" layer="21"/>
+<wire x1="13.8" y1="0" x2="12.9" y2="0" width="0.127" layer="21"/>
+<wire x1="12.9" y1="0" x2="12.2" y2="-1.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="12.2" y1="-1.2" x2="2.7" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-1.2" x2="1.9" y2="0" width="0.127" layer="21" curve="-90"/>
+<wire x1="12.935" y1="-0.032" x2="11.989" y2="0.787" width="0.127" layer="21" curve="90"/>
+<wire x1="11.989" y1="0.787" x2="2.789" y2="0.787" width="0.127" layer="21"/>
+<wire x1="2.789" y1="0.787" x2="1.87" y2="0.068" width="0.127" layer="21" curve="90"/>
+<wire x1="13.443" y1="0.614" x2="12.243" y2="1.814" width="0.127" layer="21" curve="90"/>
+<wire x1="12.243" y1="1.814" x2="3.043" y2="1.814" width="0.127" layer="21"/>
+<wire x1="3.043" y1="1.814" x2="1.743" y2="0.714" width="0.127" layer="21" curve="90"/>
+<wire x1="13.443" y1="4.541" x2="12.243" y2="5.741" width="0.127" layer="21" curve="90"/>
+<wire x1="12.243" y1="5.741" x2="3.043" y2="5.741" width="0.127" layer="21"/>
+<wire x1="3.043" y1="5.741" x2="1.743" y2="4.641" width="0.127" layer="21" curve="90"/>
+<smd name="MT1" x="13.6" y="-0.85" dx="1.4" dy="1.7" layer="1" rot="R180"/>
+<smd name="MT2" x="0.7" y="-0.85" dx="1.4" dy="1.7" layer="1" rot="R180"/>
+<smd name="CD1" x="6.55" y="-15.45" dx="1.5" dy="1.15" layer="1"/>
+<smd name="CD2" x="13.725" y="-10.6" dx="1.15" dy="1.5" layer="1"/>
+<smd name="8" x="12.15" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="7" x="11.05" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="6" x="9.95" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="5" x="8.85" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="4" x="7.75" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="3" x="6.65" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="2" x="5.55" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<smd name="1" x="4.45" y="-3.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
+<text x="10.778" y="-11.554" size="1.27" layer="25" rot="R180">&gt;NAME</text>
+<smd name="MT3" x="4.25" y="-15.45" dx="1.5" dy="1.15" layer="1"/>
+<smd name="MT4" x="13.15" y="-15.45" dx="1.5" dy="1.15" layer="1"/>
+<rectangle x1="11.15" y1="-14.355" x2="14.05" y2="-13.15" layer="41"/>
+<rectangle x1="13.35" y1="-9.65" x2="13.85" y2="-8.65" layer="41"/>
+</package>
+<package name="MSOP_8">
+<description>MSOP, 3x3mm, o.65mm pitch</description>
+<smd name="1" x="-2.4" y="0.975" dx="1.26" dy="0.4" layer="1"/>
+<smd name="2" x="-2.4" y="0.325" dx="1.26" dy="0.4" layer="1"/>
+<smd name="3" x="-2.4" y="-0.325" dx="1.26" dy="0.4" layer="1"/>
+<smd name="4" x="-2.4" y="-0.975" dx="1.26" dy="0.4" layer="1"/>
+<smd name="5" x="2.4" y="-0.975" dx="1.26" dy="0.4" layer="1" rot="R180"/>
+<smd name="6" x="2.4" y="-0.325" dx="1.26" dy="0.4" layer="1" rot="R180"/>
+<smd name="7" x="2.4" y="0.325" dx="1.26" dy="0.4" layer="1" rot="R180"/>
+<smd name="8" x="2.4" y="0.975" dx="1.26" dy="0.4" layer="1" rot="R180"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -13515,6 +13582,20 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="1.27" y1="6.35" x2="0" y2="5.08" width="0.15" layer="94"/>
 <text x="-2.54" y="3.81" size="1.27" layer="95" rot="R90" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="MIC2544">
+<pin name="IN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="!FLG" x="-12.7" y="-7.62" length="middle" direction="out"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="ILIM" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="OUT" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="1.27" y="8.89" size="1.778" layer="95" ratio="15" align="center">MIC2544</text>
+<text x="1.524" y="-11.43" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LED_0402">
@@ -13745,9 +13826,9 @@ PN: HR1941CT-ND</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="3M5607CT-ND" constant="no"/>
-<attribute name="MF" value="3M" constant="no"/>
-<attribute name="MPN" value="2908-05WB-MG" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -16533,6 +16614,29 @@ push-push type</description>
 <attribute name="DIGIKEY" value="3M5607CT-ND" constant="no"/>
 <attribute name="MF" value="3M" constant="no"/>
 <attribute name="MPN" value="2908-05WB-MG" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="CD" package="MICROSD_CD">
+<connects>
+<connect gate="G$1" pin="CARD_DETECT" pad="CD1"/>
+<connect gate="G$1" pin="CARD_DETECT1" pad="CD2"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="DATA_IN" pad="3"/>
+<connect gate="G$1" pin="DATA_OUT" pad="7"/>
+<connect gate="G$1" pin="GND" pad="MT1"/>
+<connect gate="G$1" pin="GND1" pad="MT2 MT3 MT4"/>
+<connect gate="G$1" pin="SCLK" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM19093CT-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="5025700893" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -20226,6 +20330,20 @@ Digikey:
 <technology name=""/>
 </technologies>
 </device>
+<device name="3.5_SCREW" package="1X03_3.5MM_SCREW">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="ED2636-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTTE030161" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SDMMC">
@@ -22440,6 +22558,65 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-se
 <attribute name="DIGIKEY" value="A106145CT-ND" constant="no"/>
 <attribute name="MF" value="TE Connectivity" constant="no"/>
 <attribute name="MPN" value="RCU-0C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2544" prefix="U">
+<description>&lt;b&gt;MIC2544/48&lt;/b&gt; - Hight Side Load Switch, with Adjustable Current Limit 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.7v ~ 5.5v&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A (OFF)&lt;/li&gt;
+&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 80m&amp;Omega; (Vin = 5v)&lt;/li&gt;
+&lt;li&gt; Output Current: 1.5A (Max, limit adj) &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MIC2544-1YMM/576-1738-5-ND/1028557"&gt; 576-1738-5-ND (Active High, MSOP) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MIC2544-2YMM/576-1739-5-ND/1028565"&gt; 576-1739-5-ND (Active Low, MSOP) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC2544" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MSOP" package="MSOP_8">
+<connects>
+<connect gate="G$1" pin="!FLG" pad="2"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="ILIM" pad="5"/>
+<connect gate="G$1" pin="IN" pad="7"/>
+<connect gate="G$1" pin="OUT" pad="6 8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="576-1738-5-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC2544-1YMM" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SOIC" package="SO08">
+<connects>
+<connect gate="G$1" pin="!FLG" pad="2"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="ILIM" pad="4"/>
+<connect gate="G$1" pin="IN" pad="7"/>
+<connect gate="G$1" pin="OUT" pad="6 8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="MIC2544-1YM-CT-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC2544-1YM-TR" constant="no"/>
 </technology>
 </technologies>
 </device>
