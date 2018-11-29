@@ -1,0 +1,87 @@
+{
+    "author": {
+        "email": "schu3119@umn.edu",
+        "name": "Bobby Schulz"
+    },
+    "description": {
+        "EN": "Customized CAM file based on OSH Park default"
+    },
+    "output_type": "directory",
+    "outputs": [
+        {
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+            ]
+        },
+        {
+            "filename_prefix": "outputs",
+            "format_specifier": {
+                "decimal": 4,
+                "integer": 3
+            },
+            "generate_job_file": true,
+            "output_type": "gerber",
+            "outputs": [
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Top Solder Paste",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.tcream.ger",
+                    "layers": [
+                        31
+                    ],
+                    "milling": false,
+                    "name": "Top Solder Paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Bottom Solder Paste",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.bcream.ger",
+                    "layers": [
+                        32
+                    ],
+                    "milling": false,
+                    "name": "Bottom Solder Paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                }
+            ],
+            "version": "RS274X"
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrawingFiles",
+            "output_type": "drawing",
+            "outputs": [
+            ]
+        }
+    ],
+    "timestamp": "2018-06-06T08:50:01",
+    "type": "EAGLE CAM job",
+    "units": "metric",
+    "version": "8.6.1"
+}

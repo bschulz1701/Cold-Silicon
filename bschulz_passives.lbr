@@ -9038,6 +9038,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="RC0402FR-07200KL" constant="no"/>
 <attribute name="VALUE_PART" value="200k" constant="no"/>
 </technology>
+<technology name="232">
+<attribute name="DIGIKEY" value="YAG3063CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07232RL" constant="no"/>
+<attribute name="VALUE_PART" value="232" constant="no"/>
+</technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="YAG3086CT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9067,6 +9073,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402JR-074K7L" constant="no"/>
 <attribute name="VALUE_PART" value="4.7k" constant="no"/>
+</technology>
+<technology name="453">
+<attribute name="DIGIKEY" value="YAG3165CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07453RL" constant="no"/>
+<attribute name="VALUE_PART" value="453" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9124,6 +9136,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="AC0603FR-071KL" constant="no"/>
 <attribute name="VALUE_PART" value="1k" constant="no"/>
 </technology>
+<technology name="1M">
+<attribute name="DIGIKEY" value="P1.00MHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF1004V" constant="no"/>
+<attribute name="VALUE_PART" value="1M" constant="no"/>
+</technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9160,6 +9178,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
 <attribute name="VALUE_PART" value="470k" constant="no"/>
 </technology>
+<technology name="590K">
+<attribute name="DIGIKEY" value="311-590KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07590KL" constant="no"/>
+<attribute name="VALUE_PART" value="590k" constant="no"/>
+</technology>
 <technology name="820K">
 <attribute name="DIGIKEY" value="311-820KGRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9190,6 +9214,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="ERA-3AEB102V" constant="no"/>
 <attribute name="VALUE_PART" value="1k" constant="no"/>
 </technology>
+<technology name="P62K">
+<attribute name="DIGIKEY" value="P62KDBCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERA-3AEB623V" constant="no"/>
+<attribute name="VALUE_PART" value="62k" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R0805" package="R0805">
@@ -9212,6 +9242,11 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="DIGIKEY" value="PMR10EZPFU5L00" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="PMR10EZPFU5L00" constant="no"/>
+</technology>
+<technology name="P1M">
+<attribute name="DIGIKEY" value="P1MDACT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERA-6AEB105V" constant="no"/>
 </technology>
 </technologies>
 </device>
