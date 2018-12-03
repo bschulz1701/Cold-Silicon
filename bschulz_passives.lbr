@@ -9142,6 +9142,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="ERJ-3EKF1004V" constant="no"/>
 <attribute name="VALUE_PART" value="1M" constant="no"/>
 </technology>
+<technology name="220">
+<attribute name="DIGIKEY" value="311-220HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07220RL" constant="no"/>
+<attribute name="VALUE_PART" value="220" constant="no"/>
+</technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9171,6 +9177,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
 <attribute name="VALUE_PART" value="360k" constant="no"/>
+</technology>
+<technology name="470">
+<attribute name="DIGIKEY" value="311-470HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07470RL" constant="no"/>
+<attribute name="VALUE_PART" value="470" constant="no"/>
 </technology>
 <technology name="470K">
 <attribute name="DIGIKEY" value="311-470KGRCT-ND" constant="no"/>

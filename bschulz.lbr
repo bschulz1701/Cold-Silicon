@@ -13862,6 +13862,20 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="TXDEN" x="15.24" y="-15.24" length="middle" direction="in" rot="R180"/>
 <pin name="SLEEP" x="15.24" y="-17.78" length="middle" direction="in" function="dot" rot="R180"/>
 </symbol>
+<symbol name="FERRITE_BEAD">
+<description>&lt;h3&gt;Ferrite Bead (blocks, cores, rings, chokes, etc.)&lt;/h3&gt;
+&lt;p&gt;Inductor with layers of ferrite used to suppress high frequencies. Often used to isolate high frequency noise.&lt;/p&gt;</description>
+<text x="1.27" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.27" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0.889" y1="2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.143" y1="2.54" x2="1.143" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LED_0402">
@@ -23052,6 +23066,46 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-se
 <attribute name="DIGIKEY" value="768-1008-1-ND" constant="no"/>
 <attribute name="MF" value="FTDI" constant="no"/>
 <attribute name="MPN" value="FT232RQ-REEL" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FERRITE_BEAD" prefix="FB" uservalue="yes">
+<description>&lt;b&gt;Genaric Ferrite Bead&lt;/b&gt;
+
+&lt;p&gt;
+Power Line, 30&amp;Omega; @ 100MHz &lt;br&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/murata-electronics-north-america/BLM18PG300SN1D/490-1035-1-ND/584483"&gt;490-1035-1-ND&lt;/a&gt;&lt;br&gt;
+
+&lt;br&gt;
+Signal Line, 1k&amp;Omega; @ 100MHz &lt;br&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/murata-electronics-north-america/BLM18BD102SN1D/490-1024-1-ND/584472"&gt;490-1024-1-ND&lt;/a&gt;&lt;br&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FERRITE_BEAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1KS">
+<attribute name="DIGIKEY" value="490-1024-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="BLM18BD102SN1D" constant="no"/>
+</technology>
+<technology name="30P">
+<attribute name="DIGIKEY" value="490-1035-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="BLM18PG300SN1D" constant="no"/>
 </technology>
 </technologies>
 </device>
