@@ -12465,7 +12465,7 @@ regulations. &lt;/p&gt;
 <pin name="DE" x="-10.16" y="5.08" length="middle" direction="in"/>
 <pin name="!RE" x="-10.16" y="2.54" length="middle" direction="in"/>
 </symbol>
-<symbol name="SN74LVC1G3157">
+<symbol name="SW_2:1">
 <pin name="A" x="-12.7" y="0" visible="off" length="middle"/>
 <pin name="B1" x="12.7" y="2.54" visible="off" length="middle" rot="R180"/>
 <pin name="B2" x="12.7" y="-2.54" visible="off" length="middle" rot="R180"/>
@@ -12487,7 +12487,7 @@ regulations. &lt;/p&gt;
 <wire x1="0" y1="-2.54" x2="0" y2="0.762" width="0.254" layer="94" style="shortdash"/>
 <circle x="-2.54" y="0" radius="0.359209375" width="0.254" layer="94"/>
 <text x="0" y="-11.43" size="1.27" layer="96" align="center">&gt;NAME</text>
-<text x="0" y="6.604" size="1.27" layer="95" ratio="15" align="center">SN74LVC1G3157</text>
+<text x="0" y="6.604" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
 </symbol>
 <symbol name="MCP7940">
 <pin name="SDA" x="-10.16" y="5.08" length="middle"/>
@@ -13632,28 +13632,44 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="PC6(/RESET)" x="-25.4" y="30.48" length="middle" function="dot"/>
 </symbol>
 <symbol name="MUX_1:2">
-<pin name="A" x="-12.7" y="0" visible="off" length="middle"/>
-<pin name="B1" x="12.7" y="2.54" visible="off" length="middle" rot="R180"/>
-<pin name="B2" x="12.7" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="Y" x="12.7" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="A" x="-12.7" y="0" visible="off" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="-2.54" visible="off" length="middle" direction="in"/>
 <pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle" direction="pwr"/>
 <pin name="VCC" x="12.7" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
-<pin name="S" x="-12.7" y="-2.54" visible="off" length="middle" direction="in"/>
-<circle x="2.54" y="-2.54" radius="0.359209375" width="0.254" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.359209375" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="3.302" y2="2.032" width="0.254" layer="94"/>
-<wire x1="3.048" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="3.048" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<pin name="C" x="-12.7" y="2.54" visible="off" length="middle" direction="in"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94" style="shortdash"/>
-<wire x1="0" y1="-2.54" x2="0" y2="0.762" width="0.254" layer="94" style="shortdash"/>
-<circle x="-2.54" y="0" radius="0.359209375" width="0.254" layer="94"/>
 <text x="0" y="-11.43" size="1.27" layer="96" align="center">&gt;NAME</text>
 <text x="0" y="6.604" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="4.064" y2="0" width="0.254" layer="94"/>
+<wire x1="4.064" y1="0" x2="4.064" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="4.064" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-3.81" x2="-2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.302" x2="-1.27" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.302" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
+<text x="-1.524" y="0.508" size="0.8128" layer="94" font="vector">1</text>
+<text x="-1.524" y="-3.81" size="0.8128" layer="94" font="vector">0</text>
 </symbol>
 <symbol name="TPS61099X">
 <pin name="SW" x="-12.7" y="5.08" length="middle" direction="pwr"/>
@@ -19363,7 +19379,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 
  &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SN74LVC1G3157" x="0" y="0"/>
+<gate name="G$1" symbol="SW_2:1" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DRL" package="DRL_R-PDSO-N6">
@@ -19378,6 +19394,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-18015-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74LVC1G3157" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74LVC1G3157DRLR" constant="no"/>
 </technology>
@@ -22666,12 +22683,12 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-se
 <devices>
 <device name="SC-70" package="SC-70_6">
 <connects>
-<connect gate="G$1" pin="A" pad="4"/>
-<connect gate="G$1" pin="B1" pad="1"/>
-<connect gate="G$1" pin="B2" pad="3"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="6"/>
 <connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="S" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -23106,6 +23123,45 @@ Signal Line, 1k&amp;Omega; @ 100MHz &lt;br&gt;
 <attribute name="DIGIKEY" value="490-1035-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="BLM18PG300SN1D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74AUP1T157" prefix="U">
+<description>&lt;b&gt;SN74AUP1T157 &lt;/b&gt; - Non-Inverting Digital Multiplexer, Schmitt Trigger (1:2) 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 2.3~3.3V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1T157DCKR/296-27393-1-ND/2280367"&gt; 296-27393-1-ND &lt;a&gt;&lt;br/&gt;
+
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MUX_1:2" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="DCK" package="DCK_R-PDSO-G6">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-27393-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74AUP1T157" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74AUP1T157DCKR" constant="no"/>
 </technology>
 </technologies>
 </device>
