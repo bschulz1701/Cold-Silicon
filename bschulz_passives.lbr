@@ -1917,8 +1917,8 @@ wave soldering</description>
 <wire x1="-3.973" y1="-1.983" x2="-3.973" y2="1.983" width="0.0508" layer="39"/>
 <smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
 <smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="2.413" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.413" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
 <rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
@@ -8144,6 +8144,8 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <wire x1="-1.5" y1="-5.85" x2="1.5" y2="-5.85" width="0.254" layer="21"/>
 <wire x1="1.5" y1="-5.85" x2="1.5" y2="-3.048" width="0.254" layer="21"/>
 <circle x="0" y="0" radius="3.340846875" width="0" layer="43"/>
+<text x="-4.064" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center">&gt;NAME</text>
+<text x="3.937" y="0" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -9073,6 +9075,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402JR-074K7L" constant="no"/>
 <attribute name="VALUE_PART" value="4.7k" constant="no"/>
+</technology>
+<technology name="43K">
+<attribute name="DIGIKEY" value="311-43.0KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0743KL" constant="no"/>
+<attribute name="VALUE_PART" value="43k" constant="no"/>
 </technology>
 <technology name="453">
 <attribute name="DIGIKEY" value="YAG3165CT-ND" constant="no"/>

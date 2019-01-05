@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -6446,6 +6446,8 @@ Breadboard-friendly pins.
 <wire x1="1.075" y1="-0.7" x2="1.075" y2="0.7" width="0.127" layer="21"/>
 <wire x1="1.075" y1="0.7" x2="-1.075" y2="0.7" width="0.127" layer="21"/>
 <circle x="-1.397" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+<text x="-2.032" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="1.651" y="0" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
 </package>
 <package name="1X04">
 <description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
@@ -9506,21 +9508,21 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
 </package>
-<package name="DO214AC" urn="urn:adsk.eagle:footprint:43214/1">
+<package name="DO214AC" urn="urn:adsk.eagle:footprint:43214/1" locally_modified="yes">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-2.3" y1="1" x2="2.3" y2="1" width="0.254" layer="51"/>
-<wire x1="2.3" y1="1" x2="2.3" y2="-0.95" width="0.254" layer="51"/>
-<wire x1="2.3" y1="-0.95" x2="-2.3" y2="-0.95" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="-0.95" x2="-2.3" y2="1" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="1" x2="2.3" y2="1" width="0.254" layer="21"/>
+<wire x1="2.3" y1="1" x2="2.3" y2="-0.95" width="0.254" layer="21"/>
+<wire x1="2.3" y1="-0.95" x2="-2.3" y2="-0.95" width="0.254" layer="21"/>
+<wire x1="-2.3" y1="-0.95" x2="-2.3" y2="1" width="0.254" layer="21"/>
 <wire x1="-0.8" y1="0" x2="0.25" y2="0.75" width="0.254" layer="21"/>
 <wire x1="0.25" y1="0.75" x2="0.25" y2="-0.7" width="0.254" layer="21"/>
 <wire x1="0.25" y1="-0.7" x2="-0.8" y2="0" width="0.254" layer="21"/>
 <smd name="C" x="-2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
 <smd name="A" x="2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
-<text x="-2.64" y="1.286" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.64" y="-2.556" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.65" y1="-0.7" x2="-2.4" y2="0.65" layer="51"/>
-<rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="51"/>
+<text x="-0.1" y="1.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-0.1" y="-1.54" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.65" y1="-0.7" x2="-2.4" y2="0.65" layer="21"/>
+<rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="21"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
 <package name="DFN_6_2X2">
@@ -9948,6 +9950,8 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <vertex x="-0.635" y="-0.762"/>
 <vertex x="-0.635" y="0.762"/>
 </polygon>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="JST-GH-6">
 <smd name="1" x="-3.125" y="4.55" dx="1.7" dy="0.6" layer="1" rot="R90"/>
@@ -13891,6 +13895,20 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
 <wire x1="0.889" y1="2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="1.143" y1="2.54" x2="1.143" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="TPL5010">
+<pin name="VDD" x="-15.24" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="DELAY" x="-15.24" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="GND" x="-15.24" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="DONE" x="15.24" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="RSTN" x="15.24" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="WAKE" x="15.24" y="5.08" visible="pin" length="middle" direction="out" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">TPL5010</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -23162,6 +23180,46 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="DISP" value="SN74AUP1T157" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74AUP1T157DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPL5010" prefix="U">
+<description>&lt;b&gt;TPL5010&lt;/b&gt; - Nano-Power System Timer with Watchdog Functionality 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vdd: 1.8V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 35nA (typ)&lt;/li&gt;
+&lt;li&gt;Period: 100ms ~ 7200 s &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPL5010DDCT/296-38829-1-ND/5130149"&gt;296-38829-1-ND &lt;/a&gt;&lt;br/&gt; 
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPL5010" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DDC" package="DDC_R-PDSO-G6">
+<connects>
+<connect gate="G$1" pin="DELAY" pad="3"/>
+<connect gate="G$1" pin="DONE" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RSTN" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="WAKE" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-38829-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPL5010DDCT" constant="no"/>
 </technology>
 </technologies>
 </device>
