@@ -17456,7 +17456,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <devices>
 <device name="12MM" package="LINX_BAT-HLD-012-SMT">
 <connects>
-<connect gate="G$1" pin="+" pad="POWER0 POWER1"/>
+<connect gate="G$1" pin="+" pad="POWER0 POWER1" route="any"/>
 <connect gate="G$1" pin="-" pad="GND"/>
 </connects>
 <technologies>
@@ -17478,7 +17478,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 <device name="10MM" package="BATT_10MM_CLIP">
 <connects>
-<connect gate="G$1" pin="+" pad="BATT+1 BATT+2"/>
+<connect gate="G$1" pin="+" pad="BATT+1 BATT+2" route="any"/>
 <connect gate="G$1" pin="-" pad="BATT-"/>
 </connects>
 <technologies>
