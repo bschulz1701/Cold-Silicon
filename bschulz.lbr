@@ -21304,7 +21304,11 @@ Features:
 <connect gate="G$1" pin="VCC" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ATTINY1634-MURCT-ND" constant="no"/>
+<attribute name="MF" value="Atmel" constant="no"/>
+<attribute name="MPN" value="ATTINY1634-MUR" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOIC" package="SO-20DW">
@@ -21331,7 +21335,11 @@ Features:
 <connect gate="G$1" pin="VCC" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ATTINY1634-SURCT-ND" constant="no"/>
+<attribute name="MF" value="Atmel" constant="no"/>
+<attribute name="MPN" value="ATTINY1634-SUR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
