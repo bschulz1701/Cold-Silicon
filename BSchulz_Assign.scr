@@ -3,6 +3,7 @@
 # This file can be used to configure the editor windows.
 
 # GENERAL:
+GRID mm;
 ASSIGN C+V MOVE;
 ASSIGN C+Z UNDO;
 ASSIGN C+Y REDO;

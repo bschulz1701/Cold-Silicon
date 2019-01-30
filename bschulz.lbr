@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -30,14 +30,14 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -158,14 +158,16 @@
 <library>
 <packages>
 <package name="LED_0402">
-<smd name="P$1" x="0" y="0.525" dx="0.5" dy="0.5" layer="1"/>
-<smd name="P$2" x="0" y="-0.525" dx="0.5" dy="0.5" layer="1"/>
-<wire x1="-0.625" y1="0.9375" x2="-0.625" y2="-0.9375" width="0.127" layer="21"/>
-<wire x1="-0.625" y1="-0.9375" x2="0.625" y2="-0.9375" width="0.127" layer="21"/>
-<wire x1="0.625" y1="-0.9375" x2="0.625" y2="0.9375" width="0.127" layer="21"/>
-<wire x1="0.625" y1="0.9375" x2="-0.625" y2="0.9375" width="0.127" layer="21"/>
-<wire x1="-1.5625" y1="0.9375" x2="-1.5625" y2="0.3125" width="0.127" layer="21"/>
-<wire x1="-1.875" y1="0.625" x2="-1.25" y2="0.625" width="0.127" layer="21"/>
+<smd name="CATHODE" x="-0.55" y="0" dx="0.6" dy="0.6" layer="1" rot="R90"/>
+<smd name="ANODE" x="0.55" y="0" dx="0.6" dy="0.6" layer="1" rot="R90"/>
+<wire x1="-0.5" y1="-0.25" x2="0.5" y2="-0.25" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.25" x2="-0.5" y2="0.25" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.25" x2="-0.5" y2="-0.25" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.127" x2="-0.127" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0" x2="0" y2="0.127" width="0.127" layer="21"/>
+<wire x1="0" y1="0.127" x2="0" y2="-0.127" width="0.127" layer="21"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-LQS(4X4)">
 <description>Wurth LQS series inductor, with 4mmx4mm package
@@ -5061,7 +5063,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <smd name="A@1" x="-1.4" y="0" dx="0.5" dy="3.3" layer="1"/>
 <smd name="A@2" x="1.4" y="0" dx="0.5" dy="3.3" layer="1"/>
 <smd name="C" x="0" y="0" dx="1.3" dy="3.3" layer="1"/>
-<text x="-1.524" y="2.54" size="0.6096" layer="25">&gt;NAME</text>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <wire x1="-1.725" y1="1.725" x2="-1.725" y2="-1.725" width="0.127" layer="21"/>
 <wire x1="-1.725" y1="-1.725" x2="1.725" y2="-1.725" width="0.127" layer="21"/>
 <wire x1="1.725" y1="-1.725" x2="1.725" y2="1.725" width="0.127" layer="21"/>
@@ -10814,41 +10816,122 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
-<package name="1206-LED">
+<package name="LED_1206">
 <description>&lt;p&gt;&lt;b&gt;3216 (1206) package for an LED &lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;Arrow towards the cathode.&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
-<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.127" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.127" layer="51"/>
-<smd name="ANODE" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="CATHODE" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<wire x1="0.965" y1="-0.787" x2="-0.965" y2="-0.787" width="0.127" layer="51"/>
+<wire x1="0.965" y1="0.787" x2="-0.965" y2="0.787" width="0.127" layer="51"/>
+<smd name="ANODE" x="1.4" y="0" dx="1.4" dy="1.6" layer="1" rot="R180"/>
+<smd name="CATHODE" x="-1.4" y="0" dx="1.4" dy="1.5" layer="1" rot="R180"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51" rot="R180"/>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51" rot="R180"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<wire x1="0.508" y1="0.762" x2="0.508" y2="-0.762" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="-0.4064" y="0.6096"/>
-<vertex x="0.3556" y="0"/>
-<vertex x="-0.4572" y="-0.6604"/>
-<vertex x="-0.4572" y="0.6604"/>
-</polygon>
+<wire x1="0.381" y1="0.508" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0" x2="0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="0.381" y1="-0.508" x2="0.381" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0.508" x2="-0.254" y2="-0.508" width="0.127" layer="21"/>
 </package>
-<package name="TSL238T">
+<package name="TSL237T">
 <wire x1="-1.9" y1="-1.3" x2="1.9" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="1.9" y1="-1.3" x2="1.9" y2="1.3" width="0.127" layer="21"/>
 <wire x1="1.9" y1="1.3" x2="-1.9" y2="1.3" width="0.127" layer="21"/>
 <wire x1="-1.9" y1="1.3" x2="-1.9" y2="-1.3" width="0.127" layer="21"/>
-<smd name="GND" x="-1.9" y="-0.75" dx="2" dy="0.9" layer="1"/>
-<smd name="OE_INV" x="-1.9" y="0.75" dx="2" dy="0.9" layer="1"/>
-<smd name="OUT" x="1.9" y="0.75" dx="2" dy="0.9" layer="1"/>
-<smd name="VDD" x="1.9" y="-0.75" dx="2" dy="0.9" layer="1"/>
-<circle x="-0.6" y="0.8" radius="0.1" width="0.127" layer="21"/>
+<smd name="GND" x="-1.45" y="-0.75" dx="0.9" dy="1" layer="1"/>
+<smd name="OE" x="-1.45" y="0.75" dx="0.9" dy="1" layer="1"/>
+<smd name="OUT" x="1.45" y="0.75" dx="0.9" dy="1" layer="1"/>
+<smd name="VDD" x="1.45" y="-0.75" dx="0.9" dy="1" layer="1"/>
+<circle x="-2.251" y="1.562" radius="0.1" width="0.127" layer="21"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="DRL_R-PDSO-N5">
+<smd name="5" x="-0.5" y="0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="-0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="1" x="-0.5" y="-0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.8" y1="0.6" x2="-0.8" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.6" x2="0.8" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.127" layer="21"/>
+<circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="21"/>
+<text x="1.27" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="YZP0005">
+<description>DSBGA, 5 Pin, 1.388 x 0.888 mm</description>
+<smd name="A1" x="-0.25" y="0.5" dx="0.23" dy="0.23" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="B1" x="-0.25" y="0" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
+<smd name="C1" x="-0.25" y="-0.5" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
+<smd name="A2" x="0.25" y="0.5" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
+<smd name="C2" x="0.25" y="-0.5" dx="0.23" dy="0.23" layer="1" roundness="100" cream="no"/>
+<rectangle x1="-0.375" y1="0.375" x2="-0.125" y2="0.625" layer="31"/>
+<rectangle x1="-0.375" y1="0.375" x2="-0.125" y2="0.625" layer="31"/>
+<rectangle x1="0.125" y1="-0.625" x2="0.375" y2="-0.375" layer="31" rot="R180"/>
+<rectangle x1="0.125" y1="0.375" x2="0.375" y2="0.625" layer="31"/>
+<rectangle x1="-0.375" y1="-0.125" x2="-0.125" y2="0.125" layer="31"/>
+<rectangle x1="-0.375" y1="-0.625" x2="-0.125" y2="-0.375" layer="31" rot="R180"/>
+<wire x1="-0.444" y1="0.694" x2="-0.444" y2="-0.694" width="0.127" layer="21"/>
+<wire x1="-0.444" y1="-0.694" x2="0.444" y2="-0.694" width="0.127" layer="21"/>
+<wire x1="0.444" y1="-0.694" x2="0.444" y2="0.694" width="0.127" layer="21"/>
+<wire x1="0.444" y1="0.694" x2="-0.444" y2="0.694" width="0.127" layer="21"/>
+<circle x="-0.635" y="0.889" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="MSOP_10">
+<description>MSOP, 3x3mm, 0.5mm pitch</description>
+<smd name="1" x="-2.2" y="1" dx="1.4" dy="0.3" layer="1"/>
+<smd name="2" x="-2.2" y="0.5" dx="1.4" dy="0.3" layer="1"/>
+<smd name="3" x="-2.2" y="0" dx="1.4" dy="0.3" layer="1"/>
+<smd name="4" x="-2.2" y="-0.5" dx="1.4" dy="0.3" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
+<smd name="5" x="-2.2" y="-1" dx="1.4" dy="0.3" layer="1"/>
+<smd name="6" x="2.2" y="-1" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="7" x="2.2" y="-0.5" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="8" x="2.2" y="0" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="9" x="2.2" y="0.5" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<smd name="10" x="2.2" y="1" dx="1.4" dy="0.3" layer="1" rot="R180"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="DFN_10_3X3">
+<smd name="1" x="-1.55" y="1" dx="0.65" dy="0.3" layer="1" rot="R180"/>
+<smd name="2" x="-1.55" y="0.5" dx="0.65" dy="0.3" layer="1" rot="R180"/>
+<smd name="3" x="-1.55" y="0" dx="0.65" dy="0.3" layer="1" rot="R180"/>
+<smd name="4" x="-1.55" y="-0.5" dx="0.65" dy="0.3" layer="1" rot="R180"/>
+<smd name="5" x="-1.55" y="-1" dx="0.65" dy="0.3" layer="1" rot="R180"/>
+<smd name="6" x="1.55" y="-1" dx="0.65" dy="0.3" layer="1"/>
+<smd name="7" x="1.55" y="-0.5" dx="0.65" dy="0.3" layer="1"/>
+<smd name="8" x="1.55" y="0" dx="0.65" dy="0.3" layer="1"/>
+<smd name="9" x="1.55" y="0.5" dx="0.65" dy="0.3" layer="1"/>
+<smd name="10" x="1.55" y="1" dx="0.65" dy="0.3" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.778" y="1.778" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="EP" x="0" y="0" dx="1.55" dy="2.48" layer="1"/>
+</package>
+<package name="TTSOP_8">
+<smd name="1" x="-2.95" y="0.975" dx="0.45" dy="1.45" layer="1" rot="R90"/>
+<smd name="2" x="-2.95" y="0.325" dx="0.45" dy="1.45" layer="1" rot="R90"/>
+<smd name="3" x="-2.95" y="-0.325" dx="0.45" dy="1.45" layer="1" rot="R90"/>
+<smd name="4" x="-2.95" y="-0.975" dx="0.45" dy="1.45" layer="1" rot="R90"/>
+<smd name="5" x="2.95" y="-0.975" dx="0.45" dy="1.45" layer="1" rot="R270"/>
+<smd name="6" x="2.95" y="-0.325" dx="0.45" dy="1.45" layer="1" rot="R270"/>
+<smd name="7" x="2.95" y="0.325" dx="0.45" dy="1.45" layer="1" rot="R270"/>
+<smd name="8" x="2.95" y="0.975" dx="0.45" dy="1.45" layer="1" rot="R270"/>
+<wire x1="-2.2" y1="1.5" x2="-2.2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1.5" x2="2.2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-1.5" x2="2.2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="1.5" x2="2.2" y2="1.5" width="0.127" layer="21"/>
+<circle x="-2.413" y="1.778" radius="0.127" width="0.127" layer="22"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -13946,9 +14029,9 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">TPL5010</text>
 <text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
-<symbol name="TSL238T">
+<symbol name="TSL237T">
 <description>TSL238T light-to-frequency converter</description>
-<pin name="OE_INV" x="-15.24" y="2.54" length="middle"/>
+<pin name="!OE" x="-15.24" y="2.54" length="middle"/>
 <pin name="GND" x="-15.24" y="-2.54" length="middle"/>
 <pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="VDD" x="15.24" y="-2.54" length="middle" rot="R180"/>
@@ -13956,27 +14039,73 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.27" layer="96">TSL238T</text>
+<text x="0" y="6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="-6.604" size="1.27" layer="96" align="center">TSL237T</text>
+</symbol>
+<symbol name="SN74AUP1G08">
+<pin name="A" x="-12.7" y="2.54" visible="off" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="0" visible="off" length="middle" direction="in"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCC" x="-12.7" y="7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="Y" x="7.62" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-2.54" y="-9.144" size="1.27" layer="95" ratio="15" align="center">SN74AUP1G08</text>
+<text x="-2.54" y="11.43" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-5.588" y1="3.81" x2="-5.588" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="2.54" x2="-5.588" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="0" x2="-5.588" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="-1.27" x2="-1.778" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="3.81" x2="-1.778" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="3.81" x2="0.762" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0.762" y1="1.27" x2="-1.778" y2="-1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="-7.62" y1="2.54" x2="-5.588" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-5.588" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.27" x2="1.524" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.524" y1="1.27" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MCP47CVBX2">
+<pin name="VDD" x="12.7" y="7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="SCL" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="A0" x="-12.7" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="VSS" x="12.7" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VREF" x="12.7" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT0" x="12.7" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="!LAT" x="-12.7" y="-7.62" visible="pin" length="middle" direction="in"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="-11.684" size="1.27" layer="95" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="11.43" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="VOUT1" x="12.7" y="-2.54" visible="pin" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MCP47FEBX2">
+<pin name="VDD" x="12.7" y="7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDA" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="SCL" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="VSS" x="12.7" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VREF" x="12.7" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT0" x="12.7" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="!LAT" x="-12.7" y="-7.62" visible="pin" length="middle" direction="in"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="-11.684" size="1.27" layer="95" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="11.43" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="VOUT1" x="12.7" y="-2.54" visible="pin" length="middle" direction="out" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED_0402">
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LED_0402">
-<connects>
-<connect gate="G$1" pin="ANODE" pad="P$1"/>
-<connect gate="G$1" pin="CATHODE" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CM200">
 <description>Crystal Oscilator, 32.768 kHz</description>
 <gates>
@@ -17420,6 +17549,24 @@ Manufacturer: TI
 <attribute name="MF" value="Wurth" constant="no"/>
 <attribute name="MPN" value="150060RS75000" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="0402" package="LED_0402">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="LED_1206">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -22500,6 +22647,10 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 &lt;li&gt;&lt;ul&gt;
 &lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/LM4040DYM3-4.1-TR/576-1048-1-ND/771819"&gt;576-1048-1-ND (Microchip, 4.096V) &lt;/a&gt; 
 &lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/LM4040CIM3-2.0-NOPB/LM4040CIM3-2.0-NOPBCT-ND/2350623"&gt;5LM4040CIM3-2.0/NOPBCT-ND (TI, 2.048V) &lt;/a&gt; 
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LM4040" x="0" y="0"/>
@@ -22515,6 +22666,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2.048">
+<attribute name="DIGIKEY" value="LM4040CIM3-2.0/NOPBCT-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="LM4040CIM3-2.0/NOPB" constant="no"/>
 </technology>
 <technology name="2.5">
 <attribute name="DIGIKEY" value="576-1047-1-ND" constant="no"/>
@@ -23282,53 +23438,271 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="SFH_4059-QS">
+<deviceset name="TSL237T" prefix="U">
+<description>&lt;b&gt;TSL237T&lt;/b&gt; - High-Sensitivity Light-to-Frequency Converter
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 2.7 ~ 5.5V&lt;/li&gt;
+&lt;li&gt;F&lt;sub&gt;out&lt;/sub&gt;: 0 ~ 1000 kHz &lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: ~1.3mA &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/ams/TSL237T/TSL237-TCT-ND/3095287"&gt; TSL237-TCT-ND &lt;/a&gt;&lt;br/&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED" x="0" y="-2.54"/>
+<gate name="G$1" symbol="TSL237T" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1206-LED">
+<device name="" package="TSL237T">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="ANODE"/>
-<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TSL238T">
-<description>High-Sensitivity Light-to-Frequency Converter</description>
-<gates>
-<gate name="G$1" symbol="TSL238T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSL238T">
-<connects>
+<connect gate="G$1" pin="!OE" pad="OE"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="OE_INV" pad="OE_INV"/>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="TSL237-TCT-ND" constant="no"/>
+<attribute name="MF" value="AMS" constant="no"/>
+<attribute name="MPN" value="TSL237T" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1206-LED">
+<deviceset name="SN74AUP1G08" prefix="U">
+<description>&lt;b&gt;SN74AUP1G08&lt;/b&gt; - AND, 1 Element, 2 Input
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 0.8 ~ 3.6v&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt; = 0.5&amp;mu;A
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: 
+&lt;br&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1G08DCKR/296-19075-1-ND/864306"&gt; 296-19075-1-ND (DCK) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1G08DRLR/296-18650-1-ND/863418"&gt; 296-18650-1-ND (DRL) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1G08YZPR/296-17366-1-ND/691784"&gt; 296-17366-1-ND (YZP) &lt;/a&gt;&lt;br/&gt;
+
+ &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED" x="0" y="-2.54"/>
+<gate name="G$1" symbol="SN74AUP1G08" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1206-LED">
+<device name="DCK" package="DCK_R-PDSO-G5">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="ANODE"/>
-<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="296-19075-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74AUP1G08DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="YZP" package="YZP0005">
+<connects>
+<connect gate="G$1" pin="A" pad="A1"/>
+<connect gate="G$1" pin="B" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="C1"/>
+<connect gate="G$1" pin="VCC" pad="A2"/>
+<connect gate="G$1" pin="Y" pad="C2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-17366-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74AUP1G08YZPR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DRL" package="DRL_R-PDSO-N5">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-18650-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74AUP1G08DRLR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP47CVB*2" prefix="U">
+<description>&lt;b&gt;MCP47CVBx2&lt;/b&gt; - 8/10/12 Bit, Dual Channel, Digital to Analog Converter
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 1.8~5.5V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 500&amp;mu;A (On), 0.65&amp;mu;A (Shutdown)
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;li&gt;Number of Outputs: 2&lt;/li&gt;
+&lt;li&gt;Settling Time: 16&amp;mu;s&lt;/li&gt;
+&lt;li&gt;Number of Bits: 8 (MCP47CVB02), 10 (MCP47CVB12), 12 (MCP47CVB22)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP47CVB22-E-MF/MCP47CVB22-E-MF-ND/9657690"&gt; MCP47CVB22-E/MF-ND (MCP47CVB22, DFN) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP47CVB22-E-UN/MCP47CVB22-E-UN-ND/9657693"&gt; MCP47CVB22-E/UN-ND (MCP47CVB22, MSOP) &lt;/a&gt;&lt;br/&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP47CVBX2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MSOP" package="MSOP_10">
+<connects>
+<connect gate="G$1" pin="!LAT" pad="6"/>
+<connect gate="G$1" pin="A0" pad="2"/>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="9"/>
+<connect gate="G$1" pin="SDA" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VOUT0" pad="4"/>
+<connect gate="G$1" pin="VOUT1" pad="5"/>
+<connect gate="G$1" pin="VREF" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2">
+<attribute name="DIGIKEY" value="MCP47CVB22-E/UN-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MCP47CVB22-E/UN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DFN" package="DFN_10_3X3">
+<connects>
+<connect gate="G$1" pin="!LAT" pad="6"/>
+<connect gate="G$1" pin="A0" pad="2"/>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="9"/>
+<connect gate="G$1" pin="SDA" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VOUT0" pad="4"/>
+<connect gate="G$1" pin="VOUT1" pad="5"/>
+<connect gate="G$1" pin="VREF" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="7 EP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2">
+<attribute name="DIGIKEY" value="MCP47CVB22-E/MF-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MCP47CVB22-E/MF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP47FEB*2" prefix="U">
+<description>&lt;b&gt;MCP47FEBx2&lt;/b&gt; - 8/10/12 Bit, Dual Channel, Digital to Analog Converter
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 2.7~5.5V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 380&amp;mu;A (On), 0.65&amp;mu;A (Shutdown)
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;li&gt;Number of Outputs: 2&lt;/li&gt;
+&lt;li&gt;Settling Time: 6&amp;mu;s&lt;/li&gt;
+&lt;li&gt;Number of Bits: 8 (MCP47FEB02), 10 (MCP47FEB12), 12 (MCP47FEB22)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP47FEB22A0-E-ST/MCP47FEB22A0-E-ST-ND/5033357"&gt; MCP47FEB22A0-E/ST-ND (MCP47FEB22, A0) &lt;/a&gt;&lt;br/&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP47FEBX2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TTSOP" package="TTSOP_8">
+<connects>
+<connect gate="G$1" pin="!LAT" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="7"/>
+<connect gate="G$1" pin="SDA" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VOUT0" pad="3"/>
+<connect gate="G$1" pin="VOUT1" pad="4"/>
+<connect gate="G$1" pin="VREF" pad="2"/>
+<connect gate="G$1" pin="VSS" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2">
+<attribute name="DIGIKEY" value="MCP47FEB22A0-E/ST-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MCP47FEB22A0-E/ST" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
