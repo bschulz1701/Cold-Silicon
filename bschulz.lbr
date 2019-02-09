@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -33,7 +33,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -51,7 +51,7 @@
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -11414,6 +11414,70 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.127" layer="21"/>
 <wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.127" layer="21"/>
 </package>
+<package name="SWITCH_2.6X1.6">
+<description>Layout for &lt;a href = "https://www.digikey.com/product-detail/en/EVP-BB2A9B000/P19888CT-ND/6212411/?itemSeq=282119991"&gt;EVP-BB&lt;/a&gt; series push button 
+2.6 x 1.6mm, 0.53mm height</description>
+<smd name="A" x="-1.325" y="0.375" dx="0.45" dy="0.45" layer="1"/>
+<smd name="B" x="1.325" y="0.375" dx="0.45" dy="0.45" layer="1"/>
+<smd name="B'" x="1.325" y="-0.375" dx="0.45" dy="0.45" layer="1"/>
+<smd name="A'" x="-1.325" y="-0.375" dx="0.45" dy="0.45" layer="1"/>
+<rectangle x1="-1" y1="-0.8" x2="1" y2="0.8" layer="43"/>
+<wire x1="-1.3" y1="0.8" x2="-1.3" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.8" x2="1.3" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.8" x2="1.3" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.8" x2="-1.3" y2="0.8" width="0.127" layer="21"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="0.35" width="0.127" layer="21"/>
+</package>
+<package name="SWITCH_3.0X2.0">
+<description>Layout for &lt;a href = "https://www.digikey.com/product-detail/en/EVP-AWCD2A/P19744CT-ND/6125111/?itemSeq=282119992"&gt;EVP-AW&lt;/a&gt; series push button 
+3.0 x 2.0mm, 0.60mm height</description>
+<smd name="A" x="-1.625" y="0" dx="0.55" dy="1.5" layer="1"/>
+<smd name="A'" x="1.625" y="0" dx="0.55" dy="1.5" layer="1"/>
+<wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="0.425" width="0.127" layer="21"/>
+</package>
+<package name="RSE0008A">
+<description>RSE0008A
+
+UQFN, 8 pin</description>
+<smd name="8" x="0" y="0.65" dx="0.3" dy="0.6" layer="1"/>
+<smd name="4" x="0" y="-0.65" dx="0.3" dy="0.6" layer="1"/>
+<smd name="1" x="-0.675" y="0.5" dx="0.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="7" x="0.675" y="0.5" dx="0.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="5" x="0.675" y="-0.5" dx="0.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="3" x="-0.675" y="-0.5" dx="0.25" dy="0.55" layer="1" rot="R90"/>
+<smd name="2" x="-0.675" y="0" dx="0.2" dy="0.55" layer="1" rot="R90"/>
+<smd name="6" x="0.675" y="0" dx="0.2" dy="0.55" layer="1" rot="R90"/>
+<wire x1="-0.75" y1="0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.75" x2="0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-0.75" x2="-0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
+<circle x="-1.016" y="1.016" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.397" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="DCU_(S-PDSO-G8)">
+<description>DCU (S-PDSO-G8) PLASTIC SMALL OUTLINE PACKAGE (DIE DOWN)&lt;/b&gt;&lt;p&gt;
+Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ts5a21366.pdf"&gt; Data sheet &lt;/a&gt;</description>
+<smd name="1" x="-1.55" y="0.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="2" x="-1.55" y="0.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="3" x="-1.55" y="-0.25" dx="0.8" dy="0.3" layer="1"/>
+<smd name="4" x="-1.55" y="-0.75" dx="0.8" dy="0.3" layer="1"/>
+<smd name="5" x="1.55" y="-0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="6" x="1.55" y="-0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="7" x="1.55" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="8" x="1.55" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<wire x1="-1.15" y1="1" x2="1.15" y2="1" width="0.127" layer="21"/>
+<wire x1="1.15" y1="1" x2="1.15" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.15" y1="-1" x2="-1.15" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.15" y1="-1" x2="-1.15" y2="1" width="0.127" layer="21"/>
+<circle x="-1.397" y="1.27" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.651" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -11661,6 +11725,7 @@ OSHW_LOGO</description>
 <pin name="4" x="15.24" y="-2.54" visible="off" length="middle" rot="R180"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="10.16" y2="0" width="0.254" layer="94"/>
+<text x="7.62" y="-4.064" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="WIREPAD_2">
 <pin name="PAD1" x="-7.62" y="2.54" visible="pin" length="middle"/>
@@ -18205,6 +18270,50 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
+<symbol name="TLV3691">
+<pin name="IN+" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="IN-" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="OUT" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="VCC" x="-12.7" y="7.62" length="middle" direction="pwr"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="11.43" size="1.27" layer="96" ratio="15" align="center">TLV3691</text>
+<text x="0" y="-9.144" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="SW_1:1_2">
+<pin name="A1" x="-12.7" y="5.08" visible="off" length="middle"/>
+<pin name="B1" x="12.7" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCC" x="12.7" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="S1" x="-12.7" y="2.54" visible="off" length="middle" direction="in"/>
+<circle x="2.54" y="5.08" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.302" y2="7.112" width="0.254" layer="94"/>
+<wire x1="3.048" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.842" width="0.254" layer="94" style="shortdash"/>
+<circle x="-2.54" y="5.08" radius="0.359209375" width="0.254" layer="94"/>
+<text x="0" y="-13.97" size="1.27" layer="96" align="center">&gt;NAME</text>
+<text x="0" y="11.684" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
+<pin name="A2" x="-12.7" y="-2.54" visible="off" length="middle"/>
+<pin name="B2" x="12.7" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="S2" x="-12.7" y="-5.08" visible="off" length="middle" direction="in"/>
+<circle x="2.54" y="-2.54" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="3.302" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-1.778" width="0.254" layer="94" style="shortdash"/>
+<circle x="-2.54" y="-2.54" radius="0.359209375" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -21676,6 +21785,17 @@ Manufacturer: TI
 <attribute name="MF" value="C&amp;K" constant="no"/>
 <attribute name="MPN" value="PTS810 SJG 250 SMTR LFS" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="2.6X1.6" package="SWITCH_2.6X1.6">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="A'"/>
+<connect gate="G$1" pin="3" pad="B"/>
+<connect gate="G$1" pin="4" pad="B'"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -27840,6 +27960,110 @@ Digikey:
 </package3dinstances>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV3691" prefix="U">
+<description>&lt;b&gt;TLV3691&lt;/b&gt; - Nanopower Analog Comparator 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 0.9V ~ 6.5V (&amp;plusmn; 0.45V ~ &amp;plusmn; 3.25V)&lt;/li&gt;
+&lt;li&gt;Response Time: 24us&lt;/li&gt;
+&lt;li&gt;Push-Pull Output&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 75nA&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/products/en/integrated-circuits-ics/linear-comparators/692?k=TLV3691&amp;k=&amp;pkeyword=TLV3691&amp;sv=0&amp;pv7=2&amp;sf=0&amp;FV=142c0371%2Cffe002b4&amp;quantity=&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; 296-37910-1-ND (DCK)&lt;/a&gt;&lt;br/&gt; 
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TLV3691" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCK" package="DCK_R-PDSO-G5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-37910-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TLV3691IDCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TS5A21366" prefix="U">
+<description>&lt;b&gt;TS5A21366&lt;/b&gt; - 2 Channel SPST Analog Switch
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;On state resistace: 0.75 &amp;Omega;, Typ &lt;/li&gt;
+&lt;li&gt;Channel to Channel Matching: 0.04 &amp;Omega;, Typical &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TS5A21366DCUR/296-24304-1-ND/2039822"&gt; 296-24304-1-ND (US8, DCU) &lt;a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TS5A21366RSER/296-25285-1-ND/2178186"&gt; 	296-25285-1-ND (UFQFN, RSE) &lt;/a&gt;&lt;br/&gt;
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SW_1:1_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RSE" package="RSE0008A">
+<connects>
+<connect gate="G$1" pin="A1" pad="8"/>
+<connect gate="G$1" pin="A2" pad="4"/>
+<connect gate="G$1" pin="B1" pad="1"/>
+<connect gate="G$1" pin="B2" pad="5"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="S1" pad="3"/>
+<connect gate="G$1" pin="S2" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-25285-1-ND" constant="no"/>
+<attribute name="DISP" value="TS5A21366" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TS5A21366RSER" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DCU" package="DCU_(S-PDSO-G8)">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="6"/>
+<connect gate="G$1" pin="B1" pad="1"/>
+<connect gate="G$1" pin="B2" pad="5"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="S1" pad="7"/>
+<connect gate="G$1" pin="S2" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-24304-1-ND" constant="no"/>
+<attribute name="DISP" value="TS5A21366" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TS5A21366DCUR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

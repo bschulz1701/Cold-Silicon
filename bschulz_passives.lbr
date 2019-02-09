@@ -8205,6 +8205,11 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GCM155R71C104KA55D" constant="no"/>
 </technology>
+<technology name="0.22UF">
+<attribute name="DIGIKEY" value="490-12265-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRT155R61E224KE01D" constant="no"/>
+</technology>
 <technology name="12PF">
 <attribute name="DIGIKEY" value="445-5585-1-ND" constant="no"/>
 <attribute name="MF" value="TDK" constant="no"/>
@@ -9125,6 +9130,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07120KL" constant="no"/>
 <attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="130K">
+<attribute name="DIGIKEY" value="311-130KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07130KL" constant="no"/>
+<attribute name="VALUE_PART" value="130k" constant="no"/>
 </technology>
 <technology name="180K">
 <attribute name="DIGIKEY" value="P180KHCT-ND" constant="no"/>
