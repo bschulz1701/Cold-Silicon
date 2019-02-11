@@ -8883,6 +8883,7 @@ Based on http://www.onsemi.com/pub/Collateral/485BC.PDF</description>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
 <circle x="-1.27" y="-0.889" radius="0.127" width="0.127" layer="21"/>
+<text x="1.524" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="MLF20-4X4" urn="urn:adsk.eagle:footprint:4170/1">
 <description>&lt;b&gt;20M1&lt;/b&gt; 20-pad, 4 x 4 x 0.8 mm Body&lt;p&gt;
@@ -25779,7 +25780,7 @@ Features:
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC94090">
+<deviceset name="MIC94090" prefix="U">
 <description>&lt;b&gt;MIC94090&lt;/b&gt; - Hight Side Load Switch 
  
 &lt;p&gt;Characteristics:
