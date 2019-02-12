@@ -8147,6 +8147,16 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <text x="-4.064" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center">&gt;NAME</text>
 <text x="3.937" y="0" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center">&gt;VALUE</text>
 </package>
+<package name="C1206_TANT">
+<smd name="+" x="-1.355" y="0" dx="1.19" dy="1.06" layer="1" rot="R90"/>
+<smd name="-" x="1.355" y="0" dx="1.19" dy="1.06" layer="1" rot="R90"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<rectangle x1="-0.889" y1="-0.762" x2="-0.381" y2="0.762" layer="21"/>
+<text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -11985,6 +11995,15 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 </gates>
 <devices>
 <device name="2917" package="C2917">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="C1206_TANT">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
