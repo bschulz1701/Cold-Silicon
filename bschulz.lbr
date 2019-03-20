@@ -11523,19 +11523,19 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ts5a21366.pdf"&gt; Data shee
 <package name="DPF_S-PX2SON-N6">
 </package>
 <package name="DPF0006A">
-<smd name="1" x="-0.525" y="0.35" dx="0.15" dy="0.35" layer="1" rot="R90"/>
-<smd name="2" x="-0.525" y="0" dx="0.15" dy="0.35" layer="1" rot="R90"/>
-<smd name="3" x="-0.525" y="-0.35" dx="0.15" dy="0.35" layer="1" rot="R90"/>
-<smd name="4" x="0.525" y="-0.35" dx="0.15" dy="0.35" layer="1" rot="R90"/>
-<smd name="5" x="0.525" y="0" dx="0.15" dy="0.35" layer="1" rot="R90"/>
-<smd name="6" x="0.525" y="0.35" dx="0.15" dy="0.35" layer="1" rot="R90"/>
-<wire x1="-0.5334" y1="-0.5334" x2="-0.5334" y2="0.5334" width="0.1524" layer="51"/>
-<wire x1="0.5334" y1="-0.5334" x2="0.5334" y2="0.5334" width="0.1524" layer="51"/>
-<wire x1="-0.5334" y1="0.5334" x2="0.5334" y2="0.5334" width="0.1524" layer="51"/>
-<wire x1="-0.5334" y1="-0.5334" x2="0.5334" y2="-0.5334" width="0.1524" layer="51"/>
-<wire x1="-0.5842" y1="0.6858" x2="-0.7874" y2="0.6858" width="0.0508" layer="51" curve="-180"/>
-<wire x1="-0.7874" y1="0.6858" x2="-0.5842" y2="0.6858" width="0.0508" layer="51" curve="-180"/>
-<text x="0" y="-1.016" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="1" x="-0.525" y="0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="-0.525" y="0" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="3" x="-0.525" y="-0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="4" x="0.525" y="-0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="0.525" y="0" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="0.525" y="0.35" dx="0.175" dy="0.35" layer="1" rot="R90"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="-0.5" x2="0.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="0.5" x2="0.5" y2="0.5" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="-0.5" x2="0.5" y2="-0.5" width="0.1524" layer="21"/>
+<wire x1="-0.5842" y1="0.6858" x2="-0.7874" y2="0.6858" width="0.0508" layer="21" curve="-180"/>
+<wire x1="-0.7874" y1="0.6858" x2="-0.5842" y2="0.6858" width="0.0508" layer="21" curve="-180"/>
+<text x="0" y="-1.016" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -27246,7 +27246,7 @@ Digikey:
 <connect gate="U$1" pin="AREF" pad="20"/>
 <connect gate="U$1" pin="AVCC" pad="18"/>
 <connect gate="U$1" pin="GND@3" pad="3"/>
-<connect gate="U$1" pin="GND@5" pad="5"/>
+<connect gate="U$1" pin="GND@5" pad="5 EP"/>
 <connect gate="U$1" pin="PB0(ICP)" pad="12"/>
 <connect gate="U$1" pin="PB1(OC1A)" pad="13"/>
 <connect gate="U$1" pin="PB2(SS/OC1B)" pad="14"/>
