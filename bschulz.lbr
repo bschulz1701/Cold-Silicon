@@ -18604,6 +18604,19 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="11.43" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
 <text x="1.27" y="-11.684" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="MAX6037">
+<pin name="IN" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="!SHDN" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="1.27" y="6.35" size="1.27" layer="95" ratio="6" align="center">MAX6037</text>
+<text x="1.27" y="-6.35" size="1.27" layer="95" ratio="6" align="center">&gt;NAME</text>
+<pin name="ADJ" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -28739,6 +28752,48 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX6037" prefix="U">
+<description>&lt;b&gt;MAX6037&lt;/b&gt; - Low Power Voltage Referance with Shutdown
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.5V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 1.184V ~ 5V &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 190&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Iout: 5mA &lt;/li&gt;
+&lt;li&gt;Tolerance: &amp;plusmn; 0.3% &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/maxim-integrated/MAX6037BAUKADJ-T/MAX6037BAUKADJ-TCT-ND/5821111"&gt; MAX6037BAUKADJ (Adjustable) &lt;/a&gt;&lt;br/&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="A" symbol="MAX6037" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-5">
+<connects>
+<connect gate="A" pin="!SHDN" pad="3"/>
+<connect gate="A" pin="ADJ" pad="1"/>
+<connect gate="A" pin="GND" pad="2"/>
+<connect gate="A" pin="IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="ADJ">
+<attribute name="DIGIKEY" value="MAX6037BAUKADJ+TCT-ND" constant="no"/>
+<attribute name="MF" value="Maxim" constant="no"/>
+<attribute name="MPN" value="MAX6037BAUKADJ+T" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
