@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8224,6 +8224,16 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="DIGIKEY" value="445-5585-1-ND" constant="no"/>
 <attribute name="MF" value="TDK" constant="no"/>
 <attribute name="MPN" value="CGA2B2C0G1H120J050BA" constant="no"/>
+</technology>
+<technology name="220PF">
+<attribute name="DIGIKEY" value="587-1215-1-ND" constant="no"/>
+<attribute name="MF" value="Taiyo Yuden" constant="no"/>
+<attribute name="MPN" value="UMK105CG221JV-F" constant="no"/>
+</technology>
+<technology name="56PF">
+<attribute name="DIGIKEY" value="311-1022-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0402JRNPO9BN560" constant="no"/>
 </technology>
 <technology name="68PF">
 <attribute name="DIGIKEY" value="732-7474-1-ND" constant="no"/>
