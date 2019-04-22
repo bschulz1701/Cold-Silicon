@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -47,7 +47,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -6673,24 +6673,24 @@ Breadboard-friendly pins.
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" rot="R90"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <text x="-0.254" y="1.27" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-0.381" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-5.31" y1="3.25" x2="7.85" y2="3.25" width="0.127" layer="21"/>
-<wire x1="7.85" y1="3.25" x2="7.85" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="7.85" y1="-2.54" x2="7.85" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="7.85" y1="-3.25" x2="-5.31" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="-5.31" y1="-3.25" x2="-5.31" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-5.31" y1="-2.54" x2="-5.31" y2="3.25" width="0.127" layer="21"/>
-<wire x1="-5.31" y1="-2.54" x2="7.85" y2="-2.54" width="0.127" layer="21"/>
-<pad name="5" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<wire x1="-5.31" y1="3.2" x2="7.85" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="7.85" y1="3.2" x2="7.85" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="7.85" y1="-2.54" x2="7.85" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="7.85" y1="-3.3" x2="-5.31" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-5.31" y1="-3.3" x2="-5.31" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-5.31" y1="-2.54" x2="-5.31" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="-5.31" y1="-2.54" x2="7.85" y2="-2.54" width="0.2032" layer="21"/>
+<pad name="5" x="6.35" y="0" drill="1.016" rot="R90"/>
 </package>
 <package name="1X06_SCREW">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -7229,12 +7229,12 @@ tDocu marks the spring arms
 &lt;/ul&gt;&lt;/p&gt;</description>
 <pad name="P2" x="-1.27" y="0" drill="1.016" shape="square"/>
 <pad name="P1" x="1.27" y="0" drill="1.016"/>
-<wire x1="-2.77" y1="3.25" x2="2.73" y2="3.25" width="0.2032" layer="21"/>
-<wire x1="2.73" y1="3.25" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="2.73" y1="2.5" x2="2.73" y2="-3.25" width="0.2032" layer="21"/>
-<wire x1="2.73" y1="-3.25" x2="-2.77" y2="-3.25" width="0.2032" layer="21"/>
-<wire x1="-2.77" y1="-3.25" x2="-2.77" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="-2.77" y1="2.5" x2="-2.77" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="3.3" x2="2.73" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="2.73" y1="3.3" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="2.73" y1="2.5" x2="2.73" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="2.73" y1="-3.2" x2="-2.77" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="-3.2" x2="-2.77" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="2.5" x2="-2.77" y2="3.3" width="0.2032" layer="21"/>
 <wire x1="-2.77" y1="2.5" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
 <text x="-2.54" y="3.429" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-2.54" y="-4.064" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
@@ -7861,13 +7861,13 @@ Pin rows are offset 5mm as well
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-5.31" y1="3.2" x2="5.31" y2="3.2" width="0.254" layer="21"/>
-<wire x1="5.31" y1="3.2" x2="5.31" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="5.31" y1="-2.54" x2="5.31" y2="-3.3" width="0.254" layer="21"/>
-<wire x1="5.31" y1="-3.3" x2="-5.31" y2="-3.3" width="0.254" layer="21"/>
-<wire x1="-5.31" y1="-3.3" x2="-5.31" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="-5.31" y1="-2.54" x2="-5.31" y2="3.2" width="0.254" layer="21"/>
-<wire x1="-5.31" y1="-2.54" x2="5.31" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-5.31" y1="3.2" x2="5.31" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="5.31" y1="3.2" x2="5.31" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="5.31" y1="-2.54" x2="5.31" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="5.31" y1="-3.3" x2="-5.31" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-5.31" y1="-3.3" x2="-5.31" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-5.31" y1="-2.54" x2="-5.31" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="-5.31" y1="-2.54" x2="5.31" y2="-2.54" width="0.2032" layer="21"/>
 </package>
 <package name="1X04_NOSILK">
 <description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
@@ -8524,13 +8524,13 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
 <text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
-<wire x1="-4.04" y1="3.2" x2="4.04" y2="3.2" width="0.254" layer="21"/>
-<wire x1="4.04" y1="3.2" x2="4.04" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="4.04" y1="-2.54" x2="4.04" y2="-3.3" width="0.254" layer="21"/>
-<wire x1="4.04" y1="-3.3" x2="-4.04" y2="-3.3" width="0.254" layer="21"/>
-<wire x1="-4.04" y1="-3.3" x2="-4.04" y2="-2.54" width="0.254" layer="21"/>
-<wire x1="-4.04" y1="-2.54" x2="-4.04" y2="3.2" width="0.254" layer="21"/>
-<wire x1="-4.04" y1="-2.54" x2="4.04" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-4.04" y1="3.2" x2="4.04" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="4.04" y1="3.2" x2="4.04" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="4.04" y1="-2.54" x2="4.04" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="4.04" y1="-3.3" x2="-4.04" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-4.04" y1="-3.3" x2="-4.04" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-4.04" y1="-2.54" x2="-4.04" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="-4.04" y1="-2.54" x2="4.04" y2="-2.54" width="0.2032" layer="21"/>
 </package>
 <package name="X2SON">
 <smd name="P$2" x="-0.52" y="-0.325" dx="0.21" dy="0.18" layer="1" rot="R270" stop="no" thermals="no" cream="no"/>
@@ -11753,6 +11753,32 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <wire x1="4.1" y1="-2.65" x2="4.1" y2="2.65" width="0.127" layer="21"/>
 <circle x="-4.445" y="-3.048" radius="0.254" width="0.127" layer="21"/>
 <text x="-4.699" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="1210">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
+<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
+<wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
+<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
+<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+<package name="1210_BOURNS">
+<smd name="1" x="-1.5" y="0" dx="1" dy="2.5" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1" dy="2.5" layer="1"/>
+<wire x1="-1.715" y1="1.4" x2="-1.715" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.715" y1="-1.4" x2="1.715" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.715" y1="-1.4" x2="1.715" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.715" y1="1.4" x2="-1.715" y2="1.4" width="0.127" layer="21"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -18781,22 +18807,22 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="!RESET" x="-15.24" y="-2.54" visible="pin" length="middle" direction="in"/>
 <pin name="INTA" x="-15.24" y="-7.62" visible="pin" length="middle" direction="out"/>
 <pin name="INTB" x="-15.24" y="-10.16" visible="pin" length="middle" direction="out"/>
-<pin name="GPB7" x="15.24" y="20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB6" x="15.24" y="17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB5" x="15.24" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB4" x="15.24" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB3" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB2" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB1" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="GPB0" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA7" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA6" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA5" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA4" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA3" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA2" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA1" x="15.24" y="-17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="GPA0" x="15.24" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="GPB7" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="GPB6" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="GPB5" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="GPB4" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="GPB3" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="GPB2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="GPB1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="GPB0" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="GPA7" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPA6" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPA5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPA4" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPA3" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="GPA2" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPA1" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPA0" x="15.24" y="-20.32" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
@@ -22771,6 +22797,24 @@ MCP3425
 <attribute name="DIGIKEY" value="MF-NSMF150-2CT-ND" constant="no"/>
 <attribute name="MF" value="Bourns" constant="no"/>
 <attribute name="MPN" value="MF-NSMF150-2" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1210" package="1210_BOURNS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="100MA">
+<attribute name="DIGIKEY" value="MF-USMF005-2CT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="MF-USMF005-2" constant="no"/>
 </technology>
 </technologies>
 </device>
