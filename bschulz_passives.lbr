@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8287,15 +8287,30 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM1555C1H120GA01D" constant="no"/>
 </technology>
+<technology name="1NF">
+<attribute name="DIGIKEY" value="311-1080-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603KRX7R9BB102" constant="no"/>
+</technology>
 <technology name="1UF">
 <attribute name="DIGIKEY" value="490-10479-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM188R61C105KA12D" constant="no"/>
 </technology>
+<technology name="2.2NF">
+<attribute name="DIGIKEY" value="311-1081-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603KRX7R9BB222" constant="no"/>
+</technology>
 <technology name="2.2UF">
 <attribute name="DIGIKEY" value="1276-1183-1-ND" constant="no"/>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10A225KQ8NNNC" constant="no"/>
+</technology>
+<technology name="680PF">
+<attribute name="DIGIKEY" value="311-1188-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603KRX7R9BB681" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9222,6 +9237,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
 <attribute name="VALUE_PART" value="360k" constant="no"/>
 </technology>
+<technology name="422K">
+<attribute name="DIGIKEY" value="311-422KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07422KL" constant="no"/>
+<attribute name="VALUE_PART" value="422k" constant="no"/>
+</technology>
 <technology name="470">
 <attribute name="DIGIKEY" value="311-470HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9270,6 +9291,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="ERA-3AEB102V" constant="no"/>
 <attribute name="VALUE_PART" value="1k" constant="no"/>
 </technology>
+<technology name="P27K">
+<attribute name="DIGIKEY" value="P27KDBCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERA-3AEB273V" constant="no"/>
+<attribute name="VALUE_PART" value="27k" constant="no"/>
+</technology>
 <technology name="P30K">
 <attribute name="DIGIKEY" value="P30KDBCT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
@@ -9304,6 +9331,16 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="DIGIKEY" value="PMR10EZPFU5L00" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="PMR10EZPFU5L00" constant="no"/>
+</technology>
+<technology name="0.01">
+<attribute name="DIGIKEY" value="CRF0805-FZ-R010ELFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CRF0805-FZ-R010ELF" constant="no"/>
+</technology>
+<technology name="0.1">
+<attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-6DSFR10V" constant="no"/>
 </technology>
 <technology name="P1M">
 <attribute name="DIGIKEY" value="P1MDACT-ND" constant="no"/>
