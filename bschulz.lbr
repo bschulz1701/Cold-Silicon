@@ -11839,6 +11839,44 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <rectangle x1="-5.05" y1="8.7" x2="3.75" y2="11.2" layer="43"/>
 <rectangle x1="-5.5" y1="-1.35" x2="5.5" y2="0" layer="39"/>
 </package>
+<package name="DFN_6_2.5X2.5">
+<description>DFN 6, 2.5x2.5mm body
+&lt;br&gt;Based on Senserion &lt;a href = "https://www.mouser.com/pdfdocs/Sensirion_Gas_Sensors_SGP30_Datasheet_EN-1148053.pdf"&gt;SGP30&lt;/a&gt;</description>
+<smd name="1" x="-1.15" y="0.8" dx="0.55" dy="0.4" layer="1"/>
+<smd name="2" x="-1.15" y="0" dx="0.55" dy="0.4" layer="1"/>
+<smd name="3" x="-1.15" y="-0.8" dx="0.55" dy="0.4" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-0.625" y="-0.85"/>
+<vertex x="-0.625" y="0.6378"/>
+<vertex x="-0.4128" y="0.85"/>
+<vertex x="0.625" y="0.85"/>
+<vertex x="0.625" y="-0.85"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.525" y="-0.75"/>
+<vertex x="-0.525" y="0.496440625"/>
+<vertex x="-0.271440625" y="0.75"/>
+<vertex x="0.525" y="0.75"/>
+<vertex x="0.525" y="-0.75"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.625" y="-0.85"/>
+<vertex x="-0.625" y="0.6378"/>
+<vertex x="-0.4128" y="0.85"/>
+<vertex x="0.625" y="0.85"/>
+<vertex x="0.625" y="-0.85"/>
+</polygon>
+<smd name="4" x="1.15" y="-0.8" dx="0.55" dy="0.4" layer="1" rot="R180"/>
+<smd name="5" x="1.15" y="0" dx="0.55" dy="0.4" layer="1" rot="R180"/>
+<smd name="6" x="1.15" y="0.8" dx="0.55" dy="0.4" layer="1" rot="R180"/>
+<wire x1="-1.225" y1="1.225" x2="-1.225" y2="-1.225" width="0.127" layer="21"/>
+<wire x1="-1.225" y1="-1.225" x2="1.225" y2="-1.225" width="0.127" layer="21"/>
+<wire x1="1.225" y1="-1.225" x2="1.225" y2="1.225" width="0.127" layer="21"/>
+<wire x1="1.225" y1="1.225" x2="-1.225" y2="1.225" width="0.127" layer="21"/>
+<circle x="-1.524" y="1.524" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="EP" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -14126,7 +14164,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.604" size="1.27" layer="95" align="center">TPS2105</text>
+<text x="0" y="6.604" size="1.27" layer="95" align="center">&gt;DISP</text>
 <text x="0" y="-8.89" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="SN65HVD33">
@@ -18911,6 +18949,19 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="DAT2" x="-17.78" y="-5.08" length="short"/>
 <pin name="GND" x="-17.78" y="-20.32" length="short" direction="sup"/>
 <pin name="GND1" x="-17.78" y="-17.78" length="short" direction="sup"/>
+</symbol>
+<symbol name="SGP30">
+<pin name="VDD" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="VDDH" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="VSS" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SCL" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">SPG30</text>
+<text x="0" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -26142,8 +26193,8 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS2105" prefix="U">
-<description>&lt;b&gt;TPS2105&lt;/b&gt; - Power Distribution Switch (OR'ing switch)
+<deviceset name="TPS210*" prefix="U">
+<description>&lt;b&gt;TPS210x&lt;/b&gt; - Power Distribution Switch (OR'ing switch)
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
@@ -26155,10 +26206,14 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 &lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
+
+TPS2104/5 Inverted vs non-inverted enable pin
  
 &lt;p&gt;Digikey: &lt;br&gt;
 &lt;ul&gt;
-&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS2105DBVR/296-10883-1-ND/504485"&gt; 296-10883-1-ND &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS2105DBVR/296-10883-1-ND/504485"&gt; TPS2105 296-10883-1-ND &lt;/a&gt;&lt;br/&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TPS2104DBVR/296-10882-1-ND/560870"&gt; TPS2104 296-10882-1-ND &lt;/a&gt;&lt;br/&gt;
 &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPS2105" x="0" y="0"/>
@@ -26174,7 +26229,20 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="296-10882-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS2104" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS2104DBVR" constant="no"/>
+</technology>
+<technology name="5">
 <attribute name="DIGIKEY" value="296-10883-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS2105" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TPS2105DBVR" constant="no"/>
 </technology>
@@ -29472,6 +29540,44 @@ For any MicroSD holders lacking card detect options</description>
 <attribute name="DIGIKEY" value="WM6698CT-ND" constant="no"/>
 <attribute name="MF" value="Molex" constant="no"/>
 <attribute name="MPN" value="0472192001" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPG30" prefix="U">
+<description>&lt;b&gt;SGP30&lt;/b&gt; - Multi-pixel Gas Sensor (TVOC, CO2EQ)
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.8V&lt;/li&gt;
+&lt;li&gt; Gas Sensing: Ethanol, H&lt;sub&gt;2&lt;/sub&gt;, T&lt;sub&gt;VOC&lt;/sub&gt;, CO&lt;sub&gt;2&lt;/sub&gt;eq&lt;/li&gt;
+&lt;li&gt; Sample Rate: 1Hz (Air Quality), 40Hz (Gas)&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SGP30-2.5K/1649-1084-1-ND/7400967"&gt; 1649-1084-1-ND&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SGP30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN_6_2.5X2.5">
+<connects>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VDDH" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2 4 EP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1649-1084-1-ND" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SGP30-2.5K" constant="no"/>
 </technology>
 </technologies>
 </device>
