@@ -11877,6 +11877,57 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="EP" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
 </package>
+<package name="DFN_4_2X2">
+<description>4 Pad DFN package, based on Sensirion SHTC1 design
+&lt;br&gt; &lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Sensirion%20PDFs/HT_DS_SHTC3_D1.pdf"&gt;Referance Datasheet&lt;/a&gt;</description>
+<smd name="EP" x="0" y="0" dx="0.7" dy="1.6" layer="1" rot="R180" cream="no"/>
+<smd name="4" x="0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="1" x="-0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<polygon width="0" layer="31">
+<vertex x="-0.25" y="0.7"/>
+<vertex x="-0.25" y="-0.7"/>
+<vertex x="0.25" y="-0.7"/>
+<vertex x="0.25" y="0.7"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="-0.325"/>
+<vertex x="-0.775" y="-0.675"/>
+<vertex x="-1.325" y="-0.675"/>
+<vertex x="-1.325" y="-0.325"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="-0.325"/>
+<vertex x="-0.775" y="-0.675"/>
+<vertex x="-1.325" y="-0.675"/>
+<vertex x="-1.325" y="-0.325"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="0.675"/>
+<vertex x="-0.775" y="0.325"/>
+<vertex x="-1.325" y="0.325"/>
+<vertex x="-1.325" y="0.675"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.775" y="-0.675"/>
+<vertex x="0.775" y="-0.325"/>
+<vertex x="1.325" y="-0.325"/>
+<vertex x="1.325" y="-0.675"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.775" y="0.325"/>
+<vertex x="0.775" y="0.675"/>
+<vertex x="1.325" y="0.675"/>
+<vertex x="1.325" y="0.325"/>
+</polygon>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -18962,6 +19013,18 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">SPG30</text>
 <text x="0" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="SHTC3">
+<pin name="VDD" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="VSS" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.636" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -29578,6 +29641,61 @@ For any MicroSD holders lacking card detect options</description>
 <attribute name="DIGIKEY" value="1649-1084-1-ND" constant="no"/>
 <attribute name="MF" value="Sensirion" constant="no"/>
 <attribute name="MPN" value="SGP30-2.5K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHTC*" prefix="U">
+<description>&lt;b&gt;SHTCx&lt;/b&gt; - Digital Humidity and Temperature Sensor
+ 
+&lt;p&gt;Characteristics (for SHTC3):
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.62V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;Humidity Resolution: 0.01% RH &lt;/li&gt;
+&lt;li&gt;Humidity Accuracy: &amp;plusmn;2% RH &lt;/li&gt;
+&lt;li&gt;Temperature Resolution: 0.01°C&lt;/li&gt;
+&lt;li&gt;Temperature Accuracy: 0.2°C&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC3/1649-1100-1-ND/8628149"&gt;1649-1100-1-ND (SHTC3)&lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC1/1649-1015-1-ND/5872297"&gt;1649-1015-1-ND (SHTC1)&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SHTC3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DFN" package="DFN_4_2X2">
+<connects>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="4 EP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="1649-1015-1-ND" constant="no"/>
+<attribute name="DISP" value="SHTC1" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SHTC1" constant="no"/>
+</technology>
+<technology name="3">
+<attribute name="DIGIKEY" value="1649-1100-1-ND" constant="no"/>
+<attribute name="DISP" value="SHTC3" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SHTC3" constant="no"/>
 </technology>
 </technologies>
 </device>
