@@ -11928,6 +11928,42 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <circle x="-1.27" y="1.27" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="-1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="SOT323FL">
+<description>SOT323FL, SC-85
+&lt;br&gt;&lt;a href = "https://www.rohm.com/datasheet/RU1J002YN/ru1j002yn-e"&gt;Referance Data Sheet&lt;/a&gt;</description>
+<smd name="1" x="-0.65" y="-0.735" dx="0.52" dy="0.83" layer="1"/>
+<smd name="2" x="0.65" y="-0.735" dx="0.52" dy="0.83" layer="1"/>
+<smd name="3" x="0" y="0.735" dx="0.52" dy="0.83" layer="1"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<text x="-1.397" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="SC-89">
+<description>SC-89, SOT-490, EMT3F, SOT-416FL
+&lt;br&gt;&lt;a href = "https://www.rohm.com/datasheet/RE1C002UN/re1c002untcl-e"&gt;Referance Data Sheet&lt;/a&gt;</description>
+<smd name="1" x="-0.5" y="-0.525" dx="0.65" dy="0.46" layer="1" rot="R90"/>
+<smd name="2" x="0.5" y="-0.525" dx="0.65" dy="0.46" layer="1" rot="R90"/>
+<smd name="3" x="0" y="0.525" dx="0.65" dy="0.46" layer="1" rot="R90"/>
+<wire x1="-0.8" y1="0.425" x2="0.8" y2="0.425" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.425" x2="0.8" y2="-0.425" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.425" x2="-0.8" y2="-0.425" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.425" x2="-0.8" y2="0.425" width="0.127" layer="21"/>
+<text x="-1.27" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="SOT723">
+<description>SOT-723, SC105AA, VMT3
+&lt;br&gt;&lt;a href = "https://www.rohm.com/datasheet/RZM001P02/rzm001p02t2l-e"&gt;Referance Data Sheet&lt;/a&gt;</description>
+<smd name="1" x="-0.4" y="-0.4" dx="0.37" dy="0.5" layer="1"/>
+<smd name="2" x="0.4" y="-0.4" dx="0.37" dy="0.5" layer="1"/>
+<smd name="3" x="0" y="0.4" dx="0.37" dy="0.5" layer="1"/>
+<wire x1="-0.6" y1="0.4" x2="0.6" y2="0.4" width="0.127" layer="21"/>
+<wire x1="0.6" y1="0.4" x2="0.6" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-0.4" x2="-0.6" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-0.4" x2="-0.6" y2="0.4" width="0.127" layer="21"/>
+<text x="-1.143" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -22267,6 +22303,20 @@ push-push type</description>
 </technology>
 </technologies>
 </device>
+<device name="-RE1C002UN" package="SC-89">
+<connects>
+<connect gate="NMOS" pin="D" pad="3"/>
+<connect gate="NMOS" pin="G" pad="1"/>
+<connect gate="NMOS" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="RE1C002UNTCLCT-ND" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="RE1C002UNTCL" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="MOSFET_PCH" prefix="Q">
@@ -22344,6 +22394,34 @@ push-push type</description>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-08355"/>
 <attribute name="VALUE" value="6.5A/20V/35mΩ"/>
+</technology>
+</technologies>
+</device>
+<device name="-RZM001P02" package="SOT723">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="RZM001P02T2LCT-ND" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="RZM001P02T2L" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-NX2301P" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1727-1148-1-ND" constant="no"/>
+<attribute name="MF" value="Nexperia" constant="no"/>
+<attribute name="MPN" value="NX2301P,215" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -26044,13 +26122,13 @@ Digikey:
 <attribute name="MPN" value="" constant="no"/>
 </technology>
 <technology name="18">
-<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="296-50251-1-ND" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MOUSER" value="595-TPS7A0518PDBVR" constant="no"/>
 <attribute name="MPN" value="TPS7A0518PDBVR" constant="no"/>
 </technology>
 <technology name="33">
-<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="296-50256-1-ND" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MOUSER" value="595-TPS7A0533PDBVR" constant="no"/>
 <attribute name="MPN" value="TPS7A0533PDBVR" constant="no"/>
