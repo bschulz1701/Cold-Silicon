@@ -9367,6 +9367,11 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MF" value="Bourns" constant="no"/>
 <attribute name="MPN" value="CRF0805-FZ-R010ELF" constant="no"/>
 </technology>
+<technology name="0.05">
+<attribute name="DIGIKEY" value="P50LLCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-L06KF50MV" constant="no"/>
+</technology>
 <technology name="0.1">
 <attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
