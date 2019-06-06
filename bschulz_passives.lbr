@@ -9079,6 +9079,12 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
 <attribute name="VALUE_PART" value="120k" constant="no"/>
 </technology>
+<technology name="180K">
+<attribute name="DIGIKEY" value="311-180KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07180KL" constant="no"/>
+<attribute name="VALUE_PART" value="180k" constant="no"/>
+</technology>
 <technology name="1K">
 <attribute name="DIGIKEY" value="311-1.00KLRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>

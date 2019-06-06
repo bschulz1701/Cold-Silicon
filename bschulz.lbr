@@ -29645,7 +29645,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="G$1" pin="SCL" pad="9"/>
 <connect gate="G$1" pin="SDA" pad="10"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="23"/>
+<connect gate="G$1" pin="VSS" pad="23 EP"/>
 </connects>
 <technologies>
 <technology name="">
