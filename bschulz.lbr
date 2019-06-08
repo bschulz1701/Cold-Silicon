@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11983,6 +11983,89 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">BME680</text>
 </package>
+<package name="SPARKFUN_MICRO_OLED">
+<description>Layout for the Sparkfun Micro OLED &lt;br&gt;
+&lt;a href = "https://www.sparkfun.com/products/13003"&gt;LCD-13003&lt;/a&gt;</description>
+<pad name="CS" x="-8.89" y="8.89" drill="1"/>
+<pad name="RESET" x="-6.35" y="8.89" drill="1"/>
+<pad name="D/C" x="-3.81" y="8.89" drill="1"/>
+<pad name="D2" x="-1.27" y="8.89" drill="1"/>
+<pad name="D0/SCK" x="1.27" y="8.89" drill="1"/>
+<pad name="D1/MOSI" x="3.81" y="8.89" drill="1"/>
+<pad name="VDD" x="6.35" y="8.89" drill="1"/>
+<pad name="GND" x="8.89" y="8.89" drill="1"/>
+<pad name="VBAT" x="-8.89" y="-8.89" drill="1"/>
+<pad name="WR/RW" x="-6.35" y="-8.89" drill="1"/>
+<pad name="RD/E" x="-3.81" y="-8.89" drill="1"/>
+<pad name="D3" x="-1.27" y="-8.89" drill="1"/>
+<pad name="D4" x="1.27" y="-8.89" drill="1"/>
+<pad name="D5" x="3.81" y="-8.89" drill="1"/>
+<pad name="D6" x="6.35" y="-8.89" drill="1"/>
+<pad name="D7" x="8.89" y="-8.89" drill="1"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
+<text x="0" y="3.81" size="1.27" layer="25" font="vector" ratio="15" align="center">OLED</text>
+<text x="11.43" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="8.89" y="7.493" size="0.6096" layer="21" font="vector" ratio="15" align="center">GND</text>
+<text x="-8.89" y="-7.493" size="0.6096" layer="21" font="vector" ratio="15" align="center">VBAT</text>
+</package>
+<package name="HC49UP" urn="urn:adsk.eagle:footprint:37484/1">
+<description>&lt;h3&gt;HC-49/UP 11.4x4.8mm SMD Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.standardcrystalcorp.com/pdf%5Cc-3.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-5.1091" y1="1.143" x2="-3.429" y2="2.0321" width="0.0508" layer="21" curve="-55.770993" cap="flat"/>
+<wire x1="-5.715" y1="1.143" x2="-5.715" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="2.032" x2="5.1091" y2="1.143" width="0.0508" layer="21" curve="-55.772485" cap="flat"/>
+<wire x1="5.715" y1="1.143" x2="5.715" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="-1.27" x2="-3.429" y2="-1.27" width="0.0508" layer="21"/>
+<wire x1="3.429" y1="-2.032" x2="-3.429" y2="-2.032" width="0.0508" layer="21"/>
+<wire x1="-3.429" y1="1.27" x2="3.429" y2="1.27" width="0.0508" layer="21"/>
+<wire x1="5.461" y1="-2.413" x2="-5.461" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-0.381" x2="6.477" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="5.715" y1="0.381" x2="6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="6.477" y1="-0.381" x2="6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="5.461" y1="-2.413" x2="5.715" y2="-2.159" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.715" y1="-1.143" x2="5.715" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="5.715" y1="-2.159" x2="5.715" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="3.429" y1="-1.27" x2="3.9826" y2="-1.143" width="0.0508" layer="21" curve="25.842828" cap="flat"/>
+<wire x1="3.429" y1="1.27" x2="3.9826" y2="1.143" width="0.0508" layer="21" curve="-25.842828" cap="flat"/>
+<wire x1="3.429" y1="-2.032" x2="5.109" y2="-1.1429" width="0.0508" layer="21" curve="55.771157" cap="flat"/>
+<wire x1="3.9826" y1="-1.143" x2="3.9826" y2="1.143" width="0.0508" layer="51" curve="128.314524" cap="flat"/>
+<wire x1="5.1091" y1="-1.143" x2="5.1091" y2="1.143" width="0.0508" layer="51" curve="68.456213" cap="flat"/>
+<wire x1="-5.1091" y1="-1.143" x2="-3.429" y2="-2.032" width="0.0508" layer="21" curve="55.772485" cap="flat"/>
+<wire x1="-3.9826" y1="-1.143" x2="-3.9826" y2="1.143" width="0.0508" layer="51" curve="-128.314524" cap="flat"/>
+<wire x1="-3.9826" y1="-1.143" x2="-3.429" y2="-1.27" width="0.0508" layer="21" curve="25.842828" cap="flat"/>
+<wire x1="-3.9826" y1="1.143" x2="-3.429" y2="1.27" width="0.0508" layer="21" curve="-25.842828" cap="flat"/>
+<wire x1="-6.477" y1="-0.381" x2="-6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-5.1091" y1="-1.143" x2="-5.1091" y2="1.143" width="0.0508" layer="51" curve="-68.456213" cap="flat"/>
+<wire x1="-5.715" y1="-1.143" x2="-5.715" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="-0.381" x2="-5.715" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="0.381" x2="-5.715" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="-2.159" x2="-5.715" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-2.159" x2="-5.461" y2="-2.413" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.715" y1="-0.381" x2="-6.477" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-5.715" y1="0.381" x2="-6.477" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-3.429" y1="2.032" x2="3.429" y2="2.032" width="0.0508" layer="21"/>
+<wire x1="5.461" y1="2.413" x2="-5.461" y2="2.413" width="0.1524" layer="21"/>
+<wire x1="5.461" y1="2.413" x2="5.715" y2="2.159" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-5.715" y1="2.159" x2="-5.461" y2="2.413" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-0.254" y1="0.635" x2="-0.254" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-0.635" x2="0.254" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="-0.635" x2="0.254" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="-0.254" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.016" y2="0" width="0.0508" layer="21"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.016" y2="0" width="0.0508" layer="21"/>
+<smd name="1" x="-4.826" y="0" dx="5.334" dy="1.9304" layer="1"/>
+<smd name="2" x="4.826" y="0" dx="5.334" dy="1.9304" layer="1"/>
+<rectangle x1="-6.604" y1="-3.048" x2="6.604" y2="3.048" layer="43"/>
+<text x="-0.254" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -19110,6 +19193,42 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="A2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
+<symbol name="SPARKFUN_MICRO_OLED">
+<pin name="3V3" x="-12.7" y="10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="CS" x="-12.7" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="RST" x="-12.7" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="D/C" x="-12.7" y="-5.08" visible="pin" length="middle" direction="in"/>
+<pin name="R0" x="-12.7" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="WR" x="-12.7" y="-10.16" visible="pin" length="middle" direction="in"/>
+<pin name="D0" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="D2" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="D1" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="D3" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="D4" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="D5" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="D6" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="D7" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VB" x="-12.7" y="7.62" visible="pin" length="middle" direction="pwr"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="1.27" y="14.224" size="1.778" layer="95" align="center">OLED</text>
+<text x="1.27" y="-14.478" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="MCP1501">
+<pin name="VDD" x="-13.97" y="2.54" length="middle" direction="pwr"/>
+<pin name="GND" x="-13.97" y="-2.54" length="middle" direction="pwr"/>
+<pin name="!SHDN" x="13.97" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="OUT" x="13.97" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-8.89" y1="5.08" x2="-8.89" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-5.08" x2="8.89" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-5.08" x2="8.89" y2="5.08" width="0.254" layer="94"/>
+<wire x1="8.89" y1="5.08" x2="-8.89" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.604" size="1.778" layer="96" align="center">MCP1501</text>
+<text x="0" y="-6.604" size="1.778" layer="96" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -19917,6 +20036,15 @@ Features:  (441/841)
 <attribute name="MF" value="ECS" constant="no"/>
 <attribute name="MPN" value="ECS-.327-9-34QCS-TR" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="HC-49/US" package="HC49UP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -29889,8 +30017,82 @@ For any MicroSD holders lacking card detect options</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="828-1077-1-ND" constant="no"/>
+<attribute name="DISP" value="BME680" constant="no"/>
 <attribute name="MF" value="Bosch" constant="no"/>
 <attribute name="MPN" value="BME680" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SAPRKFUN_MICRO_OLED" prefix="DS">
+<description>&lt;b&gt;Mounting for the Sparkfun Micro OLED &lt;/b&gt;&lt;br&gt;
+&lt;a href = "https://www.sparkfun.com/products/13003"&gt;LCD-13003&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SPARKFUN_MICRO_OLED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPARKFUN_MICRO_OLED">
+<connects>
+<connect gate="G$1" pin="3V3" pad="VDD"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="D/C" pad="D/C"/>
+<connect gate="G$1" pin="D0" pad="D0/SCK"/>
+<connect gate="G$1" pin="D1" pad="D1/MOSI"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D3" pad="D3"/>
+<connect gate="G$1" pin="D4" pad="D4"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7" pad="D7"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="R0" pad="RD/E"/>
+<connect gate="G$1" pin="RST" pad="RESET"/>
+<connect gate="G$1" pin="VB" pad="VBAT"/>
+<connect gate="G$1" pin="WR" pad="WR/RW"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP1501" prefix="U">
+<description>&lt;b&gt;MCP1501&lt;/b&gt; - Low Power Voltage Referance with Shutdown
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: Vout + 0.2v ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 1.024V ~ 4.096V &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 140&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Iout: 20mA &lt;/li&gt;
+&lt;li&gt;Tolerance: &amp;plusmn; 0.1% &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP1501T-25E-CHY/MCP1501T-25E-CHYCT-ND/5844631"&gt; MCP1501T-25E/CHYCT-ND (2.5v) &lt;/a&gt;&lt;br/&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCP1501" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6L">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2 3 5"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2.5V">
+<attribute name="DIGIKEY" value="MCP1501T-25E/CHYCT-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MCP1501T-25E/CHY" constant="no"/>
 </technology>
 </technologies>
 </device>
