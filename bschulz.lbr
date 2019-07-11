@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12143,6 +12143,19 @@ Ref &lt;a href = http://ww1.microchip.com/downloads/en/DeviceDoc/MCP9808-0.5C-Ma
 <wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.27" y="-1.651" radius="0.127" width="0.127" layer="21"/>
 </package>
+<package name="CRYSTAL_3.2X2.5_4-SMD">
+<description>Crystal, 3.2 x 2.5 mm, 4 pad &lt;br&gt;
+Ref &lt;a href = https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&amp;lang=en&gt;datasheet&lt;/a&gt;</description>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -19357,6 +19370,25 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="DE" x="-12.7" y="-5.08" length="middle" direction="in"/>
 <text x="-4.572" y="-9.398" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="CRYSTAL_GND">
+<description>Crystal with ground connection</description>
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="0" y="2.032" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.176" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -20171,6 +20203,11 @@ Features:  (441/841)
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.2X2.5" package="CRYSTAL_3.2X2.5_4-SMD">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -22618,6 +22655,21 @@ push-push type</description>
 <attribute name="DIGIKEY" value="RE1C002UNTCLCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="RE1C002UNTCL" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-2N7002P" package="SOT23-3">
+<connects>
+<connect gate="NMOS" pin="D" pad="3"/>
+<connect gate="NMOS" pin="G" pad="1"/>
+<connect gate="NMOS" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1727-4692-1-ND" constant="no"/>
+<attribute name="MF" value="Nexperia" constant="no"/>
+<attribute name="MPN" value="2N7002P,215" constant="no"/>
+<attribute name="VALUE" value="2N7002" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30268,7 +30320,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-se
 </devices>
 </deviceset>
 <deviceset name="TS5A23157" prefix="U">
-<description>&lt;b&gt;TS5A23157&lt;/b&gt; - 2 Channel DPDT Analog Switch
+<description>&lt;b&gt;TS5A23157&lt;/b&gt; - 2 Channel Multiplexer DPDT Analog Switch
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
@@ -30290,24 +30342,46 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </gates>
 <devices>
 <device name="RSE" package="RSE_R-PUQFN-N10">
+<connects>
+<connect gate="G$1" pin="COM1" pad="10"/>
+<connect gate="G$1" pin="COM2" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="5"/>
+<connect gate="G$1" pin="NC1" pad="9"/>
+<connect gate="G$1" pin="NC2" pad="7"/>
+<connect gate="G$1" pin="NO1" pad="2"/>
+<connect gate="G$1" pin="NO2" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="DISP" value="TS5A23157" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
-<technology name="DGS">
-<attribute name="DIGIKEY" value="296-17076-1-ND" constant="no"/>
-<attribute name="DISP" value="TS5A23157" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TS5A23157DGSR" constant="no"/>
-</technology>
-<technology name="RSE">
 <attribute name="DIGIKEY" value="296-21919-1-ND" constant="no"/>
 <attribute name="DISP" value="TS5A23157" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TS5A23157RSER" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DGS" package="DGS0010A">
+<connects>
+<connect gate="G$1" pin="COM1" pad="10"/>
+<connect gate="G$1" pin="COM2" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="5"/>
+<connect gate="G$1" pin="NC1" pad="9"/>
+<connect gate="G$1" pin="NC2" pad="7"/>
+<connect gate="G$1" pin="NO1" pad="2"/>
+<connect gate="G$1" pin="NO2" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-17076-1-ND" constant="no"/>
+<attribute name="DISP" value="TS5A23157" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TS5A23157DGSR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30427,6 +30501,28 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN65HVD72DR" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL_SHIELD" prefix="XTAL">
+<description>&lt;h3&gt;Crystal Oscilator w/Shield&lt;/h3&gt;
+&lt;p&gt;4 Pin quartz crystal oscilators&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Variants&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.digikey.com/products/en/crystals-oscillators-resonators/crystals/171?k=&amp;pkeyword=&amp;sv=0&amp;pv7=2&amp;sf=0&amp;FV=ffe000ab%2Cffec1fd3&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25”&gt;3.2x2.5mm (16MHz ~ 38.4 MHz)&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL_GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3.2X2.5" package="CRYSTAL_3.2X2.5_4-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8157,6 +8157,19 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 <rectangle x1="-0.889" y1="-0.762" x2="-0.381" y2="0.762" layer="21"/>
 <text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="UW-10X10_NICHICON">
+<description>Layout for 10x10mm Nichicon capacitor&lt;br&gt;
+Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1GS/493-2182-1-ND/590157&gt;datasheet&lt;/a&gt;</description>
+<smd name="-" x="0" y="-4" dx="2.5" dy="4" layer="1"/>
+<smd name="+" x="0" y="4" dx="2.5" dy="4" layer="1"/>
+<wire x1="5.15" y1="-5.45" x2="5.15" y2="3.45" width="0.127" layer="21"/>
+<wire x1="5.15" y1="3.45" x2="3.15" y2="5.45" width="0.127" layer="21"/>
+<wire x1="3.15" y1="5.45" x2="-3.15" y2="5.45" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="5.45" x2="-5.15" y2="3.45" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="3.45" x2="-5.15" y2="-5.45" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="-5.45" x2="5.15" y2="-5.45" width="0.127" layer="21"/>
+<text x="-5.715" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -12065,6 +12078,15 @@ Design Doc: https://media.digikey.com/pdf/Data%20Sheets/Elna%20America%20Inc/DS,
 </technologies>
 </device>
 <device name="HL" package="HL">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UW-10X10" package="UW-10X10_NICHICON">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
