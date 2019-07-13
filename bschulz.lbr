@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8569,6 +8569,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="0.725" y1="-0.525" x2="0.725" y2="0.525" width="0.127" layer="21"/>
 <wire x1="0.725" y1="0.525" x2="-0.725" y2="0.525" width="0.127" layer="21"/>
 <circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SMD1,0-2,54">
 <smd name="1" x="0" y="0" dx="1" dy="2.54" layer="1" rot="R180" cream="no"/>
@@ -8741,6 +8742,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
 <circle x="1.016" y="1.651" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="BATT_10MM_CLIP">
 <description>&lt;b&gt;Memory Protection Devices, &lt;a href = https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BK-870/BK-870-ND/3829737&gt; BK-870 &lt;/a&gt;&lt;/b&gt;
@@ -9346,6 +9348,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="1" y1="-0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.75" x2="-1" y2="0.75" width="0.127" layer="21"/>
 <circle x="-1.27" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RSA_S-PVQFN-N16">
 <smd name="12" x="-0.975" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
@@ -9431,6 +9434,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
 <circle x="-2.286" y="-2.286" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="2.921" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-PD(12X12)">
 <smd name="1" x="-4.95" y="0" dx="2.9" dy="5.4" layer="1"/>
@@ -9613,6 +9617,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="1.75" y1="-1.75" x2="-1.75" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.127" layer="21"/>
 <circle x="-2.159" y="-1.397" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RGY_S-PVQFN-N20">
 <smd name="18" x="-1.25" y="1.725" dx="0.85" dy="0.28" layer="1" rot="R90"/>
@@ -9645,6 +9650,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <rectangle x1="0.15" y1="-0.97" x2="1.47" y2="-0.15" layer="31" rot="R180"/>
 <rectangle x1="0.15" y1="0.15" x2="1.47" y2="0.97" layer="31"/>
 <rectangle x1="-1.47" y1="-0.97" x2="-0.15" y2="-0.15" layer="31" rot="R180"/>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RUG_S-PQFP-N8">
 <smd name="8" x="0" y="0.65" dx="0.3" dy="0.6" layer="1"/>
@@ -9660,6 +9666,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="0.75" y1="-0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
 <wire x1="0.75" y1="0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
 <circle x="-0.635" y="1.143" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.524" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-XHMI(6.65X6.45)">
 <smd name="1" x="-2" y="0" dx="5.5" dy="1.45" layer="1" rot="R90"/>
@@ -9695,6 +9702,7 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="-1.524" y1="-1.397" x2="-1.524" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-2.921" x2="1.524" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-2.921" x2="1.524" y2="-1.397" width="0.127" layer="21"/>
+<text x="-5.08" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="1X08_SCREW">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -9955,6 +9963,7 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.127" layer="21"/>
 <wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
 <circle x="-0.508" y="0.508" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-0.889" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SOD-123">
 <smd name="ANODE" x="1.675" y="0" dx="0.85" dy="0.85" layer="1"/>
@@ -10699,6 +10708,7 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="LED_0603">
 <smd name="CATHODE" x="-0.8" y="0" dx="0.8" dy="0.8" layer="1"/>
@@ -12155,6 +12165,21 @@ Ref &lt;a href = https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-322
 <wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
 <text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="JS202011SCQN">
+<description>JS202011SCQN, Gull Wing 6 pin&lt;br&gt;
+Ref &lt;a href = https://www.ckswitches.com/media/1422/js.pdf&gt;datasheet&lt;a&gt;</description>
+<smd name="1" x="-2.5" y="-2.75" dx="1.2" dy="2.515" layer="1"/>
+<smd name="2" x="0" y="-2.75" dx="1.2" dy="2.515" layer="1"/>
+<smd name="3" x="2.5" y="-2.75" dx="1.2" dy="2.515" layer="1"/>
+<smd name="4" x="2.5" y="2.75" dx="1.2" dy="2.515" layer="1" rot="R180"/>
+<smd name="5" x="0" y="2.75" dx="1.2" dy="2.515" layer="1" rot="R180"/>
+<smd name="6" x="-2.5" y="2.75" dx="1.2" dy="2.515" layer="1" rot="R180"/>
+<wire x1="-4.5" y1="1.8" x2="-4.5" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.8" x2="4.5" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.8" x2="4.5" y2="1.8" width="0.127" layer="21"/>
+<wire x1="4.5" y1="1.8" x2="-4.5" y2="1.8" width="0.127" layer="21"/>
+<text x="-5.334" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -19389,6 +19414,29 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="sup" rot="R270"/>
 <wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
 </symbol>
+<symbol name="SW_DPDT_POL">
+<description>&lt;h3&gt;DPDT Switch&lt;/h3&gt;</description>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0.635" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="-5.08" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-1.27" y="-6.35" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="P2" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="S2" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.635" y2="2.54" width="0.127" layer="94"/>
+<wire x1="0" y1="7.62" x2="0.635" y2="7.62" width="0.1524" layer="94"/>
+<circle x="0" y="7.62" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-2.54" y="5.08" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-1.27" y="8.382" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<pin name="P1" x="-5.08" y="5.08" visible="off" length="short" direction="pas"/>
+<pin name="S1" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O1" x="2.54" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -22487,7 +22535,7 @@ push-push type</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS3231M" prefix="RTC">
+<deviceset name="DS3231M" prefix="U">
 <description>&lt;h3&gt;DS3231M Real Time Clock&lt;/h3&gt;
 &lt;p&gt;Accuracy +/-5ppm.  Battery Backup.  2.3V to 5.5V.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/DS3231M.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -30427,16 +30475,6 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
-<technology name="DFN">
-<attribute name="DIGIKEY" value="MCP9808T-E/MCCT-ND" constant="no"/>
-<attribute name="MF" value="Microchip" constant="no"/>
-<attribute name="MPN" value="MCP9808T-E/MC" constant="no"/>
-</technology>
-<technology name="MSOP">
 <attribute name="DIGIKEY" value="MCP9808T-E/MSCT-ND" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MCP9808T-E/MS" constant="no"/>
@@ -30455,7 +30493,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="G$1" pin="VDD" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="MCP9808T-E/MCCT-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MCP9808T-E/MC" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -30523,6 +30565,31 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_DPDT" prefix="S">
+<description>&lt;h3&gt;Genric DPDT Switch&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="SW_DPDT_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="JS_GULLWING" package="JS202011SCQN">
+<connects>
+<connect gate="G$1" pin="O1" pad="1"/>
+<connect gate="G$1" pin="O2" pad="6"/>
+<connect gate="G$1" pin="P1" pad="2"/>
+<connect gate="G$1" pin="P2" pad="5"/>
+<connect gate="G$1" pin="S1" pad="3"/>
+<connect gate="G$1" pin="S2" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="401-2002-1-ND" constant="no"/>
+<attribute name="MF" value="C&amp;K" constant="no"/>
+<attribute name="MPN" value="JS202011SCQN" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
