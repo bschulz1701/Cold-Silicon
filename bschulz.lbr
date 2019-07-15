@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2909,8 +2909,8 @@ Source: AVX .. aphvc.pdf</description>
 </package>
 <package name="R0603">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="21"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="21"/>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -2919,8 +2919,8 @@ Source: AVX .. aphvc.pdf</description>
 <smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="21"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="21"/>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="R0805">
@@ -8569,7 +8569,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="0.725" y1="-0.525" x2="0.725" y2="0.525" width="0.127" layer="21"/>
 <wire x1="0.725" y1="0.525" x2="-0.725" y2="0.525" width="0.127" layer="21"/>
 <circle x="-1.016" y="-0.762" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SMD1,0-2,54">
 <smd name="1" x="0" y="0" dx="1" dy="2.54" layer="1" rot="R180" cream="no"/>
@@ -8742,7 +8741,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
 <circle x="1.016" y="1.651" radius="0.179603125" width="0.127" layer="21"/>
-<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="BATT_10MM_CLIP">
 <description>&lt;b&gt;Memory Protection Devices, &lt;a href = https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BK-870/BK-870-ND/3829737&gt; BK-870 &lt;/a&gt;&lt;/b&gt;
@@ -8818,7 +8816,6 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="1.75" y1="-2.25" x2="1.75" y2="2.25" width="0.127" layer="21"/>
 <wire x1="1.75" y1="2.25" x2="-1.75" y2="2.25" width="0.127" layer="21"/>
 <circle x="-1.397" y="2.667" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-3.048" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="VQFN-20">
 <description>VQFN 20 pin, 3x3mm
@@ -9348,7 +9345,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="1" y1="-0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.75" x2="-1" y2="0.75" width="0.127" layer="21"/>
 <circle x="-1.27" y="-1.016" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RSA_S-PVQFN-N16">
 <smd name="12" x="-0.975" y="1.975" dx="0.85" dy="0.35" layer="1" rot="R90"/>
@@ -9434,7 +9430,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="21"/>
 <circle x="-2.286" y="-2.286" radius="0.179603125" width="0.127" layer="21"/>
-<text x="0" y="2.921" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-PD(12X12)">
 <smd name="1" x="-4.95" y="0" dx="2.9" dy="5.4" layer="1"/>
@@ -9617,7 +9612,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="1.75" y1="-1.75" x2="-1.75" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.127" layer="21"/>
 <circle x="-2.159" y="-1.397" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RGY_S-PVQFN-N20">
 <smd name="18" x="-1.25" y="1.725" dx="0.85" dy="0.28" layer="1" rot="R90"/>
@@ -9650,7 +9644,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <rectangle x1="0.15" y1="-0.97" x2="1.47" y2="-0.15" layer="31" rot="R180"/>
 <rectangle x1="0.15" y1="0.15" x2="1.47" y2="0.97" layer="31"/>
 <rectangle x1="-1.47" y1="-0.97" x2="-0.15" y2="-0.15" layer="31" rot="R180"/>
-<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="RUG_S-PQFP-N8">
 <smd name="8" x="0" y="0.65" dx="0.3" dy="0.6" layer="1"/>
@@ -9666,7 +9659,6 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <wire x1="0.75" y1="-0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
 <wire x1="0.75" y1="0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
 <circle x="-0.635" y="1.143" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-1.524" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="WE-XHMI(6.65X6.45)">
 <smd name="1" x="-2" y="0" dx="5.5" dy="1.45" layer="1" rot="R90"/>
@@ -9702,7 +9694,6 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="-1.524" y1="-1.397" x2="-1.524" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="-1.524" y1="-2.921" x2="1.524" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="1.524" y1="-2.921" x2="1.524" y2="-1.397" width="0.127" layer="21"/>
-<text x="-5.08" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="1X08_SCREW">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -9963,7 +9954,6 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="0.4" y1="-0.4" x2="0.4" y2="0.4" width="0.127" layer="21"/>
 <wire x1="0.4" y1="0.4" x2="-0.4" y2="0.4" width="0.127" layer="21"/>
 <circle x="-0.508" y="0.508" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-0.889" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SOD-123">
 <smd name="ANODE" x="1.675" y="0" dx="0.85" dy="0.85" layer="1"/>
@@ -10708,7 +10698,6 @@ https://www.ckswitches.com/media/1424/pcm.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
-<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="LED_0603">
 <smd name="CATHODE" x="-0.8" y="0" dx="0.8" dy="0.8" layer="1"/>
@@ -11634,8 +11623,10 @@ Ref &lt;a href = "https://www.st.com/resource/en/datasheet/lps35hw.pdf"&gt;Datas
 <wire x1="1.99" y1="1.99" x2="1.99" y2="-1.99" width="0.05" layer="39"/>
 <wire x1="1.99" y1="-1.99" x2="-1.99" y2="-1.99" width="0.05" layer="39"/>
 <wire x1="-1.99" y1="-1.99" x2="-1.99" y2="1.99" width="0.05" layer="39"/>
+<circle x="-2.4" y="1" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.4" y="1" radius="0.1" width="0.2" layer="21"/>
 <text x="0" y="2.40255" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-<text x="0" y="-2.413" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="-2.003340625" y="-3.005009375" size="0.81415625" layer="27">&gt;VALUE</text>
 <wire x1="-1.83" y1="1.83" x2="-1.1" y2="1.83" width="0.127" layer="21"/>
 <wire x1="-1.83" y1="1.83" x2="-1.83" y2="0.8" width="0.127" layer="21"/>
 <wire x1="1.1" y1="1.83" x2="1.83" y2="1.83" width="0.127" layer="21"/>
@@ -11654,7 +11645,6 @@ Ref &lt;a href = "https://www.st.com/resource/en/datasheet/lps35hw.pdf"&gt;Datas
 <smd name="8" x="0.6" y="1.42" dx="0.63" dy="0.4" layer="1" rot="R270"/>
 <smd name="9" x="0" y="1.42" dx="0.63" dy="0.4" layer="1" rot="R270"/>
 <smd name="10" x="-0.6" y="1.42" dx="0.63" dy="0.4" layer="1" rot="R270"/>
-<circle x="-2.286" y="1.778" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="0805">
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
@@ -12076,110 +12066,31 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <text x="-0.254" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="WQFN10">
-<description>Referance &lt;a href = https://www.onsemi.com/pub/Collateral/NS5A4684S-D.PDF&gt;datasheet&lt;/a&gt;</description>
-<smd name="10" x="-0.4" y="0.7685" dx="0.563" dy="0.225" layer="1" rot="R90"/>
-<smd name="9" x="0" y="0.7685" dx="0.563" dy="0.225" layer="1" rot="R90"/>
-<smd name="8" x="0.4" y="0.7685" dx="0.563" dy="0.225" layer="1" rot="R90"/>
-<smd name="3" x="-0.4" y="-0.7685" dx="0.563" dy="0.225" layer="1" rot="R90"/>
-<smd name="4" x="0" y="-0.7685" dx="0.563" dy="0.225" layer="1" rot="R90"/>
-<smd name="5" x="0.4" y="-0.7685" dx="0.563" dy="0.225" layer="1" rot="R90"/>
-<smd name="7" x="0.5685" y="0.2" dx="0.563" dy="0.225" layer="1" rot="R180"/>
-<smd name="6" x="0.5685" y="-0.2" dx="0.563" dy="0.225" layer="1" rot="R180"/>
-<smd name="2" x="-0.5685" y="-0.2" dx="0.563" dy="0.225" layer="1" rot="R180"/>
-<smd name="1" x="-0.5185" y="0.2" dx="0.663" dy="0.225" layer="1"/>
-<wire x1="-0.7" y1="0.9" x2="-0.7" y2="-0.9" width="0.127" layer="21"/>
-<wire x1="-0.7" y1="-0.9" x2="0.7" y2="-0.9" width="0.127" layer="21"/>
-<wire x1="0.7" y1="-0.9" x2="0.7" y2="0.9" width="0.127" layer="21"/>
-<wire x1="0.7" y1="0.9" x2="-0.7" y2="0.9" width="0.127" layer="21"/>
-<circle x="-1.016" y="0.762" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-1.651" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-<package name="RSE_R-PUQFN-N10">
-<description>RSE (R-PUQFN-N10) &lt;br&gt;
-Ref &lt;a href = http://www.ti.com/lit/ds/symlink/ts5a23157.pdf&gt;Datasheet&lt;/a&gt;</description>
-<smd name="4" x="0.75" y="-0.635" dx="0.3" dy="0.58" layer="1"/>
-<smd name="6" x="0.75" y="0.635" dx="0.3" dy="0.58" layer="1"/>
-<smd name="9" x="-0.75" y="0.635" dx="0.3" dy="0.58" layer="1"/>
-<smd name="1" x="-0.75" y="-0.635" dx="0.3" dy="0.58" layer="1"/>
-<smd name="2" x="-0.25" y="-0.635" dx="0.25" dy="0.58" layer="1"/>
-<smd name="3" x="0.25" y="-0.635" dx="0.25" dy="0.58" layer="1"/>
-<smd name="8" x="-0.25" y="0.635" dx="0.25" dy="0.58" layer="1"/>
-<smd name="7" x="0.25" y="0.635" dx="0.25" dy="0.58" layer="1"/>
-<smd name="10" x="-0.86" y="0" dx="0.35" dy="0.63" layer="1" rot="R90"/>
-<smd name="5" x="0.86" y="0" dx="0.35" dy="0.63" layer="1" rot="R90"/>
-<wire x1="-1" y1="0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="-1" y1="-0.75" x2="1" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.75" x2="1" y2="0.75" width="0.127" layer="21"/>
-<wire x1="1" y1="0.75" x2="-1" y2="0.75" width="0.127" layer="21"/>
-<circle x="-1.27" y="-1.016" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-<package name="DGS0010A">
-<description>DGS0010A (VSSOP-10) &lt;br&gt;
-Ref &lt;a href = http://www.ti.com/lit/ds/symlink/ts5a23157.pdf&gt;Datasheet&lt;/a&gt;</description>
-<smd name="1" x="-2.2" y="1" dx="1.45" dy="0.3" layer="1"/>
-<smd name="2" x="-2.2" y="0.5" dx="1.45" dy="0.3" layer="1"/>
-<smd name="3" x="-2.2" y="0" dx="1.45" dy="0.3" layer="1"/>
-<smd name="4" x="-2.2" y="-0.5" dx="1.45" dy="0.3" layer="1"/>
-<smd name="5" x="-2.2" y="-1" dx="1.45" dy="0.3" layer="1"/>
-<smd name="6" x="2.2" y="-1" dx="1.45" dy="0.3" layer="1" rot="R180"/>
-<smd name="7" x="2.2" y="-0.5" dx="1.45" dy="0.3" layer="1" rot="R180"/>
-<smd name="8" x="2.2" y="0" dx="1.45" dy="0.3" layer="1" rot="R180"/>
-<smd name="9" x="2.2" y="0.5" dx="1.45" dy="0.3" layer="1" rot="R180"/>
-<smd name="10" x="2.2" y="1" dx="1.45" dy="0.3" layer="1" rot="R180"/>
+<package name="LGA-16">
+<description>16 Pin LGA package (3x3mm) for accelerometer &lt;br&gt;
+Ref &lt;a href = https://www.mouser.com/pdfdocs/Kionix_TN_PCB_Design.pdf&gt; datasheet&lt;/a&gt;</description>
+<smd name="2" x="-1.275" y="0.5" dx="0.25" dy="0.35" layer="1" rot="R90"/>
+<smd name="1" x="-1.275" y="1" dx="0.25" dy="0.35" layer="1" rot="R90"/>
+<smd name="3" x="-1.275" y="0" dx="0.25" dy="0.35" layer="1" rot="R90"/>
+<smd name="4" x="-1.275" y="-0.5" dx="0.25" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="-1.275" y="-1" dx="0.25" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="-0.5" y="-1.275" dx="0.25" dy="0.35" layer="1"/>
+<smd name="7" x="0" y="-1.275" dx="0.25" dy="0.35" layer="1"/>
+<smd name="8" x="0.5" y="-1.275" dx="0.25" dy="0.35" layer="1"/>
+<smd name="10" x="1.275" y="-0.5" dx="0.25" dy="0.35" layer="1" rot="R270"/>
+<smd name="9" x="1.275" y="-1" dx="0.25" dy="0.35" layer="1" rot="R270"/>
+<smd name="11" x="1.275" y="0" dx="0.25" dy="0.35" layer="1" rot="R270"/>
+<smd name="12" x="1.275" y="0.5" dx="0.25" dy="0.35" layer="1" rot="R270"/>
+<smd name="13" x="1.275" y="1" dx="0.25" dy="0.35" layer="1" rot="R270"/>
+<smd name="14" x="0.5" y="1.275" dx="0.25" dy="0.35" layer="1" rot="R180"/>
+<smd name="15" x="0" y="1.275" dx="0.25" dy="0.35" layer="1" rot="R180"/>
+<smd name="16" x="-0.5" y="1.275" dx="0.25" dy="0.35" layer="1" rot="R180"/>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="1.778" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-2.159" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-<package name="DFN_8_2X3">
-<description>DFN, 8 lead, 2x3mm body &lt;br&gt;
-Ref &lt;a href = http://ww1.microchip.com/downloads/en/DeviceDoc/MCP9808-0.5C-Maximum-Accuracy-Digital-Temperature-Sensor-Data-Sheet-DS20005095B.pdf&gt;datasheet&lt;/a&gt;</description>
-<smd name="1" x="-0.75" y="-1.45" dx="0.75" dy="0.3" layer="1" rot="R90"/>
-<smd name="2" x="-0.25" y="-1.45" dx="0.75" dy="0.3" layer="1" rot="R90"/>
-<smd name="3" x="0.25" y="-1.45" dx="0.75" dy="0.3" layer="1" rot="R90"/>
-<smd name="4" x="0.75" y="-1.45" dx="0.75" dy="0.3" layer="1" rot="R90"/>
-<smd name="5" x="0.75" y="1.45" dx="0.75" dy="0.3" layer="1" rot="R270"/>
-<smd name="6" x="0.25" y="1.45" dx="0.75" dy="0.3" layer="1" rot="R270"/>
-<smd name="7" x="-0.25" y="1.45" dx="0.75" dy="0.3" layer="1" rot="R270"/>
-<smd name="8" x="-0.75" y="1.45" dx="0.75" dy="0.3" layer="1" rot="R270"/>
-<smd name="EP" x="0" y="0" dx="1.45" dy="1.75" layer="1"/>
-<wire x1="-1" y1="1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1" y1="-1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
-<circle x="-1.27" y="-1.651" radius="0.127" width="0.127" layer="21"/>
-</package>
-<package name="CRYSTAL_3.2X2.5_4-SMD">
-<description>Crystal, 3.2 x 2.5 mm, 4 pad &lt;br&gt;
-Ref &lt;a href = https://support.epson.biz/td/api/doc_check.php?dl=brief_TSX-3225&amp;lang=en&gt;datasheet&lt;/a&gt;</description>
-<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
-<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
-<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
-<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
-<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
-<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
 <text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-<package name="JS202011SCQN">
-<description>JS202011SCQN, Gull Wing 6 pin&lt;br&gt;
-Ref &lt;a href = https://www.ckswitches.com/media/1422/js.pdf&gt;datasheet&lt;a&gt;</description>
-<smd name="1" x="-2.5" y="-2.75" dx="1.2" dy="2.515" layer="1"/>
-<smd name="2" x="0" y="-2.75" dx="1.2" dy="2.515" layer="1"/>
-<smd name="3" x="2.5" y="-2.75" dx="1.2" dy="2.515" layer="1"/>
-<smd name="4" x="2.5" y="2.75" dx="1.2" dy="2.515" layer="1" rot="R180"/>
-<smd name="5" x="0" y="2.75" dx="1.2" dy="2.515" layer="1" rot="R180"/>
-<smd name="6" x="-2.5" y="2.75" dx="1.2" dy="2.515" layer="1" rot="R180"/>
-<wire x1="-4.5" y1="1.8" x2="-4.5" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-1.8" x2="4.5" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-1.8" x2="4.5" y2="1.8" width="0.127" layer="21"/>
-<wire x1="4.5" y1="1.8" x2="-4.5" y2="1.8" width="0.127" layer="21"/>
-<text x="-5.334" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -19344,98 +19255,59 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="0" y="6.604" size="1.778" layer="96" align="center">MCP1501</text>
 <text x="0" y="-6.604" size="1.778" layer="96" align="center">&gt;NAME</text>
 </symbol>
-<symbol name="NS5A4684S">
-<description>2 x 2:1 analog mux</description>
-<pin name="VCC" x="-12.7" y="10.16" length="middle" direction="pwr"/>
-<pin name="GND" x="-12.7" y="7.62" length="middle" direction="pwr"/>
-<pin name="IN1" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="NC1" x="-12.7" y="0" length="middle"/>
-<pin name="IN2" x="-12.7" y="-7.62" length="middle" direction="in"/>
-<pin name="NC2" x="-12.7" y="-10.16" length="middle"/>
-<pin name="COM2" x="12.7" y="-7.62" length="middle" rot="R180"/>
-<pin name="COM1" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="NO2" x="-12.7" y="-12.7" length="middle"/>
-<pin name="NO1" x="-12.7" y="-2.54" length="middle"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<text x="0" y="14.478" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
-<text x="0" y="-17.272" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
-</symbol>
-<symbol name="MCP9808">
-<pin name="VDD" x="-12.7" y="7.62" length="middle" direction="pwr"/>
-<pin name="GND" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<pin name="SDA" x="-12.7" y="0" length="middle"/>
-<pin name="SCL" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="ALERT" x="-12.7" y="-7.62" length="middle" direction="out"/>
-<pin name="A0" x="12.7" y="-2.54" length="middle" direction="in" rot="R180"/>
-<pin name="A1" x="12.7" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="A2" x="12.7" y="-7.62" length="middle" direction="in" rot="R180"/>
+<symbol name="LIS3DH">
+<description>LIS3DH Accelerometer &lt;br&gt;
+Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/datasheet/3c/ae/50/85/d6/b1/46/fe/CD00274221.pdf/files/CD00274221.pdf/jcr:content/translations/en.CD00274221.pdf&gt; datasheet&lt;/a&gt;</description>
+<pin name="VDD" x="-12.7" y="7.62" length="middle"/>
+<pin name="VDD_IO" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="INT1" x="-12.7" y="-2.54" length="middle"/>
+<pin name="INT2" x="-12.7" y="-5.08" length="middle"/>
+<pin name="CS" x="-12.7" y="-7.62" length="middle"/>
+<pin name="SCL" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="ADC1" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="ADC2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="ADC3" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="SA0" x="15.24" y="2.54" length="middle" rot="R180"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="0" y="11.684" size="1.778" layer="95" ratio="15" align="center">MCP9808</text>
-<text x="0" y="-11.938" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="1.27" y="11.684" size="1.778" layer="95" align="center">LIS3DH</text>
+<text x="1.27" y="-11.43" size="1.778" layer="95" align="center">&gt;NAME</text>
 </symbol>
-<symbol name="SN65HVD485">
-<pin name="R" x="-12.7" y="5.08" length="middle" direction="out"/>
-<pin name="D" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="A" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="B" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<symbol name="HALL_EFFECT_SENSOR">
+<pin name="VCC" x="10.16" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="10.16" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-9.398" y1="-1.778" x2="-5.842" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-9.398" y1="1.778" x2="-5.842" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<text x="-1.27" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<text x="-1.27" y="6.604" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+</symbol>
+<symbol name="MIC5365">
+<pin name="VIN" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="VCC" x="0" y="12.7" length="middle" direction="pwr" rot="R270"/>
-<pin name="GND" x="0" y="-12.7" length="middle" direction="pwr" rot="R90"/>
-<text x="-12.7" y="9.398" size="1.27" layer="95">&gt;DISP</text>
-<pin name="!RE" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="DE" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<text x="-4.572" y="-9.398" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
-</symbol>
-<symbol name="CRYSTAL_GND">
-<description>Crystal with ground connection</description>
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="0" y="2.032" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-11.176" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="sup" rot="R270"/>
-<wire x1="-2.54" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SW_DPDT_POL">
-<description>&lt;h3&gt;DPDT Switch&lt;/h3&gt;</description>
-<wire x1="-2.54" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0.635" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
-<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="0" y="-5.08" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="-2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-1.27" y="-6.35" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<pin name="P2" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<pin name="S2" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="O2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="6.35" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0.635" y2="2.54" width="0.127" layer="94"/>
-<wire x1="0" y1="7.62" x2="0.635" y2="7.62" width="0.1524" layer="94"/>
-<circle x="0" y="7.62" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="0" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="-2.54" y="5.08" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-1.27" y="8.382" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<pin name="P1" x="-5.08" y="5.08" visible="off" length="short" direction="pas"/>
-<pin name="S1" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="O1" x="2.54" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.604" size="1.778" layer="95" ratio="15" align="center">MIC5365</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -20251,11 +20123,6 @@ Features:  (441/841)
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3.2X2.5" package="CRYSTAL_3.2X2.5_4-SMD">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -22535,7 +22402,7 @@ push-push type</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS3231M" prefix="U">
+<deviceset name="DS3231M" prefix="RTC">
 <description>&lt;h3&gt;DS3231M Real Time Clock&lt;/h3&gt;
 &lt;p&gt;Accuracy +/-5ppm.  Battery Backup.  2.3V to 5.5V.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/DS3231M.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -22703,21 +22570,6 @@ push-push type</description>
 <attribute name="DIGIKEY" value="RE1C002UNTCLCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="RE1C002UNTCL" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-2N7002P" package="SOT23-3">
-<connects>
-<connect gate="NMOS" pin="D" pad="3"/>
-<connect gate="NMOS" pin="G" pad="1"/>
-<connect gate="NMOS" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="1727-4692-1-ND" constant="no"/>
-<attribute name="MF" value="Nexperia" constant="no"/>
-<attribute name="MPN" value="2N7002P,215" constant="no"/>
-<attribute name="VALUE" value="2N7002" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30326,269 +30178,139 @@ For any MicroSD holders lacking card detect options</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NS5A4684S" prefix="U">
-<description>&lt;b&gt;NS5A4684S&lt;/b&gt; - Dual Analog Multiplexer (1:2) 
+<deviceset name="LIS3DH" prefix="U">
+<description>&lt;b&gt;LIS3DH&lt;/b&gt; -  Ultra-low-power High-performance 3-axis Digital Accelerometer (I&lt;sup&gt;2&lt;/sup&gt;C/SPI)
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
-&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
+&lt;li&gt;Vcc: 1.71V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;Acceleration Range: &amp;plusmn;2g, &amp;plusmn;4g, &amp;plusmn;8g, &amp;plusmn;16g &lt;/li&gt;
+&lt;li&gt;Sensitivity: 1000 ~ 83 LSB/g (&amp;plusmn;2g ~ &amp;plusmn; 16g)
+&lt;li&gt;Bandwidth: 0.5Hz ~ 625kHz&lt;/li&gt;
 &lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
  
-&lt;p&gt;
-Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-semiconductor/NS5A4684SMNTAG/NS5A4684SMNTAGOSCT-ND/9087458"&gt; NS5A4684SMNTAGOSCT-ND (10-WFQFN) &lt;a&gt;&lt;br/&gt;
- &lt;/p&gt;</description>
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/stmicroelectronics/LIS3DHTR/497-10613-1-ND/2334355"&gt; 497-10613-1-ND &lt;/a&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="NS5A4684S" x="0" y="0"/>
+<gate name="G$1" symbol="LIS3DH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="WQFN10">
+<device name="LGA" package="LGA-16">
 <connects>
-<connect gate="G$1" pin="COM1" pad="3"/>
-<connect gate="G$1" pin="COM2" pad="9"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="IN1" pad="4"/>
-<connect gate="G$1" pin="IN2" pad="8"/>
-<connect gate="G$1" pin="NC1" pad="5"/>
-<connect gate="G$1" pin="NC2" pad="7"/>
-<connect gate="G$1" pin="NO1" pad="2"/>
-<connect gate="G$1" pin="NO2" pad="10"/>
+<connect gate="G$1" pin="ADC1" pad="16"/>
+<connect gate="G$1" pin="ADC2" pad="15"/>
+<connect gate="G$1" pin="ADC3" pad="13"/>
+<connect gate="G$1" pin="CS" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5 10 12"/>
+<connect gate="G$1" pin="INT1" pad="11"/>
+<connect gate="G$1" pin="INT2" pad="9"/>
+<connect gate="G$1" pin="SA0" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VDD_IO" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="497-10613-1-ND" constant="no"/>
+<attribute name="MF" value="ST" constant="no"/>
+<attribute name="MPN" value="LIS3DHTR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCS40DPR" prefix="U">
+<description>&lt;b&gt;Hall Effect Sensor (TCS40DPR)&lt;/b&gt; &lt;br&gt;
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 2.3 ~ 5.5V &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Supply&lt;/sub&gt;: 12.8&amp;mu;A (Avg) &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Drive&lt;/sub&gt;: 1mA (10mA Max)&lt;/li&gt;
+&lt;li&gt;Trip Point: 4.4mT (Max) &lt;/li&gt;
+&lt;li&gt;Release Point: 0.4mT (Min) &lt;/li&gt;
+&lt;li&gt;Hysterisis: 1.4mT&lt;/li&gt;
+&lt;li&gt;Temp: -40&amp;deg;C ~ 85&amp;deg;C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/TCS40DPRLF/TCS40DPRLFCT-ND/5012766"&gt; TCS40DPRLFCT-ND&lt;/a&gt;&lt;br/&gt; 
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="HALL_EFFECT_SENSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="NS5A4684SMNTAGOSCT-ND" constant="no"/>
-<attribute name="DISP" value="NS5A4684" constant="no"/>
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MPN" value="NS5A4684SMNTAG" constant="no"/>
+<attribute name="DIGIKEY" value="TCS40DPRLFCT-ND" constant="no"/>
+<attribute name="DISP" value="TCS40DPR" constant="no"/>
+<attribute name="MF" value="Toshiba" constant="no"/>
+<attribute name="MPN" value="TCS40DPR,LF" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TS5A23157" prefix="U">
-<description>&lt;b&gt;TS5A23157&lt;/b&gt; - 2 Channel Multiplexer DPDT Analog Switch
+<deviceset name="MIC5365" prefix="U">
+<description>&lt;b&gt;MIC5365-*&lt;/b&gt; - Low Power, High Performance, Linear Regulator
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
-&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
-&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
-&lt;li&gt;On state resistace: 10 &amp;Omega;, Typ &lt;/li&gt;
-&lt;li&gt;Channel to Channel Matching: 0.15 &amp;Omega;, Typical &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
- 
-&lt;p&gt;
-Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TS5A23157RSER/296-21919-1-ND/1629272"&gt; 296-21919-1-ND (UQFN, RSE) &lt;a&gt;&lt;br/&gt;
-
-&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TS5A23157DGSR/296-17076-1-ND/659982"&gt; 296-17076-1-ND (VSSOP, DGS) &lt;/a&gt;&lt;br/&gt;
-
- &lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="NS5A4684S" x="0" y="0"/>
-</gates>
-<devices>
-<device name="RSE" package="RSE_R-PUQFN-N10">
-<connects>
-<connect gate="G$1" pin="COM1" pad="10"/>
-<connect gate="G$1" pin="COM2" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="IN1" pad="1"/>
-<connect gate="G$1" pin="IN2" pad="5"/>
-<connect gate="G$1" pin="NC1" pad="9"/>
-<connect gate="G$1" pin="NC2" pad="7"/>
-<connect gate="G$1" pin="NO1" pad="2"/>
-<connect gate="G$1" pin="NO2" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="296-21919-1-ND" constant="no"/>
-<attribute name="DISP" value="TS5A23157" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TS5A23157RSER" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="DGS" package="DGS0010A">
-<connects>
-<connect gate="G$1" pin="COM1" pad="10"/>
-<connect gate="G$1" pin="COM2" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="IN1" pad="1"/>
-<connect gate="G$1" pin="IN2" pad="5"/>
-<connect gate="G$1" pin="NC1" pad="9"/>
-<connect gate="G$1" pin="NC2" pad="7"/>
-<connect gate="G$1" pin="NO1" pad="2"/>
-<connect gate="G$1" pin="NO2" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="296-17076-1-ND" constant="no"/>
-<attribute name="DISP" value="TS5A23157" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="TS5A23157DGSR" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP9808" prefix="U">
-<description>&lt;b&gt;MCP9808&lt;/b&gt; - Digital Temperature Sensor
- 
-&lt;p&gt;Characteristics:
-&lt;ul&gt;
-&lt;li&gt;VCC: 2.7~5.5V&lt;/li&gt;
+&lt;li&gt;Vin: 2.5V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: Many options, (1v ~ 3.3v) see &lt;a href = http://ww1.microchip.com/downloads/en/DeviceDoc/mic5365.pdf&gt;datasheet&lt;/a&gt;&lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 29&amp;mu;A typ&lt;/li&gt;
+&lt;li&gt;Dropout Voltage: 55mV @ 50mA, input &amp;ge; 2.8v &lt;/li&gt;
+&lt;li&gt; Voltage Accuracy: 2% typ&lt;/li&gt;
+&lt;li&gt; Output Current: 150 mA &lt;/li&gt;
 &lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
-&lt;li&gt;Accuracy: &amp;plusmn;0.25&amp;deg;C (-40 to +125&amp;deg;C)&lt;/li&gt;
-&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 200&amp;mu;A (0.1&amp;mu;A Shutdown)&lt;/li&gt;
-&lt;li&gt;Resolution: 0.0625&amp;deg;C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
  
-&lt;p&gt;Digikey: 
+&lt;p&gt;Mouser: &lt;br&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP9808T-E-MS/MCP9808T-E-MSCT-ND/5169548"&gt; MCP9808T-E/MSCT-ND (MSOP) &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MCP9808T-E-MC/MCP9808T-E-MCCT-ND/2802117"&gt; MCP9808T-E/MCCT-ND (DFN) &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
+&lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MIC5365-3.3YC5-TR/576-3193-1-ND/1868230"&gt; MIC5365-3.3YC5 (3.3V Fixed) &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/products/en/integrated-circuits-ics/pmic-voltage-regulators-linear/699?k=mic5365&amp;k=&amp;pkeyword=mic5365&amp;sv=0&amp;pv1291=881&amp;sf=0&amp;FV=1c0002%2C1f140000%2Cffe002bb%2C1bcc0020&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; MIC5365-1.8YC5 (1.8V Fixed) &lt;/a&gt;&lt;br/&gt;
 &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="MCP9808" x="0" y="0"/>
+<gate name="G$1" symbol="MIC5365" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MSOP" package="MSOP_8">
+<device name="SC70" package="DCK_R-PDSO-G5">
 <connects>
-<connect gate="G$1" pin="A0" pad="7"/>
-<connect gate="G$1" pin="A1" pad="6"/>
-<connect gate="G$1" pin="A2" pad="5"/>
-<connect gate="G$1" pin="ALERT" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="MCP9808T-E/MSCT-ND" constant="no"/>
-<attribute name="MF" value="Microchip" constant="no"/>
-<attribute name="MPN" value="MCP9808T-E/MS" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="DFN" package="DFN_8_2X3">
-<connects>
-<connect gate="G$1" pin="A0" pad="7"/>
-<connect gate="G$1" pin="A1" pad="6"/>
-<connect gate="G$1" pin="A2" pad="5"/>
-<connect gate="G$1" pin="ALERT" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4 EP"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="MCP9808T-E/MCCT-ND" constant="no"/>
-<attribute name="MF" value="Microchip" constant="no"/>
-<attribute name="MPN" value="MCP9808T-E/MC" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SN65HVD72" prefix="U">
-<description>&lt;b&gt;SN65HVD72&lt;/b&gt; - Half Duplex RS-485 Tranciver, with output enable
- 
-&lt;p&gt;Characteristics:
-&lt;ul&gt;
-&lt;li&gt;VCC: 3~3.6V&lt;/li&gt;
-&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
- 
-&lt;p&gt;
-Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN65HVD72DR/296-39179-1-ND/5143186"&gt; 296-39179-1-ND (D)&lt;a&gt;&lt;br/&gt;
- &lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN65HVD485" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOIC" package="SO08">
-<connects>
-<connect gate="G$1" pin="!RE" pad="2"/>
-<connect gate="G$1" pin="A" pad="6"/>
-<connect gate="G$1" pin="B" pad="7"/>
-<connect gate="G$1" pin="D" pad="4"/>
-<connect gate="G$1" pin="DE" pad="3"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="R" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="DISP" value="SN65HVD72" constant="no"/>
-<attribute name="MF" value="" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
-<technology name="D">
-<attribute name="DIGIKEY" value="296-39179-1-ND" constant="no"/>
-<attribute name="DISP" value="SN65HVD72" constant="no"/>
-<attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="SN65HVD72DR" constant="no"/>
+<technology name="1.8">
+<attribute name="DIGIKEY" value="576-3181-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC5365-1.8YC5-TR" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CRYSTAL_SHIELD" prefix="XTAL">
-<description>&lt;h3&gt;Crystal Oscilator w/Shield&lt;/h3&gt;
-&lt;p&gt;4 Pin quartz crystal oscilators&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Variants&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.digikey.com/products/en/crystals-oscillators-resonators/crystals/171?k=&amp;pkeyword=&amp;sv=0&amp;pv7=2&amp;sf=0&amp;FV=ffe000ab%2Cffec1fd3&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25”&gt;3.2x2.5mm (16MHz ~ 38.4 MHz)&lt;/a&gt;&lt;/li&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CRYSTAL_GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="3.2X2.5" package="CRYSTAL_3.2X2.5_4-SMD">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SWITCH_DPDT" prefix="S">
-<description>&lt;h3&gt;Genric DPDT Switch&lt;/h3&gt;</description>
-<gates>
-<gate name="G$1" symbol="SW_DPDT_POL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="JS_GULLWING" package="JS202011SCQN">
-<connects>
-<connect gate="G$1" pin="O1" pad="1"/>
-<connect gate="G$1" pin="O2" pad="6"/>
-<connect gate="G$1" pin="P1" pad="2"/>
-<connect gate="G$1" pin="P2" pad="5"/>
-<connect gate="G$1" pin="S1" pad="3"/>
-<connect gate="G$1" pin="S2" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="401-2002-1-ND" constant="no"/>
-<attribute name="MF" value="C&amp;K" constant="no"/>
-<attribute name="MPN" value="JS202011SCQN" constant="no"/>
+<technology name="3.3">
+<attribute name="DIGIKEY" value="576-3193-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC5365-3.3YC5-TR" constant="no"/>
 </technology>
 </technologies>
 </device>
