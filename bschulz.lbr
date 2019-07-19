@@ -4781,6 +4781,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <smd name="GP3" x="11.7" y="-0.9" dx="2.8" dy="2" layer="1" rot="R90"/>
 <hole x="-11.6" y="-2.1" drill="1.1"/>
 <hole x="9.5" y="-2.1" drill="1.6"/>
+<text x="-13.97" y="-11.43" size="1.27" layer="51" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="MICROSD">
 <wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
@@ -8741,6 +8742,7 @@ Source: www.ti.com/.. slvs087l.pdf</description>
 <wire x1="1.25" y1="-1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
 <wire x1="1.25" y1="1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
 <circle x="1.016" y="1.651" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="BATT_10MM_CLIP">
 <description>&lt;b&gt;Memory Protection Devices, &lt;a href = https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BK-870/BK-870-ND/3829737&gt; BK-870 &lt;/a&gt;&lt;/b&gt;
@@ -26283,9 +26285,9 @@ Digikey:
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="3M5646CT-ND" constant="no"/>
-<attribute name="MF" value="3M" constant="no"/>
-<attribute name="MPN" value="SD-RSMT-2-MQ-WF" constant="no"/>
+<attribute name="DIGIKEY" value="A101492CT-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="2041021-4" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30311,6 +30313,71 @@ For any MicroSD holders lacking card detect options</description>
 <attribute name="DIGIKEY" value="576-3193-1-ND" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MIC5365-3.3YC5-TR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA1284*" prefix="U">
+<description>&lt;b&gt;8-bit Microcontroller&lt;/b&gt; with 128K Bytes In-System Programmable Flash&lt;p&gt;
+Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
+<gates>
+<gate name="G$1" symbol="ATMEGA644E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M" package="MLF44-TH">
+<connects>
+<connect gate="G$1" pin="(PCINT0/ADC0)PA0" pad="37"/>
+<connect gate="G$1" pin="(PCINT1/ADC1)PA1" pad="36"/>
+<connect gate="G$1" pin="(PCINT10/INT2/AIN0)PB2" pad="42"/>
+<connect gate="G$1" pin="(PCINT11/OC0A/AIN1)PB3" pad="43"/>
+<connect gate="G$1" pin="(PCINT12/OC0B/!SS!)PB4" pad="44"/>
+<connect gate="G$1" pin="(PCINT13/MOSI)PB5" pad="1"/>
+<connect gate="G$1" pin="(PCINT14/MISO)PB6" pad="2"/>
+<connect gate="G$1" pin="(PCINT15/SCK)PB7" pad="3"/>
+<connect gate="G$1" pin="(PCINT16/SCL)PC0" pad="19"/>
+<connect gate="G$1" pin="(PCINT17/SDA)PC1" pad="20"/>
+<connect gate="G$1" pin="(PCINT18/TCK)PC2" pad="21"/>
+<connect gate="G$1" pin="(PCINT19/TMS)PC3" pad="22"/>
+<connect gate="G$1" pin="(PCINT2/ADC2)PA2" pad="35"/>
+<connect gate="G$1" pin="(PCINT20/TDO)PC4" pad="23"/>
+<connect gate="G$1" pin="(PCINT21/TDI)PC5" pad="24"/>
+<connect gate="G$1" pin="(PCINT22/TOSC1)PC6" pad="25"/>
+<connect gate="G$1" pin="(PCINT23/TOSC2)PC7" pad="26"/>
+<connect gate="G$1" pin="(PCINT24/RXD0)PD0" pad="9"/>
+<connect gate="G$1" pin="(PCINT25/TXD0)PD1" pad="10"/>
+<connect gate="G$1" pin="(PCINT26/INT0)PD2" pad="11"/>
+<connect gate="G$1" pin="(PCINT27/INT1)PD3" pad="12"/>
+<connect gate="G$1" pin="(PCINT28/OC1B)PD4" pad="13"/>
+<connect gate="G$1" pin="(PCINT29/OC1A)PD5" pad="14"/>
+<connect gate="G$1" pin="(PCINT3/ADC3)PA3" pad="34"/>
+<connect gate="G$1" pin="(PCINT30/OC2B/ICP)PD6" pad="15"/>
+<connect gate="G$1" pin="(PCINT31/OC2A)PD7" pad="16"/>
+<connect gate="G$1" pin="(PCINT4/ADC4)PA4" pad="33"/>
+<connect gate="G$1" pin="(PCINT5/ADC5)PA5" pad="32"/>
+<connect gate="G$1" pin="(PCINT6/ADC6)PA6" pad="31"/>
+<connect gate="G$1" pin="(PCINT7/ADC7)PA7" pad="30"/>
+<connect gate="G$1" pin="(PCINT8/XCK0/T0)PB0" pad="40"/>
+<connect gate="G$1" pin="(PCINT9/CLKO/T1)PB1" pad="41"/>
+<connect gate="G$1" pin="AREF" pad="29"/>
+<connect gate="G$1" pin="AVCC" pad="27"/>
+<connect gate="G$1" pin="EXP" pad="TH"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="GND@1" pad="18"/>
+<connect gate="G$1" pin="GND@2" pad="28"/>
+<connect gate="G$1" pin="GND@3" pad="39"/>
+<connect gate="G$1" pin="RESET" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VCC@1" pad="17"/>
+<connect gate="G$1" pin="VCC@2" pad="38"/>
+<connect gate="G$1" pin="XTAL1" pad="8"/>
+<connect gate="G$1" pin="XTAL2" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="ATMEGA1284P-MURCT-ND" constant="no"/>
+<attribute name="MF" value="Atmel" constant="no"/>
+<attribute name="MPN" value="ATMEGA1284P-MUR" constant="no"/>
 </technology>
 </technologies>
 </device>
