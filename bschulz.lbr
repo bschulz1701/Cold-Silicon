@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4781,7 +4781,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <smd name="GP3" x="11.7" y="-0.9" dx="2.8" dy="2" layer="1" rot="R90"/>
 <hole x="-11.6" y="-2.1" drill="1.1"/>
 <hole x="9.5" y="-2.1" drill="1.6"/>
-<text x="-13.97" y="-11.43" size="1.27" layer="51" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="-13.97" y="-11.43" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="MICROSD">
 <wire x1="13" y1="-15.14" x2="14" y2="-15.14" width="0.127" layer="21"/>
@@ -5703,6 +5703,7 @@ Breadboard-friendly pins.
 <smd name="GND" x="0" y="0" dx="10.16" dy="10.16" layer="1" roundness="100" cream="no"/>
 <smd name="POWER0" x="-7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
 <smd name="POWER1" x="7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
+<text x="-10.16" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="ADAFRUIT_SMA90_DIP">
 <description>SMA DIP Connector 90° 50 Ohm</description>
@@ -12093,6 +12094,32 @@ Ref &lt;a href = https://www.mouser.com/pdfdocs/Kionix_TN_PCB_Design.pdf&gt; dat
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="1.778" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="SOD-123W">
+<description>Ref &lt;a href = https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.pdf&gt;datasheet &lt;/a&gt;</description>
+<smd name="CAT" x="-1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="ANODE" x="1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="-1.3" y1="0.85" x2="-1.3" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.85" x2="1.3" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.85" x2="1.3" y2="0.85" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.85" x2="-1.3" y2="0.85" width="0.127" layer="21"/>
+<rectangle x1="-0.635" y1="-0.889" x2="-0.254" y2="0.889" layer="21"/>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="DBV0005A">
+<description>SOT-23-5 Alternate &lt;br&gt;
+Ref &lt;a href = http://www.ti.com/lit/ds/symlink/lp3988-q1.pdf&gt;datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.3" y="0.95" dx="1.1" dy="0.6" layer="1"/>
+<smd name="2" x="-1.3" y="0" dx="1.1" dy="0.6" layer="1"/>
+<smd name="3" x="-1.3" y="-0.95" dx="1.1" dy="0.6" layer="1"/>
+<smd name="4" x="1.3" y="-0.95" dx="1.1" dy="0.6" layer="1"/>
+<smd name="5" x="1.3" y="0.95" dx="1.1" dy="0.6" layer="1"/>
+<wire x1="-0.8" y1="1.45" x2="-0.8" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.45" x2="0.8" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="21"/>
+<wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="21"/>
+<circle x="-1.016" y="1.651" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -19311,6 +19338,35 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="0" y="6.604" size="1.778" layer="95" ratio="15" align="center">MIC5365</text>
 <text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="TCA9406">
+<pin name="SCL_A" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDA_A" x="-15.24" y="0" length="middle"/>
+<pin name="VCCA" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="VCCCB" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="OE" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="SCL_B" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SDA_B" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.27" layer="95" align="center">TCA9406</text>
+<pin name="GND" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
+<text x="0" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="LP3988">
+<pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="VOUT" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="PG" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="EN" x="15.24" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="1.27" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<text x="1.27" y="8.89" size="1.778" layer="95" ratio="15" align="center">LP3988</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -22810,6 +22866,15 @@ Manufacturer: TI
 </technologies>
 </device>
 <device name="SOD-123" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-123W" package="SOD-123W">
 <connects>
 <connect gate="G$1" pin="A" pad="ANODE"/>
 <connect gate="G$1" pin="C" pad="CAT"/>
@@ -30378,6 +30443,96 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <attribute name="DIGIKEY" value="ATMEGA1284P-MURCT-ND" constant="no"/>
 <attribute name="MF" value="Atmel" constant="no"/>
 <attribute name="MPN" value="ATMEGA1284P-MUR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCA9406" prefix="U">
+<description>&lt;b&gt;TCA9406&lt;/b&gt; - I&lt;sup&gt;2&lt;/sup&gt;C Bidirectional 1MHz Logic Level Translator 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.65V ~ 5.5V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Out&lt;/sub&gt;: 25 mA &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 14.4&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;Internal Pullups: 10k&amp;Omega;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TCA9406DCUR/296-28109-1-ND/2510735"&gt; 296-28109-1-ND (VSSOP, DCU)&lt;/a&gt;&lt;br/&gt; 
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TCA9406DCTR/296-28108-1-ND/2510734"&gt; 296-28108-1-ND (SM8, DCT) &lt;/a&gt;&lt;br/&gt; 
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TCA9406" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCU" package="DCU_(R-PDSO-G8)">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OE" pad="6"/>
+<connect gate="G$1" pin="SCL_A" pad="5"/>
+<connect gate="G$1" pin="SCL_B" pad="8"/>
+<connect gate="G$1" pin="SDA_A" pad="4"/>
+<connect gate="G$1" pin="SDA_B" pad="1"/>
+<connect gate="G$1" pin="VCCA" pad="3"/>
+<connect gate="G$1" pin="VCCCB" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-28109-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TCA9406DCUR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LP3988" prefix="U">
+<description>&lt;b&gt;TPS7A05*&lt;/b&gt; - Ultra Low Power Ultra Low Dropout Linear Regulator with Power Good
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.5V ~ 6V&lt;/li&gt;
+&lt;li&gt;Vout:  1.8, 2.5, 2.85, 3.3V fixed&lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 85&amp;mu;A typ, 200&amp;mu;A max &lt;/li&gt;
+&lt;li&gt; Voltage Accuracy: 2% typ, 3.5% max &lt;/li&gt;
+&lt;li&gt; Output Current: 150 mA &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/products/en/integrated-circuits-ics/pmic-voltage-regulators-linear/699?k=LP3988&amp;k=&amp;pkeyword=LP3988&amp;sv=0&amp;pv1779=50&amp;sf=0&amp;FV=1c0002%2Cffe002bb%2C1f140000&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;pageSize=25"&gt; LP3988IMF-3.3/NOPBCT-ND (3.3V Fixed) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LP3988" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="DBV0005A">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="PG" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="3.3V">
+<attribute name="DIGIKEY" value="LP3988IMF-3.3/NOPBCT-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="LP3988IMF-3.3/NOPB" constant="no"/>
 </technology>
 </technologies>
 </device>
