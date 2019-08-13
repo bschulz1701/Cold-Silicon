@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -8169,7 +8169,7 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <wire x1="-3.15" y1="5.45" x2="-5.15" y2="3.45" width="0.127" layer="21"/>
 <wire x1="-5.15" y1="3.45" x2="-5.15" y2="-5.45" width="0.127" layer="21"/>
 <wire x1="-5.15" y1="-5.45" x2="5.15" y2="-5.45" width="0.127" layer="21"/>
-<text x="-5.715" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="-5.715" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -9196,6 +9196,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RMCF0603FT1M62" constant="no"/>
 <attribute name="VALUE_PART" value="1.62M" constant="no"/>
 </technology>
+<technology name="1.8K">
+<attribute name="DIGIKEY" value="311-1.80KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-071K8L" constant="no"/>
+<attribute name="VALUE_PART" value="1.8k" constant="no"/>
+</technology>
 <technology name="100K">
 <attribute name="DIGIKEY" value="RC0402FR-071ML" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9249,6 +9255,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ERJ-3EKF1004V" constant="no"/>
 <attribute name="VALUE_PART" value="1M" constant="no"/>
+</technology>
+<technology name="2.2K">
+<attribute name="DIGIKEY" value="311-2.20KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-072K2L" constant="no"/>
+<attribute name="VALUE_PART" value="2.2k" constant="no"/>
 </technology>
 <technology name="220">
 <attribute name="DIGIKEY" value="311-220HRCT-ND" constant="no"/>
