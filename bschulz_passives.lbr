@@ -8312,9 +8312,9 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="CC0603KRX7R9BB102" constant="no"/>
 </technology>
 <technology name="1UF">
-<attribute name="DIGIKEY" value="490-10479-1-ND" constant="no"/>
-<attribute name="MF" value="Murata" constant="no"/>
-<attribute name="MPN" value="GRM188R61C105KA12D" constant="no"/>
+<attribute name="DIGIKEY" value="587-1251-1-ND" constant="no"/>
+<attribute name="MF" value="Yaiyo Yuden" constant="no"/>
+<attribute name="MPN" value="EMK107BJ105KA-T" constant="no"/>
 </technology>
 <technology name="2.2NF">
 <attribute name="DIGIKEY" value="311-1081-1-ND" constant="no"/>
@@ -8325,6 +8325,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="DIGIKEY" value="1276-1183-1-ND" constant="no"/>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10A225KQ8NNNC" constant="no"/>
+</technology>
+<technology name="4.7UF">
+<attribute name="DIGIKEY" value="490-10481-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GRM188R61C475KAAJD" constant="no"/>
 </technology>
 <technology name="680PF">
 <attribute name="DIGIKEY" value="311-1188-1-ND" constant="no"/>
