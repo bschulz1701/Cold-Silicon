@@ -31016,6 +31016,26 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </devices>
 </deviceset>
 <deviceset name="MS5803" prefix="U">
+<description>&lt;b&gt;MS5803&lt;/b&gt; - Minature Media Compatible Pressure Sensor
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.8V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A (0.15&amp;mu;A standby)
+&lt;li&gt; Pressure Range: 10 ~ 1300 mBar (01BA model) &lt;/li&gt;
+&lt;li&gt; Pressure Resolution: 0.0012 mBar, max (01BA model)&lt;/li&gt;
+&lt;li&gt; Pressure Accuracy: relative &amp;plusmn;1.5 mBar, abs &amp;plusmn; 1 mBar&lt;/li&gt;
+&lt;li&gt;Temperature Resolution: 0.01°C&lt;/li&gt;
+&lt;li&gt;Temperature Accuracy: 0.8°C&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS580301BA01-00/223-1623-5-ND/5277628"&gt; 223-1623-5-ND (01BA)&lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS580305BA01-00/223-1625-5-ND/5277630"&gt; 223-1625-5-ND (05BA)&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="MS5803" x="0" y="0"/>
 </gates>
@@ -31032,13 +31052,53 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="Sparkfun" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
 <attribute name="PROD_ID" value="IC-12111" constant="no"/>
+</technology>
+<technology name="01BA">
+<attribute name="DIGIKEY" value="223-1623-5-ND" constant="no"/>
+<attribute name="MF" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="MS580301BA01-00" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
+</technology>
+<technology name="02BA">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
+</technology>
+<technology name="05BA">
+<attribute name="DIGIKEY" value="223-1625-5-ND" constant="no"/>
+<attribute name="MF" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="MS580305BA01-00" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MS5837" prefix="U">
+<description>&lt;b&gt;MS5837&lt;/b&gt; - Minature Media Compatible Pressure Sensor
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.5V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 0.6&amp;mu;A (0.1&amp;mu;A standby)
+&lt;li&gt; Pressure Range: 300 ~ 1200 mBar&lt;/li&gt;
+&lt;li&gt; Pressure Resolution: 0.016 mBar, max &lt;/li&gt;
+&lt;li&gt; Pressure Accuracy: relative &amp;plusmn;2 mBar&lt;/li&gt;
+&lt;li&gt;Temperature Resolution: 0.002°C&lt;/li&gt;
+&lt;li&gt;Temperature Accuracy: 2°C&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS5837-02BA21/223-1891-1-ND/8276465"&gt; 223-1891-1-ND (02BA, Shielded)&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="MS5837" x="0" y="0"/>
 </gates>
@@ -31051,7 +31111,11 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="223-1891-1-ND" constant="no"/>
+<attribute name="MF" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="MS5837-02BA21" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
