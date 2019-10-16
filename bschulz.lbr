@@ -12320,6 +12320,17 @@ Ref &lt;a href = https://www.ckswitches.com/media/1422/js.pdf&gt;datasheet&lt;a&
 <text x="-3.4925" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="3.4925" y="-0.127" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
+<package name="1X02_39532_RIGHT">
+<description>Footprint for Molex 39532 Series &lt;br&gt;
+Right angle, 2 position, female</description>
+<pad name="1" x="0" y="2.54" drill="1.6"/>
+<pad name="2" x="0" y="-2.54" drill="1.6"/>
+<wire x1="-2" y1="6.08" x2="-2" y2="-6.08" width="0.1524" layer="21"/>
+<wire x1="-2" y1="-6.08" x2="10" y2="-6.08" width="0.1524" layer="21"/>
+<wire x1="10" y1="-6.08" x2="10" y2="6.08" width="0.1524" layer="21"/>
+<wire x1="10" y1="6.08" x2="-2" y2="6.08" width="0.1524" layer="21"/>
+<text x="4.064" y="6.604" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -19746,6 +19757,30 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="-7.62" y="3.556" size="1.27" layer="95">&gt;DISP</text>
 <text x="1.27" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="CD4052">
+<pin name="A0" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="A1" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="A2" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="A3" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="B0" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="B1" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="B2" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="B3" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="BN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="AN" x="-12.7" y="2.54" length="middle"/>
+<pin name="S0" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="VCC" x="-12.7" y="12.7" length="middle" direction="pwr"/>
+<pin name="VEE" x="-12.7" y="7.62" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="10.16" length="middle" direction="pwr"/>
+<pin name="!E" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.1524" layer="94"/>
+<text x="0" y="-16.764" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="16.256" size="1.27" layer="95" ratio="15" align="center">CD74HC4052</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -24701,7 +24736,9 @@ Standard 6 pin header for AVR programming</description>
 
 &lt;p&gt;
 
-&lt;a href = "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTVN02A150/ED10561-ND/1588862"&gt; SCREW_2.54&lt;/a&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTVN02A150/ED10561-ND/1588862"&gt; SCREW_2.54&lt;/a&gt; &lt;br&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/molex/0395321002/WM7845-ND/1280696"&gt; 39532_RA&lt;/a&gt;
 
 &lt;/p&gt;</description>
 <gates>
@@ -24937,6 +24974,19 @@ Standard 6 pin header for AVR programming</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-13700"/>
+</technology>
+</technologies>
+</device>
+<device name="39532_RA" package="1X02_39532_RIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM7845-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="0395321002" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30523,28 +30573,6 @@ For any MicroSD holders lacking card detect options</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BAT54C" prefix="D">
-<description>BAT54C</description>
-<gates>
-<gate name="G$1" symbol="SDD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="A1" pad="1"/>
-<connect gate="G$1" pin="A2" pad="2"/>
-<connect gate="G$1" pin="C" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="BAT54CLT1GOSCT-ND" constant="no"/>
-<attribute name="MF" value="ON Semiconductor" constant="no"/>
-<attribute name="MFP" value="BAT54CLT1G" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BME680" prefix="U">
 <description>&lt;b&gt;BME680&lt;/b&gt; - Low power gas, pressure, tempurature, humidity sensor
 
@@ -31429,6 +31457,108 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <attribute name="DISP" value="UA78M05" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="UA78M05IDCYR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CD74HC4052" prefix="U">
+<description>&lt;b&gt;CD74HC4052&lt;/b&gt; - Dual 4x1 Analog Multiplexer/Demultiplexer
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 2 ~ 6V&lt;/li&gt;
+&lt;li&gt;V&lt;sub&gt;switch&lt;/sub&gt;: 0 ~ 10V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -55°C to 125°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/CD74HC4052PWR/296-17619-1-ND/710465"&gt;296-17619-1-ND (TSSOP) &lt;a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/CD74HC4052M/296-9218-5-ND/376764"&gt; 296-9218-5-ND (SOIC) &lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/CD74HC4052E/296-9217-5-ND/376770"&gt; 296-9217-5-ND (DIP) &lt;/a&gt;&lt;br/&gt;
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CD4052" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PW" package="TSSOP16">
+<connects>
+<connect gate="G$1" pin="!E" pad="6"/>
+<connect gate="G$1" pin="A0" pad="12"/>
+<connect gate="G$1" pin="A1" pad="14"/>
+<connect gate="G$1" pin="A2" pad="15"/>
+<connect gate="G$1" pin="A3" pad="11"/>
+<connect gate="G$1" pin="AN" pad="13"/>
+<connect gate="G$1" pin="B0" pad="1"/>
+<connect gate="G$1" pin="B1" pad="5"/>
+<connect gate="G$1" pin="B2" pad="2"/>
+<connect gate="G$1" pin="B3" pad="4"/>
+<connect gate="G$1" pin="BN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="S0" pad="10"/>
+<connect gate="G$1" pin="S1" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
+<connect gate="G$1" pin="VEE" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-17619-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="CD74HC4052PWR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE_CC" prefix="D">
+<description>&lt;b&gt;Dual Diode, Common Cathode&lt;/b&gt;
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;u&gt;BAT54C&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;V&lt;sub&gt;r, max&lt;/sub&gt;: 30V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;avg&lt;/sub&gt;: 200mA &lt;/li&gt;
+&lt;li&gt;V&lt;sub&gt;f&lt;/sub&gt;: 800mv @ 100mA &lt;/li&gt;
+&lt;li&gt;Reverse Leakage: 2&amp;mu;A @ 25V &lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;u&gt;SDM40E20LC&lt;/u&gt;
+&lt;ul&gt;
+&lt;li&gt;V&lt;sub&gt;r, max&lt;/sub&gt;: 20V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;avg&lt;/sub&gt;: 400mA &lt;/li&gt;
+&lt;li&gt;V&lt;sub&gt;f&lt;/sub&gt;: 310mv @ 100mA &lt;/li&gt;
+&lt;li&gt;Reverse Leakage: 250&amp;mu;A @ 20V &lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="SDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="BAT54C">
+<attribute name="DIGIKEY" value="BAT54CLT1GOSCT-ND" constant="no"/>
+<attribute name="MF" value="ON Semiconductor" constant="no"/>
+<attribute name="MPN" value="BAT54CLT1G" constant="no"/>
+</technology>
+<technology name="SDM40E20LC">
+<attribute name="DIGIKEY" value="SDM40E20LC-7DICT-ND" constant="no"/>
+<attribute name="MF" value="Diodes Incorporated" constant="no"/>
+<attribute name="MPN" value="SDM40E20LC-7" constant="no"/>
 </technology>
 </technologies>
 </device>
