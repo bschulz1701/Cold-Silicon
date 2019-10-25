@@ -7374,8 +7374,8 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <circle x="0" y="0" radius="4.95" width="0.1016" layer="51"/>
 <smd name="-" x="-4.25" y="0" dx="3.9" dy="1.6" layer="1"/>
 <smd name="+" x="4.25" y="0" dx="3.9" dy="1.6" layer="1"/>
-<text x="-2.55" y="1.75" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.55" y="-2.675" size="1.016" layer="27">&gt;VALUE</text>
+<text x="-0.01" y="1.75" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-0.01" y="-2.675" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-5.85" y1="-0.45" x2="-4.9" y2="0.45" layer="51"/>
 <rectangle x1="4.9" y1="-0.45" x2="5.85" y2="0.45" layer="51"/>
 <polygon width="0.1016" layer="51">
@@ -8349,10 +8349,25 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
+<technology name="0.1UF">
+<attribute name="DIGIKEY" value="399-8000-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0805C104M3RACTU" constant="no"/>
+</technology>
+<technology name="0.33UF">
+<attribute name="DIGIKEY" value="311-1888-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0805KKX7R9BB334" constant="no"/>
+</technology>
 <technology name="10UF">
 <attribute name="DIGIKEY" value="490-6473-6-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM21BR61C106KE15K" constant="no"/>
+</technology>
+<technology name="1UF">
+<attribute name="DIGIKEY" value="311-1456-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0805KKX7R8BB105" constant="no"/>
 </technology>
 <technology name="22UF">
 <attribute name="DIGIKEY" value="490-9952-1-ND" constant="no"/>
@@ -9436,6 +9451,36 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ERJ-6DSFR10V" constant="no"/>
+</technology>
+<technology name="100">
+<attribute name="DIGIKEY" value="311-100CRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-07100RL" constant="no"/>
+</technology>
+<technology name="100K">
+<attribute name="DIGIKEY" value="311-100KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-07100KL" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="DIGIKEY" value="311-10.0KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-0710KL" constant="no"/>
+</technology>
+<technology name="1K">
+<attribute name="DIGIKEY" value="311-1.00KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-071KL" constant="no"/>
+</technology>
+<technology name="78.7K">
+<attribute name="DIGIKEY" value="311-78.7KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-0778K7L" constant="no"/>
+</technology>
+<technology name="86.6K">
+<attribute name="DIGIKEY" value="311-86.6KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-0786K6L" constant="no"/>
 </technology>
 <technology name="P1M">
 <attribute name="DIGIKEY" value="P1MDACT-ND" constant="no"/>

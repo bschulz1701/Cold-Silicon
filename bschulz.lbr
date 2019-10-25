@@ -24522,6 +24522,9 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="CP-202A-ND" constant="no"/>
+<attribute name="MF" value="CUI" constant="no"/>
+<attribute name="MPN" value="PJ-202A" constant="no"/>
 <attribute name="PROD_ID" value="CONN-08197"/>
 </technology>
 </technologies>
@@ -25295,6 +25298,9 @@ Standard 6 pin header for AVR programming</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="ED2635-ND" constant="no"/>
+<attribute name="MF" value="On Shore Technology" constant="no"/>
+<attribute name="MPN" value="OSTTE020161" constant="no"/>
 <attribute name="PROD_ID" value="CONN-08399" constant="no"/>
 </technology>
 </technologies>
@@ -25434,6 +25440,9 @@ Standard 6 pin header for AVR programming</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="ED2635-ND" constant="no"/>
+<attribute name="MF" value="On Shore Technology" constant="no"/>
+<attribute name="MPN" value="OSTTE020161" constant="no"/>
 <attribute name="PROD_ID" value="CONN-08399" constant="no"/>
 </technology>
 </technologies>
@@ -32398,7 +32407,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="P" pad="PAD"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="952-3660-1-ND" constant="no"/>
+<attribute name="MF" value="Harwin" constant="no"/>
+<attribute name="MPN" value="S9111-45R" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -32409,6 +32422,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
 &lt;li&gt;VCC: 2.7~3.6V&lt;/li&gt;
+&lt;li&gt;V&lt;sub&gt;IO&lt;/sub&gt;: Vcc (TCS34001/5), 1.8V (TCS34003/7)&lt;/li&gt;
 &lt;li&gt;Operating Temperature: -40°C to 70°C&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
