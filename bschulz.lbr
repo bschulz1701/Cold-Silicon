@@ -12671,6 +12671,22 @@ No plating, no silk outline.
 <package name="SOCKET_S9111-45R_SLOT">
 <pad name="PAD" x="0" y="0" drill="2.6" diameter="3" shape="long" rot="R90"/>
 </package>
+<package name="SWITCH_6MM_TH">
+<pad name="1" x="-3.25" y="2.25" drill="1"/>
+<pad name="2" x="3.25" y="2.25" drill="1"/>
+<pad name="3" x="-3.25" y="-2.25" drill="1"/>
+<pad name="4" x="3.25" y="-2.25" drill="1"/>
+<wire x1="-3" y1="2.5" x2="-3" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.5" x2="-2.5" y2="-3" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.5" y1="-3" x2="2.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3" x2="3" y2="-2.5" width="0.127" layer="21" curve="90"/>
+<wire x1="3" y1="-2.5" x2="3" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="2.5" x2="2.5" y2="3" width="0.127" layer="21" curve="90"/>
+<wire x1="2.5" y1="3" x2="-2.5" y2="3" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3" x2="-3" y2="2.5" width="0.127" layer="21" curve="90"/>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="21"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -23880,7 +23896,7 @@ Manufacturer: TI
 <gate name="G$1" symbol="BUTTON" x="-7.62" y="0"/>
 </gates>
 <devices>
-<device name="" package="SWITCH_6MM">
+<device name="6X6" package="SWITCH_6MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -23915,6 +23931,21 @@ Manufacturer: TI
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="6X6_TH" package="SWITCH_6MM_TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="450-1650-ND" constant="no"/>
+<attribute name="MF" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="1825910-6" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
