@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -29257,7 +29257,7 @@ Digikey:
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA328P_TQFP" prefix="U">
+<deviceset name="ATMEGA328P" prefix="U">
 <description>&lt;h3&gt;Popular 328P in QFP&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.sparkfun.com/products/13448"&gt;Storefront component: ATmega328 - TQFP&lt;/a&gt; (COM-13448)&lt;/p&gt;
