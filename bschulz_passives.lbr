@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9066,7 +9066,7 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 &lt;ul&gt;
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;sf=0&amp;FV=ffec1104%2Cfffc000d%2C1c0002%2C440067%2C1f140000%2Cffe00034%2C400004&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0402&lt;/a&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;s=4356&amp;s=47360&amp;sf=0&amp;FV=fffc000d%2C1c0002%2C142c040c%2C1f140000%2Cffe00034&amp;quantity=10&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0603&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;sv=0&amp;pv1291=39245&amp;sf=1&amp;FV=-5%7C4356%2C-5%7C47360%2C-8%7C52%2C-1%7C13%2C7%7C2%2C1989%7C0&amp;quantity=10&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0603&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;pv252=68&amp;sf=0&amp;FV=ffec373d%2C1c0002%2C142c040c%2C1f140000%2Cffe00034%2C80002%2Cc0001&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Panasonic, 0603&lt;/a&gt;&lt;/li&gt;
 
