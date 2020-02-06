@@ -9064,7 +9064,7 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 
 &lt;p&gt;&lt;b&gt;Digikey Parts:&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;sf=0&amp;FV=ffec1104%2Cfffc000d%2C1c0002%2C440067%2C1f140000%2Cffe00034%2C400004&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0402&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;sv=0&amp;s=4356&amp;sf=1&amp;FV=-1%7C13%2C7%7C2%2C1291%7C39157%2C1989%7C0%2C-8%7C52%2C3%7C1131%2C3%7C2503&amp;quantity=&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0402&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href = "https://www.digikey.com/products/en/resistors/chip-resistor-surface-mount/52?k=&amp;pkeyword=&amp;sv=0&amp;pv1291=39245&amp;sf=1&amp;FV=-5%7C4356%2C-5%7C47360%2C-8%7C52%2C-1%7C13%2C7%7C2%2C1989%7C0&amp;quantity=10&amp;ColumnSort=1000011&amp;page=1&amp;stock=1&amp;pageSize=25"&gt; Yageo, 0603&lt;/a&gt;&lt;/li&gt;
 
@@ -9093,6 +9093,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="VALUE_PART" value="" constant="no"/>
+</technology>
+<technology name="0.0">
+<attribute name="DIGIKEY" value="311-0.0JRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402JR-070RL" constant="no"/>
+<attribute name="VALUE_PART" value="0" constant="no"/>
 </technology>
 <technology name="100">
 <attribute name="DIGIKEY" value="311-100LRCT-ND" constant="no"/>
@@ -9135,6 +9141,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-071ML" constant="no"/>
 <attribute name="VALUE_PART" value="1M" constant="no"/>
+</technology>
+<technology name="2.2K">
+<attribute name="DIGIKEY" value="311-2.20KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-072K2L" constant="no"/>
+<attribute name="VALUE_PART" value="2.2k" constant="no"/>
 </technology>
 <technology name="20">
 <attribute name="DIGIKEY" value="311-20LRCT-ND" constant="no"/>
