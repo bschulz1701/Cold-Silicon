@@ -6458,8 +6458,8 @@ Breadboard-friendly pins.
 <wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1" x2="-1.5" y2="1" width="0.127" layer="21"/>
 <rectangle x1="-1.5" y1="-1" x2="-0.5" y2="1" layer="21"/>
-<text x="-2.54" y="1.27" size="1.016" layer="27">&gt;NAME&lt;</text>
-<text x="-2.54" y="-2.54" size="1.016" layer="27">&gt;VALUE&lt;</text>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="DCK_R-PDSO-G6">
 <smd name="1" x="-0.65" y="-1.1" dx="0.9" dy="0.4" layer="1" rot="R90"/>
@@ -12770,20 +12770,32 @@ Based on &lt;a href = "http://ww1.microchip.com/downloads/en/DeviceDoc/20005386B
 <wire x1="0.75" y1="-0.75" x2="0.75" y2="0.75" width="0.127" layer="21"/>
 <wire x1="0.75" y1="0.75" x2="-0.75" y2="0.75" width="0.127" layer="21"/>
 <circle x="-1.016" y="1.016" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="DFN3X3A_8L_EP1_P">
 <description>DFN, 3x3mm, 8 pin transistor package with design from &lt;a href = "http://www.aosmd.com/res/packaging_information/DFN3x3A-8L%20EP1.pdf"&gt;Alpha Semiconductor &lt;/a&gt;</description>
-<smd name="1" x="-0.975" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
-<smd name="2" x="-0.325" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
-<smd name="3" x="0.325" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
-<smd name="4" x="0.975" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
-<smd name="5" x="0.975" y="1.4" dx="0.5" dy="0.35" layer="1" rot="R270"/>
-<smd name="6" x="0.325" y="1.4" dx="0.5" dy="0.35" layer="1" rot="R270"/>
-<smd name="7" x="-0.325" y="1.4" dx="0.5" dy="0.35" layer="1" rot="R270"/>
-<smd name="8" x="-0.975" y="1.4" dx="0.5" dy="0.35" layer="1" rot="R270"/>
-<polygon width="0.127" layer="1">
+<smd name="S@1" x="-0.975" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
+<smd name="S@2" x="-0.325" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
+<smd name="S@3" x="0.325" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
+<smd name="G" x="0.975" y="-1.4" dx="0.5" dy="0.35" layer="1" rot="R90"/>
+<polygon width="0" layer="1">
 <vertex x="-1.225" y="1.35"/>
+<vertex x="-1.125" y="1.35"/>
+<vertex x="-1.125" y="1.651"/>
+<vertex x="-0.775" y="1.651"/>
+<vertex x="-0.775" y="1.35"/>
+<vertex x="-0.475" y="1.35"/>
+<vertex x="-0.475" y="1.651"/>
+<vertex x="-0.125" y="1.651"/>
+<vertex x="-0.125" y="1.35"/>
+<vertex x="0.125" y="1.35"/>
+<vertex x="0.125" y="1.651"/>
+<vertex x="0.475" y="1.651"/>
+<vertex x="0.475" y="1.35"/>
+<vertex x="0.775" y="1.35"/>
+<vertex x="0.775" y="1.651"/>
+<vertex x="1.125" y="1.651"/>
+<vertex x="1.125" y="1.35"/>
 <vertex x="1.225" y="1.35"/>
 <vertex x="1.225" y="0.215"/>
 <vertex x="1.605" y="0.215"/>
@@ -12805,7 +12817,69 @@ Based on &lt;a href = "http://ww1.microchip.com/downloads/en/DeviceDoc/20005386B
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <circle x="-1.778" y="-1.778" radius="0.127" width="0.127" layer="21"/>
-<text x="2.159" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="center">&gt;NAME</text>
+<text x="2.159" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<smd name="D" x="0" y="0.381" dx="1.98" dy="2.45" layer="1" rot="R90"/>
+</package>
+<package name="SCREWTERMINAL-3.5MM-2_ROUND">
+<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch - 2 Pin PTH&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="2" y="3" radius="0.2828" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="3.4" x2="5.25" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="3.4" x2="5.25" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="5.25" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="5.25" y1="3.15" x2="5.75" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="5.75" y1="3.15" x2="5.75" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="5.75" y1="2.15" x2="5.25" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.032"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
+<text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X02_2.54_SCREWTERM_ROUND">
+<description>&lt;h3&gt;2 Pin Screw Terminal - 2.54mm&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="P2" x="-1.27" y="0" drill="1.016"/>
+<pad name="P1" x="1.27" y="0" drill="1.016"/>
+<wire x1="-2.77" y1="3.3" x2="2.73" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="2.73" y1="3.3" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="2.73" y1="2.5" x2="2.73" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="2.73" y1="-3.2" x2="-2.77" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="-3.2" x2="-2.77" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="2.5" x2="-2.77" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="-2.77" y1="2.5" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
+<text x="-2.54" y="3.429" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.54" y="-4.064" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="USC">
+<description>Toshiba USC diode footprint, based on &lt;a href = "https://toshiba.semicon-storage.com/info/docget.jsp?did=14077&amp;prodName=CUS10S30"&gt; CUS10S30,H3F&lt;/a&gt;</description>
+<smd name="CAT" x="-1.15" y="0" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="ANODE" x="1.15" y="0" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-0.85" y1="0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
+<rectangle x1="-0.635" y1="-0.635" x2="-0.254" y2="0.635" layer="21"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -20470,21 +20544,6 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="1.27" y="6.604" size="1.778" layer="95" ratio="20" align="center">&gt;DISP</text>
 <text x="1.27" y="-6.604" size="1.778" layer="95" ratio="20" align="center">&gt;NAME</text>
 </symbol>
-<symbol name="D_ZENER">
-<wire x1="-1.27" y1="-1.905" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.905" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.397" y1="1.905" x2="1.397" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.397" y1="-1.905" x2="2.032" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.397" y1="1.905" x2="0.762" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-2.9464" y="2.6416" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.4704" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="D_SCHOTTKY">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
@@ -20502,6 +20561,22 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="D_ZENER">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.016" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="1.27" y1="1.016" x2="0.762" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.016" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -23788,12 +23863,16 @@ push-push type</description>
 </device>
 <device name="-AON7522E" package="DFN3X3A_8L_EP1_P">
 <connects>
-<connect gate="NMOS" pin="D" pad="5 6 7 8"/>
-<connect gate="NMOS" pin="G" pad="4"/>
-<connect gate="NMOS" pin="S" pad="1 2 3"/>
+<connect gate="NMOS" pin="D" pad="D"/>
+<connect gate="NMOS" pin="G" pad="G"/>
+<connect gate="NMOS" pin="S" pad="S@1 S@2 S@3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="785-1505-1-ND" constant="no"/>
+<attribute name="MF" value="Alpha &amp; Omega" constant="no"/>
+<attribute name="MPN" value="AON7522E" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -24001,7 +24080,11 @@ Manufacturer: TI
 <connect gate="G$1" pin="C" pad="CAT"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD-323" package="SOD323-R">
@@ -25587,6 +25670,9 @@ Standard 6 pin header for AVR programming</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="455-1749-1-ND" constant="no"/>
+<attribute name="MF" value="JST" constant="no"/>
+<attribute name="MPN" value="S2B-PH-SM4-TB(LF)(SN)" constant="no"/>
 <attribute name="PROD_ID" value="CONN-11443"/>
 </technology>
 </technologies>
@@ -25794,6 +25880,32 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="DIGIKEY" value="WM7845-ND" constant="no"/>
 <attribute name="MF" value="Molex" constant="no"/>
 <attribute name="MPN" value="0395321002" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3.5MM_ROUND" package="SCREWTERMINAL-3.5MM-2_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="ED2635-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTTE020161" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2.54_SCREW_ROUND" package="1X02_2.54_SCREWTERM_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10561-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTVN02A150" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -32905,7 +33017,11 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="C" pad="CAT"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -32922,7 +33038,37 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="USC" package="USC">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SOD-123F" package="SOD-123F">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
