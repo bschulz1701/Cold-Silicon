@@ -8254,6 +8254,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Wurth" constant="no"/>
 <attribute name="MPN" value="885012005060" constant="no"/>
 </technology>
+<technology name="6PF">
+<attribute name="DIGIKEY" value="490-3104-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GJM1555C1H6R0CB01D" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C0504" package="C0504">
