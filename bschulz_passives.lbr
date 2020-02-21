@@ -9240,7 +9240,7 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="VALUE_PART" value="1.8k" constant="no"/>
 </technology>
 <technology name="100K">
-<attribute name="DIGIKEY" value="RC0402FR-071ML" constant="no"/>
+<attribute name="DIGIKEY" value="311-100KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07100KL" constant="no"/>
 <attribute name="VALUE_PART" value="100k" constant="no"/>
