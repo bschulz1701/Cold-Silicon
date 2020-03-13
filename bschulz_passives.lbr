@@ -8331,6 +8331,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10A225KQ8NNNC" constant="no"/>
 </technology>
+<technology name="220PF">
+<attribute name="DIGIKEY" value="399-1066-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0603C221J5GACTU" constant="no"/>
+</technology>
 <technology name="4.7UF">
 <attribute name="DIGIKEY" value="490-10481-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
