@@ -5109,15 +5109,22 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <text x="2.159" y="0" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center">&gt;VALUE</text>
 </package>
 <package name="SWITCH_6MM">
-<description>PTS645 Series (C&amp;K) 6mm Tactile Switch</description>
+<description>PTS645 Series (C&amp;K) 6mm Tactile Switch &lt;br&gt;
+&lt;a href = "https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS645/documents/datasheet.pdf"&gt;Datasheet &lt;/a&gt;</description>
 <smd name="1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
 <smd name="3" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
 <smd name="4" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
 <smd name="2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="21"/>
-<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.5" x2="-3" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.5" x2="-2.5" y2="-3" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.5" y1="-3" x2="2.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3" x2="3" y2="-2.5" width="0.127" layer="21" curve="90"/>
+<wire x1="3" y1="-2.5" x2="3" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="2.5" x2="2.5" y2="3" width="0.127" layer="21" curve="90"/>
+<wire x1="2.5" y1="3" x2="-2.5" y2="3" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3" x2="-3" y2="2.5" width="0.127" layer="21" curve="90"/>
+<text x="0" y="3.81" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="1.75" width="0.127" layer="21"/>
 </package>
 <package name="1X6_127">
 <pad name="3" x="-0.635" y="0" drill="0.7" diameter="1.016"/>
@@ -13331,6 +13338,74 @@ Ref &lt;a href = http://www.ti.com/lit/ds/symlink/lm2765.pdf&gt;datasheet&lt;/a&
 <text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="5" x="1.3" y="0" dx="1.1" dy="0.6" layer="1"/>
 </package>
+<package name="SCREWTERMINAL-3.5MM-2_ROUND_RESTRICT">
+<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch - 2 Pin PTH&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="2" y="3" radius="0.2828" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="3.4" x2="5.25" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="3.4" x2="5.25" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="5.25" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="39"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="39"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="39"/>
+<wire x1="5.25" y1="3.15" x2="5.75" y2="3.15" width="0.2032" layer="39"/>
+<wire x1="5.75" y1="3.15" x2="5.75" y2="2.15" width="0.2032" layer="39"/>
+<wire x1="5.75" y1="2.15" x2="5.25" y2="2.15" width="0.2032" layer="39"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.032"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
+<text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="LED_0805">
+<description>0805 LED package, &lt;a href = https://dammedia.osram.info/media/resource/hires/osram-dam-2493505/LS%20R976.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="CATHODE" x="-1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="ANODE" x="1.05" y="0" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0.381" x2="-0.254" y2="0" width="0.1016" layer="21"/>
+<wire x1="-0.254" y1="0" x2="0.254" y2="-0.381" width="0.1016" layer="21"/>
+<wire x1="0.254" y1="-0.381" x2="0.254" y2="0.381" width="0.1016" layer="21"/>
+<wire x1="-0.254" y1="0.381" x2="-0.254" y2="-0.381" width="0.1016" layer="21"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="OS102011MA1QN1">
+<description>Footprint for side mount SPDT minurature slide switch &lt;br&gt;
+&lt;a href = https://dznh3ojzb2azq.cloudfront.net/products/Slide/OS/documents/datasheet.pdf&gt;C&amp;K OS102011MA1QN1&lt;/a&gt;</description>
+<pad name="BODY@2" x="4.1" y="0" drill="1.5"/>
+<pad name="BODY@1" x="-4.1" y="0" drill="1.5"/>
+<pad name="1" x="-2" y="0" drill="0.8"/>
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="3" x="2" y="0" drill="0.8"/>
+<wire x1="-4.3" y1="2.2" x2="-4.3" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-2.2" x2="-2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.2" x2="2" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.2" x2="4.3" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-2.2" x2="4.3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="4.3" y1="2.2" x2="-4.3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2.2" x2="-2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-6.2" x2="2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="2" y1="-6.2" x2="2" y2="-2.2" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-2" y="-2.2"/>
+<vertex x="-2" y="-6.2"/>
+<vertex x="2" y="-6.2"/>
+<vertex x="2" y="-2.2"/>
+</polygon>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -21202,14 +21277,15 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 </devices>
 </deviceset>
 <deviceset name="18650" prefix="BT">
+<description>&lt;b&gt;Battery Holder&lt;/b&gt; 18650 form factor &lt;br&gt; Variant for with or without circuit protection (length varries depending on this)</description>
 <gates>
 <gate name="G$1" symbol="BATTERY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BATT_18650_CLIP">
+<device name="NO_PROTEC" package="BATT_18650_CLIP">
 <connects>
-<connect gate="G$1" pin="+" pad="BATT+@1"/>
-<connect gate="G$1" pin="-" pad="BATT-@1"/>
+<connect gate="G$1" pin="+" pad="BATT+@1 BATT+@2 BATT+@3"/>
+<connect gate="G$1" pin="-" pad="BATT-@1 BATT-@2 BATT-@3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -24769,10 +24845,19 @@ Manufacturer: TI
 <technology name=""/>
 </technologies>
 </device>
+<device name="0805" package="LED_0805">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BUTTON" prefix="S">
-<description>Genaric SPST Pushbutton</description>
+<description>Genaric SPST Push button</description>
 <gates>
 <gate name="G$1" symbol="BUTTON" x="-7.62" y="0"/>
 </gates>
@@ -26494,6 +26579,15 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="MF" value="OnShore" constant="no"/>
 <attribute name="MPN" value="OSTVN02A150" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="3.5MM_ROUND_RESTRICT" package="SCREWTERMINAL-3.5MM-2_ROUND_RESTRICT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -29867,6 +29961,16 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="MF" value="C&amp;K" constant="no"/>
 <attribute name="MPN" value="PCM12SMTR" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="OS1020_RT" package="OS102011MA1QN1">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
