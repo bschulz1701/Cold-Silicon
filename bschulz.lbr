@@ -21288,7 +21288,11 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <connect gate="G$1" pin="-" pad="BATT-@1 BATT-@2 BATT-@3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="36-54-ND" constant="no"/>
+<attribute name="MF" value="Keystone" constant="no"/>
+<attribute name="MPN" value="54" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -25356,6 +25360,11 @@ MCP3425
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
+<technology name="1.75A">
+<attribute name="DIGIKEY" value="MF-USMF175X-2CT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="MF-USMF175X-2" constant="no"/>
+</technology>
 <technology name="100MA">
 <attribute name="DIGIKEY" value="MF-USMF005-2CT-ND" constant="no"/>
 <attribute name="MF" value="Bourns" constant="no"/>
@@ -26587,7 +26596,11 @@ Standard 6 pin header for AVR programming</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED2635-ND" constant="no"/>
+<attribute name="MF" value="On Shore" constant="no"/>
+<attribute name="MPN" value="OSTTE020161" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26770,7 +26783,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="1" pin="P" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="N/A" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -28613,7 +28630,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="G$1" pin="P" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="N/A" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1,0" package="SMD1,0-2,54">
@@ -28621,7 +28642,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="G$1" pin="P" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="N/A" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -29970,7 +29995,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="CKN9559-ND" constant="no"/>
+<attribute name="MF" value="C&amp;K" constant="no"/>
+<attribute name="MPN" value="OS102011MA1QN1" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

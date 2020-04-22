@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8336,6 +8336,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Kemet" constant="no"/>
 <attribute name="MPN" value="C0603C221J5GACTU" constant="no"/>
 </technology>
+<technology name="22PF">
+<attribute name="DIGIKEY" value="399-7874-1-ND" constant="no"/>
+<attribute name="MF" value="KEMET" constant="no"/>
+<attribute name="MPN" value="C0603C220J1GACTU" constant="no"/>
+</technology>
 <technology name="4.7UF">
 <attribute name="DIGIKEY" value="490-10481-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
@@ -9346,6 +9351,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0603FR-07220RL" constant="no"/>
 <attribute name="VALUE_PART" value="220" constant="no"/>
 </technology>
+<technology name="240K">
+<attribute name="DIGIKEY" value="311-240KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07240KL" constant="no"/>
+<attribute name="VALUE_PART" value="240k" constant="no"/>
+</technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9388,6 +9399,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0603FR-07422KL" constant="no"/>
 <attribute name="VALUE_PART" value="422k" constant="no"/>
 </technology>
+<technology name="430K">
+<attribute name="DIGIKEY" value="311-430KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07430KL" constant="no"/>
+<attribute name="VALUE_PART" value="430k" constant="no"/>
+</technology>
 <technology name="470">
 <attribute name="DIGIKEY" value="311-470HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9399,6 +9416,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
 <attribute name="VALUE_PART" value="470k" constant="no"/>
+</technology>
+<technology name="56">
+<attribute name="DIGIKEY" value="311-56.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0756RL" constant="no"/>
+<attribute name="VALUE_PART" value="56" constant="no"/>
 </technology>
 <technology name="590K">
 <attribute name="DIGIKEY" value="311-590KHRCT-ND" constant="no"/>
