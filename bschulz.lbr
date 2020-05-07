@@ -21820,9 +21820,22 @@ Used for prog header on Arduino M0
 </device>
 </devices>
 </deviceset>
-<deviceset name="MICRO_SD">
-<description>Micro SD card holder, Push-Pull, Exposed leads for easy (non-reflow) soldering
-PN: HR1941CT-ND</description>
+<deviceset name="MICRO_SD" prefix="SD">
+<description>&lt;b&gt;Micro SD Card&lt;/b&gt; - Card Detect, Exposed leads for non-reflow soldering
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt; Number of Positions: 10 (8 + 2) &lt;/li&gt;
+&lt;li&gt; Insertion/Removal: Push In, Pull Out &lt;/li&gt;
+&lt;li&gt; Switch: Yes &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/amphenol-icc-commercial-products/114-00841-68/114-00841-68-1-ND/2187101"&gt; 114-00841-68-1-ND (Amphenol) &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/hirose-electric-co-ltd/DM3D-SF/HR1941CT-ND/1786515"&gt; HR1941CT-ND (Hirose Alternative) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SD_MICRO" x="2.54" y="-10.16"/>
 </gates>
@@ -21846,9 +21859,9 @@ PN: HR1941CT-ND</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="DIGIKEY" value="114-00841-68-1-ND" constant="no"/>
+<attribute name="MF" value="Amphenol" constant="no"/>
+<attribute name="MPN" value="114-00841-68" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -26079,7 +26092,11 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -27961,22 +27978,38 @@ NTC Thermistors:
 <devices>
 <device name="2_NP" package="2_56">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4_NP" package="4_40">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="4_PL" package="4_40_PLATED">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="2_PL" package="2_56_PLATED">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -31684,7 +31717,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37100/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="M-COPPER" package="OSHW-LOGO-M_COPPER">
@@ -31692,7 +31729,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37119/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="L-COPPER" package="OSHW-LOGO-L_COPPER">
@@ -31700,7 +31741,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37117/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="L" package="OSHW-LOGO-L">
@@ -31708,7 +31753,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37097/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="M" package="OSHW-LOGO-M">
@@ -31716,7 +31765,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37126/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="S" package="OSHW-LOGO-S">
@@ -31724,7 +31777,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37099/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MINI" package="OSHW-LOGO-MINI">
@@ -31732,7 +31789,11 @@ Digikey:
 <package3dinstance package3d_urn="urn:adsk.eagle:package:37101/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -32112,7 +32173,8 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="SOLDERCUP_CONN_QUAD">
+<deviceset name="SOLDERCUP_CONN_QUAD" prefix="J">
+<description>&lt;b&gt;Mounting pads for a M12 barel connector&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONN_04" x="0" y="0"/>
 </gates>
@@ -32125,7 +32187,11 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="A97650-ND" constant="no"/>
+<attribute name="MF" value="TE Connectivity" constant="no"/>
+<attribute name="MPN" value="1838893-2" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -33212,6 +33278,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 &lt;p&gt;Digikey: &lt;br&gt;
 &lt;ul&gt;
 &lt;a href = "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS580301BA01-00/223-1623-5-ND/5277628"&gt; 223-1623-5-ND (01BA)&lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS580302BA01-00/223-1624-5-ND/5277629"&gt; 223-1624-5-ND (02BA)&lt;/a&gt;&lt;br/&gt;
 &lt;a href = "https://www.digikey.com/product-detail/en/te-connectivity-measurement-specialties/MS580305BA01-00/223-1625-5-ND/5277630"&gt; 223-1625-5-ND (05BA)&lt;/a&gt;&lt;br/&gt;
 &lt;/p&gt;</description>
 <gates>
@@ -33242,9 +33309,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 <technology name="02BA">
-<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="223-1624-5-ND" constant="no"/>
 <attribute name="MF" value="TE Connectivity" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MPN" value="MS580302BA01-00" constant="no"/>
 <attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 <technology name="05BA">
