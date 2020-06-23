@@ -20879,7 +20879,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="-1.27" y1="-2.286" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="2.032" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 <text x="0" y="-8.89" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="6.35" size="1.27" layer="95" ratio="15" align="center">SN74AUP1G34</text>
+<text x="0" y="6.35" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
 </symbol>
 <symbol name="GEN_8">
 <description>Genaric 8 pin device</description>
@@ -32321,6 +32321,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-17230-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74AUP1G34" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74LVC1G34DCKR" constant="no"/>
 </technology>
@@ -34876,6 +34877,46 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="HW-08694" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LVC1G17" prefix="U">
+<description>&lt;b&gt;SN74LVC1G17&lt;/b&gt; - Single Schmitt Trigger Logic Buffer
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;li&gt;Number of Gates: 1 /li&gt;
+&lt;li&gt; Inverting: No &lt;/li&gt;
+&lt;li&gt; 5V Tolerent Input (Down Shift)
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC1G17DCKR/296-11934-1-ND/389052"&gt;296-11934-1-ND (SC70, DCK) &lt;a&gt;&lt;br/&gt;
+
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SN74AUP1G34" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCK" package="DCK_R-PDSO-G5">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-11934-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74LVC1G17" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G17DCKR" constant="no"/>
 </technology>
 </technologies>
 </device>
