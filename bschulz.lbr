@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12153,7 +12153,8 @@ Ref &lt;a href = http://www.ti.com/lit/ds/symlink/lp3988-q1.pdf&gt;datasheet&lt;
 <wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="21"/>
 <wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="21"/>
 <circle x="-1.016" y="1.651" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="PG-VLGA-8">
 <description>Footprint for &lt;a href = https://www.infineon.com/dgdl/Infineon-DPS368-DS-v01_00-EN.pdf?fileId=5546d46269e1c019016a0c45105d4b40&gt;DPS368&lt;/a&gt;</description>
@@ -13618,6 +13619,44 @@ Fits 4-40 Screws.
 <pad name="P$1" x="0" y="0" drill="4.191" diameter="6.1976"/>
 <text x="-1.397" y="3.302" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.524" y="-3.937" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="DGK_S-PDSO-G8">
+<smd name="1" x="-2.2" y="0.975" dx="1.45" dy="0.45" layer="1"/>
+<smd name="2" x="-2.2" y="0.325" dx="1.45" dy="0.45" layer="1"/>
+<smd name="3" x="-2.2" y="-0.325" dx="1.45" dy="0.45" layer="1"/>
+<smd name="4" x="-2.2" y="-0.975" dx="1.45" dy="0.45" layer="1"/>
+<smd name="5" x="2.2" y="-0.975" dx="1.45" dy="0.45" layer="1" rot="R180"/>
+<smd name="6" x="2.2" y="-0.325" dx="1.45" dy="0.45" layer="1" rot="R180"/>
+<smd name="7" x="2.2" y="0.325" dx="1.45" dy="0.45" layer="1" rot="R180"/>
+<smd name="8" x="2.2" y="0.975" dx="1.45" dy="0.45" layer="1" rot="R180"/>
+<wire x1="-1.5" y1="1.25" x2="-1.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.25" y2="-1.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-1.25" y1="-1.5" x2="1.25" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.5" x2="1.5" y2="-1.25" width="0.127" layer="21" curve="90"/>
+<wire x1="1.5" y1="-1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.25" y2="1.5" width="0.127" layer="21" curve="90"/>
+<wire x1="1.25" y1="1.5" x2="-1.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="1.5" x2="-1.5" y2="1.25" width="0.127" layer="21" curve="90"/>
+<circle x="-1.651" y="1.651" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="P0915N">
+<description>Potentiometer layout&lt;br&gt;Referance &lt;a href = "https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Potentiometers/Datasheets/P09x.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="1" x="-2.5" y="0" drill="1"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="2.5" y="0" drill="1"/>
+<pad name="BODY@1" x="-4.75" y="7.5" drill="1.8"/>
+<pad name="BODY@2" x="4.75" y="7.5" drill="1.8"/>
+<wire x1="-5.35" y1="11.85" x2="-5.35" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="-5.35" y1="1.5" x2="-4.85" y2="1" width="0.1524" layer="21" curve="90"/>
+<wire x1="-4.85" y1="1" x2="4.85" y2="1" width="0.1524" layer="21"/>
+<wire x1="4.85" y1="1" x2="5.35" y2="1.5" width="0.1524" layer="21" curve="90"/>
+<wire x1="5.35" y1="1.5" x2="5.35" y2="11.85" width="0.1524" layer="21"/>
+<wire x1="5.35" y1="11.85" x2="4.85" y2="12.35" width="0.1524" layer="21" curve="90"/>
+<wire x1="4.85" y1="12.35" x2="-4.85" y2="12.35" width="0.1524" layer="21"/>
+<wire x1="-4.85" y1="12.35" x2="-5.35" y2="11.85" width="0.1524" layer="21" curve="90"/>
+<circle x="0" y="6.5" radius="3" width="0.1524" layer="21"/>
+<text x="0" y="13.081" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -21587,6 +21626,34 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="-2.54" y="-4.826" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <text x="-2.54" y="3.048" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="VREG_BASIC_EN">
+<description>&lt;b&gt;Generic linear voltage regulator, with ENABLE&lt;/b&gt;</description>
+<pin name="VIN" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="VOUT" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.604" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="LP3982">
+<pin name="VIN" x="-15.24" y="10.16" length="middle" direction="pwr"/>
+<pin name="!SHDN" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="OUT" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="!FAULT" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="SET" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="CC" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="GND" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="0" y="14.478" size="1.778" layer="95" align="center">LP3982</text>
+<text x="0" y="-14.224" size="1.778" layer="95" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -32254,6 +32321,16 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technology name=""/>
 </technologies>
 </device>
+<device name="P09X5N" package="P0915N">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="GEN_6" prefix="U">
@@ -33033,7 +33110,7 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 </devices>
 </deviceset>
 <deviceset name="LP3988" prefix="U">
-<description>&lt;b&gt;TPS7A05*&lt;/b&gt; - Ultra Low Power Ultra Low Dropout Linear Regulator with Power Good
+<description>&lt;b&gt;LP3988&lt;/b&gt; - Ultra Low Power Ultra Low Dropout Linear Regulator with Power Good and Enable
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
@@ -34917,6 +34994,101 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="DISP" value="SN74LVC1G17" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74LVC1G17DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV755P" prefix="U">
+<description>&lt;b&gt;TLV755xx(x)P&lt;/b&gt; - Low I&lt;sub&gt;Q&lt;/sub&gt;, Small Size, Low Dropout, Positive Voltage Regulator
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.45V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: Many, fixed&lt;/il&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 25&amp;mu;A (typ) &lt;/li&gt;
+&lt;li&gt; Output Current: 500 mA &lt;/li&gt;
+&lt;li&gt;Dropout Voltage: 238mV @ 500mA&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/TLV75533PDBVR/296-50411-1-ND/9685550"&gt;TLV75533PDBVR (3v3, SOT-23) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREG_BASIC_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="DBV0005A">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="3V3">
+<attribute name="DIGIKEY" value="296-50411-1-ND" constant="no"/>
+<attribute name="DISP" value="TLV5533P" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TLV75533PDBVR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LP3982" prefix="U">
+<description>&lt;b&gt;LP3982*&lt;/b&gt; - Micropower, Ultra-Low-Dropout, Low-Noise, Linear Regulator 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.5V ~ 6V&lt;/li&gt;
+&lt;li&gt;Vout:  1.8V, 2.5V, 3.3V, ADJ&lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 90&amp;mu;A typ &lt;/li&gt;
+&lt;li&gt;Dropout Voltage: 120mV @ 300mA&lt;/li&gt;
+&lt;li&gt; Voltage Accuracy: 2% typ, 3.5% max &lt;/li&gt;
+&lt;li&gt; Output Current: 300 mA &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt; Features: Fault, Enable &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/LP3982IMM-ADJ-NOPB/LP3982IMM-ADJ-NOPBCT-ND/570193"&gt; LP3982IMM-ADJ/NOPB (Adjustable, VSSOP) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LP3982" x="0" y="0"/>
+</gates>
+<devices>
+<device name="VSSOP" package="DGK_S-PDSO-G8">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="8"/>
+<connect gate="G$1" pin="!SHDN" pad="7"/>
+<connect gate="G$1" pin="CC" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="1 4"/>
+<connect gate="G$1" pin="SET" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="ADJ">
+<attribute name="DIGIKEY" value="LP3982IMM-ADJ/NOPBCT-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="LP3982IMM-ADJ/NOPB" constant="no"/>
 </technology>
 </technologies>
 </device>
