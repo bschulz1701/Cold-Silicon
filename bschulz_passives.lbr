@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8295,6 +8295,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="DIGIKEY" value="1276-2083-1-ND" constant="no"/>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10B474KA8NNNC" constant="no"/>
+</technology>
+<technology name="10NF">
+<attribute name="DIGIKEY" value="399-7842-1-ND" constant="no"/>
+<attribute name="MF" value="KEMET" constant="no"/>
+<attribute name="MPN" value="C0603C103M5RACTU" constant="no"/>
 </technology>
 <technology name="10PF">
 <attribute name="DIGIKEY" value="311-1058-1-ND" constant="no"/>
