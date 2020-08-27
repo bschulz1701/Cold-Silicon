@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24026,7 +24026,7 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="9.144" size="1.27" layer="96" ratio="15" align="center">TCA9536</text>
+<text x="0" y="9.144" size="1.27" layer="96" ratio="15" align="center">PCA9536</text>
 <text x="0" y="-6.35" size="1.27" layer="96" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="CONN_12">
@@ -24976,7 +24976,11 @@ Features:  (441/841)
 <connect gate="G$1" pin="6" pad="P$3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="CLX6F-FKC-CNP1ST1E1BB7D3D3CT-ND" constant="no"/>
+<attribute name="MF" value="Cree" constant="no"/>
+<attribute name="MPN" value="CLX6F-FKC-CNP1ST1E1BB7D3D3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
