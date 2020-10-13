@@ -29406,7 +29406,11 @@ Standard 6 pin header for AVR programming</description>
 <connect gate="A" pin="7" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="277-1278-ND" constant="no"/>
+<attribute name="MF" value="Phoenix Contact" constant="no"/>
+<attribute name="MPN" value="1725708" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
