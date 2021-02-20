@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -38,7 +38,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -57,7 +57,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -79,7 +79,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
@@ -16171,17 +16171,21 @@ C&amp;K, Non-Shorting (BBM), 100mA, 12V&lt;br&gt;
 <wire x1="6.5" y1="3.95" x2="-6.5" y2="3.95" width="0.254" layer="21"/>
 <text x="0" y="4.572" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="MICRO_FIT-1X3_RT">
+<package name="1X3_MICROFIT_RT">
 <description>&lt;b&gt;Molex MicroFit Board Connector&lt;/b&gt;&lt;br&gt;1x3, Right Angle &lt;br&gt;&lt;a href = https://www.molex.com/pdm_docs/sd/436500300_sd.pdf&gt;Drawing&lt;/a&gt;</description>
 <pad name="2" x="0" y="4.32" drill="1.02"/>
 <pad name="3" x="-3" y="4.32" drill="1.02"/>
 <pad name="1" x="3" y="4.32" drill="1.02"/>
 <hole x="0" y="0" drill="3"/>
-<wire x1="-6.325" y1="5.3" x2="-6.325" y2="-4.6" width="0.254" layer="21"/>
-<wire x1="-6.325" y1="-4.6" x2="6.325" y2="-4.6" width="0.254" layer="21"/>
-<wire x1="6.325" y1="-4.6" x2="6.325" y2="5.3" width="0.254" layer="21"/>
-<wire x1="6.325" y1="5.3" x2="-6.325" y2="5.3" width="0.254" layer="21"/>
-<text x="0" y="5.969" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="6.325" y1="-3.6" x2="6.325" y2="4.8" width="0.127" layer="21"/>
+<wire x1="6.325" y1="4.8" x2="5.825" y2="5.3" width="0.127" layer="21" curve="90"/>
+<wire x1="5.825" y1="5.3" x2="-5.825" y2="5.3" width="0.127" layer="21"/>
+<wire x1="-5.825" y1="5.3" x2="-6.325" y2="4.8" width="0.127" layer="21" curve="90"/>
+<wire x1="-6.325" y1="4.8" x2="-6.325" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="-6.325" y1="-3.6" x2="-5.325" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-5.325" y1="-4.6" x2="5.325" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="5.325" y1="-4.6" x2="6.325" y2="-3.6" width="0.127" layer="21"/>
+<text x="-6.985" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="TSSOP14">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 14&lt;/b&gt;&lt;br&gt;0.65mm pitch, 14 pin&lt;br&gt;
@@ -16374,7 +16378,7 @@ C&amp;K, Non-Shorting (BBM), 100mA, 12V&lt;br&gt;
 <circle x="-1.778" y="1.778" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="2.413" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
-<package name="0430450600">
+<package name="2X3_MICROFIT_RT">
 <description>&lt;b&gt;Molex Micro-Fit, 6 pos, Right Angle&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.molex.com/pdm_docs/sd/430450600_sd.pdf&gt;Datasheet&lt;/a&gt;</description>
 <pad name="1" x="3" y="4.32" drill="1.02"/>
 <pad name="2" x="0" y="4.32" drill="1.02"/>
@@ -16392,6 +16396,71 @@ C&amp;K, Non-Shorting (BBM), 100mA, 12V&lt;br&gt;
 <wire x1="5.825" y1="5.31" x2="-5.825" y2="5.31" width="0.127" layer="21"/>
 <wire x1="-5.825" y1="5.31" x2="-6.325" y2="4.81" width="0.127" layer="21" curve="90"/>
 <text x="-6.985" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="POWERDI3333-8">
+<description>&lt;b&gt;MOSFET Power Case, Diodes Incorporated&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.diodes.com/assets/Datasheets/DMP2008UFG.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.975" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="2" x="-0.325" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="3" x="0.325" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="4" x="0.975" y="-1.5" dx="0.42" dy="0.7" layer="1"/>
+<smd name="EP@1" x="0.975" y="1.5" dx="0.42" dy="0.7" layer="1" rot="R180"/>
+<smd name="EP@2" x="0.325" y="1.5" dx="0.42" dy="0.7" layer="1" rot="R180"/>
+<smd name="EP@3" x="-0.325" y="1.5" dx="0.42" dy="0.7" layer="1" rot="R180"/>
+<smd name="EP@4" x="-0.975" y="1.5" dx="0.42" dy="0.7" layer="1" rot="R180"/>
+<rectangle x1="-1.143" y1="-0.381" x2="-0.127" y2="0.127" layer="31"/>
+<rectangle x1="0.127" y1="0.381" x2="1.143" y2="0.889" layer="31" rot="R180"/>
+<rectangle x1="0.127" y1="-0.381" x2="1.143" y2="0.127" layer="31" rot="R180"/>
+<rectangle x1="-1.143" y1="0.381" x2="-0.127" y2="0.889" layer="31" rot="R180"/>
+<wire x1="-1.65" y1="1.65" x2="-1.65" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-1.65" y1="-1.65" x2="1.65" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="1.65" y1="-1.65" x2="1.65" y2="1.65" width="0.127" layer="21"/>
+<wire x1="1.65" y1="1.65" x2="-1.65" y2="1.65" width="0.127" layer="21"/>
+<circle x="-1.905" y="-1.905" radius="0.127" width="0.127" layer="21"/>
+<text x="-2.159" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<smd name="EP@5" x="0" y="0.381" dx="1.55" dy="2.37" layer="1" rot="R90" cream="no"/>
+</package>
+<package name="DFN_14_3X3">
+<description>&lt;b&gt;DFN, 14 pos, 3x3mm&lt;/b&gt;&lt;br&gt;&lt;a href = "https://pdfserv.maximintegrated.com/land_patterns/90-0063.PDF"&gt;Datasheet&lt;/a&gt;&lt;br&gt;Maxim Package Code: T1433</description>
+<smd name="1" x="-1.475" y="1.2" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="-1.475" y="0.8" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="-1.475" y="0.4" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="-1.475" y="0" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="5" x="-1.475" y="-0.4" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="6" x="-1.475" y="-0.8" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="7" x="-1.475" y="-1.2" dx="0.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="8" x="1.475" y="-1.2" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="9" x="1.475" y="-0.8" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="10" x="1.475" y="-0.4" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="11" x="1.475" y="0" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="12" x="1.475" y="0.4" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="13" x="1.475" y="0.8" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="14" x="1.475" y="1.2" dx="0.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="1.78" dy="2.35" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.778" y="1.778" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="LED_1206_BOTTOM">
+<description>&lt;b&gt;LED, SMD, Bottom Entry&lt;/b&gt;&lt;br&gt;Size: 1206&lt;br&gt;&lt;a href = https://optoelectronics.liteon.com/upload/download/DS22-2000-256/LTST-C230KGKT.pdf&gt;Lite-On Datasheet&lt;/a&gt;&lt;br&gt;&lt;a href = https://www.kingbrightusa.com/images/catalog/SPEC/APTR3216SURCK.pdf&gt;Kingbright Datasheet&lt;/a&gt;</description>
+<smd name="CATHODE" x="-2.1" y="0" dx="1.6" dy="1.5" layer="1"/>
+<smd name="ANODE" x="2.1" y="0" dx="1.6" dy="1.5" layer="1"/>
+<wire x1="-1.15" y1="1.15" x2="-1.15" y2="-1.15" width="0" layer="46"/>
+<wire x1="-1.15" y1="-1.15" x2="1.15" y2="-1.15" width="0" layer="46"/>
+<wire x1="1.15" y1="-1.15" x2="1.15" y2="1.15" width="0" layer="46"/>
+<wire x1="1.15" y1="1.15" x2="-1.15" y2="1.15" width="0" layer="46"/>
+<wire x1="-1.6" y1="0.8" x2="-1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="1.6" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="-1.6" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="0.381" x2="-4.191" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.191" y1="0" x2="-3.556" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="-0.381" x2="-3.556" y2="0.381" width="0.127" layer="21"/>
+<wire x1="-4.191" y1="0.381" x2="-4.191" y2="-0.381" width="0.127" layer="21"/>
+<text x="0" y="1.651" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.651" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
@@ -24928,6 +24997,54 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="0" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="5.588" size="2.54" layer="94" ratio="15" align="bottom-center">&gt;DISP</text>
 </symbol>
+<symbol name="MAX17263">
+<pin name="BATT" x="-22.86" y="12.7" length="middle" direction="pwr"/>
+<pin name="CELLX/CSPH" x="-22.86" y="5.08" length="middle" direction="in"/>
+<pin name="TH" x="-22.86" y="-2.54" length="middle" direction="in"/>
+<pin name="CSPL" x="-5.08" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="CSN" x="5.08" y="-20.32" length="middle" direction="in" rot="R90"/>
+<pin name="LED4" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="LED3" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="LED2" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="LED1" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="25.4" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="SDA" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="ALRT" x="25.4" y="7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="REG" x="25.4" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="-7.62" y="-20.32" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-15.24" x2="20.32" y2="15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="15.24" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<text x="1.27" y="16.764" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="1.27" y="1.27" size="1.27" layer="95" align="center">MAX17263</text>
+</symbol>
+<symbol name="LEDV">
+<pin name="2" x="0" y="0" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="10.16" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="-1.905" y1="3.81" x2="0" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="0" y1="3.81" x2="1.905" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="1.905" y1="6.35" x2="0" y2="6.35" width="0.2032" layer="94"/>
+<wire x1="0" y1="6.35" x2="-1.905" y2="6.35" width="0.2032" layer="94"/>
+<wire x1="0" y1="6.35" x2="0" y2="7.62" width="0.2032" layer="94"/>
+<wire x1="0" y1="6.35" x2="-1.905" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="1.905" y1="3.81" x2="0" y2="6.35" width="0.2032" layer="94"/>
+<wire x1="-4.445" y1="6.35" x2="-3.81" y2="6.985" width="0.2032" layer="94"/>
+<wire x1="-2.54" y1="6.985" x2="-3.81" y2="8.255" width="0.2032" layer="94"/>
+<wire x1="-3.175" y1="5.08" x2="-4.445" y2="6.35" width="0.2032" layer="94"/>
+<wire x1="-4.445" y1="10.16" x2="-4.445" y2="9.525" width="0.2032" layer="94"/>
+<wire x1="-4.445" y1="9.525" x2="-3.81" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="10.16" x2="-4.445" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="8.255" x2="-3.175" y2="8.89" width="0.2032" layer="94"/>
+<wire x1="-3.175" y1="8.89" x2="-4.445" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="6.985" x2="-5.08" y2="8.255" width="0.2032" layer="94"/>
+<wire x1="-5.08" y1="8.255" x2="-5.08" y2="7.62" width="0.2032" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-4.445" y2="8.255" width="0.2032" layer="94"/>
+<wire x1="-4.445" y1="8.255" x2="-5.08" y2="8.255" width="0.2032" layer="94"/>
+<text x="2.54" y="2.0828" size="3.4798" layer="96" font="vector" ratio="10" rot="SR0" align="center">&gt;Value</text>
+<text x="2.54" y="5.2324" size="3.4798" layer="95" font="vector" ratio="10" rot="SR0" align="center">&gt;Name</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -25024,7 +25141,11 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <connect gate="G$1" pin="-" pad="BATT-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="36-1042P-ND" constant="no"/>
+<attribute name="MF" value="Keystone" constant="no"/>
+<attribute name="MPN" value="1042P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -28387,6 +28508,16 @@ push-push type</description>
 </technology>
 </technologies>
 </device>
+<device name="-DMP2008" package="POWERDI3333-8">
+<connects>
+<connect gate="G$1" pin="D" pad="EP@1 EP@2 EP@3 EP@4 EP@5"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="USB_MICRO" prefix="USB">
@@ -28622,6 +28753,15 @@ Manufacturer: TI
 </technologies>
 </device>
 <device name="0805" package="LED_0805">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206_BOTTOM" package="LED_1206_BOTTOM">
 <connects>
 <connect gate="G$1" pin="ANODE" pad="ANODE"/>
 <connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
@@ -32202,7 +32342,7 @@ Digikey:
 <technology name=""/>
 </technologies>
 </device>
-<device name="MICROFIT_RT" package="MICRO_FIT-1X3_RT">
+<device name="MICROFIT_RT" package="1X3_MICROFIT_RT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -33033,7 +33173,7 @@ Features:
 <technology name=""/>
 </technologies>
 </device>
-<device name="MICROFIT_RT" package="0430450600">
+<device name="MICROFIT_RT" package="2X3_MICROFIT_RT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -40255,7 +40395,7 @@ Boost Operation
 <gate name="G$1" symbol="GEMS_POWER_PLUG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="INPUT" package="0430450600">
+<device name="INPUT" package="2X3_MICROFIT_RT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="5"/>
 <connect gate="G$1" pin="BAT" pad="1"/>
@@ -40273,7 +40413,7 @@ Boost Operation
 </technology>
 </technologies>
 </device>
-<device name="OUTPUT" package="0430450600">
+<device name="OUTPUT" package="2X3_MICROFIT_RT">
 <connects>
 <connect gate="G$1" pin="3V3" pad="5"/>
 <connect gate="G$1" pin="BAT" pad="3"/>
@@ -40288,6 +40428,74 @@ Boost Operation
 <attribute name="DISP" value="Output" constant="no"/>
 <attribute name="MF" value="Molex" constant="no"/>
 <attribute name="MPN" value="0430450600" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX17263" prefix="U">
+<description>&lt;b&gt;MAX17263&lt;/b&gt; - Single/Multi-Cell Fuel Gauge with Integrated LED Control
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.3 ~ 4.9V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 15&amp;mu;A typ&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;LSB&lt;/sub&gt;: 1.5625&amp;mu;V&lt;/li&gt;
+&lt;li&gt; V&lt;sub&gt;LSB&lt;/sub&gt;: 78.125&amp;mu;V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/maxim-integrated/MAX17263LETD-T/9833463"&gt; 175-MAX17263LETD+TCT-ND&lt;/a&gt;&lt;br/&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX17263" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN_14_3X3">
+<connects>
+<connect gate="G$1" pin="ALRT" pad="12"/>
+<connect gate="G$1" pin="BATT" pad="6"/>
+<connect gate="G$1" pin="CELLX/CSPH" pad="10"/>
+<connect gate="G$1" pin="CSN" pad="7"/>
+<connect gate="G$1" pin="CSPL" pad="9"/>
+<connect gate="G$1" pin="GND" pad="8 EP"/>
+<connect gate="G$1" pin="LED1" pad="2"/>
+<connect gate="G$1" pin="LED2" pad="3"/>
+<connect gate="G$1" pin="LED3" pad="4"/>
+<connect gate="G$1" pin="LED4" pad="5"/>
+<connect gate="G$1" pin="REG" pad="11"/>
+<connect gate="G$1" pin="SCL" pad="14"/>
+<connect gate="G$1" pin="SDA" pad="13"/>
+<connect gate="G$1" pin="TH" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="175-MAX17263LETD+TCT-ND" constant="no"/>
+<attribute name="MF" value="Maxim" constant="no"/>
+<attribute name="MPN" value="MAX17263LETD+T" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTST-C230KGKT" prefix="LED">
+<gates>
+<gate name="A" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="BUILT_BY" value="EMA_Cory" constant="no"/>
+<attribute name="COPYRIGHT" value="Copyright (C) 2018 Accelerated Designs. All rights reserved" constant="no"/>
+<attribute name="DATASHEET" value="https://optoelectronics.liteon.com/upload/download/DS22-2000-256/LTST-C230KGKT.pdf" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="LTST-C230KGKT" constant="no"/>
+<attribute name="SOURCELIBRARY" value="LITE-ON_2020-07-01" constant="no"/>
+<attribute name="VENDOR" value="Lite-On" constant="no"/>
 </technology>
 </technologies>
 </device>
