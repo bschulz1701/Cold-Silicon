@@ -39,7 +39,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -16846,6 +16846,69 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <text x="6.35" y="-2.54" size="0.8128" layer="21" font="vector" ratio="15" align="center">7</text>
 <text x="8.89" y="-2.54" size="0.8128" layer="21" font="vector" ratio="15" align="center">8</text>
 </package>
+<package name="MLF32-5X5">
+<description>&lt;b&gt;32M1&lt;/b&gt; Micro Lead Frame package (MLF)&lt;br&gt;
+&lt;a href = https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48P_88P_168P-DS40002065A.pdf&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href = https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-qfn/QFN_32_05-08-1693.pdf&gt;Ref Land Pad&lt;/a&gt;
+&lt;br&gt; Note: Exposed pad different size (3.1x3.1mm vs 3.45x3.45mm) due to variance in side on actual package (see Datasheet). Also, invidiual pad sizes (0.7x0.3mm vs 0.7x0.25mm) since the slightly larger pad is standard for Atmel/Microchip layout recomendations for MLF</description>
+<wire x1="-2.25" y1="2.5" x2="2.25" y2="2.5" width="0.254" layer="51"/>
+<wire x1="2.25" y1="2.5" x2="2.5" y2="2.5" width="0.254" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="2.25" width="0.254" layer="21"/>
+<wire x1="2.5" y1="2.25" x2="2.5" y2="-2.25" width="0.254" layer="51"/>
+<wire x1="2.25" y1="-2.5" x2="-2.25" y2="-2.5" width="0.254" layer="51"/>
+<wire x1="-2.5" y1="-2.25" x2="-2.5" y2="2.25" width="0.254" layer="51"/>
+<circle x="-2.885" y="2.885" radius="0.1581" width="0.254" layer="21"/>
+<smd name="1" x="-2.4" y="1.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="2" x="-2.4" y="1.25" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="3" x="-2.4" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="4" x="-2.4" y="0.25" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="5" x="-2.4" y="-0.25" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="6" x="-2.4" y="-0.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="7" x="-2.4" y="-1.25" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="8" x="-2.4" y="-1.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
+<smd name="TH" x="0" y="0" dx="3.1" dy="3.1" layer="1" roundness="10" cream="no"/>
+<text x="0" y="3.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-2.325" y1="0.975" x2="-0.975" y2="2.325" layer="31"/>
+<rectangle x1="-0.675" y1="0.975" x2="0.675" y2="2.325" layer="31"/>
+<rectangle x1="0.977" y1="0.977" x2="2.327" y2="2.327" layer="31" rot="R90"/>
+<rectangle x1="0.975" y1="-2.325" x2="2.325" y2="-0.975" layer="31" rot="R180"/>
+<rectangle x1="-0.675" y1="-2.325" x2="0.675" y2="-0.975" layer="31" rot="R180"/>
+<rectangle x1="-2.327" y1="-2.327" x2="-0.977" y2="-0.977" layer="31" rot="R270"/>
+<rectangle x1="0.975" y1="-0.674" x2="2.325" y2="0.676" layer="31" rot="R180"/>
+<rectangle x1="-0.675" y1="-0.674" x2="0.675" y2="0.676" layer="31" rot="R180"/>
+<rectangle x1="-2.327" y1="-0.676" x2="-0.977" y2="0.674" layer="31" rot="R270"/>
+<smd name="9" x="-1.75" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="10" x="-1.25" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="11" x="-0.75" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="12" x="-0.25" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="13" x="0.25" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="14" x="0.75" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="15" x="1.25" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="16" x="1.75" y="-2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R90"/>
+<smd name="17" x="2.4" y="-1.75" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="18" x="2.4" y="-1.25" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="19" x="2.4" y="-0.75" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="20" x="2.4" y="-0.25" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="21" x="2.4" y="0.25" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="22" x="2.4" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="23" x="2.4" y="1.25" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="24" x="2.4" y="1.75" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R180"/>
+<smd name="25" x="1.75" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="26" x="1.25" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="27" x="0.75" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="28" x="0.25" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="29" x="-0.25" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="30" x="-0.75" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="31" x="-1.25" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<smd name="32" x="-1.75" y="2.4" dx="0.7" dy="0.3" layer="1" roundness="50" rot="R270"/>
+<wire x1="-2.25" y1="-2.5" x2="-2.5" y2="-2.5" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="-2.25" width="0.254" layer="21"/>
+<wire x1="2.5" y1="-2.25" x2="2.5" y2="-2.5" width="0.254" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.25" y2="-2.5" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="2.25" x2="-2.5" y2="2.5" width="0.254" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.25" y2="2.5" width="0.254" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -25828,6 +25891,44 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <pin name="6" x="7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="6" rot="R180"/>
 <pin name="7" x="7.62" y="5.08" visible="pad" length="short" direction="pas" swaplevel="7" rot="R180"/>
 <pin name="8" x="7.62" y="7.62" visible="pad" length="short" direction="pas" swaplevel="8" rot="R180"/>
+</symbol>
+<symbol name="ATMEAGA48">
+<description>&lt;b&gt;ATmega48P/88P/168P&lt;/b&gt;&lt;br&gt;&lt;a href = https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48P_88P_168P-DS40002065A.pdf&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-22.86" y1="38.1" x2="20.32" y2="38.1" width="0.254" layer="94"/>
+<wire x1="20.32" y1="38.1" x2="20.32" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-38.1" x2="-22.86" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-38.1" x2="-22.86" y2="38.1" width="0.254" layer="94"/>
+<text x="-22.86" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-22.86" y="39.37" size="1.778" layer="95">&gt;NAME</text>
+<pin name="(PCINT23/AIN1)PD7" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="(PCINT22/OC0A/AIN0)PD6" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="(PCINT21/OC0B/T1)PD5" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="(PCINT20/XCK/T0)PD4" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="(PCINT19/INT1)PD3" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="(PCINT18/INT0)PD2" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="(PCINT17/TXD)PD1" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="(PCINT16/RXD)PD0" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="(PCINT14/!RESET!)PC6" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="(PCINT13/ADC5/SCL)PC5" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="(PCINT12/ADC4/SDA)PC4" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="(PCINT11/ADC3)PC3" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="(PCINT10/ADC2)PC2" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="(PCINT9/ADC1)PC1" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="(PCINT8/ADC0)PC0" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="(PCINT7/XTAL2/TOSC2)PB7" x="25.4" y="27.94" length="middle" rot="R180"/>
+<pin name="(PCINT6/XTAL1/TOSC1)PB6" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="(PCINT5/SCK)PB5" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="(PCINT4/MISO)PB4" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="(PCINT3/OC2A/MOSI)PB3" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="(PCINT2/!SS!/OC1B)PB2" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="(PCINT1/OC1A)PB1" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="ADC7" x="25.4" y="35.56" length="middle" direction="in" rot="R180"/>
+<pin name="ADC6" x="25.4" y="33.02" length="middle" direction="in" rot="R180"/>
+<pin name="AVCC" x="-27.94" y="7.62" length="middle" direction="pwr"/>
+<pin name="AREF" x="-27.94" y="10.16" length="middle" direction="pas"/>
+<pin name="VCC" x="-27.94" y="35.56" length="middle" direction="pwr"/>
+<pin name="GND" x="-27.94" y="-35.56" length="middle" direction="pwr"/>
+<pin name="(PCINT0/CLKO/ICP1)PB0" x="25.4" y="10.16" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -41646,6 +41747,123 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <attribute name="DIGIKEY" value="CT3121CT-ND" constant="no"/>
 <attribute name="MF" value="CTS" constant="no"/>
 <attribute name="MPN" value="219-8MSTR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATMEGA48P" prefix="U">
+<description>&lt;b&gt;ATmega48P/88P/168P&lt;/b&gt; 8 bit AVR Microcontroller 
+&lt;p&gt;
+Features:  (441/841)
+&lt;ul&gt;
+&lt;li&gt;Vcc: 2.7 ~ 5.5V (P) or 1.8 ~ 5.5V (PV)&lt;/li&gt;
+&lt;li&gt;Clock: Up to 20MHz, Internal 8MHz FRC, 32kHz RC
+&lt;li&gt;Flash Memory: 4/8/16K &lt;/li&gt;
+&lt;li&gt;SRAM: 512/1K/1K B&lt;/li&gt;
+&lt;li&gt;EEPROM: 256/512/512B&lt;/li&gt;
+&lt;li&gt;ADC: 10b, 8 port &lt;/li&gt;
+&lt;li&gt;USART: Yes&lt;/li&gt;
+&lt;li&gt;SPI: Yes &lt;/li&gt;
+&lt;li&gt;I&lt;sup&gt;2&lt;/sup&gt;C: Yes&lt;/li&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Digikey:
+&lt;br&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA48PA-AUR/2357144"&gt; ATMEGA48PA-AUR (TQFP-32) &lt;/a&gt;
+&lt;br&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA48PA-MNR/2522758"&gt; ATMEGA48PA-MNR (MLF-32) &lt;/a&gt;
+&lt;br&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA88PA-AUR/2357263"&gt; ATMEGA88PA-AUR (TQFP-32) &lt;/a&gt;
+&lt;br&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA88PA-MNR/2522767"&gt; ATMEGA88PA-MNR (MLF-32) &lt;/a&gt;
+
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="A" symbol="ATMEAGA48" x="0" y="0"/>
+</gates>
+<devices>
+<device name="QFN" package="TQFP32-08">
+<connects>
+<connect gate="A" pin="(PCINT0/CLKO/ICP1)PB0" pad="12"/>
+<connect gate="A" pin="(PCINT1/OC1A)PB1" pad="13"/>
+<connect gate="A" pin="(PCINT10/ADC2)PC2" pad="25"/>
+<connect gate="A" pin="(PCINT11/ADC3)PC3" pad="26"/>
+<connect gate="A" pin="(PCINT12/ADC4/SDA)PC4" pad="27"/>
+<connect gate="A" pin="(PCINT13/ADC5/SCL)PC5" pad="28"/>
+<connect gate="A" pin="(PCINT14/!RESET!)PC6" pad="29"/>
+<connect gate="A" pin="(PCINT16/RXD)PD0" pad="30"/>
+<connect gate="A" pin="(PCINT17/TXD)PD1" pad="31"/>
+<connect gate="A" pin="(PCINT18/INT0)PD2" pad="32"/>
+<connect gate="A" pin="(PCINT19/INT1)PD3" pad="1"/>
+<connect gate="A" pin="(PCINT2/!SS!/OC1B)PB2" pad="14"/>
+<connect gate="A" pin="(PCINT20/XCK/T0)PD4" pad="2"/>
+<connect gate="A" pin="(PCINT21/OC0B/T1)PD5" pad="9"/>
+<connect gate="A" pin="(PCINT22/OC0A/AIN0)PD6" pad="10"/>
+<connect gate="A" pin="(PCINT23/AIN1)PD7" pad="11"/>
+<connect gate="A" pin="(PCINT3/OC2A/MOSI)PB3" pad="15"/>
+<connect gate="A" pin="(PCINT4/MISO)PB4" pad="16"/>
+<connect gate="A" pin="(PCINT5/SCK)PB5" pad="17"/>
+<connect gate="A" pin="(PCINT6/XTAL1/TOSC1)PB6" pad="7"/>
+<connect gate="A" pin="(PCINT7/XTAL2/TOSC2)PB7" pad="8"/>
+<connect gate="A" pin="(PCINT8/ADC0)PC0" pad="23"/>
+<connect gate="A" pin="(PCINT9/ADC1)PC1" pad="24"/>
+<connect gate="A" pin="ADC6" pad="19"/>
+<connect gate="A" pin="ADC7" pad="22"/>
+<connect gate="A" pin="AREF" pad="20"/>
+<connect gate="A" pin="AVCC" pad="18"/>
+<connect gate="A" pin="GND" pad="3 5 21"/>
+<connect gate="A" pin="VCC" pad="4 6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38945/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="ATMEGA48PA-AURCT-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="ATMEGA48PA-AUR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MLF" package="MLF32-5X5">
+<connects>
+<connect gate="A" pin="(PCINT0/CLKO/ICP1)PB0" pad="12"/>
+<connect gate="A" pin="(PCINT1/OC1A)PB1" pad="13"/>
+<connect gate="A" pin="(PCINT10/ADC2)PC2" pad="25"/>
+<connect gate="A" pin="(PCINT11/ADC3)PC3" pad="26"/>
+<connect gate="A" pin="(PCINT12/ADC4/SDA)PC4" pad="27"/>
+<connect gate="A" pin="(PCINT13/ADC5/SCL)PC5" pad="28"/>
+<connect gate="A" pin="(PCINT14/!RESET!)PC6" pad="29"/>
+<connect gate="A" pin="(PCINT16/RXD)PD0" pad="30"/>
+<connect gate="A" pin="(PCINT17/TXD)PD1" pad="31"/>
+<connect gate="A" pin="(PCINT18/INT0)PD2" pad="32"/>
+<connect gate="A" pin="(PCINT19/INT1)PD3" pad="1"/>
+<connect gate="A" pin="(PCINT2/!SS!/OC1B)PB2" pad="14"/>
+<connect gate="A" pin="(PCINT20/XCK/T0)PD4" pad="2"/>
+<connect gate="A" pin="(PCINT21/OC0B/T1)PD5" pad="9"/>
+<connect gate="A" pin="(PCINT22/OC0A/AIN0)PD6" pad="10"/>
+<connect gate="A" pin="(PCINT23/AIN1)PD7" pad="11"/>
+<connect gate="A" pin="(PCINT3/OC2A/MOSI)PB3" pad="15"/>
+<connect gate="A" pin="(PCINT4/MISO)PB4" pad="16"/>
+<connect gate="A" pin="(PCINT5/SCK)PB5" pad="17"/>
+<connect gate="A" pin="(PCINT6/XTAL1/TOSC1)PB6" pad="7"/>
+<connect gate="A" pin="(PCINT7/XTAL2/TOSC2)PB7" pad="8"/>
+<connect gate="A" pin="(PCINT8/ADC0)PC0" pad="23"/>
+<connect gate="A" pin="(PCINT9/ADC1)PC1" pad="24"/>
+<connect gate="A" pin="ADC6" pad="19"/>
+<connect gate="A" pin="ADC7" pad="22"/>
+<connect gate="A" pin="AREF" pad="20"/>
+<connect gate="A" pin="AVCC" pad="18"/>
+<connect gate="A" pin="GND" pad="3 5 21 TH"/>
+<connect gate="A" pin="VCC" pad="4 6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="ATMEGA48PA-MNRCT-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="ATMEGA48PA-MNR" constant="no"/>
 </technology>
 </technologies>
 </device>
