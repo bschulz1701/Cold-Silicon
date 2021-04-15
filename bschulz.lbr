@@ -17206,6 +17206,15 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <text x="-5.08" y="2.794" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-5.08" y="-3.683" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="4_40_CLOSE">
+<description>&lt;p&gt;&lt;b&gt;4x40 Non-Plated (Tight Clearance) Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on recomended close fit
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<hole x="0" y="0" drill="2.9464"/>
+<circle x="0" y="0" radius="2.3241" width="0" layer="39"/>
+<circle x="0" y="0" radius="2.7178" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -32980,6 +32989,11 @@ NTC Thermistors:
 <attribute name="MF" value="N/A" constant="no"/>
 <attribute name="MPN" value="DNP" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="4_NP_CLOSE" package="4_40_CLOSE">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
