@@ -24,20 +24,20 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -9580,7 +9580,7 @@ Source: &lt;a href="http://www.atmel.com/Images/doc2543.pdf"&gt; Data sheet &lt;
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
 <package name="DFN_6_2X2">
-<description>DFN, 6 pin, 2x2mm, Thin, MT</description>
+<description>DFN, 6 pin, 2x2mm, 0.65mm Pitch, Thin, MT</description>
 <smd name="6" x="-0.65" y="0.9" dx="0.26" dy="0.4" layer="1"/>
 <smd name="5" x="0" y="0.9" dx="0.26" dy="0.4" layer="1"/>
 <smd name="4" x="0.65" y="0.9" dx="0.26" dy="0.4" layer="1"/>
@@ -17215,6 +17215,570 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <circle x="0" y="0" radius="2.3241" width="0" layer="39"/>
 <circle x="0" y="0" radius="2.7178" width="0.127" layer="21"/>
 </package>
+<package name="TSSOP_8">
+<description>&lt;b&gt;TSSOP8 (SOT505-1)&lt;/b&gt;&lt;br&gt;
+&lt;a href = "https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.05" y="-2.375" dx="0.6" dy="1.15" layer="1"/>
+<smd name="4" x="1.05" y="-2.375" dx="0.6" dy="1.15" layer="1"/>
+<smd name="2" x="-0.325" y="-2.375" dx="0.45" dy="1.15" layer="1"/>
+<smd name="3" x="0.325" y="-2.375" dx="0.45" dy="1.15" layer="1"/>
+<smd name="5" x="1.05" y="2.375" dx="0.6" dy="1.15" layer="1" rot="R180"/>
+<smd name="8" x="-1.05" y="2.375" dx="0.6" dy="1.15" layer="1" rot="R180"/>
+<smd name="6" x="0.325" y="2.375" dx="0.45" dy="1.15" layer="1" rot="R180"/>
+<smd name="7" x="-0.325" y="2.375" dx="0.45" dy="1.15" layer="1" rot="R180"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.016" y="-1.016" radius="0.179603125" width="0.127" layer="21"/>
+<text x="-2.032" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="AUDIOJACK_SWITCHCRAFT_35RASMT4BHNTRX">
+<description>&lt;b&gt;TRS, 3.5mm, 3 Conductor, 5 Contact Audio Jack&lt;/b&gt;&lt;br&gt;&lt;a href = "http://www.switchcraft.com/Drawings/35rasmt4bhntrx_cd.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="4" x="1.6" y="4.05" dx="2" dy="2.1" layer="1"/>
+<smd name="2" x="4.3" y="4.05" dx="2.2" dy="2.1" layer="1"/>
+<smd name="1" x="2.2" y="-4.05" dx="2.2" dy="2.1" layer="1"/>
+<smd name="3" x="11.7" y="-4.05" dx="2.7" dy="2.1" layer="1"/>
+<smd name="5" x="15.8" y="0.75" dx="2.7" dy="2.6" layer="1" rot="R90"/>
+<wire x1="0" y1="3" x2="0" y2="2.5" width="0.127" layer="21"/>
+<wire x1="0" y1="2.5" x2="0" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.5" x2="0" y2="-3" width="0.127" layer="21"/>
+<wire x1="0" y1="-3" x2="14.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="14.5" y1="-3" x2="14.5" y2="3" width="0.127" layer="21"/>
+<wire x1="14.5" y1="3" x2="0" y2="3" width="0.127" layer="21"/>
+<hole x="3.5" y="0" drill="1.6"/>
+<hole x="10.5" y="0" drill="1.6"/>
+<wire x1="0" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="2.5" x2="-2.5" y2="2" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2" x2="-2" y2="-2.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-2" y1="-2.5" x2="0" y2="-2.5" width="0.127" layer="21"/>
+<text x="6.35" y="3.81" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="1X06_MICROLOCKPLUS">
+<description>&lt;b&gt;Micro-Lock PLUS, 6 position, single row&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.molex.com/pdm_docs/sd/2059570671_sd.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-3.125" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="-1.875" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="-0.625" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="0.625" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="1.875" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="3.125" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="BODY@1" x="-5.025" y="1.695" dx="2.15" dy="1.3" layer="1" rot="R90"/>
+<smd name="BODY@2" x="5.025" y="1.695" dx="2.15" dy="1.3" layer="1" rot="R90"/>
+<wire x1="-5.375" y1="-0.889" x2="-5.375" y2="3.042" width="0.127" layer="21"/>
+<wire x1="-5.375" y1="3.042" x2="-3.125" y2="3.042" width="0.127" layer="21"/>
+<wire x1="-3.125" y1="3.042" x2="-3.125" y2="4.45" width="0.127" layer="21"/>
+<wire x1="-3.125" y1="4.45" x2="3.125" y2="4.45" width="0.127" layer="21"/>
+<wire x1="3.125" y1="4.45" x2="3.125" y2="3.042" width="0.127" layer="21"/>
+<wire x1="3.125" y1="3.042" x2="5.375" y2="3.042" width="0.127" layer="21"/>
+<wire x1="5.375" y1="3.042" x2="5.375" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="5.375" y1="-0.889" x2="-5.375" y2="-0.889" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-5.675" y="5.27"/>
+<vertex x="-5.675" y="2.794"/>
+<vertex x="-5.715" y="2.77"/>
+<vertex x="-4.318" y="2.77"/>
+<vertex x="-4.318" y="0.62"/>
+<vertex x="-6.075" y="0.62"/>
+<vertex x="-6.075" y="-1.6"/>
+<vertex x="-3.525" y="-1.6"/>
+<vertex x="-3.525" y="0"/>
+<vertex x="3.525" y="0"/>
+<vertex x="3.525" y="-1.6"/>
+<vertex x="6.075" y="-1.6"/>
+<vertex x="6.075" y="0.62"/>
+<vertex x="4.318" y="0.62"/>
+<vertex x="4.318" y="2.77"/>
+<vertex x="5.675" y="2.77"/>
+<vertex x="5.675" y="5.27"/>
+</polygon>
+<text x="0" y="5.842" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="1X06_MICROLOCKPLUS_RT">
+<description>&lt;b&gt;Micro-Lock PLUS, 6 position, single row, Right Angle&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.molex.com/pdm_docs/sd/5055670681_sd.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-3.125" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="-1.875" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="-0.625" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="0.625" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="5" x="1.875" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="3.125" y="-0.6" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="BODY@1" x="-5.025" y="1.695" dx="2.15" dy="1.3" layer="1" rot="R90"/>
+<smd name="BODY@2" x="5.025" y="1.695" dx="2.15" dy="1.3" layer="1" rot="R90"/>
+<wire x1="-5.375" y1="-0.889" x2="-5.375" y2="2.026" width="0.127" layer="21"/>
+<wire x1="-5.375" y1="2.026" x2="-5.157" y2="2.026" width="0.127" layer="21"/>
+<wire x1="-5.157" y1="2.026" x2="-5.157" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-5.157" y1="3.25" x2="5.157" y2="3.25" width="0.127" layer="21"/>
+<wire x1="5.157" y1="3.25" x2="5.157" y2="2.026" width="0.127" layer="21"/>
+<wire x1="5.157" y1="2.026" x2="5.375" y2="2.026" width="0.127" layer="21"/>
+<wire x1="5.375" y1="2.026" x2="5.375" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="5.375" y1="-0.889" x2="-5.375" y2="-0.889" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-5.525" y="4.07"/>
+<vertex x="-5.525" y="2.794"/>
+<vertex x="-5.525" y="2.77"/>
+<vertex x="-4.318" y="2.77"/>
+<vertex x="-4.318" y="0.62"/>
+<vertex x="-5.975" y="0.62"/>
+<vertex x="-5.975" y="-1.4"/>
+<vertex x="-3.525" y="-1.4"/>
+<vertex x="-3.525" y="0"/>
+<vertex x="-2.975" y="-0.015"/>
+<vertex x="-2.975" y="4.07"/>
+</polygon>
+<text x="0" y="5.842" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<polygon width="0.127" layer="39">
+<vertex x="5.525" y="4.07"/>
+<vertex x="5.525" y="2.77"/>
+<vertex x="4.318" y="2.77"/>
+<vertex x="4.318" y="0.62"/>
+<vertex x="5.975" y="0.62"/>
+<vertex x="5.975" y="-1.4"/>
+<vertex x="3.525" y="-1.4"/>
+<vertex x="3.525" y="0"/>
+<vertex x="2.975" y="-0.015"/>
+<vertex x="2.975" y="4.07"/>
+</polygon>
+</package>
+<package name="1X03_M8_TE_T40410_BOARDLOCK">
+<description>&lt;b&gt;M8, 3 pos, A Coded connector with boardlock&lt;/b&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manufacturer: TE Connectivity&lt;/li&gt;
+&lt;li&gt;Manufacturer Part Number: T4041037031-000&lt;/li&gt;
+&lt;li&gt; Digikey Part Number: A126811-ND&lt;/li&gt;
+&lt;li&gt; &lt;a href = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7FT404103010X000%7FA%7Fpdf%7FEnglish%7FENG_CD_T404103010X000_A.pdf%7FT4041037031-000"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<pad name="3" x="-1.75" y="0" drill="1.3"/>
+<pad name="4" x="0" y="1.75" drill="1.3"/>
+<pad name="1" x="1.75" y="0" drill="1.3"/>
+<pad name="BODY@1" x="-6.25" y="0" drill="3"/>
+<pad name="BODY@2" x="6.25" y="0" drill="3"/>
+<circle x="6.145" y="-3.293" radius="0.1" width="0.2" layer="51"/>
+<circle x="0" y="0" radius="6.3" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="8.51" width="0.05" layer="39"/>
+</package>
+<package name="MAX-M8">
+<description>&lt;b&gt;MAX-M8* GPS Module Footprint&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.u-blox.com/en/docs/UBX-13004876"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4.75" y="4.4" dx="1.8" dy="0.7" layer="1" cream="no"/>
+<smd name="2" x="-4.75" y="3.3" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="3" x="-4.75" y="2.2" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="4" x="-4.75" y="1.1" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="5" x="-4.75" y="0" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="6" x="-4.75" y="-1.1" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="7" x="-4.75" y="-2.2" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="8" x="-4.75" y="-3.3" dx="1.8" dy="0.8" layer="1" cream="no"/>
+<smd name="9" x="-4.75" y="-4.4" dx="1.8" dy="0.7" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="4.75" y="-4.4" dx="1.8" dy="0.7" layer="1" rot="R180" cream="no"/>
+<smd name="11" x="4.75" y="-3.3" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="12" x="4.75" y="-2.2" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="4.75" y="-1.1" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="14" x="4.75" y="0" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="15" x="4.75" y="1.1" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="16" x="4.75" y="2.2" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="17" x="4.75" y="3.3" dx="1.8" dy="0.8" layer="1" rot="R180" cream="no"/>
+<smd name="18" x="4.75" y="4.4" dx="1.8" dy="0.7" layer="1" cream="no"/>
+<wire x1="-4.85" y1="5.05" x2="-4.85" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-4.85" y1="-5.05" x2="4.85" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="4.85" y1="-5.05" x2="4.85" y2="5.05" width="0.127" layer="21"/>
+<wire x1="4.85" y1="5.05" x2="-4.85" y2="5.05" width="0.127" layer="21"/>
+<circle x="-3.175" y="4.445" radius="0.40160625" width="0.127" layer="21"/>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="0.4"/>
+<vertex x="-6.25" y="-0.4"/>
+<vertex x="-4.85" y="-0.4"/>
+<vertex x="-4.85" y="-0.3"/>
+<vertex x="-3.95" y="-0.3"/>
+<vertex x="-3.95" y="0.3"/>
+<vertex x="-4.85" y="0.3"/>
+<vertex x="-4.85" y="0.4"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="-4.05"/>
+<vertex x="-6.25" y="-4.75"/>
+<vertex x="-4.85" y="-4.75"/>
+<vertex x="-4.85" y="-4.65"/>
+<vertex x="-3.95" y="-4.65"/>
+<vertex x="-3.95" y="-4.15"/>
+<vertex x="-4.85" y="-4.15"/>
+<vertex x="-4.85" y="-4.05"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="1.5"/>
+<vertex x="-6.25" y="0.7"/>
+<vertex x="-4.85" y="0.7"/>
+<vertex x="-4.85" y="0.8"/>
+<vertex x="-3.95" y="0.8"/>
+<vertex x="-3.95" y="1.4"/>
+<vertex x="-4.85" y="1.4"/>
+<vertex x="-4.85" y="1.5"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="2.6"/>
+<vertex x="-6.25" y="1.8"/>
+<vertex x="-4.85" y="1.8"/>
+<vertex x="-4.85" y="1.9"/>
+<vertex x="-3.95" y="1.9"/>
+<vertex x="-3.95" y="2.5"/>
+<vertex x="-4.85" y="2.5"/>
+<vertex x="-4.85" y="2.6"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="3.7"/>
+<vertex x="-6.25" y="2.9"/>
+<vertex x="-4.85" y="2.9"/>
+<vertex x="-4.85" y="3"/>
+<vertex x="-3.95" y="3"/>
+<vertex x="-3.95" y="3.6"/>
+<vertex x="-4.85" y="3.6"/>
+<vertex x="-4.85" y="3.7"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="-0.7"/>
+<vertex x="-6.25" y="-1.5"/>
+<vertex x="-4.85" y="-1.5"/>
+<vertex x="-4.85" y="-1.4"/>
+<vertex x="-3.95" y="-1.4"/>
+<vertex x="-3.95" y="-0.8"/>
+<vertex x="-4.85" y="-0.8"/>
+<vertex x="-4.85" y="-0.7"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="-1.8"/>
+<vertex x="-6.25" y="-2.6"/>
+<vertex x="-4.85" y="-2.6"/>
+<vertex x="-4.85" y="-2.5"/>
+<vertex x="-3.95" y="-2.5"/>
+<vertex x="-3.95" y="-1.9"/>
+<vertex x="-4.85" y="-1.9"/>
+<vertex x="-4.85" y="-1.8"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="-2.9"/>
+<vertex x="-6.25" y="-3.7"/>
+<vertex x="-4.85" y="-3.7"/>
+<vertex x="-4.85" y="-3.6"/>
+<vertex x="-3.95" y="-3.6"/>
+<vertex x="-3.95" y="-3"/>
+<vertex x="-4.85" y="-3"/>
+<vertex x="-4.85" y="-2.9"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-6.25" y="4.75"/>
+<vertex x="-6.25" y="4.05"/>
+<vertex x="-4.85" y="4.05"/>
+<vertex x="-4.85" y="4.15"/>
+<vertex x="-3.95" y="4.15"/>
+<vertex x="-3.95" y="4.65"/>
+<vertex x="-4.85" y="4.65"/>
+<vertex x="-4.85" y="4.75"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="-0.4"/>
+<vertex x="6.25" y="0.4"/>
+<vertex x="4.85" y="0.4"/>
+<vertex x="4.85" y="0.3"/>
+<vertex x="3.95" y="0.3"/>
+<vertex x="3.95" y="-0.3"/>
+<vertex x="4.85" y="-0.3"/>
+<vertex x="4.85" y="-0.4"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="4.05"/>
+<vertex x="6.25" y="4.75"/>
+<vertex x="4.85" y="4.75"/>
+<vertex x="4.85" y="4.65"/>
+<vertex x="3.95" y="4.65"/>
+<vertex x="3.95" y="4.15"/>
+<vertex x="4.85" y="4.15"/>
+<vertex x="4.85" y="4.05"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="-1.5"/>
+<vertex x="6.25" y="-0.7"/>
+<vertex x="4.85" y="-0.7"/>
+<vertex x="4.85" y="-0.8"/>
+<vertex x="3.95" y="-0.8"/>
+<vertex x="3.95" y="-1.4"/>
+<vertex x="4.85" y="-1.4"/>
+<vertex x="4.85" y="-1.5"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="-2.6"/>
+<vertex x="6.25" y="-1.8"/>
+<vertex x="4.85" y="-1.8"/>
+<vertex x="4.85" y="-1.9"/>
+<vertex x="3.95" y="-1.9"/>
+<vertex x="3.95" y="-2.5"/>
+<vertex x="4.85" y="-2.5"/>
+<vertex x="4.85" y="-2.6"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="-3.7"/>
+<vertex x="6.25" y="-2.9"/>
+<vertex x="4.85" y="-2.9"/>
+<vertex x="4.85" y="-3"/>
+<vertex x="3.95" y="-3"/>
+<vertex x="3.95" y="-3.6"/>
+<vertex x="4.85" y="-3.6"/>
+<vertex x="4.85" y="-3.7"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="0.7"/>
+<vertex x="6.25" y="1.5"/>
+<vertex x="4.85" y="1.5"/>
+<vertex x="4.85" y="1.4"/>
+<vertex x="3.95" y="1.4"/>
+<vertex x="3.95" y="0.8"/>
+<vertex x="4.85" y="0.8"/>
+<vertex x="4.85" y="0.7"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="1.8"/>
+<vertex x="6.25" y="2.6"/>
+<vertex x="4.85" y="2.6"/>
+<vertex x="4.85" y="2.5"/>
+<vertex x="3.95" y="2.5"/>
+<vertex x="3.95" y="1.9"/>
+<vertex x="4.85" y="1.9"/>
+<vertex x="4.85" y="1.8"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="2.9"/>
+<vertex x="6.25" y="3.7"/>
+<vertex x="4.85" y="3.7"/>
+<vertex x="4.85" y="3.6"/>
+<vertex x="3.95" y="3.6"/>
+<vertex x="3.95" y="3"/>
+<vertex x="4.85" y="3"/>
+<vertex x="4.85" y="2.9"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="6.25" y="-4.75"/>
+<vertex x="6.25" y="-4.05"/>
+<vertex x="4.85" y="-4.05"/>
+<vertex x="4.85" y="-4.15"/>
+<vertex x="3.95" y="-4.15"/>
+<vertex x="3.95" y="-4.65"/>
+<vertex x="4.85" y="-4.65"/>
+<vertex x="4.85" y="-4.75"/>
+</polygon>
+<text x="0" y="5.715" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="RWU0007A">
+<description>&lt;b&gt;RWU0007A&lt;/b&gt; - VQFN-HR, 7 pin &lt;br&gt;&lt;a href = https://www.ti.com/lit/ds/symlink/tps61022.pdf?ts=1626296324970&gt;Datasheet Ref&lt;/a&gt;</description>
+<smd name="1" x="-0.625" y="0.55" dx="0.35" dy="1.15" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.475" y="0" dx="0.2" dy="1.45" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0.975" y="-0.75" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="5" x="0.975" y="-0.25" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="6" x="0.975" y="0.25" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="7" x="0.975" y="0.75" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="3" x="-0.625" y="-0.55" dx="0.35" dy="1.15" layer="1" rot="R90" cream="no"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-1.651" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<polygon width="0" layer="31">
+<vertex x="-1.2005" y="0.725"/>
+<vertex x="-1.2005" y="0.375"/>
+<vertex x="-0.7255" y="0.375"/>
+<vertex x="-0.7255" y="0.725"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.5255" y="0.725"/>
+<vertex x="-0.5255" y="0.375"/>
+<vertex x="-0.0505" y="0.375"/>
+<vertex x="-0.0505" y="0.725"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.5255" y="-0.375"/>
+<vertex x="-0.5255" y="-0.725"/>
+<vertex x="-0.0505" y="-0.725"/>
+<vertex x="-0.0505" y="-0.375"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-1.2005" y="-0.375"/>
+<vertex x="-1.2005" y="-0.725"/>
+<vertex x="-0.7255" y="-0.725"/>
+<vertex x="-0.7255" y="-0.375"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-1.2005" y="0.1"/>
+<vertex x="-1.2005" y="-0.1"/>
+<vertex x="-0.5755" y="-0.1"/>
+<vertex x="-0.5755" y="0.1"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.3755" y="0.1"/>
+<vertex x="-0.3755" y="-0.1"/>
+<vertex x="0.2495" y="-0.1"/>
+<vertex x="0.2495" y="0.1"/>
+</polygon>
+</package>
+<package name="PSOP-8">
+<description>&lt;b&gt;PSOP-8&lt;/b&gt;&lt;br&gt;8 pin, SOIC package &lt;br&gt;&lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/PAM2320_June2021_Rev.4-2.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="EP" x="0" y="0" dx="3.6" dy="2.7" layer="1" rot="R270"/>
+<smd name="4" x="-2.7" y="-1.905" dx="0.65" dy="1.5" layer="1" rot="R270"/>
+<smd name="3" x="-2.7" y="-0.635" dx="0.65" dy="1.5" layer="1" rot="R270"/>
+<smd name="2" x="-2.7" y="0.635" dx="0.65" dy="1.5" layer="1" rot="R270"/>
+<smd name="1" x="-2.7" y="1.905" dx="0.65" dy="1.5" layer="1" rot="R270"/>
+<smd name="8" x="2.7" y="1.905" dx="0.65" dy="1.5" layer="1" rot="R90"/>
+<smd name="7" x="2.7" y="0.635" dx="0.65" dy="1.5" layer="1" rot="R90"/>
+<smd name="6" x="2.7" y="-0.635" dx="0.65" dy="1.5" layer="1" rot="R90"/>
+<smd name="5" x="2.7" y="-1.905" dx="0.65" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-1.7" y1="-2.45" x2="1.7" y2="-2.45" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-2.45" x2="1.95" y2="-2.2" width="0.127" layer="21" curve="90"/>
+<wire x1="1.95" y1="-2.2" x2="1.95" y2="2.2" width="0.127" layer="21"/>
+<wire x1="1.95" y1="2.2" x2="1.7" y2="2.45" width="0.127" layer="21" curve="90"/>
+<wire x1="1.7" y1="2.45" x2="-1.7" y2="2.45" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="2.45" x2="-1.95" y2="2.2" width="0.127" layer="21" curve="90"/>
+<wire x1="-1.95" y1="2.2" x2="-1.95" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-2.2" x2="-1.7" y2="-2.45" width="0.127" layer="21" curve="90"/>
+<circle x="-2.286" y="2.794" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-3.048" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-MAPI(5.4X5.4)">
+<description>Wurth MAPI series inductor, with 5.4mmx5.4mm package, sheilded  
+&lt;br&gt;&lt;a href = https://www.we-online.com/catalog/datasheet/74438366033.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="P$1" x="-1.95" y="0" dx="5.6" dy="1.7" layer="1" rot="R90"/>
+<smd name="P$2" x="1.95" y="0" dx="5.6" dy="1.7" layer="1" rot="R90"/>
+<wire x1="-2.7" y1="2.7" x2="-2.7" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-2.7" x2="2.7" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-2.7" x2="2.7" y2="2.7" width="0.127" layer="21"/>
+<wire x1="2.7" y1="2.7" x2="-2.7" y2="2.7" width="0.127" layer="21"/>
+<text x="0" y="-3.429" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-HCI(5040)">
+<description>&lt;b&gt;W&amp;uuml;rth HCI 5040&lt;/b&gt; - 5.6x5.3mm&lt;br&gt;&lt;a href =  https://www.we-online.de/katalog/datasheet/744316100.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="P$1" x="-2.05" y="0" dx="1.6" dy="1.9" layer="1" rot="R270"/>
+<smd name="P$2" x="2.05" y="0" dx="1.6" dy="1.9" layer="1" rot="R270"/>
+<wire x1="-2.8" y1="2.4" x2="-2.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-2.4" x2="-2.55" y2="-2.65" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.55" y1="-2.65" x2="2.55" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="2.55" y1="-2.65" x2="2.8" y2="-2.4" width="0.127" layer="21" curve="90"/>
+<wire x1="2.8" y1="-2.4" x2="2.8" y2="2.4" width="0.127" layer="21"/>
+<wire x1="2.8" y1="2.4" x2="2.55" y2="2.65" width="0.127" layer="21" curve="90"/>
+<wire x1="2.55" y1="2.65" x2="-2.55" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="2.65" x2="-2.8" y2="2.4" width="0.127" layer="21" curve="90"/>
+<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="1X09_SCREW">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<pad name="1" x="-10.16" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-7.62" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="-5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="6" x="2.54" y="0" drill="1.016" rot="R90"/>
+<text x="-6.2992" y="3.6068" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-6.35" y="-4.191" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<wire x1="-11.66" y1="3.3" x2="11.66" y2="3.3" width="0.254" layer="21"/>
+<wire x1="11.66" y1="3.3" x2="11.66" y2="2.54" width="0.254" layer="21"/>
+<wire x1="11.66" y1="2.54" x2="11.66" y2="-3.2" width="0.254" layer="21"/>
+<wire x1="11.66" y1="-3.2" x2="-11.66" y2="-3.2" width="0.254" layer="21"/>
+<wire x1="-11.66" y1="-3.2" x2="-11.66" y2="2.54" width="0.254" layer="21"/>
+<wire x1="-11.66" y1="2.54" x2="-11.66" y2="3.3" width="0.254" layer="21"/>
+<wire x1="-11.66" y1="2.54" x2="11.66" y2="2.54" width="0.254" layer="21"/>
+<pad name="7" x="5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="8" x="7.62" y="0" drill="1.016" rot="R90"/>
+<pad name="9" x="10.16" y="0" drill="1.016" rot="R90"/>
+<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
+<rectangle x1="-10.414" y1="-0.254" x2="-9.906" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+</package>
+<package name="LGA-12_2X2">
+<description>&lt;b&gt;LGA, 12 Pos, 2x2mm&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma456-ds000.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.75" y="-0.775" dx="0.3" dy="0.35" layer="1" rot="R180"/>
+<smd name="2" x="-0.25" y="-0.775" dx="0.3" dy="0.35" layer="1" rot="R180"/>
+<smd name="3" x="0.25" y="-0.775" dx="0.3" dy="0.35" layer="1" rot="R180"/>
+<smd name="4" x="0.75" y="-0.775" dx="0.3" dy="0.35" layer="1" rot="R180"/>
+<smd name="7" x="0.75" y="0.775" dx="0.3" dy="0.35" layer="1"/>
+<smd name="8" x="0.25" y="0.775" dx="0.3" dy="0.35" layer="1"/>
+<smd name="9" x="-0.25" y="0.775" dx="0.3" dy="0.35" layer="1"/>
+<smd name="10" x="-0.75" y="0.775" dx="0.3" dy="0.35" layer="1"/>
+<smd name="11" x="-0.8" y="0.25" dx="0.3" dy="0.25" layer="1"/>
+<smd name="12" x="-0.8" y="-0.25" dx="0.3" dy="0.25" layer="1"/>
+<smd name="5" x="0.8" y="-0.25" dx="0.3" dy="0.25" layer="1" rot="R180"/>
+<smd name="6" x="0.8" y="0.25" dx="0.3" dy="0.25" layer="1" rot="R180"/>
+<rectangle x1="-0.381" y1="-0.381" x2="0.381" y2="0.381" layer="41"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.27" y="-1.27" radius="0.127" width="0.127" layer="21"/>
+<text x="1.524" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center">&gt;NAME</text>
+</package>
+<package name="QFN10_SI114X">
+<description>&lt;b&gt;QFN, 10 Pos, for Si114x light sensor&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.silabs.com/documents/public/data-sheets/Si114x.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="10" x="0" y="0.95" dx="0.3" dy="0.8" layer="1"/>
+<smd name="5" x="0" y="-0.95" dx="0.3" dy="0.8" layer="1"/>
+<smd name="9" x="0.95" y="0.75" dx="0.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="8" x="0.95" y="0.25" dx="0.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="7" x="0.95" y="-0.25" dx="0.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="6" x="0.95" y="-0.75" dx="0.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="4" x="-0.95" y="-0.75" dx="0.3" dy="0.8" layer="1" rot="R270"/>
+<smd name="3" x="-0.95" y="-0.25" dx="0.3" dy="0.8" layer="1" rot="R270"/>
+<smd name="2" x="-0.95" y="0.25" dx="0.3" dy="0.8" layer="1" rot="R270"/>
+<smd name="1" x="-0.95" y="0.75" dx="0.3" dy="0.8" layer="1" rot="R270"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.143" y="1.27" radius="0.127" width="0.127" layer="21"/>
+</package>
+<package name="VEML7700">
+<description>&lt;b&gt;VEML7700 Landing Pad&lt;/b&gt;&lt;br&gt;&lt;a href = https://media.digikey.com/pdf/Data%20Sheets/Vishay%20Semiconductors/VEML7700.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.905" y="0" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="0" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="0" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="0" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<wire x1="-3.4" y1="2.6" x2="-3.4" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-0.4" x2="3.4" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-0.4" x2="3.4" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3.4" y1="2.6" x2="-3.4" y2="2.6" width="0.127" layer="21"/>
+<rectangle x1="-3.429" y1="-0.381" x2="-2.921" y2="2.54" layer="21"/>
+<text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="PQFN50P250X300X97-14N">
+<text x="0" y="1.787" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="-2" y="0.75" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2" y="0.75" radius="0.1" width="0.2" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.25" x2="-1.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="1.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="0.925" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="0.925" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-0.925" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.25" x2="-0.925" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.5" x2="1.75" y2="-1.5" width="0.05" layer="39"/>
+<wire x1="-1.75" y1="1.5" x2="1.75" y2="1.5" width="0.05" layer="39"/>
+<wire x1="-1.75" y1="-1.5" x2="-1.75" y2="1.5" width="0.05" layer="39"/>
+<wire x1="1.75" y1="-1.5" x2="1.75" y2="1.5" width="0.05" layer="39"/>
+<smd name="5" x="-0.5" y="-0.915" dx="0.59" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="6" x="0" y="-0.915" dx="0.59" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="7" x="0.5" y="-0.915" dx="0.59" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="12" x="0.5" y="0.915" dx="0.59" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="13" x="0" y="0.915" dx="0.59" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="14" x="-0.5" y="0.915" dx="0.59" dy="0.35" layer="1" roundness="25" rot="R90"/>
+<smd name="1" x="-1.165" y="0.75" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="2" x="-1.165" y="0.25" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="3" x="-1.165" y="-0.25" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="4" x="-1.165" y="-0.75" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="8" x="1.165" y="-0.75" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="9" x="1.165" y="-0.25" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="10" x="1.165" y="0.25" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+<smd name="11" x="1.165" y="0.75" dx="0.59" dy="0.35" layer="1" roundness="25"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -19374,15 +19938,15 @@ regulations. &lt;/p&gt;
 </polygon>
 </symbol>
 <symbol name="VEML6075">
-<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="SCL" x="12.7" y="-2.54" length="middle" direction="in" rot="R180"/>
-<pin name="VDD" x="-12.7" y="2.54" length="middle" direction="pwr"/>
-<pin name="GND" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="VDD" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="middle" direction="pwr"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="6.604" size="1.27" layer="95" ratio="15" align="center">VEML6075</text>
+<text x="0" y="6.604" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
 </symbol>
 <symbol name="VEML6030">
 <pin name="VDD" x="-12.7" y="2.54" length="middle" direction="pwr"/>
@@ -26386,6 +26950,179 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <wire x1="4.064" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="AUDIO-JACK-5-TRS">
+<description>&lt;h3&gt; Audio Jack &lt;/h3&gt;
+&lt;p&gt; 1/4" TRS Jack - 3 Conductors, 5 Contacts&lt;/p&gt;</description>
+<rectangle x1="-6.35" y1="-5.08" x2="-5.08" y2="6.35" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="-2.54" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-1.27" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.048" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-1.27" x2="2.032" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-1.27" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="3.048" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="3.81" x2="2.032" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="3.81" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<pin name="EARTH" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="RING" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="RING-NORM" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="TIP" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="TIP-NORM" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1.27" layer="94" rot="MR180" align="bottom-center">T</text>
+<text x="-2.54" y="5.08" size="1.27" layer="94" align="bottom-center">R</text>
+</symbol>
+<symbol name="SN74LVC1G125">
+<pin name="A" x="-10.16" y="0" length="middle" direction="in"/>
+<pin name="Y" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="!OE" x="-10.16" y="5.08" length="middle" direction="in"/>
+<pin name="GND" x="-10.16" y="-5.08" length="middle" direction="pwr"/>
+<pin name="VCC" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="1.27" y="9.144" size="1.778" layer="95" rot="R180" align="center">&gt;NAME</text>
+<text x="1.27" y="-9.144" size="1.778" layer="95" align="center">SN74LVC1G125</text>
+</symbol>
+<symbol name="MAX-M8">
+<pin name="RF_IN" x="20.32" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="RESET_N" x="20.32" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="SAFEBOOT_N" x="20.32" y="10.16" length="middle" direction="in" rot="R180"/>
+<pin name="V_ANT" x="20.32" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="V_BCKP" x="20.32" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC_IO" x="20.32" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="20.32" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC_RF" x="20.32" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="20.32" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="TXD" x="-20.32" y="-10.16" length="middle"/>
+<pin name="RXD" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="LNA_EN" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="TIMEPULSE" x="-20.32" y="5.08" length="middle" direction="out"/>
+<pin name="EXTINT" x="-20.32" y="7.62" length="middle"/>
+<pin name="SCL" x="-20.32" y="-2.54" length="middle" direction="in"/>
+<pin name="SDA" x="-20.32" y="0" length="middle"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<text x="0" y="20.32" size="1.778" layer="95" align="center">&gt;DISP</text>
+<text x="0" y="-17.78" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="TPS61022">
+<pin name="VIN" x="-15.24" y="7.62" length="middle" direction="pwr"/>
+<pin name="GND" x="-15.24" y="2.54" length="middle" direction="pwr"/>
+<pin name="MODE" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="EN" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="FB" x="15.24" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="VOUT" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="SW" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="-12.192" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="11.684" size="1.778" layer="95" ratio="15" align="center">TPS61022</text>
+</symbol>
+<symbol name="PAM2320">
+<pin name="EN" x="-12.7" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="VIN" x="-12.7" y="7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="SW" x="12.7" y="7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="-12.7" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="11.684" size="1.778" layer="95" ratio="15" align="center">PAM2320</text>
+<text x="0" y="-11.684" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="CONN_09">
+<description>&lt;h3&gt; 9 Pin Connection&lt;/h3&gt;</description>
+<wire x1="6.35" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="7.62" x2="5.08" y2="7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="5.08" x2="5.08" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="0" y1="25.4" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="0" y1="25.4" x2="6.35" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="12.7" x2="5.08" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="10.16" x2="5.08" y2="10.16" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="15.24" x2="5.08" y2="15.24" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="17.78" x2="5.08" y2="17.78" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="20.32" x2="5.08" y2="20.32" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="22.86" x2="5.08" y2="22.86" width="0.6096" layer="94"/>
+<text x="0" y="-2.286" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="0" y="25.908" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="1" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="10.16" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="6" x="10.16" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="10.16" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="8" x="10.16" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="9" x="10.16" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="GEN_12">
+<description>Genaric 12 pin device</description>
+<pin name="1" x="-10.16" y="7.62" length="middle"/>
+<pin name="2" x="-10.16" y="5.08" length="middle"/>
+<pin name="3" x="-10.16" y="2.54" length="middle"/>
+<pin name="12" x="10.16" y="7.62" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="11.43" size="1.27" layer="95" align="center">&gt;NAME</text>
+<pin name="4" x="-10.16" y="0" length="middle"/>
+<pin name="11" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="5" x="-10.16" y="-2.54" length="middle"/>
+<pin name="6" x="-10.16" y="-5.08" length="middle"/>
+<pin name="7" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="10" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="9" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="8" x="10.16" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="GEN_10">
+<description>Genaric 10 pin device</description>
+<pin name="1" x="-10.16" y="5.08" length="middle"/>
+<pin name="2" x="-10.16" y="2.54" length="middle"/>
+<pin name="3" x="-10.16" y="0" length="middle"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="8.89" size="1.27" layer="95" align="center">&gt;NAME</text>
+<pin name="4" x="-10.16" y="-2.54" length="middle"/>
+<pin name="5" x="-10.16" y="-5.08" length="middle"/>
+<pin name="6" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="7" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="10" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="9" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="8" x="10.16" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="GEN_4">
+<description>Genaric 6 pin device</description>
+<pin name="1" x="-10.16" y="2.54" length="middle"/>
+<pin name="2" x="-10.16" y="0" length="middle"/>
+<pin name="3" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="4" x="10.16" y="2.54" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -27342,7 +28079,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <gate name="G$1" symbol="L" x="0" y="0"/>
 </gates>
 <devices>
-<device name="LQS_4X4" package="WE-LQS(4X4)">
+<device name="_LQS_4X4" package="WE-LQS(4X4)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -27351,7 +28088,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="MAIA_4.1X4.1" package="WE-MAIA(4.1X4.1)">
+<device name="_MAIA_4.1X4.1" package="WE-MAIA(4.1X4.1)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -27360,7 +28097,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="LQS_5X5" package="WE-LQS(5X5)">
+<device name="_LQS_5X5" package="WE-LQS(5X5)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27369,7 +28106,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="0806" package="0806">
+<device name="_0806" package="0806">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -27378,7 +28115,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="LQS_3X3" package="WE-LQS(3X3)">
+<device name="_LQS_3X3" package="WE-LQS(3X3)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -27387,7 +28124,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="1008" package="1008">
+<device name="_1008" package="1008">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27396,7 +28133,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="PD_12X12" package="WE-PD(12X12)">
+<device name="_PD_12X12" package="WE-PD(12X12)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27405,7 +28142,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="XHMI_6.65X6.45" package="WE-XHMI(6.65X6.45)">
+<device name="_XHMI_6.65X6.45" package="WE-XHMI(6.65X6.45)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27414,7 +28151,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="TPC_4.8X4.8" package="WE-TPC(4.8X4.8)">
+<device name="_TPC_4.8X4.8" package="WE-TPC(4.8X4.8)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27423,7 +28160,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="TPC_3.8X3.8" package="WE-TPC(3.8X3.8)">
+<device name="_TPC_3.8X3.8" package="WE-TPC(3.8X3.8)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27432,7 +28169,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="0805" package="0805">
+<device name="_0805" package="0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -27441,7 +28178,7 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="LQSH_2.5X2" package="WE-LQSH(2.5X2)">
+<device name="_LQSH_2.5X2" package="WE-LQSH(2.5X2)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -27450,7 +28187,25 @@ Digikey: https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7
 <technology name=""/>
 </technologies>
 </device>
-<device name="MAPI_3X3" package="WE-MAPI(3X3)">
+<device name="_MAPI_3X3" package="WE-MAPI(3X3)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MAPI_5.4X5.4" package="WE-MAPI(5.4X5.4)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HCI_5040" package="WE-HCI(5040)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -31670,6 +32425,40 @@ Standard 6 pin header for AVR programming</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="MICROLOCK" package="1X06_MICROLOCKPLUS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="900-2059570671CT-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="2059570671" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MICROLOCK_RT" package="1X06_MICROLOCKPLUS_RT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM22471CT-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="5055670681" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -36424,6 +37213,24 @@ Signal Line, 1k&amp;Omega; @ 100MHz &lt;br&gt;
 </technology>
 </technologies>
 </device>
+<device name="0402" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1KS">
+<attribute name="DIGIKEY" value="490-4003-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="BLM15HD102SN1D" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SN74AUP1T157" prefix="U">
@@ -37336,7 +38143,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </devices>
 </deviceset>
 <deviceset name="GEN_6" prefix="U">
-<description>Genaric 6 Pin Device</description>
+<description>&lt;h3&gt;Generic 6 Pin Package for Breakout Boards&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="GEN_6" x="0" y="0"/>
 </gates>
@@ -37355,6 +38162,19 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </technologies>
 </device>
 <device name="SOT-23" package="DDC_R-PDSO-G6">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DFN_2X2" package="DFN_6_2X2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -37462,7 +38282,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </devices>
 </deviceset>
 <deviceset name="GEN_8" prefix="U">
-<description>Generic 8 Pin Device</description>
+<description>&lt;h3&gt;Generic 8 Pin Package for Breakout Boards&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="GEN_8" x="0" y="0"/>
 </gates>
@@ -37513,6 +38333,21 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </technologies>
 </device>
 <device name="DQE" package="DQE_R-PX2SON-N8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DFN" package="DFN_8_2.5X2.5">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -38236,9 +39071,10 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 &lt;/ul&gt;
 &lt;/p&gt;
  
-&lt;p&gt;Mouser: &lt;br&gt;
+&lt;p&gt;Digikey: &lt;br&gt;
 &lt;ul&gt;
 &lt;a href = "https://www.digikey.com/product-detail/en/microchip-technology/MIC5205-3.3YM5-TR/576-1259-1-ND/771886"&gt; 576-1259-1-ND (3.3V Fixed) &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/MIC5205-5-0YM5-TR/771730?s=N4IgjCBcoCwdIDGUBmBDANgZwKYBoQB7KAbRAGYYB2GciAXQIAcAXKEAZRYCcBLAOwDmIAL4EwVKgE4ooZJHTZ8RUiABMMKRIbM2kTjwHCxIALRrZSKDwCuy4pDIz6IkxccgAtr0QBWNQAMviAuQA"&gt; 576-1261-1-ND (5V Fixed) &lt;/a&gt;&lt;br/&gt;
 
 &lt;/p&gt;</description>
 <gates>
@@ -38259,10 +39095,15 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
 </technology>
-<technology name="3.3V">
+<technology name="_3.3V">
 <attribute name="DIGIKEY" value="576-1259-1-ND" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MIC5205-3.3YM5-TR" constant="no"/>
+</technology>
+<technology name="_5V">
+<attribute name="DIGIKEY" value="576-1261-1-ND" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC5205-5.0YM5-TR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -41331,7 +42172,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <gate name="G$1" symbol="PCA9617" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TSSOP8" package="TTSOP_8">
+<device name="" package="TSSOP_8">
 <connects>
 <connect gate="G$1" pin="EN" pad="5"/>
 <connect gate="G$1" pin="GND" pad="4"/>
@@ -41440,6 +42281,27 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technologies>
 </device>
 <device name="SSOP" package="SSOP14">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LGA_3X2.5" package="PQFN50P250X300X97-14N">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -42618,6 +43480,23 @@ Features:  (441/841)
 </devices>
 </deviceset>
 <deviceset name="SN74LVC2G241" prefix="U">
+<description>&lt;b&gt;SN74LVC2G241&lt;/b&gt; - Dual Buffer and Driver with 3-State Outputs
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;Number of Bits: 2 /li&gt;
+&lt;li&gt; Inverting: No &lt;/li&gt;
+&lt;li&gt; 5V Tolerent Input (Down Shift)
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC2G241DCUT/1592289"&gt;296-32323-1-ND (VSSOP, DCU) &lt;a&gt;&lt;br/&gt;
+
+
+ &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SN74LVC2G241" x="0" y="0"/>
 </gates>
@@ -42634,7 +43513,11 @@ Features:  (441/841)
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="296-32323-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74LVC2G241DCUT" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -42744,6 +43627,350 @@ Note: These are recomendations at the time, always verify pin compatability usin
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MCP79412-I/SN" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AUDIOJACK_TRS_3CONDUCTOR_5CONTACT" prefix="J">
+<description>&lt;h3&gt;Audio Jack: TRS, 3 Conductor, 5 Contact&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="AUDIO-JACK-5-TRS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD_SWITCHCRAFT" package="AUDIOJACK_SWITCHCRAFT_35RASMT4BHNTRX">
+<connects>
+<connect gate="G$1" pin="EARTH" pad="1"/>
+<connect gate="G$1" pin="RING" pad="2"/>
+<connect gate="G$1" pin="RING-NORM" pad="4"/>
+<connect gate="G$1" pin="TIP" pad="3"/>
+<connect gate="G$1" pin="TIP-NORM" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="SC1488-1-ND" constant="no"/>
+<attribute name="MF" value="Switchcraft" constant="no"/>
+<attribute name="MPN" value="35RASMT4BHNTRX" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74LVC1G125" prefix="U">
+<description>&lt;b&gt;SN74LVC1G125&lt;/b&gt; - Single Buffer with 3-State Output
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
+&lt;li&gt;Number of Gates: 1 &lt;/li&gt;
+&lt;li&gt; Inverting: No &lt;/li&gt;
+&lt;li&gt; 5V Tolerent Input (Down Shift)
+&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/texas-instruments/74LVC1G125DCKRG4/1688757"&gt;296-35997-1-ND (SC70, DCK) &lt;a&gt;&lt;br/&gt;
+
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SN74LVC1G125" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SC70" package="DCK_R-PDSO-G5">
+<connects>
+<connect gate="G$1" pin="!OE" pad="1"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-35997-1-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="74LVC1G125DCKRG4" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX-M8*" prefix="U">
+<description>&lt;b&gt;MAX-M8* GPS Unit&lt;/b&gt; - GNSS Module 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 2.7~3.6V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/MAX-M8W-0/672-MAX-M8W-0CT-ND/6150667?itemSeq=371005764"&gt; 672-MAX-M8W-0CT-ND (MAX-M8W) &lt;a&gt;&lt;br/&gt;
+
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX-M8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAX-M8">
+<connects>
+<connect gate="G$1" pin="EXTINT" pad="5"/>
+<connect gate="G$1" pin="GND" pad="1 10 12"/>
+<connect gate="G$1" pin="LNA_EN" pad="13"/>
+<connect gate="G$1" pin="RESET_N" pad="9"/>
+<connect gate="G$1" pin="RF_IN" pad="11"/>
+<connect gate="G$1" pin="RXD" pad="3"/>
+<connect gate="G$1" pin="SAFEBOOT_N" pad="18"/>
+<connect gate="G$1" pin="SCL" pad="17"/>
+<connect gate="G$1" pin="SDA" pad="16"/>
+<connect gate="G$1" pin="TIMEPULSE" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VCC_IO" pad="7"/>
+<connect gate="G$1" pin="VCC_RF" pad="14"/>
+<connect gate="G$1" pin="V_ANT" pad="15"/>
+<connect gate="G$1" pin="V_BCKP" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="W">
+<attribute name="DIGIKEY" value="672-MAX-M8W-0CT-ND" constant="no"/>
+<attribute name="DISP" value="MAX-M8W" constant="no"/>
+<attribute name="MF" value="U-Blox" constant="no"/>
+<attribute name="MPN" value="MAX-M8W-0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS61022" prefix="U">
+<description>&lt;b&gt;TPS61022&lt;/b&gt; - Boost converter with ultra-low input voltage
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 0.5V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 2.2V ~ 5.5V &lt;/il&gt;
+&lt;li&gt; Output Current (max): 8A &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 27&amp;mu;A (typ)&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/texas-instruments/TPS61022RWUT/10434643"&gt; 296-TPS61022RWUTCT-ND &lt;/a&gt;&lt;br/&gt;
+
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS61022" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RWU0007A">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="MODE" pad="6"/>
+<connect gate="G$1" pin="SW" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="7"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="296-TPS61022RWUTCT-ND" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS61022RWUT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAM2320" prefix="U">
+<description>&lt;b&gt;PAM2320&lt;/b&gt; - Low noise Step-Down DC-DC Converter 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.7V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 0.6V ~ Vin&lt;/il&gt;
+&lt;li&gt; Iout: 3A&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: &amp;lt;1&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/diodes-incorporated/PAM2320BECADJR/4033249"&gt; PAM2320BECADJRDICT-ND &lt;/a&gt;&lt;br/&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PAM2320" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PSOP-8">
+<connects>
+<connect gate="G$1" pin="EN" pad="7"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
+<connect gate="G$1" pin="SW" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="PAM2320BECADJRDICT-ND" constant="no"/>
+<attribute name="MF" value="Diodes Inc" constant="no"/>
+<attribute name="MPN" value="PAM2320BECADJR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONN_9" prefix="J">
+<description>&lt;b&gt;Genaric 9 terminal header&lt;/b&gt;
+
+&lt;p&gt;
+&lt;b&gt;Digikey&lt;/b&gt;&lt;br&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/282834-9/1827298"&gt; 2.54_SCREW&lt;/a&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CONN_09" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2.54_SCREW" package="1X09_SCREW">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="A122599-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="282834-9" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GEN_12" prefix="U">
+<description>&lt;h3&gt;Generic 12 Pin Package for Breakout Boards&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="GEN_12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LGA12_2X2" package="LGA-12_2X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GEN_10" prefix="U">
+<description>&lt;h3&gt;Generic 10 Pin Package for Breakout Boards&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="GEN_10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="QFN10_2X2" package="QFN10_SI114X">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEML7700" prefix="U">
+<description>&lt;b&gt;VEML7700&lt;/b&gt; - Ambient Light Sensor with I&lt;sup&gt;2&lt;/sup&gt;C Interface
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 2.5~3.6V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;Ambient Light Range: 0 ~ 167,000 Lux &lt;/li&gt;
+&lt;li&gt;Resolution: 0.005 lx/ct&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;a href = "https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML7700-TR/5820244"&gt; VEML7700CT-ND &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VEML6075" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VEML7700">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="VEML7700CT-ND" constant="no"/>
+<attribute name="DISP" value="VEML7700" constant="no"/>
+<attribute name="MF" value="Vishay" constant="no"/>
+<attribute name="MPN" value="VEML7700-TR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GEN_4" prefix="U">
+<description>&lt;h3&gt;Generic 4 Pin Package for Breakout Boards&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="GEN_4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="BGA" package="YFP0004">
+<connects>
+<connect gate="G$1" pin="1" pad="A1"/>
+<connect gate="G$1" pin="2" pad="A2"/>
+<connect gate="G$1" pin="3" pad="B1"/>
+<connect gate="G$1" pin="4" pad="B2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
