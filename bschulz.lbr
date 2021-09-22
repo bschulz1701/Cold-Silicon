@@ -30345,14 +30345,15 @@ push-push type</description>
 </devices>
 </deviceset>
 <deviceset name="MOSFET-NCH" prefix="Q">
-<description>&lt;h3&gt;N-channel MOSFETs&lt;/h3&gt;
-&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13261”&gt;SparkFun OpenScale&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;SparkFun Digital Sandbox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10182”&gt;SparkFun Monster Moto Shield&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11214”&gt;SparkFun MOSFET Power Controller&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+<description>&lt;h3&gt;N-channel MOSFET&lt;/h3&gt;&lt;br&gt;
+
+&lt;b&gt;Small Signal/Low Power:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;BSS138&lt;/li&gt;
+&lt;li&gt;2N7002P&lt;/li&gt;
+&lt;li&gt;2N7002PW&lt;/li&gt;
+&lt;li&gt;RE1C002UN&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="NMOS" symbol="LABELED-NMOS" x="0" y="0"/>
 </gates>
@@ -30410,6 +30411,7 @@ push-push type</description>
 <attribute name="DIGIKEY" value="BSS138LT3GOSCT-ND" constant="no"/>
 <attribute name="MF" value="ON Semiconductor" constant="no"/>
 <attribute name="MPN" value="BSS138LT3G" constant="no"/>
+<attribute name="VALUE" value="BSS138" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30478,6 +30480,7 @@ push-push type</description>
 <attribute name="DIGIKEY" value="RE1C002UNTCLCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="RE1C002UNTCL" constant="no"/>
+<attribute name="VALUE" value="RE1C002UN" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30492,6 +30495,7 @@ push-push type</description>
 <attribute name="DIGIKEY" value="1727-4692-1-ND" constant="no"/>
 <attribute name="MF" value="Nexperia" constant="no"/>
 <attribute name="MPN" value="2N7002P,215" constant="no"/>
+<attribute name="VALUE" value="2N7002" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30506,6 +30510,7 @@ push-push type</description>
 <attribute name="DIGIKEY" value="785-1505-1-ND" constant="no"/>
 <attribute name="MF" value="Alpha &amp; Omega" constant="no"/>
 <attribute name="MPN" value="AON7522E" constant="no"/>
+<attribute name="VALUE" value="AON7522E" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30520,18 +30525,17 @@ push-push type</description>
 <attribute name="DIGIKEY" value="ZXMN3B14FCT-ND" constant="no"/>
 <attribute name="MF" value="Diodes Inc" constant="no"/>
 <attribute name="MPN" value="ZXMN3B14FTA" constant="no"/>
+<attribute name="VALUE" value="ZXMN3B14" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET_PCH" prefix="Q">
-<description>&lt;h3&gt;P-channel MOSFETs&lt;/h3&gt;
-&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+<deviceset name="MOSFET-PCH" prefix="Q">
+<description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
+&lt;b&gt;Small Signal/Low Power:&lt;/b&gt;
+&lt;ul&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LABELED-PMOS-1" x="0" y="0"/>
 </gates>
@@ -30614,6 +30618,7 @@ push-push type</description>
 <attribute name="DIGIKEY" value="RZM001P02T2LCT-ND" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="RZM001P02T2L" constant="no"/>
+<attribute name="VALUE" value="RZM001" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30628,6 +30633,7 @@ push-push type</description>
 <attribute name="DIGIKEY" value="1727-1148-1-ND" constant="no"/>
 <attribute name="MF" value="Nexperia" constant="no"/>
 <attribute name="MPN" value="NX2301P,215" constant="no"/>
+<attribute name="VALUE" value="NX2301P" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -30652,6 +30658,22 @@ push-push type</description>
 <attribute name="DIGIKEY" value="DMP3036SFG-7DICT-ND" constant="no"/>
 <attribute name="MF" value="Diodes Incorporated" constant="no"/>
 <attribute name="MPN" value="DMP3036SFG-7" constant="no"/>
+<attribute name="VALUE" value="DMP3036" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-AO3419" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="785-1013-1-ND" constant="no"/>
+<attribute name="MF" value="Alpha and Omega" constant="no"/>
+<attribute name="MPN" value="AO3419" constant="no"/>
+<attribute name="VALUE" value="AO3419" constant="no"/>
 </technology>
 </technologies>
 </device>
