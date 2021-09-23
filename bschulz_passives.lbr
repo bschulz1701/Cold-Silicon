@@ -8414,6 +8414,11 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="CC0805KKX7R9BB334" constant="no"/>
 </technology>
+<technology name="1.5UF">
+<attribute name="DIGIKEY" value="399-4930-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0805C155K4RACTU" constant="no"/>
+</technology>
 <technology name="10UF">
 <attribute name="DIGIKEY" value="490-6473-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
@@ -9283,6 +9288,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="AC0603JR-070RL" constant="no"/>
 <attribute name="VALUE_PART" value="0" constant="no"/>
 </technology>
+<technology name="0.082">
+<attribute name="DIGIKEY" value="408-1446-1-ND" constant="no"/>
+<attribute name="MF" value="Susumu" constant="no"/>
+<attribute name="MPN" value="RL0816T-R082-F" constant="no"/>
+<attribute name="VALUE_PART" value="82m" constant="no"/>
+</technology>
 <technology name="1">
 <attribute name="DIGIKEY" value="311-1.00HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9462,6 +9473,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ERJ-3EKF3093V" constant="no"/>
 <attribute name="VALUE_PART" value="309k" constant="no"/>
+</technology>
+<technology name="30K">
+<attribute name="DIGIKEY" value="311-30.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0730KL" constant="no"/>
+<attribute name="VALUE_PART" value="30k" constant="no"/>
 </technology>
 <technology name="316K">
 <attribute name="DIGIKEY" value="311-316KHRCT-ND" constant="no"/>
