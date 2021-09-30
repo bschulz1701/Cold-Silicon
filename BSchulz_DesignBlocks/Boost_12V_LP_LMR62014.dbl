@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <designblock>
 <description>Output: 12V, 500mA &lt;br&gt;
 Input: </description>
 <attributes>
-<attribute name="BOARDSIZE" value="15 x 13.1 mm"/>
+<attribute name="AIRWIRES" value="YES"/>
+<attribute name="BOARDSIZE" value="12 x 13.1 mm"/>
 <attribute name="LAYERS" value="2: 1, 16"/>
 </attributes>
 <drawings>
@@ -181,7 +182,8 @@ Ref &lt;a href = http://www.ti.com/lit/ds/symlink/lp3988-q1.pdf&gt;datasheet&lt;
 <wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="21"/>
 <wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="21"/>
 <circle x="-1.016" y="1.651" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="WE-LQS(4X4)">
 <description>Wurth LQS series inductor, with 4mmx4mm package
@@ -195,36 +197,6 @@ https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV
 <wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
 <text x="-2.54" y="3.302" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="WE-MAIA(4.1X4.1)">
-<description>Wurth MAIA series inductor, with 4.1mmx4.1mm package, sheilded  
-
-Avaliable in inductances 330nH, 560nH, 680nH, 1.2uH, 1.5uH, 1.8uH, 2.2uH, 3.3uH, 4.7uH, 5.6uH
-
-https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV=ffecb9d7%2Cfffc0511%2Cfffc06ed%2Cfffc02dc%2Cb87c46%2C1f140000%2Cffe00047&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pbfree=0&amp;rohs=0&amp;cad=0&amp;datasheet=0&amp;nstock=0&amp;photo=0&amp;nonrohs=0&amp;newproducts=0&amp;k=inductor&amp;quantity=&amp;ptm=0&amp;fid=0&amp;pageSize=25&amp;pkeyword=inductor</description>
-<smd name="P$1" x="-1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
-<smd name="P$2" x="1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
-<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
-<package name="WE-LQS(5X5)">
-<description>&lt;p&gt;LQS Series Inductor &lt;br&gt; Manufacturer: Wurth &lt;br&gt; &lt;br&gt; Size: 5x5mm &lt;br&gt;
-Inductances: 470nH, 1uH, 1.2uH, 1.5uH, 2.2uH, 3.3uH, 3.9uH, 4.7uH, 5.6uH, &lt;br&gt;
-6.8uH, 8.2uH, 10uH, 15uH, 22uH, 33uH, 47uH, 68uH, 100uH, 1mH &lt;br&gt;
-Current: 0.2A ~ 4.9A &lt;/p&gt;
-
-&lt;p&gt; Digikey: &lt;a href = "https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?k=&amp;pkeyword=&amp;pv46=13332&amp;FV=fffc0511%2Cfffc06ed%2Cfffc02dc%2C1f140000%2Cffe00047%2Cffecaecb&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;quantity=0&amp;ptm=0&amp;fid=0&amp;pageSize=25"&gt; LQS (5x5mm) &lt;/a&gt;</description>
-<smd name="1" x="1.925" y="0" dx="1.55" dy="4.5" layer="1"/>
-<smd name="2" x="-1.925" y="0" dx="1.55" dy="4.5" layer="1"/>
-<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="22"/>
-<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="22"/>
-<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="22"/>
-<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="22"/>
-<text x="-2.54" y="2.921" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="0806">
 <smd name="P$1" x="-0.725" y="0" dx="1.9" dy="0.85" layer="1" rot="R90"/>
@@ -384,6 +356,107 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
+<package name="WE-MAIA(4.1X4.1)">
+<description>Wurth MAIA series inductor, with 4.1mmx4.1mm package, sheilded  
+
+Avaliable in inductances 330nH, 560nH, 680nH, 1.2uH, 1.5uH, 1.8uH, 2.2uH, 3.3uH, 4.7uH, 5.6uH
+
+https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?FV=ffecb9d7%2Cfffc0511%2Cfffc06ed%2Cfffc02dc%2Cb87c46%2C1f140000%2Cffe00047&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;pbfree=0&amp;rohs=0&amp;cad=0&amp;datasheet=0&amp;nstock=0&amp;photo=0&amp;nonrohs=0&amp;newproducts=0&amp;k=inductor&amp;quantity=&amp;ptm=0&amp;fid=0&amp;pageSize=25&amp;pkeyword=inductor</description>
+<smd name="P$1" x="-1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
+<smd name="P$2" x="1.185" y="0" dx="3.7" dy="0.98" layer="1" rot="R90"/>
+<wire x1="-2.05" y1="2.05" x2="-2.05" y2="-2.05" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-2.05" x2="2.05" y2="-2.05" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-2.05" x2="2.05" y2="2.05" width="0.127" layer="21"/>
+<wire x1="2.05" y1="2.05" x2="-2.05" y2="2.05" width="0.127" layer="21"/>
+<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-LQS(5X5)">
+<description>&lt;p&gt;LQS Series Inductor &lt;br&gt; Manufacturer: Wurth &lt;br&gt; &lt;br&gt; Size: 5x5mm &lt;br&gt;
+Inductances: 470nH, 1uH, 1.2uH, 1.5uH, 2.2uH, 3.3uH, 3.9uH, 4.7uH, 5.6uH, &lt;br&gt;
+6.8uH, 8.2uH, 10uH, 15uH, 22uH, 33uH, 47uH, 68uH, 100uH, 1mH &lt;br&gt;
+Current: 0.2A ~ 4.9A &lt;/p&gt;
+
+&lt;p&gt; Digikey: &lt;a href = "https://www.digikey.com/products/en/inductors-coils-chokes/fixed-inductors/71?k=&amp;pkeyword=&amp;pv46=13332&amp;FV=fffc0511%2Cfffc06ed%2Cfffc02dc%2C1f140000%2Cffe00047%2Cffecaecb&amp;mnonly=0&amp;ColumnSort=0&amp;page=1&amp;stock=1&amp;quantity=0&amp;ptm=0&amp;fid=0&amp;pageSize=25"&gt; LQS (5x5mm) &lt;/a&gt;</description>
+<smd name="1" x="1.925" y="0" dx="1.55" dy="4.5" layer="1"/>
+<smd name="2" x="-1.925" y="0" dx="1.55" dy="4.5" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<text x="0" y="3.048" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="-3.048" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-MAPI(3X3)">
+<description>Wurth MAPI series inductor, with 3mmx3mm package, sheilded  
+&lt;br&gt;&lt;a href = https://katalog.we-online.de/pbs/datasheet/744383360047.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="P$1" x="-1.05" y="0" dx="3.4" dy="1.3" layer="1" rot="R90"/>
+<smd name="P$2" x="1.05" y="0" dx="3.4" dy="1.3" layer="1" rot="R90"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-MAPI(5.4X5.4)">
+<description>Wurth MAPI series inductor, with 5.4mmx5.4mm package, sheilded  
+&lt;br&gt;&lt;a href = https://www.we-online.com/catalog/datasheet/74438366033.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="P$1" x="-1.95" y="0" dx="5.6" dy="1.7" layer="1" rot="R90"/>
+<smd name="P$2" x="1.95" y="0" dx="5.6" dy="1.7" layer="1" rot="R90"/>
+<wire x1="-2.7" y1="2.7" x2="-2.7" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-2.7" x2="2.7" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-2.7" x2="2.7" y2="2.7" width="0.127" layer="21"/>
+<wire x1="2.7" y1="2.7" x2="-2.7" y2="2.7" width="0.127" layer="21"/>
+<text x="0" y="-3.429" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-HCI(5040)">
+<description>&lt;b&gt;W&amp;uuml;rth HCI 5040&lt;/b&gt; - 5.6x5.3mm&lt;br&gt;&lt;a href =  https://www.we-online.de/katalog/datasheet/744316100.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="P$1" x="-2.05" y="0" dx="1.6" dy="1.9" layer="1" rot="R270"/>
+<smd name="P$2" x="2.05" y="0" dx="1.6" dy="1.9" layer="1" rot="R270"/>
+<wire x1="-2.8" y1="2.4" x2="-2.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-2.4" x2="-2.55" y2="-2.65" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.55" y1="-2.65" x2="2.55" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="2.55" y1="-2.65" x2="2.8" y2="-2.4" width="0.127" layer="21" curve="90"/>
+<wire x1="2.8" y1="-2.4" x2="2.8" y2="2.4" width="0.127" layer="21"/>
+<wire x1="2.8" y1="2.4" x2="2.55" y2="2.65" width="0.127" layer="21" curve="90"/>
+<wire x1="2.55" y1="2.65" x2="-2.55" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="2.65" x2="-2.8" y2="2.4" width="0.127" layer="21" curve="90"/>
+<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WE-MAPI(4.1X4.1)">
+<description>&lt;b&gt;Wurth MAPI Inductor&lt;/b&gt; - 4.1x4.1mm, Shielded &lt;br&gt;
+ 
+&lt;br&gt;&lt;a href = "https://www.we-online.com/catalog/datasheet/744383560047HT.pdf"&gt;Ref Datasheet&lt;/a&gt;
+
+&lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/filter/fixed-inductors/71?s=N4IgjCBcoCwGxVAYygMwIYBsDOBTANCAPZQDa4ATAKwAMMIAuoQA4AuUIAyqwE4CWAOwDmIAL6EAtPWggUkDDgIgAbgLRY8hEpHIwwVeIxbtIIMZIqJZUXgFcl28gE5Got0A"&gt; Digikey List&lt;/a&gt;</description>
+<wire x1="-2.05" y1="2.05" x2="-2.05" y2="-2.05" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-2.05" x2="2.05" y2="-2.05" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-2.05" x2="2.05" y2="2.05" width="0.127" layer="21"/>
+<wire x1="2.05" y1="2.05" x2="-2.05" y2="2.05" width="0.127" layer="21"/>
+<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="P$1" x="-1.185" y="0" dx="0.98" dy="3.7" layer="1"/>
+<smd name="P$2" x="1.185" y="0" dx="0.98" dy="3.7" layer="1" rot="R180"/>
+</package>
+<package name="DO214AC" urn="urn:adsk.eagle:footprint:43214/1" locally_modified="yes">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-2.3" y1="1" x2="2.3" y2="1" width="0.254" layer="21"/>
+<wire x1="2.3" y1="1" x2="2.3" y2="-0.95" width="0.254" layer="21"/>
+<wire x1="2.3" y1="-0.95" x2="-2.3" y2="-0.95" width="0.254" layer="21"/>
+<wire x1="-2.3" y1="-0.95" x2="-2.3" y2="1" width="0.254" layer="21"/>
+<wire x1="-0.8" y1="0" x2="0.25" y2="0.75" width="0.254" layer="21"/>
+<wire x1="0.25" y1="0.75" x2="0.25" y2="-0.7" width="0.254" layer="21"/>
+<wire x1="0.25" y1="-0.7" x2="-0.8" y2="0" width="0.254" layer="21"/>
+<smd name="C" x="-2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
+<smd name="A" x="2.05" y="0" dx="1.8" dy="1.7" layer="1"/>
+<text x="-0.1" y="1.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="-0.1" y="-1.54" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.65" y1="-0.7" x2="-2.4" y2="0.65" layer="21"/>
+<rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="21"/>
+<rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LMR62014">
@@ -479,12 +552,12 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
-<description>Genaric inductor</description>
+<description>&lt;h3&gt;Genaric Inductor&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="L" x="0" y="0"/>
 </gates>
 <devices>
-<device name="LQS_4X4" package="WE-LQS(4X4)">
+<device name="_LQS_4X4" package="WE-LQS(4X4)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -493,7 +566,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="MAIA_4.1X4.1" package="WE-MAIA(4.1X4.1)">
+<device name="_MAIA_4.1X4.1" package="WE-MAIA(4.1X4.1)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -502,7 +575,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="LQS_5X5" package="WE-LQS(5X5)">
+<device name="_LQS_5X5" package="WE-LQS(5X5)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -511,7 +584,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="0806" package="0806">
+<device name="_0806" package="0806">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -520,7 +593,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="LQS_3X3" package="WE-LQS(3X3)">
+<device name="_LQS_3X3" package="WE-LQS(3X3)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -529,7 +602,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="1008" package="1008">
+<device name="_1008" package="1008">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -538,7 +611,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="PD_12X12" package="WE-PD(12X12)">
+<device name="_PD_12X12" package="WE-PD(12X12)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -547,7 +620,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="XHMI_6.65X6.45" package="WE-XHMI(6.65X6.45)">
+<device name="_XHMI_6.65X6.45" package="WE-XHMI(6.65X6.45)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -556,7 +629,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="TPC_4.8X4.8" package="WE-TPC(4.8X4.8)">
+<device name="_TPC_4.8X4.8" package="WE-TPC(4.8X4.8)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -565,7 +638,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="TPC_3.8X3.8" package="WE-TPC(3.8X3.8)">
+<device name="_TPC_3.8X3.8" package="WE-TPC(3.8X3.8)">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -574,7 +647,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="0805" package="0805">
+<device name="_0805" package="0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -583,7 +656,43 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="LQSH_2.5X2" package="WE-LQSH(2.5X2)">
+<device name="_LQSH_2.5X2" package="WE-LQSH(2.5X2)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MAPI_3X3" package="WE-MAPI(3X3)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MAPI_5.4X5.4" package="WE-MAPI(5.4X5.4)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HCI_5040" package="WE-HCI(5040)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MAPI_4.1X4.1" package="WE-MAPI(4.1X4.1)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -594,7 +703,7 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE_SCHOTTKY" prefix="D">
+<deviceset name="DIODE_SCHOTTKY" prefix="D" uservalue="yes">
 <description>&lt;h2&gt;Generic Shottky Diode&lt;/h2&gt;</description>
 <gates>
 <gate name="G$1" symbol="D_SCHOTTKY" x="0" y="0"/>
@@ -643,6 +752,15 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <connects>
 <connect gate="G$1" pin="A" pad="ANODE"/>
 <connect gate="G$1" pin="C" pad="CAT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO-214AC" package="DO214AC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2355,21 +2473,6 @@ wave soldering</description>
 <rectangle x1="0.9144" y1="-1.3081" x2="1.6645" y2="1.2918" layer="51"/>
 <rectangle x1="-0.3" y1="-0.8001" x2="0.3" y2="0.8001" layer="35"/>
 </package>
-<package name="R2010">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-1.662" y1="1.245" x2="1.662" y2="1.245" width="0.1524" layer="51"/>
-<wire x1="-1.637" y1="-1.245" x2="1.687" y2="-1.245" width="0.1524" layer="51"/>
-<wire x1="-3.473" y1="1.483" x2="3.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="1.483" x2="3.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="-1.483" x2="-3.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-3.473" y1="-1.483" x2="-3.473" y2="1.483" width="0.0508" layer="39"/>
-<smd name="1" x="-2.2" y="0" dx="1.8" dy="2.7" layer="1"/>
-<smd name="2" x="2.2" y="0" dx="1.8" dy="2.7" layer="1"/>
-<text x="-3.175" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.175" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.4892" y1="-1.3208" x2="-1.6393" y2="1.3292" layer="51"/>
-<rectangle x1="1.651" y1="-1.3208" x2="2.5009" y2="1.3292" layer="51"/>
-</package>
 <package name="R2010W">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 wave soldering</description>
@@ -3784,6 +3887,41 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
+<package name="R2010">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-1.662" y1="1.245" x2="1.662" y2="1.245" width="0.1524" layer="21"/>
+<wire x1="-1.637" y1="-1.245" x2="1.687" y2="-1.245" width="0.1524" layer="21"/>
+<wire x1="-3.473" y1="1.483" x2="3.473" y2="1.483" width="0.0508" layer="39"/>
+<wire x1="3.473" y1="1.483" x2="3.473" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="3.473" y1="-1.483" x2="-3.473" y2="-1.483" width="0.0508" layer="39"/>
+<wire x1="-3.473" y1="-1.483" x2="-3.473" y2="1.483" width="0.0508" layer="39"/>
+<smd name="1" x="-2.2" y="0" dx="1.8" dy="2.7" layer="1"/>
+<smd name="2" x="2.2" y="0" dx="1.8" dy="2.7" layer="1"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.159" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+<rectangle x1="-2.4892" y1="-1.3208" x2="-1.6393" y2="1.3292" layer="21"/>
+<rectangle x1="1.651" y1="-1.3208" x2="2.5009" y2="1.3292" layer="21"/>
+</package>
+<package name="R_TH_0.4&quot;">
+<description>Relaxed resistor layout (0.4") for standard 1/4W resistors</description>
+<pad name="P$1" x="-5.08" y="0" drill="1.1"/>
+<pad name="P$2" x="5.08" y="0" drill="1.1"/>
+<wire x1="-3" y1="1.15" x2="-3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.15" x2="-1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.15" x2="-1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="1.778" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.016" x2="1.778" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-1.15" x2="3" y2="-1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.15" x2="3" y2="1.15" width="0.127" layer="21"/>
+<wire x1="3" y1="1.15" x2="1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.15" x2="1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.778" y1="1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.016" x2="-1.778" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="1.15" x2="-3" y2="1.15" width="0.127" layer="21"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.2" layer="21"/>
+<wire x1="4.953" y1="0" x2="3.048" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -3897,6 +4035,16 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10B474KA8NNNC" constant="no"/>
 </technology>
+<technology name="0.68UF">
+<attribute name="DIGIKEY" value="399-9123-1-ND" constant="no"/>
+<attribute name="MF" value="KEMET" constant="no"/>
+<attribute name="MPN" value="C0603C684K4PACTU" constant="no"/>
+</technology>
+<technology name="10NF">
+<attribute name="DIGIKEY" value="399-7842-1-ND" constant="no"/>
+<attribute name="MF" value="KEMET" constant="no"/>
+<attribute name="MPN" value="C0603C103M5RACTU" constant="no"/>
+</technology>
 <technology name="10PF">
 <attribute name="DIGIKEY" value="311-1058-1-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -3937,15 +4085,30 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Kemet" constant="no"/>
 <attribute name="MPN" value="C0603C221J5GACTU" constant="no"/>
 </technology>
+<technology name="22PF">
+<attribute name="DIGIKEY" value="399-7874-1-ND" constant="no"/>
+<attribute name="MF" value="KEMET" constant="no"/>
+<attribute name="MPN" value="C0603C220J1GACTU" constant="no"/>
+</technology>
 <technology name="4.7UF">
 <attribute name="DIGIKEY" value="490-10481-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM188R61C475KAAJD" constant="no"/>
 </technology>
+<technology name="47PF">
+<attribute name="DIGIKEY" value="399-1056-1-ND" constant="no"/>
+<attribute name="MF" value="KEMET" constant="no"/>
+<attribute name="MPN" value="C0603C470J5GACTU" constant="no"/>
+</technology>
 <technology name="680PF">
 <attribute name="DIGIKEY" value="311-1188-1-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="CC0603KRX7R9BB681" constant="no"/>
+</technology>
+<technology name="7PF">
+<attribute name="DIGIKEY" value="478-10337-1-ND" constant="no"/>
+<attribute name="MF" value="AVX" constant="no"/>
+<attribute name="MPN" value="06035A7R0CAT2A" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3970,8 +4133,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="CC0805KKX7R9BB334" constant="no"/>
 </technology>
+<technology name="1.5UF">
+<attribute name="DIGIKEY" value="399-4930-1-ND" constant="no"/>
+<attribute name="MF" value="Kemet" constant="no"/>
+<attribute name="MPN" value="C0805C155K4RACTU" constant="no"/>
+</technology>
 <technology name="10UF">
-<attribute name="DIGIKEY" value="490-6473-6-ND" constant="no"/>
+<attribute name="DIGIKEY" value="490-6473-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM21BR61C106KE15K" constant="no"/>
 </technology>
@@ -4833,6 +5001,24 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="VALUE_PART" value="" constant="no"/>
 </technology>
+<technology name="0.0">
+<attribute name="DIGIKEY" value="311-0.0LECT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="AC0603JR-070RL" constant="no"/>
+<attribute name="VALUE_PART" value="0" constant="no"/>
+</technology>
+<technology name="0.082">
+<attribute name="DIGIKEY" value="408-1446-1-ND" constant="no"/>
+<attribute name="MF" value="Susumu" constant="no"/>
+<attribute name="MPN" value="RL0816T-R082-F" constant="no"/>
+<attribute name="VALUE_PART" value="82m" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="311-1.00HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-071RL" constant="no"/>
+<attribute name="VALUE_PART" value="1" constant="no"/>
+</technology>
 <technology name="1.62M">
 <attribute name="DIGIKEY" value="RMCF0603FT1M62CT-ND" constant="no"/>
 <attribute name="MF" value="Stackpole" constant="no"/>
@@ -4844,6 +5030,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-071K8L" constant="no"/>
 <attribute name="VALUE_PART" value="1.8k" constant="no"/>
+</technology>
+<technology name="10">
+<attribute name="DIGIKEY" value="311-10.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0710RL" constant="no"/>
+<attribute name="VALUE_PART" value="10" constant="no"/>
+</technology>
+<technology name="100">
+<attribute name="DIGIKEY" value="311-100HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07100RL" constant="no"/>
+<attribute name="VALUE_PART" value="100" constant="no"/>
 </technology>
 <technology name="100K">
 <attribute name="DIGIKEY" value="311-100KHRCT-ND" constant="no"/>
@@ -4929,6 +5127,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0603FR-072K2L" constant="no"/>
 <attribute name="VALUE_PART" value="2.2k" constant="no"/>
 </technology>
+<technology name="20">
+<attribute name="DIGIKEY" value="311-20.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0720RL" constant="no"/>
+<attribute name="VALUE_PART" value="20" constant="no"/>
+</technology>
 <technology name="200K">
 <attribute name="DIGIKEY" value="311-200KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -4947,17 +5151,65 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0603FR-07220RL" constant="no"/>
 <attribute name="VALUE_PART" value="220" constant="no"/>
 </technology>
+<technology name="220K">
+<attribute name="DIGIKEY" value="311-220KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07220KL" constant="no"/>
+<attribute name="VALUE_PART" value="220k" constant="no"/>
+</technology>
+<technology name="240K">
+<attribute name="DIGIKEY" value="311-240KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07240KL" constant="no"/>
+<attribute name="VALUE_PART" value="240k" constant="no"/>
+</technology>
 <technology name="27">
 <attribute name="DIGIKEY" value="311-27.0HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-0727RL" constant="no"/>
 <attribute name="VALUE_PART" value="27" constant="no"/>
 </technology>
+<technology name="2K">
+<attribute name="DIGIKEY" value="311-2.00KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-072KL" constant="no"/>
+<attribute name="VALUE_PART" value="2k" constant="no"/>
+</technology>
 <technology name="3.3M">
 <attribute name="DIGIKEY" value="RMCF0603FT3M30CT-ND" constant="no"/>
 <attribute name="MF" value="Stackpole" constant="no"/>
 <attribute name="MPN" value="RMCF0603FT3M30" constant="no"/>
 <attribute name="VALUE_PART" value="3.3M" constant="no"/>
+</technology>
+<technology name="30">
+<attribute name="DIGIKEY" value="311-30.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0730RL" constant="no"/>
+<attribute name="VALUE_PART" value="30" constant="no"/>
+</technology>
+<technology name="309K">
+<attribute name="DIGIKEY" value="P309KHCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-3EKF3093V" constant="no"/>
+<attribute name="VALUE_PART" value="309k" constant="no"/>
+</technology>
+<technology name="30K">
+<attribute name="DIGIKEY" value="311-30.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0730KL" constant="no"/>
+<attribute name="VALUE_PART" value="30k" constant="no"/>
+</technology>
+<technology name="316K">
+<attribute name="DIGIKEY" value="311-316KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07316KL" constant="no"/>
+<attribute name="VALUE_PART" value="316k" constant="no"/>
+</technology>
+<technology name="33.2K">
+<attribute name="DIGIKEY" value="311-33.2KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0733K2L" constant="no"/>
+<attribute name="VALUE_PART" value="33.2k" constant="no"/>
 </technology>
 <technology name="330">
 <attribute name="DIGIKEY" value="311-330HRCT-ND" constant="no"/>
@@ -4989,6 +5241,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0603FR-07422KL" constant="no"/>
 <attribute name="VALUE_PART" value="422k" constant="no"/>
 </technology>
+<technology name="430K">
+<attribute name="DIGIKEY" value="311-430KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07430KL" constant="no"/>
+<attribute name="VALUE_PART" value="430k" constant="no"/>
+</technology>
+<technology name="43K">
+<attribute name="DIGIKEY" value="311-43.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0743KL" constant="no"/>
+<attribute name="VALUE_PART" value="43k" constant="no"/>
+</technology>
 <technology name="470">
 <attribute name="DIGIKEY" value="311-470HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -5001,17 +5265,47 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="MPN" value="RC0603JR-07470KL" constant="no"/>
 <attribute name="VALUE_PART" value="470k" constant="no"/>
 </technology>
+<technology name="51.1K">
+<attribute name="DIGIKEY" value="118-CR0603-FX-5112ELFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0603-FX-5112ELF" constant="no"/>
+<attribute name="VALUE_PART" value="51.1k" constant="no"/>
+</technology>
+<technology name="51K">
+<attribute name="DIGIKEY" value="311-51.0KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0751KL" constant="no"/>
+<attribute name="VALUE_PART" value="51k" constant="no"/>
+</technology>
+<technology name="56">
+<attribute name="DIGIKEY" value="311-56.0HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-0756RL" constant="no"/>
+<attribute name="VALUE_PART" value="56" constant="no"/>
+</technology>
 <technology name="590K">
 <attribute name="DIGIKEY" value="311-590KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603FR-07590KL" constant="no"/>
 <attribute name="VALUE_PART" value="590k" constant="no"/>
 </technology>
+<technology name="750K">
+<attribute name="DIGIKEY" value="311-750KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07750KL" constant="no"/>
+<attribute name="VALUE_PART" value="750k" constant="no"/>
+</technology>
 <technology name="820K">
 <attribute name="DIGIKEY" value="311-820KGRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0603JR-07820KL" constant="no"/>
 <attribute name="VALUE_PART" value="820k" constant="no"/>
+</technology>
+<technology name="82K">
+<attribute name="DIGIKEY" value="CR0603-FX-8202ELFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CR0603-FX-8202ELF" constant="no"/>
+<attribute name="VALUE_PART" value="82k" constant="no"/>
 </technology>
 <technology name="91K">
 <attribute name="DIGIKEY" value="P91.0KHCT-ND" constant="no"/>
@@ -5067,6 +5361,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0.002">
+<attribute name="DIGIKEY" value="RHM.002AJCT-ND" constant="no"/>
+<attribute name="MF" value="Rohm" constant="no"/>
+<attribute name="MPN" value="PMR10EZPFV2L00" constant="no"/>
 </technology>
 <technology name="0.003">
 <attribute name="DIGIKEY" value="RHM.003AJCT-ND" constant="no"/>
@@ -5181,7 +5480,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE_PART" value="" constant="no"/>
+</technology>
+<technology name="0.04">
+<attribute name="DIGIKEY" value="WSLE-.04CT-ND" constant="no"/>
+<attribute name="MF" value="Vishay Dale" constant="no"/>
+<attribute name="MPN" value="WSL2010R0400FEA" constant="no"/>
+<attribute name="VALUE_PART" value="40m" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R2010W" package="R2010W">
@@ -5199,7 +5509,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE_PART" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="R2012W" package="R2012W">
@@ -5877,6 +6192,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="TH_0.4&quot;" package="R_TH_0.4&quot;">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -5925,7 +6249,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </classes>
 <parts>
 <part name="U1" library="bschulz" deviceset="LMR62014" device="SOT23"/>
-<part name="L1" library="bschulz" deviceset="INDUCTOR" device="1008" value="10uH">
+<part name="L1" library="bschulz" deviceset="INDUCTOR" device="_1008" value="10uH">
 <attribute name="DIGIKEY" value="732-4851-1-ND"/>
 <attribute name="MF" value="Wurth"/>
 <attribute name="MPN" value="74438323100"/>
@@ -6279,7 +6603,8 @@ Ref &lt;a href = http://www.ti.com/lit/ds/symlink/lp3988-q1.pdf&gt;datasheet&lt;
 <wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="21"/>
 <wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="21"/>
 <circle x="-1.016" y="1.651" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="1008">
 <smd name="1" x="-0.975" y="0" dx="0.85" dy="2.3" layer="1"/>
@@ -6605,7 +6930,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="14.986" y="14.732" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE_PART" value="13.3k" x="13.589" y="14.732" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D1" library="bschulz" package="SOD-123" value="DIODE_SCHOTTKYSOD-123" x="20.955" y="10.668" smashed="yes" rot="R180">
+<element name="D1" library="bschulz" package="SOD-123" value="" x="20.955" y="10.668" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="MBR0520LT1GOSCT-ND" x="20.955" y="10.668" size="0.8128" layer="27" font="vector" ratio="20" rot="R180" align="center" display="off"/>
 <attribute name="MF" value="ON Semiconductor" x="20.955" y="10.668" size="0.8128" layer="27" font="vector" ratio="20" rot="R180" align="center" display="off"/>
 <attribute name="MPN" value="MBR0520LT1G" x="20.955" y="10.668" size="0.8128" layer="27" font="vector" ratio="20" rot="R180" align="center" display="off"/>
@@ -6687,6 +7012,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="12.827" y="9.906"/>
 <vertex x="12.7" y="10.033"/>
 </polygon>
+<wire x1="18.923" y1="13.208" x2="20.005" y2="12.827" width="0" layer="19" extent="1-1"/>
+<wire x1="18.923" y1="12.319" x2="18.923" y2="13.208" width="0" layer="19" extent="1-1"/>
+<wire x1="17.937" y1="11.811" x2="18.923" y2="12.319" width="0" layer="19" extent="1-1"/>
+<wire x1="16.637" y1="11.811" x2="17.937" y2="11.811" width="0" layer="19" extent="1-1"/>
+<wire x1="16.19" y1="9.017" x2="16.637" y2="11.811" width="0" layer="19" extent="1-1"/>
+<wire x1="13.589" y1="13.882" x2="16.637" y2="11.811" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SW">
 <contactref element="U1" pad="1"/>
@@ -6704,6 +7035,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="19.812" y="11.176"/>
 <vertex x="17.272" y="11.176"/>
 </polygon>
+<wire x1="19.28" y1="10.668" x2="17.937" y2="10.861" width="0" layer="19" extent="1-1"/>
+<wire x1="17.739" y1="6.604" x2="17.937" y2="10.861" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="12V">
 <contactref element="D1" pad="CAT"/>
@@ -6746,6 +7079,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="16.002" y="10.541"/>
 <vertex x="16.002" y="11.557"/>
 </polygon>
+<wire x1="13.589" y1="10.834" x2="15.337" y2="10.861" width="0" layer="19" extent="1-1"/>
+<wire x1="14.29" y1="9.017" x2="13.589" y2="10.834" width="0" layer="19" extent="1-1"/>
+<wire x1="15.789" y1="6.604" x2="14.29" y2="9.017" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
