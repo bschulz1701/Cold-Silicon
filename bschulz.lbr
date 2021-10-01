@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -31,7 +31,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -18064,6 +18064,156 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <wire x1="10" y1="-6" x2="10" y2="-3.81" width="0.127" layer="48"/>
 <wire x1="10" y1="-3.81" x2="-10" y2="-3.81" width="0.127" layer="48"/>
 </package>
+<package name="MSOP_8EP">
+<description>&lt;b&gt;MSOP, 3x3mm, 0.65mm pitch, exposed pad&lt;/b&gt;</description>
+<smd name="1" x="-1.975" y="0.975" dx="1.35" dy="0.45" layer="1"/>
+<smd name="2" x="-1.975" y="0.325" dx="1.35" dy="0.45" layer="1"/>
+<smd name="3" x="-1.975" y="-0.325" dx="1.35" dy="0.45" layer="1"/>
+<smd name="4" x="-1.975" y="-0.975" dx="1.35" dy="0.45" layer="1"/>
+<smd name="5" x="1.975" y="-0.975" dx="1.35" dy="0.45" layer="1" rot="R180"/>
+<smd name="6" x="1.975" y="-0.325" dx="1.35" dy="0.45" layer="1" rot="R180"/>
+<smd name="7" x="1.975" y="0.325" dx="1.35" dy="0.45" layer="1" rot="R180"/>
+<smd name="8" x="1.975" y="0.975" dx="1.35" dy="0.45" layer="1" rot="R180"/>
+<wire x1="1.5" y1="-1.25" x2="1.5" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.25" x2="1.25" y2="1.5" width="0.127" layer="21" curve="90"/>
+<wire x1="1.25" y1="1.5" x2="-1.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="1.5" x2="-1.5" y2="1.25" width="0.127" layer="21" curve="90"/>
+<wire x1="-1.5" y1="1.25" x2="-1.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.25" y2="-1.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-1.25" y1="-1.5" x2="1.25" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.5" x2="1.5" y2="-1.25" width="0.127" layer="21" curve="90"/>
+<circle x="-1.778" y="1.778" radius="0.179603125" width="0.127" layer="21"/>
+<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<smd name="EP" x="0" y="0" dx="1.7" dy="2" layer="1"/>
+</package>
+<package name="SOT-553">
+<description>&lt;b&gt;SOT-553, 5 pin, 0.5mm pitch&lt;/b&gt; &lt;br&gt;Toshiba ESV&lt;br&gt;&lt;a href = https://toshiba.semicon-storage.com/us/semiconductor/design-development/package/detail.ESV.html&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.5" y="-0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="-0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="-0.5" y="0.675" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.8" y1="0.6" x2="-0.8" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.6" x2="0.8" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.8" y="-0.254"/>
+<vertex x="-0.254" y="-0.254"/>
+<vertex x="-0.254" y="-0.6"/>
+<vertex x="-0.8" y="-0.6"/>
+</polygon>
+<text x="1.27" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R270" align="center">&gt;NAME</text>
+</package>
+<package name="ML621S">
+<description>Footprint for soldered backup battery &lt;br&gt;Referance Datasheet &lt;a href = "https://media.digikey.com/pdf/Other%20Related%20Documents/Panasonic%20Other%20Doc/ML%20Series%20Tab%20Configurations.pdf"&gt;ML621S/F9D&lt;/a&gt;</description>
+<smd name="-" x="-0.75" y="1" dx="2" dy="0.75" layer="1" rot="R90"/>
+<smd name="+" x="0.75" y="1" dx="2" dy="0.75" layer="1" rot="R90"/>
+<circle x="0" y="6" radius="3.4" width="0.127" layer="39"/>
+<circle x="0" y="6" radius="3.7" width="0.254" layer="21"/>
+<text x="0" y="10.414" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="1.651" y="1.27" size="0.8128" layer="25" font="vector" ratio="15" rot="R270" align="center">+</text>
+<text x="-1.651" y="1.27" size="0.8128" layer="25" font="vector" ratio="15" rot="R270" align="center">-</text>
+</package>
+<package name="UQFN-8_1.4X1.2">
+<description>&lt;b&gt;UQFN, 8 pos, 0.4mm pitch, 1.4x1.2mm body&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.onsemi.cn/pdf/datasheet/fxmar2102-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.53" y="0" dx="0.55" dy="0.25" layer="1"/>
+<smd name="2" x="-0.4" y="-0.475" dx="0.45" dy="0.25" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-0.475" dx="0.45" dy="0.25" layer="1" rot="R90"/>
+<smd name="4" x="0.4" y="-0.475" dx="0.45" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="0.58" y="0" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="6" x="0.4" y="0.475" dx="0.45" dy="0.25" layer="1" rot="R270"/>
+<smd name="7" x="0" y="0.475" dx="0.45" dy="0.25" layer="1" rot="R270"/>
+<smd name="8" x="-0.4" y="0.475" dx="0.45" dy="0.25" layer="1" rot="R270"/>
+<wire x1="-0.7" y1="0.6" x2="-0.7" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-0.6" x2="0.7" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-0.6" x2="0.7" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.7" y1="0.6" x2="-0.7" y2="0.6" width="0.127" layer="21"/>
+<circle x="-1.016" y="-0.381" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="MICROPAK_10">
+<description>&lt;b&gt;MicroPak, 10 pos, 0.5mm pitch, 1.6x2.1mm body&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.onsemi.com/pdf/datasheet/fsa2258-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="10" x="-0.81" y="0" dx="0.25" dy="0.35" layer="1" rot="R90"/>
+<smd name="1" x="-0.75" y="-0.56" dx="0.25" dy="0.35" layer="1" rot="R180"/>
+<smd name="2" x="-0.25" y="-0.56" dx="0.25" dy="0.35" layer="1" rot="R180"/>
+<smd name="3" x="0.25" y="-0.56" dx="0.25" dy="0.35" layer="1" rot="R180"/>
+<smd name="4" x="0.75" y="-0.56" dx="0.25" dy="0.35" layer="1" rot="R180"/>
+<smd name="5" x="0.81" y="0" dx="0.25" dy="0.35" layer="1" rot="R270"/>
+<smd name="6" x="0.75" y="0.56" dx="0.25" dy="0.35" layer="1"/>
+<smd name="7" x="0.25" y="0.56" dx="0.25" dy="0.35" layer="1"/>
+<smd name="8" x="-0.25" y="0.56" dx="0.25" dy="0.35" layer="1"/>
+<smd name="9" x="-0.75" y="0.56" dx="0.25" dy="0.35" layer="1"/>
+<wire x1="-1.05" y1="0.8" x2="-1.05" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="-0.8" x2="1.05" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-0.8" x2="1.05" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.05" y1="0.8" x2="-1.05" y2="0.8" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1.016" y="-0.254"/>
+<vertex x="-0.508" y="-0.254"/>
+<vertex x="-0.508" y="-0.762"/>
+<vertex x="-1.016" y="-0.762"/>
+</polygon>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="-0.63" y1="-0.38" x2="0.63" y2="0.38" layer="41"/>
+</package>
+<package name="7103K2CWA">
+<description>&lt;b&gt;C&amp;K 7103K2CWA, Right Angle, PC Pin, Locking Lever Switch&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.ckswitches.com/media/1394/7000toggle.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="3" x="-4.7" y="12.7" drill="1.85"/>
+<pad name="2" x="0" y="12.7" drill="1.85"/>
+<pad name="1" x="4.7" y="12.7" drill="1.85"/>
+<pad name="BODY@1" x="-2.54" y="0" drill="1.85"/>
+<pad name="BODY@2" x="2.54" y="0" drill="1.85"/>
+<wire x1="-6.35" y1="8.39" x2="-6.35" y2="0.445" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="0.445" x2="-5.905" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="5.905" y1="0" x2="6.35" y2="0.445" width="0.127" layer="21" curve="90"/>
+<wire x1="6.35" y1="0.445" x2="6.35" y2="8.39" width="0.127" layer="21"/>
+<wire x1="6.35" y1="8.39" x2="5.85" y2="8.89" width="0.127" layer="21" curve="90"/>
+<wire x1="5.85" y1="8.89" x2="-5.85" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-5.85" y1="8.89" x2="-6.35" y2="8.39" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.905" y1="0" x2="-5.905" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.905" y1="-2" x2="-3.175" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2" x2="5.905" y2="-2" width="0.127" layer="21"/>
+<wire x1="5.905" y1="-2" x2="5.905" y2="0" width="0.127" layer="21"/>
+<wire x1="5.905" y1="0" x2="-5.905" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-2" x2="-3.175" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-8.6" x2="3.175" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-8.6" x2="3.175" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2" x2="-3.175" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2.72" y1="-8.6" x2="-2.72" y2="-23.98" width="0.127" layer="48" style="shortdash"/>
+<wire x1="-2.72" y1="-23.98" x2="-0.22" y2="-26.48" width="0.127" layer="48" style="shortdash" curve="90"/>
+<wire x1="-0.22" y1="-26.48" x2="0.22" y2="-26.48" width="0.127" layer="48" style="shortdash"/>
+<wire x1="0.22" y1="-26.48" x2="2.72" y2="-23.98" width="0.127" layer="48" style="shortdash" curve="90"/>
+<wire x1="2.72" y1="-23.98" x2="2.72" y2="-8.6" width="0.127" layer="48" style="shortdash"/>
+<wire x1="2.72" y1="-8.6" x2="-2.72" y2="-8.6" width="0.127" layer="48" style="shortdash"/>
+<text x="-6.985" y="3.81" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="YKE0004">
+<description>&lt;b&gt;BGA 2x2, 0.35mm pitch&lt;/b&gt;&lt;br&gt;Texas Instruments: YKE004&lt;br&gt;&lt;a href = "https://www.ti.com/lit/ds/symlink/lp5907.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1633025414478&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flp5907"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A1" x="-0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="B1" x="-0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100"/>
+<smd name="B2" x="0.175" y="-0.175" dx="0.18" dy="0.18" layer="1" roundness="100" rot="R180"/>
+<smd name="A2" x="0.175" y="0.175" dx="0.18" dy="0.18" layer="1" roundness="100" rot="R180"/>
+<wire x1="-0.325" y1="0.325" x2="-0.325" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="-0.325" y1="-0.325" x2="0.325" y2="-0.325" width="0.127" layer="21"/>
+<wire x1="0.325" y1="-0.325" x2="0.325" y2="0.325" width="0.127" layer="21"/>
+<wire x1="0.325" y1="0.325" x2="-0.325" y2="0.325" width="0.127" layer="21"/>
+<circle x="-0.508" y="0.508" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-0.762" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="BGA_4">
+<description>&lt;b&gt;BGA, 4 pos, 2x2, 0.4mm pitch, 0.85x0.85mm body&lt;/b&gt;&lt;br&gt;&lt;a href = "http://www.memsic.com/uploadfiles/2020/08/20200827165106864.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="A1" x="-0.2" y="0.2" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B1" x="-0.2" y="-0.2" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B2" x="0.2" y="-0.2" dx="0.23" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<smd name="A2" x="0.2" y="0.2" dx="0.23" dy="0.23" layer="1" roundness="100" rot="R180"/>
+<wire x1="-0.425" y1="0.425" x2="-0.425" y2="-0.425" width="0.127" layer="21"/>
+<wire x1="-0.425" y1="-0.425" x2="0.425" y2="-0.425" width="0.127" layer="21"/>
+<wire x1="0.425" y1="-0.425" x2="0.425" y2="0.425" width="0.127" layer="21"/>
+<wire x1="0.425" y1="0.425" x2="-0.425" y2="0.425" width="0.127" layer="21"/>
+<circle x="-0.635" y="0.635" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-0.889" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -20742,7 +20892,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="-5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="1.27" y="9.144" size="1.27" layer="95" align="center">TXS0102</text>
+<text x="1.27" y="9.144" size="1.27" layer="95" align="center">&gt;DISP</text>
 <pin name="GND" x="-10.16" y="-2.54" visible="pin" length="middle" direction="pwr"/>
 <text x="1.27" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
@@ -26029,11 +26179,11 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <wire x1="1.27" y1="-1.016" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MIC2090">
-<pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
 <pin name="EN" x="-12.7" y="0" length="middle" direction="in"/>
 <pin name="!FAULT" x="-12.7" y="-7.62" length="middle" direction="out"/>
-<pin name="GND" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="VOUT" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
@@ -27937,6 +28087,93 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="0" y="11.684" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
 <text x="0" y="-11.938" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
+<symbol name="SW_2:1_2">
+<pin name="2A" x="-12.7" y="-2.54" visible="off" length="middle"/>
+<pin name="2B0" x="12.7" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="2B1" x="12.7" y="-5.08" visible="off" length="middle" rot="R180"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCC" x="12.7" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="S2" x="-12.7" y="-5.08" visible="off" length="middle" direction="in"/>
+<circle x="2.54" y="-5.08" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="3.302" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-1.778" width="0.254" layer="94" style="shortdash"/>
+<circle x="-2.54" y="-2.54" radius="0.359209375" width="0.254" layer="94"/>
+<text x="0" y="-13.97" size="1.27" layer="96" align="center">&gt;NAME</text>
+<text x="0" y="14.224" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="5.08" y="1.27" size="1.27" layer="94" font="vector" ratio="15" align="center">0</text>
+<text x="5.08" y="-6.35" size="1.27" layer="94" font="vector" ratio="15" align="center">1</text>
+<pin name="1A" x="-12.7" y="7.62" visible="off" length="middle"/>
+<pin name="1B0" x="12.7" y="10.16" visible="off" length="middle" rot="R180"/>
+<pin name="1B1" x="12.7" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="S1" x="-12.7" y="5.08" visible="off" length="middle" direction="in"/>
+<circle x="2.54" y="5.08" radius="0.359209375" width="0.254" layer="94"/>
+<circle x="2.54" y="10.16" radius="0.359209375" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="3.302" y2="9.652" width="0.254" layer="94"/>
+<wire x1="3.048" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="3.048" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="5.08" x2="0" y2="8.382" width="0.254" layer="94" style="shortdash"/>
+<circle x="-2.54" y="7.62" radius="0.359209375" width="0.254" layer="94"/>
+<text x="5.08" y="11.43" size="1.27" layer="94" font="vector" ratio="15" align="center">0</text>
+<text x="5.08" y="3.81" size="1.27" layer="94" font="vector" ratio="15" align="center">1</text>
+</symbol>
+<symbol name="MIC2260X">
+<pin name="PVIN" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="SVIN" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="EN/DLY" x="-17.78" y="0" length="middle"/>
+<pin name="RC" x="-17.78" y="-5.08" length="middle"/>
+<pin name="DELAY" x="-17.78" y="-10.16" length="middle"/>
+<pin name="SW" x="20.32" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="POR/PG" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="FB" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="COMP" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="PGND" x="0" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<pin name="SGND" x="2.54" y="-17.78" visible="pin" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="11.43" size="1.778" layer="95" align="center">&gt;DISP</text>
+</symbol>
+<symbol name="SENSOR_I2C">
+<description>&lt;b&gt;Generic Device for I2C Only Sensors&lt;/b&gt;</description>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="SENSOR_I2C_INT">
+<description>&lt;b&gt;Generic Device for I2C Only Sensors (with Interrupt)&lt;/b&gt;</description>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="INT" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -28431,25 +28668,67 @@ Used for prog header on Arduino M0
 </device>
 </devices>
 </deviceset>
-<deviceset name="FXMAR2102">
-<description>Fairchild bi-directional logic level shifter, 5v tollerent, open drain/tri state inputs</description>
+<deviceset name="FXMAR2102" prefix="U">
+<description>&lt;b&gt;FXMAR2102&lt;/b&gt; - 2 Channel Bidirectional Voltage Level Translator for I&lt;sup&gt;2&lt;/sup&gt;C Applications
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.65 ~ 5.5V&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: &amp;lt;5&amp;mu;A &lt;/li&gt;
+&lt;li&gt;Output Current: 50mA &lt;/li&gt;
+&lt;li&gt;Output Type: Open Drain/Push-Pull&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onsemi/FXMAR2102UMX-F106/5050715"&gt; FXMAR2102UMX-F106CT-ND (UMLP)&lt;a&gt;&lt;br/&gt;
+
+
+
+ &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="FXMAR2102" x="0" y="-5.08"/>
+<gate name="G$1" symbol="TXS0102" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MICROPAK_8">
+<device name="MICROPAK" package="MICROPAK_8">
 <connects>
-<connect gate="G$1" pin="A0" pad="2"/>
-<connect gate="G$1" pin="A1" pad="3"/>
-<connect gate="G$1" pin="B0" pad="7"/>
-<connect gate="G$1" pin="B1" pad="6"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="B1" pad="7"/>
+<connect gate="G$1" pin="B2" pad="6"/>
+<connect gate="G$1" pin="EN" pad="5"/>
 <connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="OE" pad="5"/>
-<connect gate="G$1" pin="VCCA" pad="1"/>
-<connect gate="G$1" pin="VCCB" pad="8"/>
+<connect gate="G$1" pin="VA" pad="1"/>
+<connect gate="G$1" pin="VB" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="FXMAR2102L8XCT-ND" constant="no"/>
+<attribute name="DISP" value="FXMAR2102" constant="no"/>
+<attribute name="MF" value="OnSemi" constant="no"/>
+<attribute name="MPN" value="FXMAR2102L8X" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="UMLP" package="UQFN-8_1.4X1.2">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="B1" pad="7"/>
+<connect gate="G$1" pin="B2" pad="6"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VA" pad="1"/>
+<connect gate="G$1" pin="VB" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="FXMAR2102UMX-F106CT-ND" constant="no"/>
+<attribute name="DISP" value="FXMAR2102" constant="no"/>
+<attribute name="MF" value="OnSemi" constant="no"/>
+<attribute name="MPN" value="FXMAR2102UMX-F106" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -31921,6 +32200,19 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <attribute name="DIGIKEY" value="P297-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
 <attribute name="MPN" value="ML-614S/FN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="ML621" package="ML621S">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="P044-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ML-621S/DN" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -36010,6 +36302,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-28368-1-ND" constant="no"/>
+<attribute name="DISP" value="TXS0102" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TXS0102DQER" constant="no"/>
 </technology>
@@ -36029,6 +36322,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-21931-1-ND" constant="no"/>
+<attribute name="DISP" value="TXS0102" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TXS0102DCUR" constant="no"/>
 </technology>
@@ -36048,6 +36342,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-28435-1-ND" constant="no"/>
+<attribute name="DISP" value="TXS0102" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TXS0102DQMR" constant="no"/>
 </technology>
@@ -36067,6 +36362,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-TXS0102YZCT-ND" constant="no"/>
+<attribute name="DISP" value="TXS0102" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="TXS0102YZTR" constant="no"/>
 </technology>
@@ -37201,6 +37497,16 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <attribute name="MF" value="Nidec Copal" constant="no"/>
 <attribute name="MPN" value="CAS-120TA" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="7103K2CWA" package="7103K2CWA">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -40473,7 +40779,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE_CC" prefix="D">
+<deviceset name="DIODE_CC" prefix="D" uservalue="yes">
 <description>&lt;b&gt;Dual Diode, Common Cathode&lt;/b&gt;
 
 &lt;br&gt;
@@ -44391,6 +44697,28 @@ Features:  (441/841)
 </technology>
 </technologies>
 </device>
+<device name="YKE" package="YKE0004">
+<connects>
+<connect gate="G$1" pin="EN" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="B2"/>
+<connect gate="G$1" pin="VIN" pad="A1"/>
+<connect gate="G$1" pin="VOUT" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="LP5907" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="3.3V">
+<attribute name="DIGIKEY" value="296-39067-1-ND" constant="no"/>
+<attribute name="DISP" value="LP5907" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="LP5907UVX-3.3/NOPB" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONN_04X2" prefix="J" uservalue="yes">
@@ -45787,12 +46115,331 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onse
 </gates>
 <devices>
 <device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="WP" pad="7"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="865-1269-1-ND" constant="no"/>
 <attribute name="DISP" value="MB85RC512" constant="no"/>
 <attribute name="MF" value="Fujitsu" constant="no"/>
 <attribute name="MPN" value="MB85RC512TPNF-G-JNERE1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HALL_EFFECT" prefix="U">
+<description>&lt;h3&gt;General Hall Effect Sensor&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="HALL_EFFECT_SENSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SI7201" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="336-4121-1-ND" constant="no"/>
+<attribute name="DISP" value="Si7201" constant="no"/>
+<attribute name="MF" value="Silicon Labs" constant="no"/>
+<attribute name="MPN" value="SI7201-B-05-IVR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP24*1" prefix="U">
+<description>&lt;b&gt;AP24x1&lt;/b&gt; - Current Limit Load Switch with Latch-Off
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.7V ~ 5.5V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 0.1&amp;mu;A (OFF), 60&amp;mu;A (ON) &lt;/li&gt;
+&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 70m&amp;Omega; (Vin = 5V), 90m&amp;Omega; (Vin = 3.3V)&lt;/li&gt;
+&lt;li&gt;UVLO: 2V&lt;/li&gt;
+&lt;li&gt; Output Current: 2.5A&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/diodes-incorporated/AP2411MP-13/2755849"&gt; AP2411MP-13DICT-ND (MSOP, Active High) &lt;/a&gt;&lt;br/&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC2090" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP_8EP">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="5"/>
+<connect gate="G$1" pin="EN" pad="4"/>
+<connect gate="G$1" pin="GND" pad="1 EP"/>
+<connect gate="G$1" pin="VIN" pad="2 3"/>
+<connect gate="G$1" pin="VOUT" pad="6 7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="AP2411MP-13DICT-ND" constant="no"/>
+<attribute name="DISP" value="AP2411" constant="no"/>
+<attribute name="MF" value="Diodes Inc" constant="no"/>
+<attribute name="MPN" value="AP2411MP-13" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCR2L*" prefix="U">
+<description>&lt;b&gt;TCR2Lyxx&lt;/b&gt; - Ultra Low Quiescent Current, Low Dropout Linear Regulator with Enable
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 0.8V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;Vout: 0.8V ~ 3.6V (Many fixed steps)&lt;/il&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A typ, 2&amp;mu;A max &lt;/li&gt;
+&lt;li&gt; Drop-Out Voltage: 220mV (V&lt;sub&gt;Out&lt;/sub&gt; = 3V)&lt;/li&gt;
+&lt;li&gt; Voltage Accuracy: &amp;plusmn;1% typ&lt;/li&gt;
+&lt;li&gt; Output Current: 200 mA &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/filter/pmic-voltage-regulators-linear/699?s=N4IgjCBcoLQExVAYygFwE4FcCmAaEA9lANogCcIAugL74wAsiIKkAZgIYA2AznoSSABsADgCsYAOxVaIGKKYsOPPkUikENOhWjM0WFQIg0ZCNSAAqAYQBKcADJV8gpgEsAJlFlgADAnwAHVE8QfABHVABPTx8QkEj-bE83bhRqaiA"&gt; TCR2LExx (ESV/SOT-553 Package Series)&lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/en/products/filter/pmic-voltage-regulators-linear/699?s=N4IgjCBcoLQExVAYygFwE4FcCmAaEA9lANogCcIAugL74wCsiIKkAZgIYA2AznoSSAQ06FaMzRY%2BRSKQjCQMACxMWHHlIEA2ABz0w2qtVqCBAFQDCAJTgAZKvk1MAlgBMoCsAAYI%2BAA6p3EHwAR1QAT3cvIJBw32x3dm4UIyA"&gt; TCR2LFxx (SMV/SOT-25/SC-74A Package Series) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREG_BASIC_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ESV" package="SOT-553">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="E31">
+<attribute name="DIGIKEY" value="TCR2LE31LMCT-ND" constant="no"/>
+<attribute name="DISP" value="TCS2LE31" constant="no"/>
+<attribute name="MF" value="Toshiba" constant="no"/>
+<attribute name="MPN" value="TCR2LE31,LM" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FSA2258" prefix="U">
+<description>&lt;b&gt;FSA2258&lt;/b&gt; - Low Voltage, Dual SPDT Analog Switch
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 1.65~4.3V&lt;/li&gt;
+&lt;li&gt;On state resistace: 0.8 &amp;Omega;, Max &lt;/li&gt;
+&lt;li&gt;Channel to Channel Matching: 0.2 &amp;Omega;, Typical &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onsemi/FSA2258L10X/2115881"&gt; FSA2258L10XCT-ND &lt;a&gt;&lt;br/&gt;
+
+
+ &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SW_2:1_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICROPAK_10">
+<connects>
+<connect gate="G$1" pin="1A" pad="9"/>
+<connect gate="G$1" pin="1B0" pad="1"/>
+<connect gate="G$1" pin="1B1" pad="2"/>
+<connect gate="G$1" pin="2A" pad="6"/>
+<connect gate="G$1" pin="2B0" pad="3"/>
+<connect gate="G$1" pin="2B1" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="S1" pad="8"/>
+<connect gate="G$1" pin="S2" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="FSA2258L10XCT-ND" constant="no"/>
+<attribute name="DISP" value="FSA2258" constant="no"/>
+<attribute name="MF" value="OnSemi" constant="no"/>
+<attribute name="MPN" value="FSA2258L10X" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2260*" prefix="U">
+<description>&lt;b&gt;MIC2260x&lt;/b&gt; - High Efficiency Synchronous Buck Converter
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 2.6V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Vout: 0.7V ~ Vin &lt;/il&gt;
+&lt;li&gt; Output Current (max): 6A&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 850&amp;mu;A (typ)&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/MIC22602YML-TR/2242451"&gt; 576-3645-1-ND &lt;/a&gt;&lt;br/&gt;
+
+
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC2260X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN24_POWER">
+<connects>
+<connect gate="G$1" pin="COMP" pad="15"/>
+<connect gate="G$1" pin="DELAY" pad="3"/>
+<connect gate="G$1" pin="EN/DLY" pad="2"/>
+<connect gate="G$1" pin="FB" pad="14"/>
+<connect gate="G$1" pin="PGND" pad="7 12 19 24 EP EP@1 EP@2 EP@3 EP@4 EP@5 EP@6 EP@7 EP@8 EP@9"/>
+<connect gate="G$1" pin="POR/PG" pad="5"/>
+<connect gate="G$1" pin="PVIN" pad="1 6 13 18"/>
+<connect gate="G$1" pin="RC" pad="4"/>
+<connect gate="G$1" pin="SGND" pad="16"/>
+<connect gate="G$1" pin="SVIN" pad="17"/>
+<connect gate="G$1" pin="SW" pad="8 9 10 11 20 21 22 23"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="2">
+<attribute name="DIGIKEY" value="576-3645-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC22602" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC22602YML-TR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMC5633" prefix="U">
+<description>&lt;b&gt;MMC5633&lt;/b&gt; - High Performance 3 Axis Magnetic Sensor (Compass)
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.62~ 3.6V&lt;/li&gt;
+&lt;li&gt;Range: &amp;plusmn;30G&lt;/li&gt;
+&lt;li&gt;Magnetic Resolution: 0.0625mG &lt;/li&gt;
+&lt;li&gt;Magnetic Accuracy Accuracy: &amp;plusmn;2mG (&amp;lt;1&amp;deg;)&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/memsic-inc/MMC5633NJL/12171925"&gt;1267-MMC5633NJLCT-ND&lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHT31-DIS-F2.5KS/1649-1066-1-ND/6212137"&gt;1649-1066-1-ND (SHT31)&lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHT35-DIS-F2.5KS/1649-1067-1-ND/6212138"&gt;1649-1067-1-ND (SHT35)&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_I2C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BGA_4">
+<connects>
+<connect gate="G$1" pin="GND" pad="A1"/>
+<connect gate="G$1" pin="SCL" pad="A2"/>
+<connect gate="G$1" pin="SDA" pad="B2"/>
+<connect gate="G$1" pin="VCC" pad="B1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1267-MMC5633NJLCT-ND" constant="no"/>
+<attribute name="DISP" value="MMC5633" constant="no"/>
+<attribute name="MF" value="Memsic" constant="no"/>
+<attribute name="MPN" value="MMC5633NJL" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MXC6655" prefix="U">
+<description>&lt;b&gt;MXC6655&lt;/b&gt; -  3-axis Digital Accelerometer (I&lt;sup&gt;2&lt;/sup&gt;C)
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.62V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;Acceleration Range: &amp;plusmn;2g, &amp;plusmn;4g, &amp;plusmn;8g &lt;/li&gt;
+&lt;li&gt;Sensitivity: 1024 ~ 256 LSB/g (&amp;plusmn;2g ~ &amp;plusmn; 8g)
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/memsic-inc/MXC6655XA/12171923?s=N4IgTCBcDaILIA0DCA2FBWdIC6BfIA"&gt; 1267-MXC6655XACT-ND &lt;/a&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_I2C_INT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-12_2X2">
+<connects>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="INT" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="12"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1267-MXC6655XACT-ND" constant="no"/>
+<attribute name="DISP" value="MXC6655" constant="no"/>
+<attribute name="MF" value="Memsic" constant="no"/>
+<attribute name="MPN" value="MXC6655XA" constant="no"/>
 </technology>
 </technologies>
 </device>
