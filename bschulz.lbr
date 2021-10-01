@@ -8068,6 +8068,7 @@ Inifineon</description>
 <text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="VEML6075">
+<description>&lt;b&gt;VEML6075 Land Pattern, 4 pos&lt;/b&gt;&lt;br&gt;Also compatible with VEML3328&lt;br&gt;&lt;a href = "https://www.vishay.com/docs/84968/veml3328.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="1" x="-0.95" y="0.35" dx="0.9" dy="0.35" layer="1"/>
 <smd name="2" x="-0.95" y="-0.35" dx="0.9" dy="0.35" layer="1"/>
 <smd name="4" x="0.95" y="0.35" dx="0.9" dy="0.35" layer="1"/>
@@ -46440,6 +46441,41 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onse
 <attribute name="DISP" value="MXC6655" constant="no"/>
 <attribute name="MF" value="Memsic" constant="no"/>
 <attribute name="MPN" value="MXC6655XA" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEML3328" prefix="U">
+<description>&lt;b&gt;VEML3328&lt;/b&gt; - RGBCIR Color Sensor with I&lt;sup&gt;2&lt;/sup&gt;C Interface
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;VCC: 2.6~3.6V&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;Resolution: 16 Bit &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;a href = "https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML3328/10673129"&gt; 751-VEML3328CT-ND &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_I2C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VEML6075">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="751-VEML3328CT-ND" constant="no"/>
+<attribute name="DISP" value="VEML3328" constant="no"/>
+<attribute name="MF" value="Vishay" constant="no"/>
+<attribute name="MPN" value="VEML3328" constant="no"/>
 </technology>
 </technologies>
 </device>
