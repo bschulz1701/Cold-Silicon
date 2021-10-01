@@ -8191,6 +8191,22 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <wire x1="-5.08" y1="0" x2="-3.048" y2="0" width="0.2" layer="21"/>
 <wire x1="4.953" y1="0" x2="3.048" y2="0" width="0.2" layer="21"/>
 </package>
+<package name="C1411_TANT">
+<description>&lt;b&gt;1411 (3528 Metric) Tantalum Capacitor&lt;/b&gt;&lt;br&gt;&lt;b&gt;Size Code: B&lt;br&gt;EIA Code: 1210&lt;br&gt;&lt;a href = "https://www.avx.com/docs/techinfo/Surface_Mount_Tantalum.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="ANODE" x="-1.725" y="0" dx="1.65" dy="2.4" layer="1"/>
+<smd name="CATHODE" x="1.725" y="0" dx="1.65" dy="2.4" layer="1"/>
+<wire x1="-1.75" y1="1.4" x2="-1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-1.4" x2="1.75" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-1.4" x2="1.75" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.75" y1="1.4" x2="-1.75" y2="1.4" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-1.75" y="1.397"/>
+<vertex x="-0.381" y="1.397"/>
+<vertex x="-0.381" y="-1.397"/>
+<vertex x="-1.75" y="-1.397"/>
+</polygon>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -12460,6 +12476,15 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1411" package="C1411_TANT">
+<connects>
+<connect gate="G$1" pin="+" pad="ANODE"/>
+<connect gate="G$1" pin="-" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
