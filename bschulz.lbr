@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -6111,6 +6111,7 @@ Breadboard-friendly pins.
 </polygon>
 </package>
 <package name="QFN20">
+<description>&lt;b&gt;QFN, 20 pos, 0.5mm pitch, 4x4mm body&lt;/b&gt;</description>
 <wire x1="-2.032" y1="-1.532" x2="-2.032" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="-2.032" y1="-2.032" x2="-1.532" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="-2.032" y1="1.468" x2="-2.032" y2="1.968" width="0.127" layer="21"/>
@@ -18215,6 +18216,104 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <circle x="-0.635" y="0.635" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="-0.889" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="MICROSD_MOLEX_5031821852">
+<description>&lt;b&gt;&amp;mu;SD Card Socket, 10 pos (8 + 2)&lt;/b&gt;&lt;br&gt;Molex 5031821852&lt;br&gt;&lt;a href = "https://www.molex.com/pdm_docs/sd/5031821852_sd.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="0" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="2" x="1.1" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="3" x="2.2" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="4" x="3.3" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="5" x="4.4" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="6" x="5.5" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="7" x="6.6" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="8" x="7.7" y="-0.62" dx="0.8" dy="1.24" layer="1"/>
+<smd name="BODY@1" x="-4.345" y="-1.24" dx="0.95" dy="2.5" layer="1"/>
+<smd name="BODY@2" x="-4.305" y="-12.58" dx="1.15" dy="2.2" layer="1"/>
+<smd name="BODY@3" x="0" y="-13.155" dx="1.15" dy="1.5" layer="1" rot="R90"/>
+<smd name="BODY@4" x="7.78" y="-13.155" dx="1.15" dy="1.5" layer="1" rot="R90"/>
+<smd name="SW1" x="9.64" y="-12.25" dx="1.16" dy="1.2" layer="1" rot="R180"/>
+<smd name="SW2" x="9.64" y="-3.25" dx="1.16" dy="1.2" layer="1" rot="R180"/>
+<smd name="BODY@5" x="10.045" y="-1.1" dx="1.15" dy="2.2" layer="1" rot="R180"/>
+<polygon width="0.127" layer="39">
+<vertex x="10.31" y="-8.83"/>
+<vertex x="9.91" y="-8.83"/>
+<vertex x="9.91" y="-11.15"/>
+<vertex x="10.31" y="-11.15"/>
+</polygon>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-13.7" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-13.7" x2="-1.016" y2="-13.7" width="0.127" layer="21"/>
+<wire x1="8.763" y1="-13.7" x2="9.91" y2="-13.7" width="0.127" layer="21"/>
+<wire x1="9.91" y1="-13.7" x2="9.91" y2="1.25" width="0.127" layer="21"/>
+<wire x1="9.91" y1="1.25" x2="8.89" y2="1.25" width="0.127" layer="21"/>
+<wire x1="8.89" y1="1.25" x2="8.89" y2="-1.54" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-1.54" x2="7.89" y2="-2.54" width="0.127" layer="21" curve="-90"/>
+<wire x1="7.89" y1="-2.54" x2="0.5" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2.54" x2="-0.5" y2="-1.54" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.5" y1="-1.54" x2="-0.5" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.75" x2="-1" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.25" x2="-3.81" y2="1.25" width="0.127" layer="21"/>
+<polygon width="0.127" layer="39">
+<vertex x="-0.75" y="-1.49"/>
+<vertex x="-0.75" y="-6.25"/>
+<vertex x="8.45" y="-6.25"/>
+<vertex x="8.45" y="-1.49"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-0.75" y="-1.49"/>
+<vertex x="-0.75" y="-9.65"/>
+<vertex x="8.45" y="-9.65"/>
+<vertex x="8.45" y="-1.49"/>
+</polygon>
+<wire x1="-1.016" y1="-13.7" x2="-1.016" y2="-13.208" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-13.208" x2="8.763" y2="-13.208" width="0.127" layer="21"/>
+<wire x1="8.763" y1="-13.208" x2="8.763" y2="-13.7" width="0.127" layer="21"/>
+<wire x1="8.65" y1="2.031" x2="7.75" y2="2.75" width="0.127" layer="48" curve="90"/>
+<wire x1="7.75" y1="2.75" x2="-1.45" y2="2.75" width="0.127" layer="48"/>
+<wire x1="-1.45" y1="2.75" x2="-2.35" y2="2.031" width="0.127" layer="48" curve="90"/>
+<wire x1="8.65" y1="2.931" x2="7.75" y2="3.65" width="0.127" layer="48" curve="90"/>
+<wire x1="7.75" y1="3.65" x2="-1.45" y2="3.65" width="0.127" layer="48"/>
+<wire x1="-1.45" y1="3.65" x2="-2.35" y2="2.931" width="0.127" layer="48" curve="90"/>
+<wire x1="8.65" y1="6.731" x2="7.75" y2="7.45" width="0.127" layer="48" curve="90"/>
+<wire x1="7.75" y1="7.45" x2="-1.45" y2="7.45" width="0.127" layer="48"/>
+<wire x1="-1.45" y1="7.45" x2="-2.35" y2="6.731" width="0.127" layer="48" curve="90"/>
+</package>
+<package name="QFN20_5X5">
+<description>&lt;b&gt;QFN, 20 pos, 0.65mm pitch, 5x5mm body&lt;/b&gt;</description>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="21"/>
+<smd name="1" x="-2.45" y="1.3" dx="0.7" dy="0.25" layer="1"/>
+<smd name="2" x="-2.45" y="0.65" dx="0.7" dy="0.25" layer="1"/>
+<smd name="3" x="-2.45" y="0" dx="0.7" dy="0.25" layer="1"/>
+<smd name="4" x="-2.45" y="-0.65" dx="0.7" dy="0.25" layer="1"/>
+<smd name="5" x="-2.45" y="-1.3" dx="0.7" dy="0.25" layer="1"/>
+<smd name="EP" x="0" y="0" dx="3" dy="3" layer="1" cream="no"/>
+<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<circle x="-2.794" y="2.794" radius="0.127" width="0.127" layer="21"/>
+<rectangle x1="-0.9" y1="0.25" x2="-0.25" y2="0.9" layer="31"/>
+<rectangle x1="-0.9" y1="-0.9" x2="-0.25" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="-0.9" x2="0.9" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="0.25" x2="0.9" y2="0.9" layer="31"/>
+<wire x1="-2" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<smd name="6" x="-1.3" y="-2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="7" x="-0.65" y="-2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="0" y="-2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="9" x="0.65" y="-2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="1.3" y="-2.45" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<wire x1="2.5" y1="-2" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<smd name="11" x="2.45" y="-1.3" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="12" x="2.45" y="-0.65" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="13" x="2.45" y="0" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="14" x="2.45" y="0.65" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="15" x="2.45" y="1.3" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<wire x1="2" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="2" width="0.127" layer="21"/>
+<smd name="16" x="1.3" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="17" x="0.65" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="18" x="0" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="19" x="-0.65" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="20" x="-1.3" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -19480,8 +19579,8 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="DAT1" x="-17.78" y="-2.54" length="short"/>
 <pin name="DAT2" x="-17.78" y="-5.08" length="short"/>
 <pin name="CARD_DETECT" x="-17.78" y="17.78" length="short" direction="pas"/>
-<pin name="GND" x="-17.78" y="-20.32" length="short" direction="sup"/>
-<pin name="GND1" x="-17.78" y="-17.78" length="short" direction="sup"/>
+<pin name="GND" x="-17.78" y="-20.32" visible="pin" length="short" direction="sup"/>
+<pin name="GND1" x="-17.78" y="-17.78" visible="pin" length="short" direction="sup"/>
 <pin name="CARD_DETECT1" x="-17.78" y="15.24" length="short" direction="pas"/>
 </symbol>
 <symbol name="DS3231M">
@@ -28175,6 +28274,34 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 <pin name="INT" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
 </symbol>
+<symbol name="PCA9634">
+<pin name="A0" x="-15.24" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="A1" x="-15.24" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="2.54" visible="pin" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="-5.08" visible="pin" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="LED0" x="15.24" y="15.24" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED1" x="15.24" y="12.7" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED2" x="15.24" y="10.16" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED3" x="15.24" y="7.62" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED4" x="15.24" y="5.08" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED5" x="15.24" y="2.54" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED6" x="15.24" y="0" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="LED7" x="15.24" y="-2.54" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="-15.24" y="15.24" visible="pin" length="middle" direction="pwr"/>
+<pin name="VSS" x="-15.24" y="-15.24" visible="pin" length="middle" direction="pwr"/>
+<pin name="!OE" x="15.24" y="-7.62" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="SDA" x="15.24" y="-12.7" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="SCL" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<text x="0" y="19.304" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-19.558" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -29072,6 +29199,11 @@ Features:  (441/841)
 <attribute name="DIGIKEY" value="XC2160CT-ND" constant="no"/>
 <attribute name="MF" value="ECS" constant="no"/>
 <attribute name="MPN" value="ECS-.327-9-34QCS-TR" constant="no"/>
+</technology>
+<technology name="32.768KHZ_9PF">
+<attribute name="DIGIKEY" value="SER4085CT-ND" constant="no"/>
+<attribute name="MF" value="Epson" constant="no"/>
+<attribute name="MPN" value="FC-135 32.7680KA-AC3" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -31403,6 +31535,29 @@ push-push type</description>
 <attribute name="DIGIKEY" value="HR1972CT-ND" constant="no"/>
 <attribute name="MF" value="Hirose" constant="no"/>
 <attribute name="MPN" value="DM3CS-SF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MOLEX_503182" package="MICROSD_MOLEX_5031821852">
+<connects>
+<connect gate="G$1" pin="CARD_DETECT" pad="SW2"/>
+<connect gate="G$1" pin="CARD_DETECT1" pad="SW1"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="DATA_IN" pad="3"/>
+<connect gate="G$1" pin="DATA_OUT" pad="7"/>
+<connect gate="G$1" pin="GND" pad="BODY@3 BODY@4"/>
+<connect gate="G$1" pin="GND1" pad="BODY@1 BODY@2 BODY@5"/>
+<connect gate="G$1" pin="SCLK" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="WM12834CT-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="5031821852" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -46477,6 +46632,74 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onse
 <attribute name="MF" value="Vishay" constant="no"/>
 <attribute name="MPN" value="VEML3328" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCA9634" prefix="U">
+<description>&lt;b&gt;PCA9634&lt;/b&gt; - I&lt;sup&gt;2&lt;/sup&gt;C LED Driver, 8 Channel
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 2.3V ~ 5.5V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Out&lt;/sub&gt;: &amp;gt;25mA &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 2.9&amp;mu;A @ 3.3V&lt;/li&gt;
+&lt;li&gt;PWM Resolution: 256 Steps &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/nxp-usa-inc/PCA9634BS-118/1300982"&gt; 568-8717-1-ND (QFN)&lt;/a&gt;&lt;br/&gt; 
+
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PCA9634" x="0" y="0"/>
+</gates>
+<devices>
+<device name="QFN" package="QFN20_5X5">
+<connects>
+<connect gate="G$1" pin="!OE" pad="13"/>
+<connect gate="G$1" pin="A0" pad="19"/>
+<connect gate="G$1" pin="A1" pad="20"/>
+<connect gate="G$1" pin="A2" pad="1"/>
+<connect gate="G$1" pin="A3" pad="2"/>
+<connect gate="G$1" pin="A4" pad="3"/>
+<connect gate="G$1" pin="A5" pad="14"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="LED0" pad="4"/>
+<connect gate="G$1" pin="LED1" pad="5"/>
+<connect gate="G$1" pin="LED2" pad="6"/>
+<connect gate="G$1" pin="LED3" pad="7"/>
+<connect gate="G$1" pin="LED4" pad="9"/>
+<connect gate="G$1" pin="LED5" pad="10"/>
+<connect gate="G$1" pin="LED6" pad="11"/>
+<connect gate="G$1" pin="LED7" pad="12"/>
+<connect gate="G$1" pin="SCL" pad="16"/>
+<connect gate="G$1" pin="SDA" pad="17"/>
+<connect gate="G$1" pin="VDD" pad="18"/>
+<connect gate="G$1" pin="VSS" pad="8 EP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="568-8717-1-ND" constant="no"/>
+<attribute name="DISP" value="PCA9634" constant="no"/>
+<attribute name="MF" value="NXP" constant="no"/>
+<attribute name="MPN" value="PCA9634BS,118" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP22804">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
