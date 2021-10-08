@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2923,8 +2923,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
 <smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
 <smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="1.016" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-1.016" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
@@ -17935,6 +17935,7 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.6" x2="-0.8" y2="0.6" width="0.127" layer="21"/>
 <circle x="-1.016" y="0.889" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.143" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="CAS-120A1">
 <description>&lt;b&gt;CAS-120A1 SPDT Switch Landing Pad&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.nidec-copal-electronics.com/e/catalog/switch/cas.pdf"&gt;Datasheet&lt;/a&gt;</description>
@@ -18258,10 +18259,10 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <vertex x="8.45" y="-1.49"/>
 </polygon>
 <polygon width="0.127" layer="41">
-<vertex x="-0.75" y="-1.49"/>
+<vertex x="-0.75" y="-6.25"/>
 <vertex x="-0.75" y="-9.65"/>
 <vertex x="8.45" y="-9.65"/>
-<vertex x="8.45" y="-1.49"/>
+<vertex x="8.45" y="-6.25"/>
 </polygon>
 <wire x1="-1.016" y1="-13.7" x2="-1.016" y2="-13.208" width="0.127" layer="21"/>
 <wire x1="-1.016" y1="-13.208" x2="8.763" y2="-13.208" width="0.127" layer="21"/>
@@ -18313,6 +18314,50 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <smd name="18" x="0" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
 <smd name="19" x="-0.65" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
 <smd name="20" x="-1.3" y="2.45" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+</package>
+<package name="D0201">
+<description>&lt;b&gt;Diode, 0201 Package&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.onsemi.com/pdf/datasheet/esdm3551-d.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.215" y="0" dx="0.3" dy="0.31" layer="1" rot="R90"/>
+<smd name="2" x="0.215" y="0" dx="0.3" dy="0.31" layer="1" rot="R90"/>
+<wire x1="-0.31" y1="0.16" x2="-0.31" y2="-0.16" width="0.127" layer="21"/>
+<wire x1="-0.31" y1="-0.16" x2="0.31" y2="-0.16" width="0.127" layer="21"/>
+<wire x1="0.31" y1="-0.16" x2="0.31" y2="0.16" width="0.127" layer="21"/>
+<wire x1="0.31" y1="0.16" x2="-0.31" y2="0.16" width="0.127" layer="21"/>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="D0402">
+<description>&lt;b&gt;Diode, 0402 &lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP4.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-0.35" y="0" dx="0.4" dy="0.7" layer="1"/>
+<smd name="2" x="0.35" y="0" dx="0.4" dy="0.7" layer="1"/>
+<wire x1="-0.5" y1="0.3" x2="-0.5" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.3" x2="0.5" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-0.3" x2="0.5" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.3" x2="-0.5" y2="0.3" width="0.127" layer="21"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="WSON-8_2X3">
+<description>&lt;b&gt;WSON, 8 pos, EP, 2x3mm body, 0.5mm Pitch&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.nxp.com/docs/en/data-sheet/PCA9617A.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="4" x="0.75" y="-1.4" dx="0.625" dy="0.25" layer="1" rot="R270"/>
+<smd name="3" x="0.25" y="-1.4" dx="0.625" dy="0.25" layer="1" rot="R270"/>
+<smd name="2" x="-0.25" y="-1.4" dx="0.625" dy="0.25" layer="1" rot="R270"/>
+<smd name="1" x="-0.75" y="-1.4" dx="0.625" dy="0.25" layer="1" rot="R270"/>
+<smd name="8" x="-0.75" y="1.4" dx="0.625" dy="0.25" layer="1" rot="R90"/>
+<smd name="7" x="-0.25" y="1.4" dx="0.625" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="1.4" dx="0.625" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="0.75" y="1.4" dx="0.625" dy="0.25" layer="1" rot="R90"/>
+<smd name="EP" x="0" y="0" dx="1.6" dy="1.6" layer="1" cream="no"/>
+<polygon width="0" layer="31">
+<vertex x="-0.3" y="0.3"/>
+<vertex x="-0.3" y="-0.3"/>
+<vertex x="0.3" y="-0.3"/>
+<vertex x="0.3" y="0.3"/>
+</polygon>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.27" y="-1.397" radius="0.127" width="0.127" layer="21"/>
+<text x="1.524" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -28168,7 +28213,7 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="9.144" size="1.778" layer="95" align="center">FDC6330L</text>
+<text x="0" y="9.144" size="1.778" layer="95" align="center">&gt;DISP</text>
 <text x="0" y="-11.684" size="1.778" layer="95" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="FRAM_MB85RC">
@@ -28301,6 +28346,45 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <text x="0" y="19.304" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
 <text x="0" y="-19.558" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="D_ESD_BI">
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.016" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<text x="-4.826" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-1.27" y1="1.016" x2="-1.778" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.016" x2="-0.762" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.016" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.016" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.016" x2="1.778" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.016" x2="0.762" y2="1.524" width="0.254" layer="94"/>
+</symbol>
+<symbol name="EEPROM_WP">
+<description>&lt;b&gt;Generic Device for I2C EEPROM (with Write Protect)&lt;/b&gt;</description>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="WP" x="12.7" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -43603,6 +43687,25 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technology>
 </technologies>
 </device>
+<device name="WSON" package="WSON-8_2X3">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 EP"/>
+<connect gate="G$1" pin="SCL_A" pad="8"/>
+<connect gate="G$1" pin="SCL_B" pad="5"/>
+<connect gate="G$1" pin="SDA_A" pad="1"/>
+<connect gate="G$1" pin="SDA_B" pad="4"/>
+<connect gate="G$1" pin="VCCA" pad="7"/>
+<connect gate="G$1" pin="VCCB" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="568-10953-1-ND" constant="no"/>
+<attribute name="MF" value="NXP" constant="no"/>
+<attribute name="MPN" value="PCA9617ATPZ" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="JUMPER-SMT_2_NC_TRACE" prefix="JP">
@@ -46242,6 +46345,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onse
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="FDC6330LCT-ND" constant="no"/>
+<attribute name="DISP" value="FDC6330L" constant="no"/>
 <attribute name="MF" value="OnSemi" constant="no"/>
 <attribute name="MPN" value="FDC6330L" constant="no"/>
 </technology>
@@ -46700,6 +46804,182 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/onse
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS2294*" prefix="U">
+<description>&lt;b&gt;TPS2294x&lt;/b&gt; - Low Input Voltage Current Limited Load Switch with Shut off and Auto Restart 
+
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.62V ~ 5.5V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: &amp;lt;1&amp;mu;A (OFF), 40&amp;mu;A (ON) &lt;/li&gt;
+&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 400m&amp;Omega; (Vin = 5v), 500m&amp;Omega; (Vin = 3.3v)&lt;/li&gt;
+&lt;li&gt; Output Current: 100mA&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/texas-instruments/TPS22944DCKR/2172678"&gt; 296-25218-1-ND (TPS22944) &lt;/a&gt;&lt;br/&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC2090" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCK_R-PDSO-G5">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="3"/>
+<connect gate="G$1" pin="EN" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="TPS2294x" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="296-25218-1-ND" constant="no"/>
+<attribute name="DISP" value="TPS22944" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="TPS22944DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE_ESD_BI" prefix="D">
+<description>&lt;h3&gt;Generic Bidirectional ESD Diode&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="D_ESD_BI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0201" package="D0201">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_ESDM3551">
+<attribute name="DIGIKEY" value="ESDM3551MXT5GOSCT-ND" constant="no"/>
+<attribute name="MF" value="OnSemi" constant="no"/>
+<attribute name="MPN" value="ESDM3551MXT5G" constant="no"/>
+<attribute name="VALUE" value="5.5V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0402" package="D0402">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
+<technology name="_D5V0L1">
+<attribute name="DIGIKEY" value="D5V0L1B2LP4-7BDICT-ND" constant="no"/>
+<attribute name="MF" value="Diodes Inc" constant="no"/>
+<attribute name="MPN" value="D5V0L1B2LP4-7B" constant="no"/>
+<attribute name="VALUE" value="6V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="24AA02" prefix="U">
+<description>&lt;b&gt;24AA02&lt;/b&gt; - 2k I&lt;sup&gt;2&lt;/sup&gt;C Serial EEPROM
+
+&lt;p&gt;&lt;b&gt;Characteristics:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.7V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Memory: 2kb (256 x 8 bit) &lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A &lt;/li&gt;
+&lt;li&gt;Temperature: -40&amp;deg;C to 85&amp;deg;C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;b&gt;Digikey:&lt;/b&gt;
+&lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/24AA025E64T-I-OT/3908633"&gt; 24AA025E64T-I/OTCT-ND (SOT-23)&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="EEPROM_WP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="WP" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="24AA025E64T-I/OTCT-ND" constant="no"/>
+<attribute name="DISP" value="24AA025E64" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MOUSER" value="24AA025E64T-I/OTCT-ND" constant="no"/>
+<attribute name="MPN" value="24AA025E64T-I/OT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI1869" prefix="U">
+<description>&lt;b&gt;Si1869&lt;/b&gt; - Ultra Low Leakage Load Switch with Level Shift
+
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.8V~20V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: &amp;lt;1&amp;mu;A&lt;/li&gt;
+&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 132m&amp;Omega; (Vin = 4.5V)&lt;/li&gt;
+&lt;li&gt; Output Current: 1.2A&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -55°C to 150°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/vishay-siliconix/SI1869DH-T1-E3/1656323"&gt; SI1869DH-T1-E3CT-ND &lt;/a&gt;&lt;br/&gt;
+
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FDC6330L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70_6">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="R1,C1" pad="6"/>
+<connect gate="G$1" pin="R2" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="2 3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="SI1869DH-T1-E3CT-ND" constant="no"/>
+<attribute name="DISP" value="Si1869" constant="no"/>
+<attribute name="MF" value="Vishay" constant="no"/>
+<attribute name="MPN" value="SI1869DH-T1-E3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
