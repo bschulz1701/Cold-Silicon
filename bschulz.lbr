@@ -7,9 +7,9 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -24,7 +24,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
@@ -37,7 +37,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -54,7 +54,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -18057,10 +18057,10 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <wire x1="3.775" y1="-1.1" x2="3.775" y2="1.1" width="0" layer="46"/>
 <wire x1="4.725" y1="-1.1" x2="3.775" y2="-1.1" width="0" layer="46" curve="-180"/>
 <wire x1="3.775" y1="1.1" x2="4.725" y2="1.1" width="0" layer="46" curve="-180"/>
-<wire x1="-4.825" y1="0.925" x2="-4.825" y2="-0.925" width="1.1" layer="30"/>
-<wire x1="4.825" y1="-0.925" x2="4.825" y2="0.925" width="1.1" layer="30"/>
-<wire x1="-4.825" y1="0.925" x2="-4.825" y2="-0.925" width="1.1" layer="29"/>
-<wire x1="4.825" y1="-0.925" x2="4.825" y2="0.925" width="1.1" layer="29"/>
+<wire x1="-4.25" y1="1.1" x2="-4.25" y2="-1.1" width="1.1" layer="30"/>
+<wire x1="4.25" y1="-1.1" x2="4.25" y2="1.1" width="1.1" layer="30"/>
+<wire x1="-4.25" y1="1.1" x2="-4.25" y2="-1.1" width="1.1" layer="29"/>
+<wire x1="4.25" y1="-1.1" x2="4.25" y2="1.1" width="1.1" layer="29"/>
 <wire x1="-10" y1="-4.03" x2="-10" y2="-6.26" width="0.127" layer="48"/>
 <wire x1="-10" y1="-6.26" x2="10" y2="-6.23" width="0.127" layer="48"/>
 <wire x1="10" y1="-6.23" x2="10" y2="-4.03" width="0.127" layer="48"/>
@@ -18373,6 +18373,30 @@ Keystone Electronics 1042P SMD Battery Holder - No polarity indication in silk &
 <wire x1="0.8" y1="0.8" x2="-0.8" y2="0.8" width="0.127" layer="21"/>
 <circle x="-1.143" y="-0.762" radius="0.127" width="0.127" layer="21"/>
 <text x="1.27" y="0" size="0.6096" layer="51" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="7103K2CWAV2">
+<description>&lt;b&gt;C&amp;K 7103K2CWAV2, Right Angle, Vertical, PC Pin, Locking Lever Switch&lt;/b&gt;&lt;br&gt;&lt;a href = "https://www.ckswitches.com/media/1394/7000toggle.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="3" x="0" y="20.32" drill="1.85"/>
+<pad name="2" x="0" y="16.51" drill="1.85"/>
+<pad name="1" x="0" y="12.7" drill="1.85"/>
+<pad name="BODY@1" x="-2.54" y="0" drill="1.7"/>
+<pad name="BODY@2" x="2.54" y="0" drill="1.7"/>
+<wire x1="3.43" y1="0" x2="3.43" y2="7.89" width="0.127" layer="21"/>
+<wire x1="3.43" y1="7.89" x2="2.43" y2="8.89" width="0.127" layer="21" curve="90"/>
+<wire x1="2.43" y1="8.89" x2="-2.43" y2="8.89" width="0.127" layer="21"/>
+<wire x1="-2.43" y1="8.89" x2="-3.43" y2="7.89" width="0.127" layer="21" curve="90"/>
+<wire x1="-3.43" y1="7.89" x2="-3.43" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.43" y1="0" x2="3.43" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.91" y1="0" x2="-5.91" y2="-1.6" width="0.127" layer="48" style="shortdash"/>
+<wire x1="-5.91" y1="-1.6" x2="-3.175" y2="-1.6" width="0.127" layer="48" style="shortdash"/>
+<wire x1="3.175" y1="-1.6" x2="5.91" y2="-1.6" width="0.127" layer="48" style="shortdash"/>
+<wire x1="5.91" y1="-1.6" x2="5.91" y2="0" width="0.127" layer="48" style="shortdash"/>
+<wire x1="5.91" y1="0" x2="-5.91" y2="0" width="0.127" layer="48" style="shortdash"/>
+<wire x1="-3.175" y1="-1.6" x2="-3.175" y2="-6.35" width="0.127" layer="48" style="shortdash"/>
+<wire x1="-3.175" y1="-6.35" x2="3.175" y2="-6.35" width="0.127" layer="48" style="shortdash"/>
+<wire x1="3.175" y1="-6.35" x2="3.175" y2="-1.6" width="0.127" layer="48" style="shortdash"/>
+<wire x1="3.175" y1="-1.6" x2="-3.175" y2="-1.6" width="0.127" layer="48" style="shortdash"/>
+<text x="-3.81" y="2.54" size="0.6096" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -37964,6 +37988,20 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </technology>
 </technologies>
 </device>
+<device name="7103K2CWAV2" package="7103K2CWAV2">
+<connects>
+<connect gate="G$1" pin="O" pad="1"/>
+<connect gate="G$1" pin="P" pad="2"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="7103K2CWAV2BE-ND" constant="no"/>
+<attribute name="MF" value="C&amp;K" constant="no"/>
+<attribute name="MPN" value="7103K2CWAV2BE" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONN_8" prefix="J">
@@ -40248,15 +40286,15 @@ For any MicroSD holders lacking card detect options</description>
 &lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC1/1649-1015-1-ND/5872297"&gt;1649-1015-1-ND (SHTC1)&lt;/a&gt;&lt;br/&gt;
 &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SHTC3" x="0" y="0"/>
+<gate name="G$1" symbol="SENSOR_I2C" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DFN" package="DFN_4_2X2">
 <connects>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
 <connect gate="G$1" pin="SCL" pad="2"/>
 <connect gate="G$1" pin="SDA" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="4 EP"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
