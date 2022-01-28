@@ -22029,17 +22029,17 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="-2.54" y="3.81" size="1.27" layer="95" rot="R90" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="MIC2544">
-<pin name="IN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<pin name="EN" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="!FLG" x="-12.7" y="-7.62" length="middle" direction="out"/>
-<pin name="GND" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="ILIM" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
-<pin name="OUT" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="IN" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="EN" x="-12.7" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="!FLG" x="-12.7" y="-7.62" visible="pin" length="middle" direction="oc"/>
+<pin name="GND" x="15.24" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="ILIM" x="15.24" y="2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="OUT" x="15.24" y="5.08" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="1.27" y="8.89" size="1.778" layer="95" ratio="15" align="center">MIC2544</text>
+<text x="1.27" y="8.89" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
 <text x="1.524" y="-11.43" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="FT232R-BASIC">
@@ -28389,10 +28389,10 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 </symbol>
 <symbol name="LOAD_SWITCH_BASIC">
 <description>&lt;b&gt;Generic Load Switch Symbol&lt;/b&gt;</description>
-<pin name="VIN" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
 <pin name="EN" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="VOUT" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="12.7" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
@@ -39190,6 +39190,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-se
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="576-1738-5-ND" constant="no"/>
+<attribute name="DISP" value="MIC2544" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MIC2544-1YMM" constant="no"/>
 </technology>
@@ -39207,6 +39208,7 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/on-se
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="MIC2544-1YM-CT-ND" constant="no"/>
+<attribute name="DISP" value="MIC2544" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="MIC2544-1YM-TR" constant="no"/>
 </technology>
@@ -48246,6 +48248,58 @@ Digikey:&lt;br&gt;
 <attribute name="DISP" value="FPF2195BUCX" constant="no"/>
 <attribute name="MF" value="onsemi" constant="no"/>
 <attribute name="MPN" value="FPF2195BUCX" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCK11*" prefix="U">
+<description>&lt;b&gt;TCK11x&lt;/b&gt; - Load Switch, with Reverse Current Blocking, Output Discharge (TCK112G Only)
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.1v ~ 5.5v&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: &amp;lt;0.5&amp;mu;A (OFF), 48&amp;mu;A (ON)&lt;/li&gt;
+&lt;li&gt;R&lt;sub&gt;DS(ON)&lt;/sub&gt;: 8.4m&amp;Omega; (Vin = 3.3v)&lt;/li&gt;
+&lt;li&gt; Output Current: 3A, max &lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/TCK111G-LF/4948988"&gt; TCK111GLFCT-ND (TCK111G) &lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/TCK112G-LF/4880051?s=N4IgTCBcDaICoGEDSBGFYDiIC6BfIA"&gt; TCK112GLFCT-ND (TCK112G) &lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LOAD_SWITCH_BASIC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WCSP_6">
+<connects>
+<connect gate="G$1" pin="EN" pad="C2"/>
+<connect gate="G$1" pin="GND" pad="C1"/>
+<connect gate="G$1" pin="VIN" pad="A2 B2"/>
+<connect gate="G$1" pin="VOUT" pad="A1 B1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1G">
+<attribute name="DIGIKEY" value="TCK111GLFCT-ND" constant="no"/>
+<attribute name="DISP" value="TCK111G" constant="no"/>
+<attribute name="MF" value="Toshiba" constant="no"/>
+<attribute name="MPN" value="TCK111G,LF" constant="no"/>
+</technology>
+<technology name="2G">
+<attribute name="DIGIKEY" value="TCK112GLFCT-ND" constant="no"/>
+<attribute name="DISP" value="TCK112G" constant="no"/>
+<attribute name="MF" value="Toshiba" constant="no"/>
+<attribute name="MPN" value="TCK112G,LF" constant="no"/>
 </technology>
 </technologies>
 </device>
