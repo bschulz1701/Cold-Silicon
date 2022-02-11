@@ -34,9 +34,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -6430,10 +6430,15 @@ Breadboard-friendly pins.
 <pad name="CW" x="-2.54" y="0" drill="0.75"/>
 <pad name="WIPER" x="0" y="-2.54" drill="0.75"/>
 <pad name="CCW" x="2.54" y="0" drill="0.75"/>
-<wire x1="-3.3" y1="3.5" x2="-3.3" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="-3.5" x2="3.3" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="3.3" y1="-3.5" x2="3.3" y2="3.5" width="0.127" layer="21"/>
-<wire x1="3.3" y1="3.5" x2="-3.3" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="3" x2="-3.3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-3" x2="-2.8" y2="-3.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.8" y1="-3.5" x2="2.8" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="2.8" y1="-3.5" x2="3.3" y2="-3" width="0.127" layer="21" curve="90"/>
+<wire x1="3.3" y1="-3" x2="3.3" y2="3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="3" x2="2.8" y2="3.5" width="0.127" layer="21" curve="90"/>
+<wire x1="2.8" y1="3.5" x2="-2.8" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="3.5" x2="-3.3" y2="3" width="0.127" layer="21" curve="90"/>
+<text x="0" y="4.064" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="VSON-10">
 <smd name="THERMAL1" x="0" y="0" dx="1.65" dy="2.4" layer="1" rot="R90" thermals="no" cream="no"/>
@@ -18675,6 +18680,18 @@ Out</text>
 <circle x="-0.762" y="1.016" radius="0.127" width="0.1524" layer="21"/>
 <text x="0" y="-1.27" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center">&gt;NAME</text>
 </package>
+<package name="BANANA_JACK_575-4">
+<description>&lt;b&gt;Swage Mount Banana Jack, Standard Size&lt;/b&gt;&lt;br&gt;&lt;a href = "http://www.keyelco.com/product-pdf.cfm?p=2379"&gt;Datasheet&lt;/a&gt;</description>
+<pad name="PAD" x="0" y="0" drill="5.25" diameter="8"/>
+</package>
+<package name="4_40_GND">
+<description>&lt;p&gt;&lt;b&gt;4x40 Non-Plated Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="3.175"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -29027,6 +29044,30 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="0" y="-11.684" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 <text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
 </symbol>
+<symbol name="MIC841">
+<pin name="VDD" x="-12.7" y="10.16" visible="pin" length="middle" direction="pwr"/>
+<pin name="LTH" x="-12.7" y="0" visible="pin" length="middle" direction="in"/>
+<pin name="GND" x="12.7" y="-10.16" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT" x="12.7" y="10.16" visible="pin" length="middle" direction="out" rot="R180"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="0" y="13.97" size="1.27" layer="95" align="center">&gt;DISP</text>
+<text x="0" y="-14.224" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="HTH" x="-12.7" y="-10.16" visible="pin" length="middle" direction="in"/>
+</symbol>
+<symbol name="MOUNT-HOLE-CONTACT">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P$1" x="0" y="0" visible="off" length="point" direction="in"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CM200">
@@ -34069,7 +34110,7 @@ Standard 6 pin header for AVR programming</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRIM_POT">
+<deviceset name="TRIM_POT" prefix="VR" uservalue="yes">
 <description>&lt;p&gt;
 &lt;b&gt;Genaric Trim Potentiometer&lt;/b&gt;
 &lt;/p&gt;</description>
@@ -34077,7 +34118,7 @@ Standard 6 pin header for AVR programming</description>
 <gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TRIMPOT_3362P-1/4&quot;">
+<device name="3362P" package="TRIMPOT_3362P-1/4&quot;">
 <connects>
 <connect gate="G$1" pin="CCW" pad="CCW"/>
 <connect gate="G$1" pin="CW" pad="CW"/>
@@ -35841,6 +35882,11 @@ NTC Thermistors:
 </technologies>
 </device>
 <device name="4_NP_CLOSE" package="4_40_CLOSE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4_PL_GND" package="4_40_GND">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -48301,6 +48347,92 @@ Digikey:&lt;br&gt;
 <attribute name="MF" value="Toshiba" constant="no"/>
 <attribute name="MPN" value="TCK112G,LF" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC841" prefix="U">
+<description>&lt;b&gt;MIC841&lt;/b&gt; - Single Comparator with Internal Referance and Adjustable Hysteresis 
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vin: 1.5V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Response Time: 10&amp;mu;s&lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 1.5&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Internal Ref&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+
+&lt;a href = "https://www.digikey.com/en/products/detail/MIC841HYC5-TR/576-2923-1-ND/1822083?itemSeq=388711469"&gt; MIC841HYC5-TR (SC-70)&lt;/a&gt;&lt;br/&gt; 
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC841" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SC-70" package="DCK_R-PDSO-G5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="HTH" pad="1"/>
+<connect gate="G$1" pin="LTH" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="H">
+<attribute name="DIGIKEY" value="576-2923-1-ND" constant="no"/>
+<attribute name="DISP" value="MIC841H" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="MIC841HYC5-TR" constant="no"/>
+</technology>
+<technology name="L">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="N">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE_CONTACT" prefix="H">
+<description>&lt;p&gt;&lt;b&gt;Genaric Mechanical Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum &lt;b&gt;required clearance&lt;/b&gt;)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (&lt;b&gt;recomended clearance&lt;/b&gt;) 
+&lt;li&gt;
+&lt;b&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href = "http://fastener-express.com/fastener-technical/SocketscapSS-Alloy.pdf"&gt;Socket Cap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "http://fastener-express.com/fastener-technical/Button-Socket-alloy.pdf"&gt;Button Head Socket Cap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = "http://fastener-express.com/fastener-technical/pan-machine-Screws.pdf"&gt;Pan Head&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOUNT-HOLE-CONTACT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="4_40" package="4_40_GND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
