@@ -8290,20 +8290,35 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM1555C1H102JA01D" constant="no"/>
 </technology>
+<technology name="1PF">
+<attribute name="DIGIKEY" value="490-6073-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GJM1555C1H1R0BB01D" constant="no"/>
+</technology>
 <technology name="220PF">
 <attribute name="DIGIKEY" value="587-1215-1-ND" constant="no"/>
 <attribute name="MF" value="Taiyo Yuden" constant="no"/>
 <attribute name="MPN" value="UMK105CG221JV-F" constant="no"/>
+</technology>
+<technology name="3.3NF">
+<attribute name="DIGIKEY" value="311-1034-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0402KRX7R9BB332" constant="no"/>
 </technology>
 <technology name="39PF">
 <attribute name="DIGIKEY" value="399-1018-1-ND" constant="no"/>
 <attribute name="MF" value="Kemet" constant="no"/>
 <attribute name="MPN" value="C0402C390J5GAC7867" constant="no"/>
 </technology>
-<technology name="47PF">
+<technology name="47NF">
 <attribute name="DIGIKEY" value="490-3254-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM155R71E473KA88D" constant="no"/>
+</technology>
+<technology name="47PF">
+<attribute name="DIGIKEY" value="490-10670-1-ND" constant="no"/>
+<attribute name="MF" value="Murata" constant="no"/>
+<attribute name="MPN" value="GCM1555C1H470JA16D" constant="no"/>
 </technology>
 <technology name="56PF">
 <attribute name="DIGIKEY" value="311-1022-1-ND" constant="no"/>
@@ -8393,9 +8408,9 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="CC0603KRX7R9BB102" constant="no"/>
 </technology>
 <technology name="1UF">
-<attribute name="DIGIKEY" value="587-1251-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="587-2984-1-ND" constant="no"/>
 <attribute name="MF" value="Yaiyo Yuden" constant="no"/>
-<attribute name="MPN" value="EMK107BJ105KA-T" constant="no"/>
+<attribute name="MPN" value="TMK107B7105KA-T" constant="no"/>
 </technology>
 <technology name="2.2NF">
 <attribute name="DIGIKEY" value="311-1081-1-ND" constant="no"/>
@@ -9230,11 +9245,23 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0402FR-0710KL" constant="no"/>
 <attribute name="VALUE_PART" value="10k" constant="no"/>
 </technology>
+<technology name="11K">
+<attribute name="DIGIKEY" value="311-11.0KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0711KL" constant="no"/>
+<attribute name="VALUE_PART" value="11k" constant="no"/>
+</technology>
 <technology name="120K">
 <attribute name="DIGIKEY" value="311-120KLRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07120KL" constant="no"/>
 <attribute name="VALUE_PART" value="120k" constant="no"/>
+</technology>
+<technology name="13.3K">
+<attribute name="DIGIKEY" value="YAG2974CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-0713K3L" constant="no"/>
+<attribute name="VALUE_PART" value="13.3k" constant="no"/>
 </technology>
 <technology name="130K">
 <attribute name="DIGIKEY" value="YAG2969CT-ND" constant="no"/>
@@ -9361,6 +9388,18 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0402FR-07470RL" constant="no"/>
 <attribute name="VALUE_PART" value="470" constant="no"/>
+</technology>
+<technology name="5.6K">
+<attribute name="DIGIKEY" value="311-5.6KLRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-075K6L" constant="no"/>
+<attribute name="VALUE_PART" value="5.6k" constant="no"/>
+</technology>
+<technology name="510">
+<attribute name="DIGIKEY" value="311-510LRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0402FR-07510RL" constant="no"/>
+<attribute name="VALUE_PART" value="510" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9616,6 +9655,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
 <attribute name="VALUE_PART" value="360k" constant="no"/>
 </technology>
+<technology name="390K">
+<attribute name="DIGIKEY" value="311-390KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07390KL" constant="no"/>
+<attribute name="VALUE_PART" value="390k" constant="no"/>
+</technology>
 <technology name="4.7K">
 <attribute name="DIGIKEY" value="311-4.70KHRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -9699,6 +9744,12 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Stackpole" constant="no"/>
 <attribute name="MPN" value="RMCF0603FT62K0" constant="no"/>
 <attribute name="VALUE_PART" value="62k" constant="no"/>
+</technology>
+<technology name="750">
+<attribute name="DIGIKEY" value="311-750HRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07750RL" constant="no"/>
+<attribute name="VALUE_PART" value="750" constant="no"/>
 </technology>
 <technology name="750K">
 <attribute name="DIGIKEY" value="311-750KHRCT-ND" constant="no"/>
