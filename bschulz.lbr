@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -48433,6 +48433,57 @@ Digikey:&lt;br&gt;
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AT24MAC*02" prefix="U">
+<description>&lt;b&gt;AT24MACx02&lt;/b&gt; - 2kb  I&lt;sup&gt;2&lt;/sup&gt;C Serial EEPROM with EUI serial number
+
+&lt;p&gt;&lt;b&gt;Characteristics:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.7V ~ 5.5V&lt;/li&gt;
+&lt;li&gt;Memory: 2kb (256 x 8 bit) &lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A &lt;/li&gt;
+&lt;li&gt;Temperature: -40&amp;deg;C to 85&amp;deg;C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;b&gt;Digikey:&lt;/b&gt;
+&lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/microchip-technology/AT24MAC602-STUM-T/3973073?s=N4IgTCBcDaIIIBUwBYCycDCA2ADGAtAMoICqq%2BCIAugL5A"&gt; AT24MAC602-STUM-T (SOT-23, EUI-64)&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="EEPROM_WP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="WP" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="AT24MAC*02" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="4">
+<attribute name="DIGIKEY" value="AT24MAC402-STUM-TCT-ND" constant="no"/>
+<attribute name="DISP" value="AT24MAC402" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="AT24MAC402-STUM-T" constant="no"/>
+</technology>
+<technology name="6">
+<attribute name="DIGIKEY" value="AT24MAC602-STUM-TCT-ND" constant="no"/>
+<attribute name="DISP" value="AT24MAC602" constant="no"/>
+<attribute name="MF" value="Microchip" constant="no"/>
+<attribute name="MPN" value="AT24MAC602-STUM-T" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
