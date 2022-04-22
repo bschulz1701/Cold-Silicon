@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -11764,7 +11764,7 @@ https://www.bourns.com/docs/Product-Datasheets/3214.pdf</description>
 <text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="QFN24">
-<description>24 pin QFN package, 4x4 mm size &lt;br&gt;
+<description>24 pin QFN package, 4x4 mm size, 0.5mm pitch &lt;br&gt;
 &lt;a href = "http://ww1.microchip.com/downloads/en/devicedoc/22103a.pdf"&gt;Reference&lt;/a&gt;
 &lt;br&gt; &lt;b&gt;Note: 0.5mm vs 0.65mm pitch discrepancy between land pattern and package drawing!&lt;/b&gt;</description>
 <smd name="4" x="-1.95" y="-0.25" dx="0.3" dy="0.85" layer="1" rot="R90"/>
@@ -14411,7 +14411,7 @@ tMask is only on one layer. Designed for kits to prevent soldering on the wrong 
 <rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
 <rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
 <rectangle x1="22.606" y1="-0.254" x2="23.114" y2="0.254" layer="51"/>
-<rectangle x1="25.146" y1="-0.254" x2="25.654" y2="0.254" layer="51"/>
+<rectangle x1="21.146" y1="-0.254" x2="25.654" y2="0.254" layer="51"/>
 <rectangle x1="27.686" y1="-0.254" x2="28.194" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
@@ -29067,6 +29067,38 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 <text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.032" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="P$1" x="0" y="0" visible="off" length="point" direction="in"/>
+</symbol>
+<symbol name="PCA9535">
+<pin name="A0" x="-15.24" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="SDA" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="VDD" x="-15.24" y="20.32" length="middle" direction="pwr"/>
+<pin name="VSS" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="SCL" x="-15.24" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="!INT" x="-15.24" y="-17.78" visible="pin" length="middle" direction="out"/>
+<pin name="P1_7" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="P1_6" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="P1_5" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="P1_4" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="P1_3" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="P1_2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="P1_1" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="P1_0" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="P0_7" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="P0_6" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="P0_5" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="P0_4" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0_3" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="P0_2" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="P0_1" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="P0_0" x="15.24" y="-20.32" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<text x="0" y="24.384" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-24.384" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="A1" x="-15.24" y="12.7" visible="pin" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="10.16" visible="pin" length="middle" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -48483,6 +48515,80 @@ Digikey:&lt;br&gt;
 <attribute name="DISP" value="AT24MAC602" constant="no"/>
 <attribute name="MF" value="Microchip" constant="no"/>
 <attribute name="MPN" value="AT24MAC602-STUM-T" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCAL95*5A" prefix="U">
+<description>&lt;b&gt;PCAL95*5A&lt;/b&gt; - I&lt;sup&gt;2&lt;/sup&gt;C I/O Expander, 16 bit wtih interrupt and agile IO
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.65V ~ 5.5V&lt;/li&gt;
+&lt;li&gt; I&lt;sub&gt;Out&lt;/sub&gt;: 25 mA &lt;/li&gt;
+&lt;li&gt;I&lt;sub&gt;Q&lt;/sub&gt;: 1&amp;mu;A&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C&lt;/li&gt;
+&lt;li&gt;Internal Configurable Pullups/Pulldown*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/nxp-usa-inc/PCAL9535AHF-128/3721166"&gt;568-9947-1-ND (PCAL9535A, QFN)&lt;/a&gt;&lt;br/&gt; 
+&lt;a href = "https://www.digikey.com/en/products/detail/nxp-usa-inc/PCAL9555AHF-128/3598045"&gt;568-9952-1-ND (PCAL9555A, QFN)&lt;/a&gt;&lt;br/&gt; 
+&lt;/p&gt;
+
+*PCAL9555A has pullups enabled by default, but remain configurable</description>
+<gates>
+<gate name="G$1" symbol="PCA9535" x="0" y="0"/>
+</gates>
+<devices>
+<device name="QFN" package="QFN24">
+<connects>
+<connect gate="G$1" pin="!INT" pad="22"/>
+<connect gate="G$1" pin="A0" pad="18"/>
+<connect gate="G$1" pin="A1" pad="23"/>
+<connect gate="G$1" pin="A2" pad="24"/>
+<connect gate="G$1" pin="P0_0" pad="1"/>
+<connect gate="G$1" pin="P0_1" pad="2"/>
+<connect gate="G$1" pin="P0_2" pad="3"/>
+<connect gate="G$1" pin="P0_3" pad="4"/>
+<connect gate="G$1" pin="P0_4" pad="5"/>
+<connect gate="G$1" pin="P0_5" pad="6"/>
+<connect gate="G$1" pin="P0_6" pad="7"/>
+<connect gate="G$1" pin="P0_7" pad="8"/>
+<connect gate="G$1" pin="P1_0" pad="10"/>
+<connect gate="G$1" pin="P1_1" pad="11"/>
+<connect gate="G$1" pin="P1_2" pad="12"/>
+<connect gate="G$1" pin="P1_3" pad="13"/>
+<connect gate="G$1" pin="P1_4" pad="14"/>
+<connect gate="G$1" pin="P1_5" pad="15"/>
+<connect gate="G$1" pin="P1_6" pad="16"/>
+<connect gate="G$1" pin="P1_7" pad="17"/>
+<connect gate="G$1" pin="SCL" pad="19"/>
+<connect gate="G$1" pin="SDA" pad="20"/>
+<connect gate="G$1" pin="VDD" pad="21"/>
+<connect gate="G$1" pin="VSS" pad="9 EP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="PCAL95*5A" constant="no"/>
+<attribute name="MF" value="NXP" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="3">
+<attribute name="DIGIKEY" value="568-9947-1-ND" constant="no"/>
+<attribute name="DISP" value="PCAL9535A" constant="no"/>
+<attribute name="MF" value="NXP" constant="no"/>
+<attribute name="MPN" value="PCAL9535AHF,128" constant="no"/>
+</technology>
+<technology name="5">
+<attribute name="DIGIKEY" value="568-9952-1-ND" constant="no"/>
+<attribute name="DISP" value="PCAL9555A" constant="no"/>
+<attribute name="MF" value="NXP" constant="no"/>
+<attribute name="MPN" value="PCAL9555AHF,128" constant="no"/>
 </technology>
 </technologies>
 </device>
