@@ -29360,6 +29360,19 @@ Ref &lt;a href = https://www.st.com/content/ccc/resource/technical/document/data
 </technology>
 </technologies>
 </device>
+<device name="1042" package="BATT_1042P">
+<connects>
+<connect gate="G$1" pin="+" pad="BATT+"/>
+<connect gate="G$1" pin="-" pad="BATT-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="36-1042-ND" constant="no"/>
+<attribute name="MF" value="Keystone" constant="no"/>
+<attribute name="MPN" value="1042" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SKRPABE010">
