@@ -708,6 +708,23 @@
 </technology>
 </technologies>
 </device>
+<device name="_LOGGER_VERT" package="1X06_MICROLOCKPLUS">
+<connects>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="RX" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="TX" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="900-2059570671CT-ND" constant="no"/>
+<attribute name="MF" value="Molex" constant="no"/>
+<attribute name="MPN" value="2059570671" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONN_APOGEE_LOGGER" prefix="J">
