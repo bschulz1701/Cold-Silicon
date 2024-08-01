@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -5742,10 +5742,23 @@ Breadboard-friendly pins.
 <text x="-1.651" y="0.635" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="LINX_BAT-HLD-012-SMT">
+<description>12mm (1225) coin cell battery holder&lt;br&gt;&lt;a href = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=BAT-HLD-012-SMT&amp;DocType=Data+Sheet&amp;DocLang=English&amp;DocFormat=pdf&amp;PartCntxt=BAT-HLD-012-SMT"&gt;Datasheet&lt;/a&gt;</description>
 <smd name="GND" x="0" y="0" dx="10.16" dy="10.16" layer="1" roundness="100" cream="no"/>
 <smd name="POWER0" x="-7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
 <smd name="POWER1" x="7.62" y="0" dx="2.54" dy="5.08" layer="1"/>
 <text x="-10.16" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<wire x1="-6.75" y1="-2.54" x2="-6.75" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="2.54" x2="-4.75" y2="4.54" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="4.54" x2="4.75" y2="4.54" width="0.127" layer="21"/>
+<wire x1="4.75" y1="4.54" x2="6.75" y2="2.54" width="0.127" layer="21"/>
+<wire x1="6.75" y1="2.54" x2="6.75" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-2.54" x2="4.8212125" y2="-3.989871875" width="0.127" layer="21"/>
+<wire x1="4.8212125" y1="-3.989871875" x2="2.689896875" y2="-4.16201875" width="0.127" layer="21" curve="-64.628669"/>
+<wire x1="2.689896875" y1="-4.16201875" x2="0.929575" y2="-3.237965625" width="0.127" layer="21"/>
+<wire x1="0.929575" y1="-3.237965625" x2="-0.929578125" y2="-3.23796875" width="0.127" layer="21" curve="55.392999"/>
+<wire x1="-0.929578125" y1="-3.23796875" x2="-2.689896875" y2="-4.16201875" width="0.127" layer="21"/>
+<wire x1="-2.689896875" y1="-4.16201875" x2="-4.8212125" y2="-3.989871875" width="0.127" layer="21" curve="-64.628582"/>
+<wire x1="-4.8212125" y1="-3.989871875" x2="-6.75" y2="-2.54" width="0.127" layer="21"/>
 </package>
 <package name="ADAFRUIT_SMA90_DIP">
 <description>SMA DIP Connector 90° 50 Ohm</description>
@@ -34291,7 +34304,7 @@ push-push type</description>
 </devices>
 </deviceset>
 <deviceset name="DS3231M" prefix="RTC">
-<description>&lt;h3&gt;DS3231M Real Time Clock&lt;/h3&gt;
+<description>&lt;h3&gt;DS3231M Real Time Clock (RTC)&lt;/h3&gt;
 &lt;p&gt;Accuracy +/-5ppm.  Battery Backup.  2.3V to 5.5V.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/DS3231M.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;SparkFun Products&lt;/h4&gt;
