@@ -8499,10 +8499,20 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="CC0805KKX7R8BB105" constant="no"/>
 </technology>
+<technology name="22PF">
+<attribute name="DIGIKEY" value="311-1103-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0805JRNPO9BN220" constant="no"/>
+</technology>
 <technology name="22UF">
 <attribute name="DIGIKEY" value="490-9952-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM219R61C226ME15L" constant="no"/>
+</technology>
+<technology name="3.3NF">
+<attribute name="DIGIKEY" value="13-CC0805KPX7R9BB332CT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0805KPX7R9BB332" constant="no"/>
 </technology>
 <technology name="3.3UF">
 <attribute name="DIGIKEY" value="445-6966-1-ND" constant="no"/>
@@ -9913,10 +9923,25 @@ Ref &lt;a href = https://www.digikey.com/product-detail/en/nichicon/UWT1C681MNL1
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0805FR-071ML" constant="no"/>
 </technology>
+<technology name="200K">
+<attribute name="DIGIKEY" value="311-200KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-07200KL" constant="no"/>
+</technology>
 <technology name="2M">
 <attribute name="DIGIKEY" value="311-2.00MCRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0805FR-072ML" constant="no"/>
+</technology>
+<technology name="402K">
+<attribute name="DIGIKEY" value="311-402KCRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0805FR-07402KL" constant="no"/>
+</technology>
+<technology name="510">
+<attribute name="DIGIKEY" value="P510CCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-6ENF5100V" constant="no"/>
 </technology>
 <technology name="78.7K">
 <attribute name="DIGIKEY" value="311-78.7KCRCT-ND" constant="no"/>
