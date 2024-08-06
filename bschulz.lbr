@@ -20004,6 +20004,28 @@ CIT, 200mA, 30V&lt;br&gt;
 <vertex x="-2.032" y="0" curve="-90"/>
 </polygon>
 </package>
+<package name="JST-2-PTH-VERT">
+<description>&lt;h3&gt;JST 2 Pin Vertical Plated Through  Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.jst-mfg.com/product/pdf/eng/ePH.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="-1" y="0" drill="0.7" diameter="1.6"/>
+<pad name="2" x="1" y="0" drill="0.7" diameter="1.6"/>
+<text x="2.54" y="-3.111" size="0.6096" layer="25" font="vector" ratio="20" rot="R180">&gt;Name</text>
+<wire x1="-2.95" y1="1.7" x2="-2.95" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-2.8" x2="2.95" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-2.8" x2="2.95" y2="1.7" width="0.127" layer="21"/>
+<wire x1="2.95" y1="1.7" x2="0.381" y2="1.7" width="0.127" layer="21"/>
+<wire x1="0.381" y1="1.7" x2="0.381" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.381" y1="1.27" x2="-0.381" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="1.27" x2="-0.381" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="1.7" x2="-2.95" y2="1.7" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -36988,6 +37010,19 @@ Standard 6 pin header for AVR programming</description>
 <attribute name="DIGIKEY" value="ED2635-ND" constant="no"/>
 <attribute name="MF" value="On Shore" constant="no"/>
 <attribute name="MPN" value="OSTTE020161" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-JST-2MM-PTH-VERT" package="JST-2-PTH-VERT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="455-1704-ND" constant="no"/>
+<attribute name="MF" value="JST" constant="no"/>
+<attribute name="MPN" value="B2B-PH-K-S" constant="no"/>
 </technology>
 </technologies>
 </device>
