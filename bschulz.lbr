@@ -7,10 +7,10 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
@@ -20,7 +20,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -20122,6 +20122,90 @@ CIT, 200mA, 30V&lt;br&gt;
 <wire x1="8.89" y1="-0.635" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="11.43" y1="0.635" x2="11.43" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.1524" layer="21"/>
+</package>
+<package name="FEATHER_SMD">
+<description>SMD plug to be inserted into Feather form-factor socket&lt;br&gt;&lt;a href = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F1241150%7FD1%7Fpdf%7FEnglish%7FENG_CD_1241150_D1.pdf%7F1-1241150-2"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-26.67" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="3" x="-21.59" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="5" x="-16.51" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="7" x="-11.43" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="9" x="-6.35" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="10" x="-3.81" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="4" x="-19.05" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="6" x="-13.97" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="8" x="-8.89" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="2" x="-24.13" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="11" x="-1.27" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="12" x="1.27" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="13" x="3.81" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="14" x="6.35" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="15" x="8.89" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="16" x="11.43" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="17" x="11.43" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="18" x="8.89" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="19" x="6.35" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="20" x="3.81" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="21" x="1.27" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="22" x="-1.27" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="23" x="-3.81" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="24" x="-6.35" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="25" x="-8.89" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="26" x="-11.43" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<wire x1="-33.02" y1="8.89" x2="-33.02" y2="-8.89" width="0.127" layer="22"/>
+<wire x1="-33.02" y1="-8.89" x2="-30.48" y2="-11.43" width="0.127" layer="22" curve="90"/>
+<wire x1="-30.48" y1="-11.43" x2="15.24" y2="-11.43" width="0.127" layer="22"/>
+<wire x1="15.24" y1="-11.43" x2="17.78" y2="-8.89" width="0.127" layer="22" curve="90"/>
+<wire x1="17.78" y1="-8.89" x2="17.78" y2="8.89" width="0.127" layer="22"/>
+<wire x1="17.78" y1="8.89" x2="15.24" y2="11.43" width="0.127" layer="22" curve="90"/>
+<wire x1="15.24" y1="11.43" x2="-30.48" y2="11.43" width="0.127" layer="22"/>
+<wire x1="-30.48" y1="11.43" x2="-33.02" y2="8.89" width="0.127" layer="22" curve="90"/>
+<hole x="-30.48" y="8.89" drill="2.54"/>
+<hole x="-30.48" y="-8.89" drill="2.54"/>
+<hole x="15.24" y="-8.89" drill="2.54"/>
+<hole x="15.24" y="8.89" drill="2.54"/>
+<text x="-8.89" y="0" size="1.778" layer="26" font="vector" ratio="15" rot="MR180" align="center">Feather</text>
+<smd name="27" x="-13.97" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="28" x="-16.51" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+</package>
+<package name="FEATHER_SMD_MIN">
+<description>SMD plug to be inserted into Feather form-factor socket&lt;br&gt;&lt;a href = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F1241150%7FD1%7Fpdf%7FEnglish%7FENG_CD_1241150_D1.pdf%7F1-1241150-2"&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-26.67" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="3" x="-21.59" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="5" x="-16.51" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="7" x="-11.43" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="9" x="-6.35" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="10" x="-3.81" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="4" x="-19.05" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="6" x="-13.97" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="8" x="-8.89" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="2" x="-24.13" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="11" x="-1.27" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="12" x="1.27" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="13" x="3.81" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="14" x="6.35" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="15" x="8.89" y="-8.76" dx="1.27" dy="3.4" layer="16"/>
+<smd name="16" x="11.43" y="-11.56" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="17" x="11.43" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="18" x="8.89" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="19" x="6.35" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="20" x="3.81" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="21" x="1.27" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="22" x="-1.27" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="23" x="-3.81" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="24" x="-6.35" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<smd name="25" x="-8.89" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="26" x="-11.43" y="11.56" dx="1.27" dy="3.4" layer="16"/>
+<wire x1="-33.02" y1="8.89" x2="-33.02" y2="-8.89" width="0.127" layer="22"/>
+<wire x1="-33.02" y1="-8.89" x2="-30.48" y2="-11.43" width="0.127" layer="22" curve="90"/>
+<wire x1="-30.48" y1="-11.43" x2="15.24" y2="-11.43" width="0.127" layer="22"/>
+<wire x1="15.24" y1="-11.43" x2="17.78" y2="-8.89" width="0.127" layer="22" curve="90"/>
+<wire x1="17.78" y1="-8.89" x2="17.78" y2="8.89" width="0.127" layer="22"/>
+<wire x1="17.78" y1="8.89" x2="15.24" y2="11.43" width="0.127" layer="22" curve="90"/>
+<wire x1="15.24" y1="11.43" x2="-30.48" y2="11.43" width="0.127" layer="22"/>
+<wire x1="-30.48" y1="11.43" x2="-33.02" y2="8.89" width="0.127" layer="22" curve="90"/>
+<text x="-8.89" y="0" size="1.778" layer="26" font="vector" ratio="15" rot="MR180" align="center">Feather</text>
+<smd name="27" x="-13.97" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
+<smd name="28" x="-16.51" y="11.56" dx="1.27" dy="3.4" layer="16"/>
 </package>
 </packages>
 <packages3d>
@@ -41003,6 +41087,76 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </technologies>
 </device>
 <device name="LAYOUT" package="FEATHERWING_MIN">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="1"/>
+<connect gate="G$1" pin="3V" pad="2"/>
+<connect gate="G$1" pin="AREF" pad="3"/>
+<connect gate="G$1" pin="EN" pad="27"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="GPIO10" pad="22"/>
+<connect gate="G$1" pin="GPIO11" pad="23"/>
+<connect gate="G$1" pin="GPIO12" pad="24"/>
+<connect gate="G$1" pin="GPIO13" pad="25"/>
+<connect gate="G$1" pin="GPIO5" pad="19"/>
+<connect gate="G$1" pin="GPIO6" pad="20"/>
+<connect gate="G$1" pin="GPIO9" pad="21"/>
+<connect gate="G$1" pin="GPIOA0" pad="5"/>
+<connect gate="G$1" pin="GPIOA1" pad="6"/>
+<connect gate="G$1" pin="GPIOA2" pad="7"/>
+<connect gate="G$1" pin="GPIOA3" pad="8"/>
+<connect gate="G$1" pin="GPIOA4" pad="9"/>
+<connect gate="G$1" pin="GPIOA5" pad="10"/>
+<connect gate="G$1" pin="GPIOMISO" pad="13"/>
+<connect gate="G$1" pin="GPIOMOSI" pad="12"/>
+<connect gate="G$1" pin="GPIORX" pad="14"/>
+<connect gate="G$1" pin="GPIOSCK" pad="11"/>
+<connect gate="G$1" pin="GPIOSCL" pad="18"/>
+<connect gate="G$1" pin="GPIOSDA" pad="17"/>
+<connect gate="G$1" pin="GPIOTX" pad="15"/>
+<connect gate="G$1" pin="NC" pad="16"/>
+<connect gate="G$1" pin="USB" pad="26"/>
+<connect gate="G$1" pin="VBAT" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMD" package="FEATHER_SMD">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="1"/>
+<connect gate="G$1" pin="3V" pad="2"/>
+<connect gate="G$1" pin="AREF" pad="3"/>
+<connect gate="G$1" pin="EN" pad="27"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="GPIO10" pad="22"/>
+<connect gate="G$1" pin="GPIO11" pad="23"/>
+<connect gate="G$1" pin="GPIO12" pad="24"/>
+<connect gate="G$1" pin="GPIO13" pad="25"/>
+<connect gate="G$1" pin="GPIO5" pad="19"/>
+<connect gate="G$1" pin="GPIO6" pad="20"/>
+<connect gate="G$1" pin="GPIO9" pad="21"/>
+<connect gate="G$1" pin="GPIOA0" pad="5"/>
+<connect gate="G$1" pin="GPIOA1" pad="6"/>
+<connect gate="G$1" pin="GPIOA2" pad="7"/>
+<connect gate="G$1" pin="GPIOA3" pad="8"/>
+<connect gate="G$1" pin="GPIOA4" pad="9"/>
+<connect gate="G$1" pin="GPIOA5" pad="10"/>
+<connect gate="G$1" pin="GPIOMISO" pad="13"/>
+<connect gate="G$1" pin="GPIOMOSI" pad="12"/>
+<connect gate="G$1" pin="GPIORX" pad="14"/>
+<connect gate="G$1" pin="GPIOSCK" pad="11"/>
+<connect gate="G$1" pin="GPIOSCL" pad="18"/>
+<connect gate="G$1" pin="GPIOSDA" pad="17"/>
+<connect gate="G$1" pin="GPIOTX" pad="15"/>
+<connect gate="G$1" pin="NC" pad="16"/>
+<connect gate="G$1" pin="USB" pad="26"/>
+<connect gate="G$1" pin="VBAT" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMD_LAYOUT" package="FEATHER_SMD_MIN">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="1"/>
 <connect gate="G$1" pin="3V" pad="2"/>
