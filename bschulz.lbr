@@ -23,7 +23,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -20207,6 +20207,101 @@ CIT, 200mA, 30V&lt;br&gt;
 <smd name="27" x="-13.97" y="8.76" dx="1.27" dy="3.4" layer="16" rot="R180"/>
 <smd name="28" x="-16.51" y="11.56" dx="1.27" dy="3.4" layer="16"/>
 </package>
+<package name="SCD4X">
+<description>SCD4x Sensor Land Pattern&lt;br&gt;&lt;a href = https://sensirion.com/media/documents/48C4B7FB/64C134E7/Sensirion_SCD4x_Datasheet.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-4" y="2.5" dx="1.5" dy="0.8" layer="1"/>
+<smd name="2" x="-4" y="1.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="3" x="-4" y="0" dx="1.5" dy="0.8" layer="1"/>
+<smd name="4" x="-4" y="-1.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="5" x="-4" y="-2.5" dx="1.5" dy="0.8" layer="1"/>
+<smd name="6" x="-2.5" y="-4" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="7" x="-1.25" y="-4" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="8" x="0" y="-4" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="9" x="1.25" y="-4" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="10" x="2.5" y="-4" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="11" x="4" y="-2.5" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="12" x="4" y="-1.25" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="13" x="4" y="0" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="14" x="4" y="1.25" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="15" x="4" y="2.5" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="16" x="2.5" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="17" x="1.25" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="18" x="0" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="19" x="-1.25" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="20" x="-2.5" y="4" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="4.8" dy="4.8" layer="1" cream="no"/>
+<rectangle x1="-2.15" y1="0.35" x2="-0.35" y2="2.15" layer="31"/>
+<rectangle x1="0.35" y1="-2.15" x2="2.15" y2="-0.35" layer="31" rot="R180"/>
+<rectangle x1="0.35" y1="0.35" x2="2.15" y2="2.15" layer="31" rot="R270"/>
+<rectangle x1="-2.15" y1="-2.15" x2="-0.35" y2="-0.35" layer="31" rot="R90"/>
+<wire x1="-5.05" y1="5.05" x2="-5.05" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="-5.05" y1="-5.05" x2="5.05" y2="-5.05" width="0.127" layer="21"/>
+<wire x1="5.05" y1="-5.05" x2="5.05" y2="5.05" width="0.127" layer="21"/>
+<wire x1="5.05" y1="5.05" x2="-5.05" y2="5.05" width="0.127" layer="21"/>
+<circle x="-4" y="4" radius="0.283978125" width="0.127" layer="21"/>
+<text x="0" y="-5.842" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="STC31">
+<description>STC31 Sensor Land Pattern&lt;br&gt;&lt;a href = https://sensirion.com/media/documents/D9F76A0F/66D9B5B7/TC_DS_STC31-C_D1.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="1" x="-1.525" y="0.8" dx="0.55" dy="0.3" layer="1"/>
+<smd name="2" x="-1.525" y="0" dx="0.55" dy="0.3" layer="1"/>
+<smd name="3" x="-1.525" y="-0.8" dx="0.55" dy="0.3" layer="1"/>
+<smd name="4" x="-0.8" y="-1.775" dx="0.55" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.775" dx="0.55" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="0.8" y="-1.775" dx="0.55" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="1.525" y="-0.8" dx="0.55" dy="0.3" layer="1" rot="R180"/>
+<smd name="8" x="1.525" y="0" dx="0.55" dy="0.3" layer="1" rot="R180"/>
+<smd name="9" x="1.525" y="0.8" dx="0.55" dy="0.3" layer="1" rot="R180"/>
+<smd name="10" x="0.8" y="1.775" dx="0.55" dy="0.3" layer="1" rot="R270"/>
+<smd name="11" x="0" y="1.775" dx="0.55" dy="0.3" layer="1" rot="R270"/>
+<smd name="12" x="-0.8" y="1.775" dx="0.55" dy="0.3" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="1.6" dy="1.6" layer="1" stop="no" cream="no"/>
+<polygon width="0" layer="1">
+<vertex x="-0.9" y="-1.15"/>
+<vertex x="-0.9" y="0.85"/>
+<vertex x="-0.6" y="1.15"/>
+<vertex x="0.9" y="1.15"/>
+<vertex x="0.9" y="-1.15"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="-0.9" y="-1.15"/>
+<vertex x="-0.9" y="0.85"/>
+<vertex x="-0.6" y="1.15"/>
+<vertex x="0.9" y="1.15"/>
+<vertex x="0.9" y="-1.15"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.1" y="0.925"/>
+<vertex x="-0.7" y="0.925"/>
+<vertex x="-0.8" y="0.825"/>
+<vertex x="-0.8" y="0.225"/>
+<vertex x="-0.1" y="0.225"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.8" y="-0.925"/>
+<vertex x="0.8" y="-0.225"/>
+<vertex x="0.1" y="-0.225"/>
+<vertex x="0.1" y="-0.925"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.8" y="-0.925"/>
+<vertex x="-0.1" y="-0.925"/>
+<vertex x="-0.1" y="-0.225"/>
+<vertex x="-0.8" y="-0.225"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.8" y="0.925"/>
+<vertex x="0.1" y="0.925"/>
+<vertex x="0.1" y="0.225"/>
+<vertex x="0.8" y="0.225"/>
+</polygon>
+<wire x1="-1.5" y1="1.75" x2="-1.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.75" x2="1.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.75" x2="1.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.75" x2="-1.5" y2="1.75" width="0.127" layer="21"/>
+<circle x="-1.778" y="2.032" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-2.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -27672,7 +27767,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">SPG30</text>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
 <text x="0" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="SHTC3">
@@ -31251,6 +31346,20 @@ Switches electronic signals</description>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="-8.89" size="1.27" layer="95" align="center">&gt;NAME</text>
 <text x="0" y="9.144" size="1.27" layer="95" align="center">&gt;DISP</text>
+</symbol>
+<symbol name="SENSOR_I2C_ADDR">
+<description>&lt;b&gt;Generic Device for I2C Only Sensors (with Address select)&lt;/b&gt;</description>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<pin name="ADDR" x="-12.7" y="0" visible="pin" length="middle" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -43306,7 +43415,7 @@ For any MicroSD holders lacking card detect options</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPG30" prefix="U">
+<deviceset name="SGP30" prefix="U">
 <description>&lt;b&gt;SGP30&lt;/b&gt; - Multi-pixel Gas Sensor (TVOC, CO2EQ)
  
 &lt;p&gt;Characteristics:
@@ -43337,6 +43446,7 @@ For any MicroSD holders lacking card detect options</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="1649-1084-1-ND" constant="no"/>
+<attribute name="DISP" value="SGP30" constant="no"/>
 <attribute name="MF" value="Sensirion" constant="no"/>
 <attribute name="MPN" value="SGP30-2.5K" constant="no"/>
 </technology>
@@ -52846,6 +52956,99 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/texa
 <attribute name="DISP" value="SN74LVC3G17" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="SN74LVC3G17DCTR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCD4*" prefix="U">
+<description>&lt;b&gt;SCD4x&lt;/b&gt; - Miniature NDIR CO&lt;sub&gt;2&lt;/sub&gt; Sensor
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 2.4 ~ 5.5V&lt;/li&gt;
+&lt;li&gt; Sensing: CO&lt;sub&gt;2&lt;/sub&gt;, Temperature, Humidity
+&lt;li&gt; Range: 0 ~ 40000 ppm (CO&lt;sub&gt;2&lt;/sub&gt;)
+&lt;li&gt; Sample Rate: &amp;lt;5s&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -10°C to 60°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/sensirion-ag/SCD40-D-R2/13684003"&gt; 1649-SCD40-D-R2CT-ND&lt;/a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/sensirion-ag/SCD41-D-R2/13684005"&gt; 1649-SCD41-D-R2CT-ND&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SGP30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCD4X">
+<connects>
+<connect gate="G$1" pin="SCL" pad="9"/>
+<connect gate="G$1" pin="SDA" pad="10"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VDDH" pad="19"/>
+<connect gate="G$1" pin="VSS" pad="6 20 EP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="SCD4x" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="0">
+<attribute name="DIGIKEY" value="1649-SCD40-D-R2CT-ND" constant="no"/>
+<attribute name="DISP" value="SCD40" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SCD40-D-R2" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="1649-SCD41-D-R2CT-ND" constant="no"/>
+<attribute name="DISP" value="SCD41" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SCD41-D-R2" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STC31" prefix="U">
+<description>&lt;b&gt;STC31&lt;/b&gt; - Thermal Conductivity CO&lt;sub&gt;2&lt;/sub&gt; Gas Sensor&lt;/sub&gt; Sensor
+ 
+&lt;p&gt;Characteristics:
+&lt;ul&gt;
+&lt;li&gt;Vcc: 2.7 ~ 5.5V&lt;/li&gt;
+&lt;li&gt; Sensing: CO&lt;sub&gt;2&lt;/sub&gt;, Temperature
+&lt;li&gt; Range: 0 ~ 100% (CO&lt;sub&gt;2&lt;/sub&gt;)
+&lt;li&gt; Sample Rate: &amp;gt;1Hz&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 105°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/sensirion-ag/STC31-C-R3/24394079"&gt; 1649-STC31-C-R3CT-ND&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_I2C_ADDR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STC31">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1 5 9 11 EP"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="1649-STC31-C-R3CT-ND" constant="no"/>
+<attribute name="DISP" value="STC31" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="STC31-C-R3" constant="no"/>
 </technology>
 </technologies>
 </device>
