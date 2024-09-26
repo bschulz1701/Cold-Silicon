@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -646,6 +646,40 @@
 <text x="0" y="1.27" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <pad name="5" x="0" y="-9" drill="1.2"/>
 </package>
+<package name="1X04_M12_TE_T41400">
+<description>&lt;b&gt;M12, 4 pos, A Coded connector&lt;/b&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Manufacturer: TE Connectivity&lt;/li&gt;
+&lt;li&gt;Manufacturer Part Number: T4140012041-000&lt;/li&gt;
+&lt;li&gt; Digikey Part Number: A124956-ND&lt;/li&gt;
+&lt;li&gt; &lt;a href = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=T41400120X1000&amp;DocType=Customer+Drawing&amp;DocLang=English"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<pad name="2" x="-1.7677" y="1.7677" drill="1.2"/>
+<pad name="1" x="1.7677" y="1.7677" drill="1.2"/>
+<pad name="4" x="1.7677" y="-1.7677" drill="1.2"/>
+<pad name="3" x="-1.7677" y="-1.7677" drill="1.2"/>
+<circle x="0" y="0" radius="4.016090625" width="0.254" layer="22"/>
+<wire x1="-0.508" y1="3.937" x2="-0.508" y2="3.675" width="0.254" layer="22"/>
+<wire x1="-0.508" y1="3.675" x2="-0.008" y2="3.175" width="0.254" layer="22" curve="90"/>
+<wire x1="-0.008" y1="3.175" x2="0.008" y2="3.175" width="0.254" layer="22"/>
+<wire x1="0.008" y1="3.175" x2="0.508" y2="3.675" width="0.254" layer="22" curve="90"/>
+<wire x1="0.508" y1="3.675" x2="0.508" y2="3.937" width="0.254" layer="22"/>
+<text x="0" y="-3.81" size="1.27" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-8.45" y1="4.008653125" x2="-8.45" y2="-4.008653125" width="0.127" layer="22"/>
+<wire x1="-8.45" y1="-4.008653125" x2="-7.699584375" y2="-5.30793125" width="0.127" layer="22" curve="60.018333"/>
+<wire x1="-7.699584375" y1="-5.30793125" x2="-0.749584375" y2="-9.317546875" width="0.127" layer="22"/>
+<wire x1="-0.749584375" y1="-9.317546875" x2="0.749584375" y2="-9.317546875" width="0.127" layer="22" curve="59.963334"/>
+<wire x1="0.749584375" y1="-9.317546875" x2="7.699584375" y2="-5.30793125" width="0.127" layer="22"/>
+<wire x1="7.699584375" y1="-5.30793125" x2="8.45" y2="-4.008653125" width="0.127" layer="22" curve="60.018273"/>
+<wire x1="8.45" y1="-4.008653125" x2="8.45" y2="4.008653125" width="0.127" layer="22"/>
+<wire x1="8.45" y1="4.008653125" x2="7.699584375" y2="5.30793125" width="0.127" layer="22" curve="60.018333"/>
+<wire x1="7.699584375" y1="5.30793125" x2="0.749584375" y2="9.317546875" width="0.127" layer="22"/>
+<wire x1="0.749584375" y1="9.317546875" x2="-0.749584375" y2="9.317546875" width="0.127" layer="22" curve="59.963334"/>
+<wire x1="-0.749584375" y1="9.317546875" x2="-7.699584375" y2="5.30793125" width="0.127" layer="22"/>
+<wire x1="-7.699584375" y1="5.30793125" x2="-8.45" y2="4.008653125" width="0.127" layer="22" curve="60.018273"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_I2C">
@@ -796,6 +830,21 @@
 <attribute name="DIGIKEY" value="626-2136-ND" constant="no"/>
 <attribute name="MF" value="Conec" constant="no"/>
 <attribute name="MPN" value="43-01204" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_BOARD_MOUNT_TH" package="1X04_M12_TE_T41400">
+<connects>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="A124956-ND" constant="no"/>
+<attribute name="MF" value="TE" constant="no"/>
+<attribute name="MPN" value="T4140012041-000" constant="no"/>
 </technology>
 </technologies>
 </device>
