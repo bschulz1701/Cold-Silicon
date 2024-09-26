@@ -20302,6 +20302,15 @@ CIT, 200mA, 30V&lt;br&gt;
 <circle x="-1.778" y="2.032" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="-2.54" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="1_72">
+<description>&lt;p&gt;&lt;b&gt;1x72 Non-Plated Mounting Hole &lt;/b&gt;
+&lt;br&gt;Hole diameter based on max body diameter + 15% 
+&lt;br&gt;Keepout ring is for diameter of socket cap screw (minimum clearance required)
+&lt;br&gt;TPlace ring is for diameter of pan head screw (recomended clearance) &lt;/p&gt;</description>
+<hole x="0" y="0" drill="2.13233125"/>
+<circle x="0" y="0" radius="1.4986" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1.8034" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="MLF20-4X4" urn="urn:adsk.eagle:package:4316/1" type="box">
@@ -38345,6 +38354,15 @@ NTC Thermistors:
 <device name="4_PL_GND" package="4_40_GND">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="1_NP" package="1_72">
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="DNP" constant="no"/>
+<attribute name="MF" value="N/A" constant="no"/>
+<attribute name="MPN" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
