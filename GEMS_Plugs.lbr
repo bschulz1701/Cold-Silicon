@@ -51,7 +51,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
@@ -680,6 +680,29 @@
 <wire x1="-0.749584375" y1="9.317546875" x2="-7.699584375" y2="5.30793125" width="0.127" layer="22"/>
 <wire x1="-7.699584375" y1="5.30793125" x2="-8.45" y2="4.008653125" width="0.127" layer="22" curve="60.018273"/>
 </package>
+<package name="1X05_M12_PHOENIX_1432363">
+<description>&lt;b&gt;M12 unthreaded connector, 5 pos - through hole&lt;/b&gt;&lt;br&gt;&lt;a href = https://www.phoenixcontact.com/en-us/products/contact-insert-sacc-ci-m12fs-5con-l180-thr-sh-1432363?utm_source=pdf&amp;utm_medium=pdf&gt;Datasheet</description>
+<text x="-6.096" y="0.0254" size="1.27" layer="25" font="vector" ratio="15" rot="SR90" align="center">&gt;Name</text>
+<circle x="0" y="0" radius="5.1" width="0.127" layer="21"/>
+<pad name="1" x="-1.767" y="1.767" drill="1.1" diameter="2.1"/>
+<pad name="2" x="1.767" y="1.767" drill="1.1" diameter="2.1"/>
+<pad name="3" x="1.767" y="-1.767" drill="1.1" diameter="2.1"/>
+<pad name="4" x="-1.767" y="-1.767" drill="1.1" diameter="2.1" rot="R180"/>
+<pad name="5" x="0" y="0" drill="1.1" diameter="2.1"/>
+<hole x="0" y="5" drill="1.4"/>
+<hole x="-4.25" y="-4.5" drill="1.4"/>
+<hole x="4.25" y="-4.5" drill="1.4"/>
+<hole x="0" y="-7.15" drill="1.1"/>
+<wire x1="-0.508" y1="5" x2="0.508" y2="5" width="0.127" layer="21" curve="172.37185"/>
+<polygon width="0.127" layer="39">
+<vertex x="-6.75" y="-7.75"/>
+<vertex x="-6.75" y="0" curve="-90"/>
+<vertex x="-0.01" y="6.75"/>
+<vertex x="0.01" y="6.75" curve="-90"/>
+<vertex x="6.75" y="0"/>
+<vertex x="6.75" y="-7.75"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CONN_I2C">
@@ -909,6 +932,22 @@
 <attribute name="DIGIKEY" value="277-10282-1-ND" constant="no"/>
 <attribute name="MF" value="Phoenix" constant="no"/>
 <attribute name="MPN" value="1411976" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_M12_REMOTE_NOTHREAD" package="1X05_M12_PHOENIX_1432363">
+<connects>
+<connect gate="G$1" pin="3V3" pad="1"/>
+<connect gate="G$1" pin="ANALOG" pad="4"/>
+<connect gate="G$1" pin="DIGITAL" pad="5"/>
+<connect gate="G$1" pin="DIGITAL_OPENDRAIN" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="277-13153-ND" constant="no"/>
+<attribute name="MF" value="Phoenix" constant="no"/>
+<attribute name="MPN" value="1432363" constant="no"/>
 </technology>
 </technologies>
 </device>
